@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartDorf24 — Automatenaufsteller</title>
+  <meta name="description" content="SmartDorf24 — Snack- und Getränkeautomaten in der Region. Bald wieder mit Standortübersicht und aktuellem Sortiment." />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #121a2b;
+      --text: #e8eefc;
+      --muted: #9db0d0;
+      --accent: #3dd6c6;
+      --accent2: #6ea8ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #1a3a55 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #16352f 0%, transparent 50%),
+        var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      width: min(680px, 100%);
+      background: color-mix(in srgb, var(--card) 92%, black);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 36px 32px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+    }
+    .badge {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(61,214,198,0.1);
+      border: 1px solid rgba(61,214,198,0.25);
+      border-radius: 999px;
+      padding: 6px 12px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      line-height: 1.15;
+    }
+    p { margin: 0 0 14px; color: var(--muted); line-height: 1.55; }
+    .lang { display: grid; gap: 18px; margin-top: 8px; }
+    .block {
+      padding: 16px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .block h2 {
+      margin: 0 0 8px;
+      font-size: 0.85rem;
+      color: var(--accent2);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    a { color: var(--accent); }
+    .meta { margin-top: 22px; font-size: 0.95rem; color: var(--text); }
+    .meta span { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge">SmartDorf24 · Online bald erweitert</div>
+    <h1>Automaten. Lokal. Zuverlässig.</h1>
+    <div class="lang">
+      <section class="block">
+        <h2>Deutsch</h2>
+        <p>Willkommen bei <strong>SmartDorf24</strong>. Unsere Website wird gerade überarbeitet — mit Standortkarte und aktuellem Automaten-Sortiment.</p>
+        <p>Für Anfragen erreichen Sie uns unter den Kontaktdaten unten.</p>
+      </section>
+      <section class="block">
+        <h2>English</h2>
+        <p>Welcome to <strong>SmartDorf24</strong>. We’re rebuilding this site with machine locations and live stock soon.</p>
+        <p>For inquiries, use the contact details below.</p>
+      </section>
+    </div>
+    <div class="meta">
+      <div><span>Adresse:</span> Lindenstr. 35, 65623 Schiesheim</div>
+      <div><span>Telefon:</span> <a href="tel:+4915567429218">0155 67429218</a></div>
+      <div><span>Web:</span> smartdorf24.de</div>
+    </div>
+  </main>
+</body>
+</html>
