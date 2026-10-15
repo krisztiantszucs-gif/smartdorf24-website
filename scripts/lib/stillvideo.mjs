@@ -11,6 +11,6 @@ export function imageToStillMp4(imgBuf, seconds = 10) {
   execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-loop", "1", "-i", inp, "-t", String(seconds),
     "-r", "25", "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2,format=yuv420p",
     "-c:v", "libx264", "-preset", "medium", "-tune", "stillimage", "-crf", "23",
-    "-movflags", "+faststart", "-an", out]);
+    "-pix_fmt", "yuv420p", "-color_range", "tv", "-movflags", "+faststart", "-an", out]);
   return readFileSync(out);
 }
