@@ -46,16 +46,7 @@
       "advertiseGroupItemId": "100001199"
     }
   },
-  "machineAds": {
-    "7680783": {
-      "advertiseId": "100001916",
-      "advertiseGroupItemId": "100001199",
-      "adName": "SD24-expiry-7680783-2026-10-15",
-      "groupName": "SD24-expiry-grp-7680783-2026-10-15",
-      "boundAt": "2026-10-15T17:15:11.015Z",
-      "day": "2026-10-15"
-    }
-  },
+  "machineAds": {},
   "permanentAds": {
     "liveStock": {
       "advertiseId": "100001917",
@@ -71,6 +62,36 @@
       ],
       "updatedAt": "2026-10-15T17:29:04.711Z",
       "minutes": 10
+    },
+    "combined": {
+      "advertiseId": "100001919",
+      "advertiseGroupItemId": "100001203",
+      "adName": "SD24-combined-2026-10-15-d82f45",
+      "groupName": "SD24-combined-grp",
+      "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2d126f044e6a418fbb2ddf584f476423.mp4",
+      "hash": "d82f452ae856f9b0",
+      "nightGroups": [
+        "100000785",
+        "100000786"
+      ],
+      "boundRtus": [
+        "7680787",
+        "7680782",
+        "7680800",
+        "7680783"
+      ],
+      "previousAdvertiseId": null,
+      "updatedAt": "2026-10-15T18:03:32.798Z"
+    }
+  },
+  "retiredMachineAds": {
+    "7680783": {
+      "advertiseId": "100001916",
+      "advertiseGroupItemId": "100001199",
+      "adName": "SD24-expiry-7680783-2026-10-15",
+      "groupName": "SD24-expiry-grp-7680783-2026-10-15",
+      "boundAt": "2026-10-15T17:15:11.015Z",
+      "day": "2026-10-15"
     }
   }
 }

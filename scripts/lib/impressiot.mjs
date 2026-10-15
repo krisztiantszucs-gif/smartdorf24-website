@@ -3,10 +3,10 @@ import { createHash } from "node:crypto";
 export const BASE = "https://usa.impressiot.com";
 
 export const MACHINES = [
-  { rtuNumber: "7680787", locationId: "schiesheim", name: { de: "Schiesheim Rechts", en: "Schiesheim Right" } },
-  { rtuNumber: "7680782", locationId: "schiesheim", name: { de: "Schiesheim Links", en: "Schiesheim Left" } },
-  { rtuNumber: "7680800", locationId: "steinsberg", name: { de: "Steinsberg Rechts", en: "Steinsberg Right" } },
-  { rtuNumber: "7680783", locationId: "steinsberg", name: { de: "Steinsberg Links", en: "Steinsberg Left" } },
+  { rtuNumber: "7680787", serial: "SN20251212D7680787usa", locationId: "schiesheim", name: { de: "Schiesheim Rechts", en: "Schiesheim Right" } },
+  { rtuNumber: "7680782", serial: "SN20251212D7680782usa", locationId: "schiesheim", name: { de: "Schiesheim Links", en: "Schiesheim Left" } },
+  { rtuNumber: "7680800", serial: "SN20251212D7680800usa", locationId: "steinsberg", name: { de: "Steinsberg Rechts", en: "Steinsberg Right" } },
+  { rtuNumber: "7680783", serial: "SN20251212D7680783usa", locationId: "steinsberg", name: { de: "Steinsberg Links", en: "Steinsberg Left" } },
 ];
 
 export function md5(text) {

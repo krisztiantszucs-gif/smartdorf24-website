@@ -1,0 +1,204 @@
+#!/usr/bin/env python3
+"""Render the combined ~30s SmartDorf24 screen ad (3 x 10s segments).
+Usage: make-combined-ad.py --karamalz IMG --qr QR.png --stock data/stock.json
+       --discounts data/discounts.json --out out.mp4 --preview preview.png
+Frames rendered with Pillow and piped to ffmpeg (H.264 yuv420p 30fps)."""
+import argparse, json, math, random, subprocess, io, urllib.request, os, datetime
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+
+W, H, FPS, SEG = 1792, 1008, 30, 10
+TEAL, BLUE, RED, YEL, BG, WHITE = (61,214,198), (110,168,255), (255,77,94), (255,208,64), (8,12,22), (240,245,255)
+FB = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+FR = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+_fc = {}
+def font(sz, bold=True):
+    k = (sz, bold)
+    if k not in _fc: _fc[k] = ImageFont.truetype(FB if bold else FR, sz)
+    return _fc[k]
+
+def ease(x): x = max(0., min(1., x)); return 1 - (1 - x) ** 3
+def pop(x):  # overshoot pop-in 0..1
+    x = max(0., min(1., x)); return 1 + 2.7 * (x - 1) ** 3 + 1.7 * (x - 1) ** 2 if x < 1 else 1.
+
+random.seed(24)
+PARTS = [(random.random()*W, random.random()*H, random.uniform(2,6), random.uniform(10,40), random.random()*6.28) for _ in range(70)]
+
+def background(t, c1=(10,18,36), c2=(14,44,52)):
+    img = Image.new("RGB", (W, H), BG)
+    d = ImageDraw.Draw(img)
+    sh = (math.sin(t*0.6)+1)/2
+    for y in range(0, H, 8):
+        f = y/H
+        c = tuple(int(c1[i]*(1-f)+c2[i]*f + 10*sh*f) for i in range(3))
+        d.rectangle([0,y,W,y+8], fill=c)
+    for (x,y,r,sp,ph) in PARTS:
+        yy = (y - t*sp) % H; xx = x + 18*math.sin(t*0.8+ph)
+        a = int(90 + 80*math.sin(t*2+ph))
+        d.ellipse([xx-r,yy-r,xx+r,yy+r], fill=(min(255,61+a//3),214,198) if ph>3 else (110,168,min(255,180+a//4)))
+    return img
+
+def text_c(d, cx, y, s, f, fill, stroke=0, sfill=(0,0,0)):
+    w = d.textlength(s, font=f); d.text((cx-w/2, y), s, font=f, fill=fill, stroke_width=stroke, stroke_fill=sfill)
+
+def scaled_text(img, s, f, fill, cx, cy, scale, stroke=4):
+    if scale <= 0.02: return
+    d0 = ImageDraw.Draw(img); bw = int(d0.textlength(s, font=f)) + 40; bh = f.size + 40
+    layer = Image.new("RGBA", (bw, bh), (0,0,0,0))
+    ImageDraw.Draw(layer).text((20,10), s, font=f, fill=fill, stroke_width=stroke, stroke_fill=(0,0,0,200))
+    nw, nh = max(1,int(bw*scale)), max(1,int(bh*scale))
+    layer = layer.resize((nw, nh), Image.LANCZOS)
+    img.paste(layer, (int(cx-nw/2), int(cy-nh/2)), layer)
+
+def fetch_img(url):
+    try:
+        if os.path.exists(url): return Image.open(url).convert("RGB")
+        return Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent":"sd24"}), timeout=20).read())).convert("RGB")
+    except Exception: return None
+
+def cover(img, w, h):
+    s = max(w/img.width, h/img.height); im = img.resize((int(img.width*s)+1, int(img.height*s)+1), Image.LANCZOS)
+    l, t = (im.width-w)//2, (im.height-h)//2; return im.crop((l,t,l+w,t+h))
+
+def brand_bar(img, t):
+    d = ImageDraw.Draw(img)
+    d.rectangle([0,H-70,W,H], fill=(6,10,18))
+    d.text((40,H-58), "SmartDorf24", font=font(36), fill=TEAL)
+    d.text((W-460,H-52), "smartdorf24.de · 24/7", font=font(30,False), fill=WHITE)
+    x = int((t*400) % (W+400)) - 200
+    d.rectangle([x,H-72,x+200,H-68], fill=TEAL)
+
+# --- segment 1: Karamalz Ken Burns ---
+def seg_karamalz(t, src):
+    z = 1.0 + 0.18*ease(t/SEG); pan = 60*math.sin(t*0.35)
+    cw, ch = int(W/z), int(H/z)
+    base = cover(src, W+160, H+160)
+    l = int((base.width-cw)/2 + pan); tp = int((base.height-ch)/2 - pan*0.4)
+    img = base.crop((l,tp,l+cw,tp+ch)).resize((W,H), Image.LANCZOS)
+    if t < 0.6: img = Image.blend(Image.new("RGB",(W,H),BG), img, ease(t/0.6))
+    ov = Image.new("RGBA",(W,H),(0,0,0,0)); od = ImageDraw.Draw(ov)
+    od.rectangle([0,H-260,W,H], fill=(0,0,0,150))
+    img = Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
+    s = pop((t-1.0)/0.6)
+    scaled_text(img, "Jetzt im Automaten!", font(78), YEL, W/2, H-200, s)
+    if t > 2.2:
+        p = 1 + 0.06*math.sin((t-2.2)*5)
+        scaled_text(img, "Eiskalt · 24/7 · Kontaktlos zahlen", font(40), WHITE, W/2, H-120, p*ease((t-2.2)/0.5), 3)
+    brand_bar(img, t); return img
+
+# --- segment 2: Live stock ---
+def seg_live(t, qr, thumbs):
+    img = background(t, (10,22,48), (8,52,60)); d = ImageDraw.Draw(img)
+    x0 = -900 + 1000*ease(t/0.8)
+    d.text((x0+100, 120), "Live-Bestand", font=font(110), fill=TEAL, stroke_width=3, stroke_fill=(0,0,0))
+    d.text((x0+100, 250), "jetzt online", font=font(110), fill=WHITE, stroke_width=3, stroke_fill=(0,0,0))
+    if t > 0.9:
+        a = ease((t-0.9)/0.6); d.text((100, 400), "See live stock online", font=font(48,False), fill=tuple(int(c*a) for c in BLUE))
+    if t > 1.4:
+        d.text((100, 480), "Vor dem Weg prüfen, was drin ist.", font=font(38,False), fill=WHITE)
+    # thumbs carousel
+    for i, th in enumerate(thumbs):
+        st = 1.8 + i*0.25
+        if t < st: continue
+        sc = pop((t-st)/0.5); sz = int(150*sc)
+        if sz < 4: continue
+        x = 100 + i*175 + 75; y = 680 + int(10*math.sin(t*3+i))
+        tile = Image.new("RGB",(170,170),(255,255,255)); tile.paste(th.resize((150,150)),(10,10))
+        tile = tile.resize((int(170*sc),int(170*sc)))
+        img.paste(tile,(x-tile.width//2, y-tile.height//2))
+    # QR pulsing
+    if t > 0.5:
+        sc = pop((t-0.5)/0.7) * (1 + 0.04*math.sin(t*6))
+        qs = int(440*sc)
+        if qs > 10:
+            q = qr.resize((qs,qs)); cx, cy = W-340, 430
+            ImageDraw.Draw(img).rounded_rectangle([cx-qs/2-20,cy-qs/2-20,cx+qs/2+20,cy+qs/2+20], 24, fill=WHITE)
+            img.paste(q,(int(cx-qs/2),int(cy-qs/2)))
+    if t > 2.5:
+        g = int(127+127*math.sin(t*6)); text_c(d, W-340, 700, "Scan → smartdorf24.de", font(36), (g,255,230))
+    brand_bar(img, t); return img
+
+# --- segment 3: Deals ---
+def burst(img, cx, cy, r, t, col):
+    d = ImageDraw.Draw(img); pts = []
+    n = 18; rot = t*0.8
+    for i in range(n*2):
+        rr = r if i%2==0 else r*0.72; a = rot + i*math.pi/n
+        pts.append((cx+rr*math.cos(a), cy+rr*math.sin(a)))
+    d.polygon(pts, fill=col)
+
+def seg_deals(t, deals):
+    img = background(t, (40,8,20), (60,20,10)); d = ImageDraw.Draw(img)
+    r = 230*pop(t/0.6)*(1+0.05*math.sin(t*5))
+    if r > 5:
+        burst(img, 330, 360, r, t, RED); burst(img, 330, 360, r*0.82, -t, YEL); burst(img, 330, 360, r*0.68, t, RED)
+        scaled_text(img, "−50%", font(130), WHITE, 330, 360, min(1,r/230), 5)
+    if deals:
+        d.text((640, 90), "Kurz vor MHD – halber Preis!", font=font(58), fill=YEL, stroke_width=2, stroke_fill=(0,0,0))
+        for i, dl in enumerate(deals[:5]):
+            st = 0.8 + i*0.45
+            if t < st: continue
+            x = 640 + int(1200*(1-ease((t-st)/0.5))); y = 200 + i*130
+            d.rounded_rectangle([x,y,x+1080,y+112], 18, fill=(20,20,30), outline=YEL, width=3)
+            name = dl["name"] if len(dl["name"]) < 27 else dl["name"][:25]+"…"
+            d.text((x+24,y+12), name, font=font(40), fill=WHITE)
+            d.text((x+24,y+64), f"nur noch bis {dl['until']}", font=font(28,False), fill=(255,190,190))
+            old = f"{dl['old']:.2f} €".replace(".",","); new = f"{dl['new']:.2f} €".replace(".",",")
+            ow = d.textlength(old, font=font(38,False)); ox = x+690
+            d.text((ox,y+36), old, font=font(38,False), fill=(180,180,190)); d.line([ox,y+60,ox+ow,y+60], fill=RED, width=4)
+            ps = 1+0.08*math.sin((t-st)*7)
+            scaled_text(img, new, font(52), YEL, x+990, y+56, ps*ease((t-st)/0.4), 3)
+    else:
+        d.text((640, 220), "Tagesangebote", font=font(110), fill=YEL, stroke_width=3, stroke_fill=(0,0,0))
+        if t > 1: d.text((640, 380), "24/7 Snacks & Getränke", font=font(64), fill=WHITE)
+    if t > 3:
+        p = 1+0.07*math.sin(t*6)
+        scaled_text(img, "Jetzt zugreifen!  smartdorf24.de", font(56), TEAL, W/2, H-150, p, 4)
+    brand_bar(img, t); return img
+
+def transition(a, b, x):  # slide + fade
+    x = ease(x); off = int(W*0.25*(1-x))
+    out = Image.blend(a, b, x)
+    if off: out.paste(Image.blend(a, b, x).crop((0,0,W-off,H)), (off,0))
+    return out
+
+def main():
+    ap = argparse.ArgumentParser()
+    for a in ["karamalz","qr","stock","discounts","out","preview"]: ap.add_argument("--"+a, required=True)
+    o = ap.parse_args()
+    kar = fetch_img(o.karamalz); qr = Image.open(o.qr).convert("RGB")
+    stock = json.load(open(o.stock)); disc = json.load(open(o.discounts)) if os.path.exists(o.discounts) else {}
+    thumbs = []
+    for loc in stock.get("locations",[]):
+        for m in loc["machines"]:
+            for it in m["items"]:
+                if it.get("image") and it.get("stock",0) > 0 and len(thumbs) < 5:
+                    im = fetch_img(it["image"])
+                    if im: thumbs.append(im)
+    today = datetime.date.today()
+    deals = []
+    for a in (disc.get("active") or {}).values():
+        try:
+            if datetime.date.fromisoformat(a["effDate"]) >= today:
+                dd = datetime.date.fromisoformat(a["effDate"])
+                deals.append({"name":a["name"],"old":float(a["originalPrice"]),"new":float(a["discountPrice"]),"until":dd.strftime("%d.%m.")})
+        except Exception: pass
+    segs = [lambda t: seg_karamalz(t, kar), lambda t: seg_live(t, qr, thumbs), lambda t: seg_deals(t, deals)]
+    p = subprocess.Popen(["ffmpeg","-y","-loglevel","error","-f","rawvideo","-pix_fmt","rgb24","-s",f"{W}x{H}","-r",str(FPS),"-i","-",
+        "-c:v","libx264","-preset","medium","-crf","21","-pix_fmt","yuv420p","-color_range","tv","-movflags","+faststart","-an",o.out], stdin=subprocess.PIPE)
+    frames, TR = [], 0.5
+    for si, seg in enumerate(segs):
+        for f in range(SEG*FPS):
+            t = f/FPS; fr = seg(t)
+            if si < 2 and t > SEG-TR:  # crossfade into next segment
+                fr = transition(fr, segs[si+1](0.0), (t-(SEG-TR))/TR)
+            if f == int(5.5*FPS): frames.append(fr.copy())
+            p.stdin.write(fr.tobytes())
+    p.stdin.close(); p.wait()
+    sheet = Image.new("RGB", (W, H*3//3 + 40), (0,0,0))
+    tw, th = W//3, H//3
+    sheet = Image.new("RGB", (tw*3+40, th+20), (20,20,20))
+    for i, fr in enumerate(frames): sheet.paste(fr.resize((tw,th)), (10+i*(tw+10), 10))
+    sheet.save(o.preview)
+    print(json.dumps({"deals":len(deals),"thumbs":len(thumbs)}))
+
+if __name__ == "__main__": main()

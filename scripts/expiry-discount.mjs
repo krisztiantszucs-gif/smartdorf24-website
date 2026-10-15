@@ -12,6 +12,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { imageToStillMp4 } from "./lib/stillvideo.mjs";
+import { swapCombined } from "./lib/combined.mjs";
 import {
   MACHINES,
   login,
@@ -658,6 +659,8 @@ async function main() {
     );
     if (SKIP_ADS) {
       console.log("Skipping ads (--skip-ads)");
+    } else if (state.permanentAds?.combined) {
+      // Combined-ad mode: per-machine expiry groups are retired; handled after loop.
     } else if (activeOnMachine.length === 0) {
       if (state.machineAds[rtuNumber]) {
         console.log(`Removing discount ad from ${rtuNumber}`);
@@ -699,6 +702,17 @@ async function main() {
   state.lastRunAt = new Date().toISOString();
   state.lastRunDay = today;
   saveState(state);
+
+  if (!SKIP_ADS && state.permanentAds?.combined) {
+    try {
+      const r = await swapCombined(token, state, { root: ROOT, outDir: join(ROOT, ".ads-out"), today });
+      console.log(`combined ad: changed=${r.changed}`);
+      saveState(state);
+    } catch (e) {
+      console.error(`COMBINED AD ERROR: ${e.message}`);
+      process.exitCode = 1;
+    }
+  }
   console.log(`\nWrote ${STATE_PATH}`);
   console.log(
     "Active discounts:",

@@ -26,6 +26,13 @@ jobs:
           cache: npm
       - name: Install deps
         run: npm ci --omit=dev
+      - name: Video deps
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core python3-pil
+      - name: Refresh stock (for combined ad thumbnails)
+        env:
+          IMPRESSIOT_USERNAME: ${{ secrets.IMPRESSIOT_USERNAME }}
+          IMPRESSIOT_PASSWORD: ${{ secrets.IMPRESSIOT_PASSWORD }}
+        run: node scripts/fetch-stock.mjs
       - name: Run expiry discount job
         env:
           IMPRESSIOT_USERNAME: ${{ secrets.IMPRESSIOT_USERNAME }}
