@@ -11,6 +11,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { imageToStillMp4 } from "./lib/stillvideo.mjs";
 import {
   MACHINES,
   login,
@@ -152,7 +153,7 @@ async function uploadPng(token, buffer, filename) {
 
 async function saveAdvertise(token, { name, url, mediaType = "img", remark = "", minutes = 10 }) {
   const { http, json } = await api(token, "POST", "/advertise/save", {
-    body: { name, url, mediaType, remark, minutes: mediaType === "img" ? minutes : 0 },
+    body: { name, url, mediaType, remark, minutes },
   });
   console.log(`advertise/save ${name} HTTP ${http} code=${json.code} msg=${json.msg || ""}`);
   if (http !== 200 || json.code !== 200) throw new Error(`advertise/save failed: ${json.msg}`);
@@ -442,38 +443,30 @@ async function ensureMachineAd(token, rtuNumber, machineName, products, today, s
   const adName = `SD24-expiry-${rtuNumber}-${today}`;
   const groupName = `SD24-expiry-grp-${rtuNumber}-${today}`;
   const png = await generateDiscountAdPng({ machineName, products, today });
-  const url = await uploadPng(token, png, `${adName}.png`);
-
+  // Images with minutes=0 never rotate and minutes is whole minutes; use a 10s still MP4 instead.
   let adv = await findAdvertiseByName(token, adName);
   if (!adv) {
-    const saved = await saveAdvertise(token, {
-      name: adName,
-      url,
-      mediaType: "img",
-      remark: "auto expiry discount — smartdorf24",
-    });
-    // re-fetch to get id
+    let url, mediaType = "video", minutes = 0;
+    try {
+      const mp4 = imageToStillMp4(png, 10);
+      const form = new FormData();
+      form.append("file", new Blob([mp4], { type: "video/mp4" }), `${adName}.mp4`);
+      const up = await api(token, "POST", "/file/upload", { formData: form });
+      if (up.json.code !== 200 || !up.json.data) throw new Error(up.json.msg);
+      url = up.json.data;
+    } catch (e) {
+      console.warn("MP4 path failed, fallback to image minutes=1:", e.message);
+      url = await uploadPng(token, png, `${adName}.png`);
+      mediaType = "img"; minutes = 1;
+    }
+    await saveAdvertise(token, { name: adName, url, mediaType, minutes, remark: "auto expiry discount — smartdorf24" });
     adv = await findAdvertiseByName(token, adName);
-    if (!adv && saved.id) adv = { id: saved.id, name: adName, url };
   }
   if (!adv?.id) throw new Error("could not resolve advertise id");
-  // minutes is only honored on create (update silently ignores it). Recreate if wrong.
-  if (adv.mediaType === "img" && Number(adv.minutes) !== 10) {
-    const re = await saveAdvertise(token, {
-      name: adName + "-v",
-      url: adv.url || url,
-      mediaType: "img",
-      remark: adv.remark || "auto expiry discount — smartdorf24",
-      minutes: 10,
-    });
-    const again = await findAdvertiseByName(token, adName + "-v");
-    if (again?.id) adv = again;
-    else if (re.id) adv = { id: re.id, name: adName + "-v", url, mediaType: "img", minutes: 10 };
-  }
 
   let group = await findGroupByName(token, groupName);
   if (!group) {
-    await saveGroup(token, { name: groupName, advertiseIds: [adv.id], mediaType: "img" });
+    await saveGroup(token, { name: groupName, advertiseIds: [adv.id], mediaType: adv.mediaType || "video" });
     group = await findGroupByName(token, groupName);
   }
   if (!group?.id) throw new Error("could not resolve group id");
