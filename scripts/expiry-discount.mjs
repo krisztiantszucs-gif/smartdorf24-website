@@ -248,28 +248,39 @@ function escapeXml(s) {
     .replace(/"/g, "&quot;");
 }
 
-async function safeBindAppend(token, rtuNumber, newGroupId) {
+function permanentGroupIds(state) {
+  const ids = [];
+  const live = state?.permanentAds?.liveStock?.advertiseGroupItemId;
+  if (live) ids.push(String(live));
+  return [...new Set(ids)];
+}
+
+async function safeBindAppend(token, rtuNumber, newGroupId, state) {
   const before = await listBindings(token, rtuNumber);
   const beforeIds = [...new Set(before.map((b) => String(b.id)))];
-  if (beforeIds.includes(String(newGroupId))) {
-    console.log(`group ${newGroupId} already bound to ${rtuNumber}`);
+  const mustKeep = permanentGroupIds(state);
+  // Confirmed: advertiseGroupItemBindRtu REPLACES the machine's group set.
+  // Always re-bind previous + permanent + new, then verify.
+  const full = [...new Set([...beforeIds, ...mustKeep, String(newGroupId)])];
+  if (beforeIds.includes(String(newGroupId)) && mustKeep.every((id) => beforeIds.includes(id))) {
+    console.log(`group ${newGroupId} already bound to ${rtuNumber} (permanents present)`);
     return { mode: "already", beforeIds };
   }
-  // Confirmed: advertiseGroupItemBindRtu REPLACES the machine's group set.
-  // Always re-bind the full previous set plus our new group, then verify.
-  const full = [...beforeIds, String(newGroupId)];
   await bindGroups(token, rtuNumber, full);
   const after = await listBindings(token, rtuNumber);
   const afterIds = after.map((b) => String(b.id));
   const missing = beforeIds.filter((id) => !afterIds.includes(id));
-  if (missing.length || !afterIds.includes(String(newGroupId))) {
+  const missingPerm = mustKeep.filter((id) => !afterIds.includes(id));
+  if (missing.length || missingPerm.length || !afterIds.includes(String(newGroupId))) {
     console.error("Full-set bind verification failed — restoring originals");
     if (beforeIds.length) await bindGroups(token, rtuNumber, beforeIds);
     throw new Error(
-      `Could not safely append ad on ${rtuNumber}. missing=${missing.join(",")} hasNew=${afterIds.includes(String(newGroupId))}`
+      `Could not safely append ad on ${rtuNumber}. missing=${missing.join(",")} missingPerm=${missingPerm.join(",")} hasNew=${afterIds.includes(String(newGroupId))}`
     );
   }
-  console.log(`Bound ${full.length} groups on ${rtuNumber} (kept ${beforeIds.length} existing + 1 new)`);
+  console.log(
+    `Bound ${full.length} groups on ${rtuNumber} (prev ${beforeIds.length} + permanent ${mustKeep.length} + expiry)`
+  );
   return { mode: "replaced-full-set", beforeIds };
 }
 
@@ -454,7 +465,7 @@ async function ensureMachineAd(token, rtuNumber, machineName, products, today, s
   }
   if (!group?.id) throw new Error("could not resolve group id");
 
-  await safeBindAppend(token, rtuNumber, group.id);
+  await safeBindAppend(token, rtuNumber, group.id, state);
   state.machineAds[rtuNumber] = {
     advertiseId: String(adv.id),
     advertiseGroupItemId: String(group.id),
@@ -469,15 +480,37 @@ async function ensureMachineAd(token, rtuNumber, machineName, products, today, s
 async function removeMachineAd(token, rtuNumber, state) {
   const info = state.machineAds[rtuNumber];
   if (!info) return;
+  const expiryGroupId = info.advertiseGroupItemId ? String(info.advertiseGroupItemId) : null;
+  const permanentIds = permanentGroupIds(state);
   try {
-    if (info.advertiseGroupItemId) {
+    if (expiryGroupId) {
       const bound = await listBindings(token, rtuNumber);
-      if (bound.some((b) => String(b.id) === String(info.advertiseGroupItemId))) {
-        await unbindGroup(token, info.advertiseGroupItemId, rtuNumber);
+      const keep = [
+        ...new Set(
+          bound
+            .map((b) => String(b.id))
+            .filter((id) => id !== expiryGroupId)
+            .concat(permanentIds)
+        ),
+      ];
+      // Prefer full-set rebind (bind replaces) so live-stock + user ads stay
+      if (keep.length) {
+        await bindGroups(token, rtuNumber, keep);
+        const after = await listBindings(token, rtuNumber);
+        const afterIds = after.map((b) => String(b.id));
+        const missingPerm = permanentIds.filter((id) => !afterIds.includes(id));
+        if (missingPerm.length) {
+          throw new Error(`lost permanent ads on ${rtuNumber}: ${missingPerm.join(",")}`);
+        }
+        if (afterIds.includes(expiryGroupId)) {
+          // fallback unbind single
+          await unbindGroup(token, expiryGroupId, rtuNumber);
+        }
+      } else if (bound.some((b) => String(b.id) === expiryGroupId)) {
+        await unbindGroup(token, expiryGroupId, rtuNumber);
       }
-      // only remove group/ad if name is ours and refCounts allow — try remove group
       try {
-        await removeGroup(token, info.advertiseGroupItemId);
+        await removeGroup(token, expiryGroupId);
       } catch (e) {
         console.warn("group remove:", e.message);
       }

@@ -55,5 +55,21 @@
       "boundAt": "2026-10-15T17:15:11.015Z",
       "day": "2026-10-15"
     }
+  },
+  "permanentAds": {
+    "liveStock": {
+      "advertiseId": "100001900",
+      "advertiseGroupItemId": "100001200",
+      "adName": "SD24-live-stock",
+      "groupName": "SD24-live-stock-grp",
+      "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/a9cdb8cab0704ad0a1c5ce870892f258.png",
+      "boundRtus": [
+        "7680787",
+        "7680782",
+        "7680800",
+        "7680783"
+      ],
+      "updatedAt": "2026-10-15T17:20:03.509Z"
+    }
   }
 }
