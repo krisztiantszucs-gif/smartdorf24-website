@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-15T15:56:31.467Z",
+  "updatedAt": "2026-10-15T15:58:54.527Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -19,9 +19,388 @@
             "de": "Schiesheim Rechts",
             "en": "Schiesheim Right"
           },
-          "online": false,
-          "fetchedAt": "2026-10-15T15:56:31.467Z",
-          "items": []
+          "online": true,
+          "fetchedAt": "2026-10-15T15:58:54.527Z",
+          "items": [
+            {
+              "lane": "1",
+              "level": 1,
+              "name": "Choco Chip Cookies",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/369fe3b29e5f4559baee5414c67f4f14.jpeg",
+              "price": 2,
+              "stock": 2,
+              "capacity": 3
+            },
+            {
+              "lane": "2",
+              "level": 1,
+              "name": "Haribo Happy Mix",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/31eb2a4173f048b6a0e6be16e1cec492.png",
+              "price": 2.2,
+              "stock": 1,
+              "capacity": 3
+            },
+            {
+              "lane": "3",
+              "level": 1,
+              "name": "Pringles",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg",
+              "price": 1.6,
+              "stock": 2,
+              "capacity": 3
+            },
+            {
+              "lane": "4",
+              "level": 1,
+              "name": "Oreo Wafer Roll Vanilla 54g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/45bdb2b506aa4e4f817a1fa69632e23b.jpeg",
+              "price": 2,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "5",
+              "level": 1,
+              "name": "durex gefühlsecht",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d2a974f4b2742a886b66e76d4be6888.png",
+              "price": 3.5,
+              "stock": 5,
+              "capacity": 10
+            },
+            {
+              "lane": "11",
+              "level": 2,
+              "name": "Toffifee",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
+              "price": 2.5,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "12",
+              "level": 2,
+              "name": "Capico Knusper Röllchen Haselnuss",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png",
+              "price": 2.2,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "13",
+              "level": 2,
+              "name": "LEGO Technic Backhoe Loader",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/751fbcdd61b84fa2aa312f993fff07cd.png",
+              "price": 15,
+              "stock": 1,
+              "capacity": 10
+            },
+            {
+              "lane": "14",
+              "level": 2,
+              "name": "LEGO Minecraft The Nether Lava Battle",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ad83eeacba7c464798f25516f2700eeb.png",
+              "price": 13,
+              "stock": 2,
+              "capacity": 10
+            },
+            {
+              "lane": "15",
+              "level": 2,
+              "name": "Doritos Bits Honey BBQ",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/e4d09ddbc14045a7bf2f34ae6a6310a9.jpeg",
+              "price": 2,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "21",
+              "level": 3,
+              "name": "funny-frisch goldfischli original!",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d91a8269c52b468686ef6de20eabf4d7.png",
+              "price": 2,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "22",
+              "level": 3,
+              "name": "Milram Moin Kakao Drink 0,3% 0,5l",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
+              "price": 1.1,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "23",
+              "level": 3,
+              "name": "Milka Choco Brownie",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
+              "price": 3,
+              "stock": 1,
+              "capacity": 3
+            },
+            {
+              "lane": "24",
+              "level": 3,
+              "name": "MrBeast Beef Jerky Original",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5bcdf3ec37c94f218c917fb7dd6ff76b.png",
+              "price": 2.5,
+              "stock": 5,
+              "capacity": 10
+            },
+            {
+              "lane": "25",
+              "level": 3,
+              "name": "Milka LU",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3830c0a5e93d4f08bd8f8e543c07615c.png",
+              "price": 2,
+              "stock": 4,
+              "capacity": 10
+            },
+            {
+              "lane": "31",
+              "level": 4,
+              "name": "Capri-Sun Mystic Dragon",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/51b41b5d91cb4df480eaacc429084388.png",
+              "price": 1,
+              "stock": 5,
+              "capacity": 10
+            },
+            {
+              "lane": "32",
+              "level": 4,
+              "name": "Kinder Bueno",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
+              "price": 1.3,
+              "stock": 7,
+              "capacity": 10
+            },
+            {
+              "lane": "33",
+              "level": 4,
+              "name": "Nutella Go",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
+              "price": 1.9,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "34",
+              "level": 4,
+              "name": "KitKat",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg",
+              "price": 1.3,
+              "stock": 7,
+              "capacity": 10
+            },
+            {
+              "lane": "35",
+              "level": 4,
+              "name": "Smarties",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/590f59b9add746c6beb00de283b64173.jpg",
+              "price": 1.3,
+              "stock": 2,
+              "capacity": 10
+            },
+            {
+              "lane": "36",
+              "level": 4,
+              "name": "Haribo Happy Cola Sauer",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/04eaa9f558ea40c2a351f7a42646705f.jpg",
+              "price": 2,
+              "stock": 1,
+              "capacity": 5
+            },
+            {
+              "lane": "37",
+              "level": 4,
+              "name": "Huober Minis",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png",
+              "price": 1,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "38",
+              "level": 4,
+              "name": "Mikado Keks-Sticks Milchschokolade 75g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ed7b5378c2cf49fd89f1a9e547c0fbff.jpeg",
+              "price": 2.4,
+              "stock": 3,
+              "capacity": 10
+            },
+            {
+              "lane": "39",
+              "level": 4,
+              "name": "Minecraft Figure",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/edb4a6fbf94c483b98aa3fd5c7fd70a1.png",
+              "price": 3,
+              "stock": 5,
+              "capacity": 10
+            },
+            {
+              "lane": "41",
+              "level": 5,
+              "name": "Capri-Sun Fairy Drink",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0d19a0bd2c174af5a3fdc1f611c5efcf.png",
+              "price": 1,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "42",
+              "level": 5,
+              "name": "Red Bull White Edition inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "43",
+              "level": 5,
+              "name": "RedBull Peach 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/dbc4ec1647874649a3fa390bcce36def.jpeg",
+              "price": 2.2,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "44",
+              "level": 5,
+              "name": "RedBull Original 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "45",
+              "level": 5,
+              "name": "Monster Energy 0.5l inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
+              "price": 2.2,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "46",
+              "level": 5,
+              "name": "Monster Viking Berry 0.5l inkl pfand.",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
+              "price": 2.2,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "47",
+              "level": 5,
+              "name": "Gösser Natur Radler",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
+              "price": 2,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "48",
+              "level": 5,
+              "name": "Starbucks Frappuccino Caramel Eiskaffee 250ml",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bc904bb2cfd4f06acba2b827b3eba2a.jpeg",
+              "price": 2.5,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "49",
+              "level": 5,
+              "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
+              "price": 1.6,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "51",
+              "level": 6,
+              "name": "Vio Still 0.5l Wasser  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
+              "price": 1.6,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "52",
+              "level": 6,
+              "name": "Vio Medium 0.5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
+              "price": 1.6,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "53",
+              "level": 6,
+              "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "54",
+              "level": 6,
+              "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "55",
+              "level": 6,
+              "name": "Fuze Tea Pfirsich 0,4L  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "56",
+              "level": 6,
+              "name": "Paulaner Spezi 330ml Cola-Orange",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
+              "price": 1.6,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "57",
+              "level": 6,
+              "name": "Fanta Exotic 330ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
+              "price": 1.6,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "58",
+              "level": 6,
+              "name": "Coca Cola Zero 0.5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "59",
+              "level": 6,
+              "name": "Coca Cola 0.5l Original inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
+              "price": 2.2,
+              "stock": 4,
+              "capacity": 5
+            }
+          ]
         },
         {
           "rtuNumber": "7680782",
@@ -30,8 +409,198 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-15T15:56:31.467Z",
-          "items": []
+          "fetchedAt": "2026-10-15T15:58:54.527Z",
+          "items": [
+            {
+              "lane": "1",
+              "level": 1,
+              "name": "Capico Knusper Röllchen Haselnuss",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png",
+              "price": 2.2,
+              "stock": 0,
+              "capacity": 10
+            },
+            {
+              "lane": "23",
+              "level": 3,
+              "name": "Milram Moin Kakao Drink 0,3% 0,5l",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
+              "price": 1,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "24",
+              "level": 3,
+              "name": "Vollmilch 3.5% 0.5l",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/431b28fb18b54f7ba96ac98210dc7632.jpeg",
+              "price": 0.7,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "41",
+              "level": 5,
+              "name": "Fanta Exotic 330ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
+              "price": 1.6,
+              "stock": 1,
+              "capacity": 5
+            },
+            {
+              "lane": "42",
+              "level": 5,
+              "name": "Fanta Mango DragonFruit",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg",
+              "price": 1.6,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "43",
+              "level": 5,
+              "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
+              "price": 1.9,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "44",
+              "level": 5,
+              "name": "Capri Sun MultiVitamin 200ml",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6baacaaf2c06466f9267459c0a57a83f.jpeg",
+              "price": 1,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "45",
+              "level": 5,
+              "name": "Gösser Natur Radler",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
+              "price": 1.8,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "46",
+              "level": 5,
+              "name": "Monster Viking Berry 0.5l inkl pfand.",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "47",
+              "level": 5,
+              "name": "Monster Energy 0.5l inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 10
+            },
+            {
+              "lane": "48",
+              "level": 5,
+              "name": "RedBull Peach 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/dbc4ec1647874649a3fa390bcce36def.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "49",
+              "level": 5,
+              "name": "RedBull Original 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
+              "price": 2.2,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "51",
+              "level": 6,
+              "name": "Vio Still 0.5l Wasser  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
+              "price": 1.7,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "52",
+              "level": 6,
+              "name": "Vio Medium 0.5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
+              "price": 1.7,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "53",
+              "level": 6,
+              "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "54",
+              "level": 6,
+              "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
+              "price": 2.1,
+              "stock": 1,
+              "capacity": 5
+            },
+            {
+              "lane": "55",
+              "level": 6,
+              "name": "Fuze Tea Pfirsich 0,4L  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "56",
+              "level": 6,
+              "name": "Paulaner Spezi 330ml Cola-Orange",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
+              "price": 1.6,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "57",
+              "level": 6,
+              "name": "AriZona Cowboy Cocktail Watermelon",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d7bd7e02a79d4da78a8967d24da8f8c5.png",
+              "price": 2,
+              "stock": 1,
+              "capacity": 5
+            },
+            {
+              "lane": "58",
+              "level": 6,
+              "name": "Coca Cola Zero 0.5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "59",
+              "level": 6,
+              "name": "Coca Cola 0.5l Original inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            }
+          ]
         }
       ]
     },
@@ -51,9 +620,388 @@
             "de": "Steinsberg Rechts",
             "en": "Steinsberg Right"
           },
-          "online": false,
-          "fetchedAt": "2026-10-15T15:56:31.467Z",
-          "items": []
+          "online": true,
+          "fetchedAt": "2026-10-15T15:58:54.527Z",
+          "items": [
+            {
+              "lane": "1",
+              "level": 1,
+              "name": "Choco Chip Cookies",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/369fe3b29e5f4559baee5414c67f4f14.jpeg",
+              "price": 2,
+              "stock": 3,
+              "capacity": 3
+            },
+            {
+              "lane": "2",
+              "level": 1,
+              "name": "Oreo Wafer Roll Vanilla 54g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/45bdb2b506aa4e4f817a1fa69632e23b.jpeg",
+              "price": 2,
+              "stock": 2,
+              "capacity": 10
+            },
+            {
+              "lane": "3",
+              "level": 1,
+              "name": "Golden Toast Vollkorn 250g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/df4e4440188744f6a6dd473a252bcaaa.png",
+              "price": 2,
+              "stock": 2,
+              "capacity": 2
+            },
+            {
+              "lane": "4",
+              "level": 1,
+              "name": "Werther's Original Caramel Popcorn",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6d19cf4273e5473fac0019429005b22a.png",
+              "price": 3.5,
+              "stock": 2,
+              "capacity": 3
+            },
+            {
+              "lane": "5",
+              "level": 1,
+              "name": "durex gefühlsecht",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d2a974f4b2742a886b66e76d4be6888.png",
+              "price": 3.6,
+              "stock": 10,
+              "capacity": 10
+            },
+            {
+              "lane": "11",
+              "level": 2,
+              "name": "Pringles",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg",
+              "price": 1.6,
+              "stock": 3,
+              "capacity": 3
+            },
+            {
+              "lane": "12",
+              "level": 2,
+              "name": "Toffifee",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
+              "price": 2.5,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "13",
+              "level": 2,
+              "name": "Milka Choco Brownie",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
+              "price": 3,
+              "stock": 0,
+              "capacity": 3
+            },
+            {
+              "lane": "14",
+              "level": 2,
+              "name": "Twist'n'Taste Cocoa Roll Wafers",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/4526ecb8de7c4894bc789a7bf66d47ac.png",
+              "price": 3,
+              "stock": 3,
+              "capacity": 3
+            },
+            {
+              "lane": "15",
+              "level": 2,
+              "name": "Sport",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/19ed1a7d28ba4323b2117da96de7bcb0.png",
+              "price": 1.5,
+              "stock": 6,
+              "capacity": 10
+            },
+            {
+              "lane": "21",
+              "level": 3,
+              "name": "funny-frisch goldfischli sesam",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9b9bd38faafe47e8b79f35eced831897.png",
+              "price": 2,
+              "stock": 1,
+              "capacity": 5
+            },
+            {
+              "lane": "22",
+              "level": 3,
+              "name": "MrBeast Beef Jerky Original",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5bcdf3ec37c94f218c917fb7dd6ff76b.png",
+              "price": 2.5,
+              "stock": 5,
+              "capacity": 10
+            },
+            {
+              "lane": "23",
+              "level": 3,
+              "name": "LEGO Technic Backhoe Loader",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/751fbcdd61b84fa2aa312f993fff07cd.png",
+              "price": 15,
+              "stock": 1,
+              "capacity": 5
+            },
+            {
+              "lane": "24",
+              "level": 3,
+              "name": "LEGO Minecraft The Nether Lava Battle",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ad83eeacba7c464798f25516f2700eeb.png",
+              "price": 13,
+              "stock": 1,
+              "capacity": 5
+            },
+            {
+              "lane": "25",
+              "level": 3,
+              "name": "Minecraft Figure",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/edb4a6fbf94c483b98aa3fd5c7fd70a1.png",
+              "price": 3,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "31",
+              "level": 4,
+              "name": "Milka Haselnuss",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/24fdb100b98241e6a7f95ce26ee3a4e5.png",
+              "price": 2.1,
+              "stock": 4,
+              "capacity": 10
+            },
+            {
+              "lane": "32",
+              "level": 4,
+              "name": "Crackzel Pretzel Pieces",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fe511a8730aa4065bb9f5b7232ba325f.png",
+              "price": 1.6,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "33",
+              "level": 4,
+              "name": "Nut & Fruit Mix",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/304baa5cb88c4acda661fb056a8ab958.png",
+              "price": 2.4,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "34",
+              "level": 4,
+              "name": "BiFi Roll 40g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b22597f3c98b49c895f27b149d2130ce.jpeg",
+              "price": 1.6,
+              "stock": 2,
+              "capacity": 10
+            },
+            {
+              "lane": "35",
+              "level": 4,
+              "name": "Huober Minis",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png",
+              "price": 1,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "36",
+              "level": 4,
+              "name": "Ültje Erdnüsse, geröstet und gesalzen",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/119a07410be244859196a501e09d45b1.jpeg",
+              "price": 2.5,
+              "stock": 3,
+              "capacity": 10
+            },
+            {
+              "lane": "37",
+              "level": 4,
+              "name": "Haribo Pasta Flagga",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/537fcfd985df4edda29937d78af14900.png",
+              "price": 2.2,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "38",
+              "level": 4,
+              "name": "Haribo Pico Balla Sauer",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ea50b19a795e4218a290e7cebbf00150.png",
+              "price": 2.2,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "39",
+              "level": 4,
+              "name": "Haribo Pasta Penne",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fc3826465a294e76b32bce15829942ae.jpeg",
+              "price": 2.1,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "41",
+              "level": 5,
+              "name": "Milka Tuc",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9f88c5fa7ec044c8ab92300767c9608b.png",
+              "price": 2.1,
+              "stock": 1,
+              "capacity": 10
+            },
+            {
+              "lane": "42",
+              "level": 5,
+              "name": "Smarties",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/590f59b9add746c6beb00de283b64173.jpg",
+              "price": 1.3,
+              "stock": 4,
+              "capacity": 10
+            },
+            {
+              "lane": "43",
+              "level": 5,
+              "name": "Kinder Bueno",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
+              "price": 1.6,
+              "stock": 9,
+              "capacity": 10
+            },
+            {
+              "lane": "44",
+              "level": 5,
+              "name": "Nutella Go",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
+              "price": 1.9,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "45",
+              "level": 5,
+              "name": "Nutella Go",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
+              "price": 1.9,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "46",
+              "level": 5,
+              "name": "Kinder Schokolade 100g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3f50b805073545368488b956fa847e33.jpeg",
+              "price": 2.5,
+              "stock": 1,
+              "capacity": 10
+            },
+            {
+              "lane": "47",
+              "level": 5,
+              "name": "KitKat",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg",
+              "price": 1.2,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "48",
+              "level": 5,
+              "name": "Twix",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/de24003846ac4af6b982be92a01f78ae.jpg",
+              "price": 0.8,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "49",
+              "level": 5,
+              "name": "Nestle Lion",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ff6d807696574fe1934323de18cceaaa.jpg",
+              "price": 0.8,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "51",
+              "level": 6,
+              "name": "Fanta Exotic 330ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
+              "price": 1.6,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "52",
+              "level": 6,
+              "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
+              "price": 1.9,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "53",
+              "level": 6,
+              "name": "Monster Energy 0.5l inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
+              "price": 2.2,
+              "stock": 2,
+              "capacity": 3
+            },
+            {
+              "lane": "54",
+              "level": 6,
+              "name": "Monster Viking Berry 0.5l inkl pfand.",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
+              "price": 2.2,
+              "stock": 3,
+              "capacity": 3
+            },
+            {
+              "lane": "55",
+              "level": 6,
+              "name": "Mikado Keks-Sticks Milchschokolade 75g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ed7b5378c2cf49fd89f1a9e547c0fbff.jpeg",
+              "price": 2.3,
+              "stock": 2,
+              "capacity": 10
+            },
+            {
+              "lane": "56",
+              "level": 6,
+              "name": "Skittles",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9440e493398c42ac8c7e82aef9ac1a0d.jpeg",
+              "price": 2.3,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "57",
+              "level": 6,
+              "name": "Reese's Pieces",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d72ff0b3e214ba5b2a36d2551c60677.png",
+              "price": 2.1,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "58",
+              "level": 6,
+              "name": "Haribo Happy Cola",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ff6bf09c006840d3bf9b740ec9011da7.png",
+              "price": 2.2,
+              "stock": 1,
+              "capacity": 5
+            },
+            {
+              "lane": "59",
+              "level": 6,
+              "name": "Snickers",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ae29a5ec902b457e96ef0922c721afa2.jpeg",
+              "price": 1.3,
+              "stock": 5,
+              "capacity": 5
+            }
+          ]
         },
         {
           "rtuNumber": "7680783",
@@ -61,9 +1009,361 @@
             "de": "Steinsberg Links",
             "en": "Steinsberg Left"
           },
-          "online": false,
-          "fetchedAt": "2026-10-15T15:56:31.467Z",
-          "items": []
+          "online": true,
+          "fetchedAt": "2026-10-15T15:58:54.527Z",
+          "items": [
+            {
+              "lane": "1",
+              "level": 1,
+              "name": "Schlüter's Bio Nürnberger Rostbratwürste",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d66fb02721c545bfbfcf87bf8d691765.png",
+              "price": 4,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "2",
+              "level": 1,
+              "name": "Popp Coleslaw-Salat",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/a4a3eafe57d34304b708981033db4b67.png",
+              "price": 3.5,
+              "stock": 2,
+              "capacity": 2
+            },
+            {
+              "lane": "3",
+              "level": 1,
+              "name": "Popp Kartoffelsalat Klassik",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d35471b285684c71b4b5c7a7c36d0e05.png",
+              "price": 3.2,
+              "stock": 2,
+              "capacity": 2
+            },
+            {
+              "lane": "4",
+              "level": 1,
+              "name": "Grünländer Bärlauch",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/203be2d8ff3c4d74a8b4a6a6840733ee.png",
+              "price": 2.5,
+              "stock": 2,
+              "capacity": 2
+            },
+            {
+              "lane": "11",
+              "level": 2,
+              "name": "Wiesenhof Geflügel Mortadella",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7a5d3b9b063e45288bcc085cdc282ea8.png",
+              "price": 2,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "12",
+              "level": 2,
+              "name": "Pick Ungarische Salami",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6896b049df3448f294dfef12ff6b089b.png",
+              "price": 3,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "13",
+              "level": 2,
+              "name": "Pick Puszta-Kolbasz",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/707c24edb06d4270bc6b55b8d5813bff.png",
+              "price": 2.8,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "15",
+              "level": 2,
+              "name": "Sonntags-Brötchen",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/01fa843caec14bc0a8f69484dabd1b35.png",
+              "price": 2.5,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "21",
+              "level": 3,
+              "name": "Milram Moin Kakao Drink 0,3% 0,5l",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
+              "price": 1.1,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "22",
+              "level": 3,
+              "name": "Vollmilch 3.5% 0.5l",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/431b28fb18b54f7ba96ac98210dc7632.jpeg",
+              "price": 1,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "23",
+              "level": 3,
+              "name": "Arla Kærgården Ungesalzen 200 g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8f5389a2fb7e488097764d7913614517.png",
+              "price": 2.5,
+              "stock": 1,
+              "capacity": 5
+            },
+            {
+              "lane": "24",
+              "level": 3,
+              "name": "Popp Brot-Aufstrich Ei-Bacon Maxi",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/caf6528418524bef92340800768e8668.jpg",
+              "price": 2.8,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "31",
+              "level": 4,
+              "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
+              "price": 1,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "32",
+              "level": 4,
+              "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
+              "price": 1,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "33",
+              "level": 4,
+              "name": "Paulaner Spezi 330ml Cola-Orange",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
+              "price": 1.6,
+              "stock": 1,
+              "capacity": 5
+            },
+            {
+              "lane": "34",
+              "level": 4,
+              "name": "Capri Sun MultiVitamin 200ml",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6baacaaf2c06466f9267459c0a57a83f.jpeg",
+              "price": 1,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "35",
+              "level": 4,
+              "name": "Capri-Sun Mystic Dragon",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/51b41b5d91cb4df480eaacc429084388.png",
+              "price": 1,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "36",
+              "level": 4,
+              "name": "Capri-Sun Fairy Drink",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0d19a0bd2c174af5a3fdc1f611c5efcf.png",
+              "price": 1,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "37",
+              "level": 4,
+              "name": "Milka Schokoladen Milch",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/82cbed567b1146208d8e538e594ce1e2.jpeg",
+              "price": 2.2,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "38",
+              "level": 4,
+              "name": "Fanta Mango DragonFruit",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg",
+              "price": 1.6,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "39",
+              "level": 4,
+              "name": "Fanta Exotic 330ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
+              "price": 1.6,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "41",
+              "level": 5,
+              "name": "Starbucks Caramel Macchiato",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/cfa688d0e6504560ab0a32919372d0ca.jpeg",
+              "price": 2.5,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "42",
+              "level": 5,
+              "name": "Starbucks Hazelnut Macchiato",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d75325ea045341adbce08e43955de5f4.jpeg",
+              "price": 2.5,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "43",
+              "level": 5,
+              "name": "Starbucks Frappuccino Caramel Eiskaffee 250ml",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bc904bb2cfd4f06acba2b827b3eba2a.jpeg",
+              "price": 2.7,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "44",
+              "level": 5,
+              "name": "Gösser Natur Radler",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
+              "price": 2,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "45",
+              "level": 5,
+              "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
+              "price": 1.6,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "46",
+              "level": 5,
+              "name": "Red Bull White Edition inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
+              "price": 2.2,
+              "stock": 1,
+              "capacity": 5
+            },
+            {
+              "lane": "47",
+              "level": 5,
+              "name": "Red Bull White Edition inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
+              "price": 2.2,
+              "stock": 1,
+              "capacity": 5
+            },
+            {
+              "lane": "48",
+              "level": 5,
+              "name": "RedBull Original 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
+              "price": 2.2,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "49",
+              "level": 5,
+              "name": "RedBull Original 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "51",
+              "level": 6,
+              "name": "Vio Still 0.5l Wasser  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
+              "price": 2,
+              "stock": 5,
+              "capacity": 5
+            },
+            {
+              "lane": "52",
+              "level": 6,
+              "name": "Vio Medium 0.5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
+              "price": 2,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "53",
+              "level": 6,
+              "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
+              "price": 2.2,
+              "stock": 3,
+              "capacity": 5
+            },
+            {
+              "lane": "54",
+              "level": 6,
+              "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
+              "price": 2.2,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "55",
+              "level": 6,
+              "name": "Fuze Tea Pfirsich 0,4L  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
+              "price": 2.2,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "56",
+              "level": 6,
+              "name": "Monster Viking Berry 0.5l inkl pfand.",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
+              "price": 2.2,
+              "stock": 2,
+              "capacity": 5
+            },
+            {
+              "lane": "57",
+              "level": 6,
+              "name": "Monster Energy 0.5l inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
+              "price": 2,
+              "stock": 3,
+              "capacity": 10
+            },
+            {
+              "lane": "58",
+              "level": 6,
+              "name": "Coca Cola Zero 0.5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
+              "price": 2.2,
+              "stock": 4,
+              "capacity": 5
+            },
+            {
+              "lane": "59",
+              "level": 6,
+              "name": "Coca Cola 0.5l Original inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
+              "price": 2.2,
+              "stock": 2,
+              "capacity": 5
+            }
+          ]
         }
       ]
     }
