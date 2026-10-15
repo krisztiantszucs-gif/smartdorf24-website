@@ -14,7 +14,7 @@
       "effDate": "2026-10-16",
       "startedAt": "2026-10-15T17:14:52.737Z",
       "updatedAt": "2026-10-15T17:14:52.737Z",
-      "advertiseId": "100001899",
+      "advertiseId": "100001906",
       "advertiseGroupItemId": "100001199"
     },
     "7680783:24": {
@@ -28,7 +28,7 @@
       "effDate": "2026-10-16",
       "startedAt": "2026-10-15T17:14:52.737Z",
       "updatedAt": "2026-10-15T17:14:52.737Z",
-      "advertiseId": "100001899",
+      "advertiseId": "100001906",
       "advertiseGroupItemId": "100001199"
     },
     "7680783:42": {
@@ -42,13 +42,13 @@
       "effDate": "2026-10-16",
       "startedAt": "2026-10-15T17:14:52.737Z",
       "updatedAt": "2026-10-15T17:14:52.737Z",
-      "advertiseId": "100001899",
+      "advertiseId": "100001906",
       "advertiseGroupItemId": "100001199"
     }
   },
   "machineAds": {
     "7680783": {
-      "advertiseId": "100001899",
+      "advertiseId": "100001906",
       "advertiseGroupItemId": "100001199",
       "adName": "SD24-expiry-7680783-2026-10-15",
       "groupName": "SD24-expiry-grp-7680783-2026-10-15",
@@ -58,7 +58,7 @@
   },
   "permanentAds": {
     "liveStock": {
-      "advertiseId": "100001900",
+      "advertiseId": "100001905",
       "advertiseGroupItemId": "100001200",
       "adName": "SD24-live-stock",
       "groupName": "SD24-live-stock-grp",
@@ -69,7 +69,8 @@
         "7680800",
         "7680783"
       ],
-      "updatedAt": "2026-10-15T17:20:03.509Z"
+      "updatedAt": "2026-10-15T17:29:04.711Z",
+      "minutes": 10
     }
   }
 }

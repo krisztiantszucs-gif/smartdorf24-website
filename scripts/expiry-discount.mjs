@@ -150,9 +150,9 @@ async function uploadPng(token, buffer, filename) {
   return url.startsWith("http") ? url : BASE + (url.startsWith("/") ? url : "/" + url);
 }
 
-async function saveAdvertise(token, { name, url, mediaType = "img", remark = "" }) {
+async function saveAdvertise(token, { name, url, mediaType = "img", remark = "", minutes = 10 }) {
   const { http, json } = await api(token, "POST", "/advertise/save", {
-    body: { name, url, mediaType, remark },
+    body: { name, url, mediaType, remark, minutes: mediaType === "img" ? minutes : 0 },
   });
   console.log(`advertise/save ${name} HTTP ${http} code=${json.code} msg=${json.msg || ""}`);
   if (http !== 200 || json.code !== 200) throw new Error(`advertise/save failed: ${json.msg}`);
@@ -457,6 +457,19 @@ async function ensureMachineAd(token, rtuNumber, machineName, products, today, s
     if (!adv && saved.id) adv = { id: saved.id, name: adName, url };
   }
   if (!adv?.id) throw new Error("could not resolve advertise id");
+  // Ensure image dwell time (minutes field = play duration used by device; we use 10 for ~10s)
+  if (adv.mediaType === "img" && Number(adv.minutes) !== 10) {
+    await api(token, "POST", "/advertise/update", {
+      body: {
+        id: adv.id,
+        name: adv.name,
+        url: adv.url || url,
+        mediaType: "img",
+        remark: adv.remark || "auto expiry discount — smartdorf24",
+        minutes: 10,
+      },
+    });
+  }
 
   let group = await findGroupByName(token, groupName);
   if (!group) {
