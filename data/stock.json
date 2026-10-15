@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-15T18:10:49.633Z",
+  "updatedAt": "2026-10-15T18:40:48.641Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-15T18:10:49.633Z",
+          "fetchedAt": "2026-10-15T18:40:48.641Z",
           "items": [
             {
               "lane": "1",
@@ -126,7 +126,7 @@
               "level": 3,
               "name": "Milram Moin Kakao Drink 0,3% 0,5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
-              "price": 1.1,
+              "price": 0.9,
               "stock": 5,
               "capacity": 5
             },
@@ -409,7 +409,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-15T18:10:49.633Z",
+          "fetchedAt": "2026-10-15T18:40:48.641Z",
           "items": [
             {
               "lane": "1",
@@ -621,7 +621,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-15T18:10:49.633Z",
+          "fetchedAt": "2026-10-15T18:40:48.641Z",
           "items": [
             {
               "lane": "1",
@@ -1010,7 +1010,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-15T18:10:49.633Z",
+          "fetchedAt": "2026-10-15T18:40:48.641Z",
           "items": [
             {
               "lane": "1",
@@ -1035,7 +1035,7 @@
               "level": 1,
               "name": "Popp Kartoffelsalat Klassik",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d35471b285684c71b4b5c7a7c36d0e05.png",
-              "price": 3.2,
+              "price": 2.55,
               "stock": 2,
               "capacity": 2
             },
@@ -1089,7 +1089,7 @@
               "level": 3,
               "name": "Milram Moin Kakao Drink 0,3% 0,5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
-              "price": 1.1,
+              "price": 0.9,
               "stock": 4,
               "capacity": 5
             },
