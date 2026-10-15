@@ -1,0 +1,22 @@
+{
+  "name": "smartdorf24-website",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krisztiantszucs-gif/smartdorf24-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krisztiantszucs-gif/smartdorf24-website/issues"
+  },
+  "homepage": "https://github.com/krisztiantszucs-gif/smartdorf24-website#readme",
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "sharp": "^0.35.5"
+  },
+  "private": true
+}

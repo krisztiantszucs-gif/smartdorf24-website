@@ -23,6 +23,7 @@
   const state = {
     lang: localStorage.getItem("sd24_lang") || "de",
     stock: null,
+    discounts: { active: {} },
     locationId: "schiesheim",
     machineId: null,
     map: null,
@@ -55,6 +56,12 @@
     renderMachineTabs();
     renderMachine();
     updateMapPopups();
+  }
+
+  
+  function discountFor(rtu, lane) {
+    const key = String(rtu) + ":" + String(lane);
+    return state.discounts?.active?.[key] || null;
   }
 
   function formatMoney(n) {
@@ -207,11 +214,17 @@
                   const img = item.image
                     ? `<img src="${escapeAttr(item.image)}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><div class="slot-fallback" style="display:none">${letter}</div>`
                     : `<div class="slot-fallback">${letter}</div>`;
+                  const disc = discountFor(machine.rtuNumber, item.lane);
+                  const priceHtml = disc
+                    ? `<span class="price-wrap"><span class="price-old">${formatMoney(disc.originalPrice)}</span><span class="price">${formatMoney(item.price)}</span></span>`
+                    : `<span class="price">${formatMoney(item.price)}</span>`;
+                  const saleBadge = disc ? `<span class="badge-sale">${escapeHtml(t("sale_badge"))}</span>` : "";
                   return `<div class="slot ${sold ? "soldout" : ""}" data-soldout="${escapeAttr(t("sold_out"))}">
+                    ${saleBadge}
                     ${img}
                     <div class="name" title="${escapeAttr(item.name || "")}">${escapeHtml(item.name || "")}</div>
                     <div class="meta-row">
-                      <span class="price">${formatMoney(item.price)}</span>
+                      ${priceHtml}
                       <span class="stock-badge ${badge}">${Number(item.stock) || 0}/${Number(item.capacity) || 0}</span>
                     </div>
                   </div>`;
@@ -295,6 +308,12 @@
         updatedAt: null,
         locations: FALLBACK_LOCATIONS,
       };
+    }
+    try {
+      const dres = await fetch("data/discounts.json", { cache: "no-store" });
+      if (dres.ok) state.discounts = await dres.json();
+    } catch (err) {
+      console.warn("discounts.json unavailable", err);
     }
     const loc = currentLocation();
     state.machineId = loc?.machines?.[0]?.rtuNumber || null;

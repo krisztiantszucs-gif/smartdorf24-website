@@ -42,6 +42,7 @@ window.SD24_I18N = {
     footer: "SmartDorf24 — Automatenaufsteller in Rheinland-Pfalz",
     empty_machine: "Für diesen Automaten sind gerade keine Artikeldaten verfügbar.",
     map_popup_machines: "Automaten",
+    sale_badge: "−50%",
   },
   en: {
     nav_how: "How it works",
@@ -86,5 +87,6 @@ window.SD24_I18N = {
     footer: "SmartDorf24 — vending operator in Rhineland-Palatinate",
     empty_machine: "No item data is available for this machine right now.",
     map_popup_machines: "machines",
+    sale_badge: "−50%",
   },
 };

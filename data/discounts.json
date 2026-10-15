@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "lastRunAt": "2026-10-15T17:15:11.015Z",
+  "lastRunDay": "2026-10-15",
+  "active": {
+    "7680783:1": {
+      "rtuNumber": "7680783",
+      "lane": "1",
+      "name": "Schlüter's Bio Nürnberger Rostbratwürste",
+      "originalPrice": 4,
+      "originalCostPrice": 2.99,
+      "discountPrice": 2,
+      "discountCostPrice": 2,
+      "effDate": "2026-10-16",
+      "startedAt": "2026-10-15T17:14:52.737Z",
+      "updatedAt": "2026-10-15T17:14:52.737Z",
+      "advertiseId": "100001899",
+      "advertiseGroupItemId": "100001199"
+    },
+    "7680783:24": {
+      "rtuNumber": "7680783",
+      "lane": "24",
+      "name": "Popp Brot-Aufstrich Ei-Bacon Maxi",
+      "originalPrice": 2.8,
+      "originalCostPrice": 1.5,
+      "discountPrice": 1.4,
+      "discountCostPrice": 1.4,
+      "effDate": "2026-10-16",
+      "startedAt": "2026-10-15T17:14:52.737Z",
+      "updatedAt": "2026-10-15T17:14:52.737Z",
+      "advertiseId": "100001899",
+      "advertiseGroupItemId": "100001199"
+    },
+    "7680783:42": {
+      "rtuNumber": "7680783",
+      "lane": "42",
+      "name": "Starbucks Hazelnut Macchiato",
+      "originalPrice": 2.5,
+      "originalCostPrice": 1.49,
+      "discountPrice": 1.25,
+      "discountCostPrice": 1.25,
+      "effDate": "2026-10-16",
+      "startedAt": "2026-10-15T17:14:52.737Z",
+      "updatedAt": "2026-10-15T17:14:52.737Z",
+      "advertiseId": "100001899",
+      "advertiseGroupItemId": "100001199"
+    }
+  },
+  "machineAds": {
+    "7680783": {
+      "advertiseId": "100001899",
+      "advertiseGroupItemId": "100001199",
+      "adName": "SD24-expiry-7680783-2026-10-15",
+      "groupName": "SD24-expiry-grp-7680783-2026-10-15",
+      "boundAt": "2026-10-15T17:15:11.015Z",
+      "day": "2026-10-15"
+    }
+  }
+}

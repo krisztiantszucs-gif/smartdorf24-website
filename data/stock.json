@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-15T17:10:24.947Z",
+  "updatedAt": "2026-10-15T17:15:36.679Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-15T17:10:24.947Z",
+          "fetchedAt": "2026-10-15T17:15:36.679Z",
           "items": [
             {
               "lane": "1",
@@ -409,7 +409,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-15T17:10:24.947Z",
+          "fetchedAt": "2026-10-15T17:15:36.679Z",
           "items": [
             {
               "lane": "1",
@@ -621,7 +621,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-15T17:10:24.947Z",
+          "fetchedAt": "2026-10-15T17:15:36.679Z",
           "items": [
             {
               "lane": "1",
@@ -1010,14 +1010,14 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-15T17:10:24.947Z",
+          "fetchedAt": "2026-10-15T17:15:36.679Z",
           "items": [
             {
               "lane": "1",
               "level": 1,
               "name": "Schlüter's Bio Nürnberger Rostbratwürste",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d66fb02721c545bfbfcf87bf8d691765.png",
-              "price": 4,
+              "price": 2,
               "stock": 2,
               "capacity": 5
             },
@@ -1116,7 +1116,7 @@
               "level": 3,
               "name": "Popp Brot-Aufstrich Ei-Bacon Maxi",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/caf6528418524bef92340800768e8668.jpg",
-              "price": 2.8,
+              "price": 1.4,
               "stock": 2,
               "capacity": 5
             },
@@ -1215,7 +1215,7 @@
               "level": 5,
               "name": "Starbucks Hazelnut Macchiato",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d75325ea045341adbce08e43955de5f4.jpeg",
-              "price": 2.5,
+              "price": 1.25,
               "stock": 3,
               "capacity": 5
             },
