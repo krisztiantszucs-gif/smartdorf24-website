@@ -3,100 +3,147 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SmartDorf24 — Automatenaufsteller</title>
-  <meta name="description" content="SmartDorf24 — Snack- und Getränkeautomaten in der Region. Bald wieder mit Standortübersicht und aktuellem Sortiment." />
-  <style>
-    :root {
-      --bg: #0b1220;
-      --card: #121a2b;
-      --text: #e8eefc;
-      --muted: #9db0d0;
-      --accent: #3dd6c6;
-      --accent2: #6ea8ff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(1200px 600px at 10% -10%, #1a3a55 0%, transparent 55%),
-        radial-gradient(900px 500px at 100% 0%, #16352f 0%, transparent 50%),
-        var(--bg);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-    .card {
-      width: min(680px, 100%);
-      background: color-mix(in srgb, var(--card) 92%, black);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 20px;
-      padding: 36px 32px;
-      box-shadow: 0 24px 80px rgba(0,0,0,0.35);
-    }
-    .badge {
-      display: inline-flex;
-      gap: 8px;
-      align-items: center;
-      font-size: 12px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: rgba(61,214,198,0.1);
-      border: 1px solid rgba(61,214,198,0.25);
-      border-radius: 999px;
-      padding: 6px 12px;
-      margin-bottom: 18px;
-    }
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(1.8rem, 4vw, 2.4rem);
-      line-height: 1.15;
-    }
-    p { margin: 0 0 14px; color: var(--muted); line-height: 1.55; }
-    .lang { display: grid; gap: 18px; margin-top: 8px; }
-    .block {
-      padding: 16px;
-      border-radius: 14px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.06);
-    }
-    .block h2 {
-      margin: 0 0 8px;
-      font-size: 0.85rem;
-      color: var(--accent2);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-    a { color: var(--accent); }
-    .meta { margin-top: 22px; font-size: 0.95rem; color: var(--text); }
-    .meta span { color: var(--muted); }
-  </style>
+  <title>SmartDorf24 — Automaten mit Live-Bestand</title>
+  <meta name="description" content="SmartDorf24 — Snack- und Getränkeautomaten in Schiesheim und Steinsberg. Live-Bestand, Preise und Standorte." />
+  <meta name="theme-color" content="#070b14" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <main class="card">
-    <div class="badge">SmartDorf24 · Online bald erweitert</div>
-    <h1>Automaten. Lokal. Zuverlässig.</h1>
-    <div class="lang">
-      <section class="block">
-        <h2>Deutsch</h2>
-        <p>Willkommen bei <strong>SmartDorf24</strong>. Unsere Website wird gerade überarbeitet — mit Standortkarte und aktuellem Automaten-Sortiment.</p>
-        <p>Für Anfragen erreichen Sie uns unter den Kontaktdaten unten.</p>
-      </section>
-      <section class="block">
-        <h2>English</h2>
-        <p>Welcome to <strong>SmartDorf24</strong>. We’re rebuilding this site with machine locations and live stock soon.</p>
-        <p>For inquiries, use the contact details below.</p>
-      </section>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark">SD</span>
+        <span>SmartDorf24</span>
+      </a>
+      <button type="button" class="menu-btn" id="menu-btn" aria-label="Menu">Menu</button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#how" data-i18n="nav_how">So funktioniert’s</a>
+        <a href="#locations" data-i18n="nav_locations">Standorte</a>
+        <a href="#stock" data-i18n="nav_stock">Aktueller Bestand</a>
+        <a href="#contact" data-i18n="nav_contact">Kontakt</a>
+        <a href="#legal" data-i18n="nav_legal">Impressum</a>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-lang="de" class="active">DE</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </nav>
     </div>
-    <div class="meta">
-      <div><span>Adresse:</span> Lindenstr. 35, 65623 Schiesheim</div>
-      <div><span>Telefon:</span> <a href="tel:+4915567429218">0155 67429218</a></div>
-      <div><span>Web:</span> smartdorf24.de</div>
-    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="badge" data-i18n="badge">Snack- & Getränkeautomaten</div>
+          <h1 data-i18n="hero_title">Frisch am Automaten — Bestand live einsehen</h1>
+          <p class="lead" data-i18n="hero_lead">SmartDorf24 betreibt moderne Automaten in Schiesheim und Steinsberg. Sieh vor dem Weg, was gerade verfügbar ist.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#stock" data-i18n="cta_stock">Bestand anzeigen</a>
+            <a class="btn btn-ghost" href="#locations" data-i18n="cta_map">Standorte auf der Karte</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Highlights">
+          <div class="stat-grid">
+            <div class="stat"><strong>4</strong><span data-i18n="stat_machines">Automaten</span></div>
+            <div class="stat"><strong>2</strong><span data-i18n="stat_locations">Standorte</span></div>
+            <div class="stat"><strong>Live</strong><span data-i18n="stat_live">Live-Bestand</span></div>
+            <div class="stat"><strong>DE / EN</strong><span data-i18n="stat_bilingual">Sprachen</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="container">
+        <h2 data-i18n="how_title">So funktioniert’s</h2>
+        <p class="section-lead" data-i18n="how_lead">In drei Schritten zum passenden Snack — ohne Umwege.</p>
+        <div class="steps">
+          <article class="step">
+            <div class="n">1</div>
+            <h3 data-i18n="step1_t">Standort wählen</h3>
+            <p data-i18n="step1_d">Finde den nächsten Automaten auf der Karte in Schiesheim oder Steinsberg.</p>
+          </article>
+          <article class="step">
+            <div class="n">2</div>
+            <h3 data-i18n="step2_t">Bestand prüfen</h3>
+            <p data-i18n="step2_d">Sieh Preise und aktuellen Vorrat je Fach — aktualisiert regelmäßig.</p>
+          </article>
+          <article class="step">
+            <div class="n">3</div>
+            <h3 data-i18n="step3_t">Vor Ort genießen</h3>
+            <p data-i18n="step3_d">Geh gezielt zum Automaten. Ausverkauft? Dann weißt du’s vorher.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="locations">
+      <div class="container">
+        <h2 data-i18n="loc_title">Unsere Standorte</h2>
+        <p class="section-lead" data-i18n="loc_lead">Zwei Orte, vier Automaten. Tippe einen Standort an oder nutze die Karte.</p>
+        <div class="loc-layout">
+          <div class="loc-list" id="loc-list"></div>
+          <div id="map" role="region" aria-label="Map"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stock">
+      <div class="container">
+        <div class="toolbar">
+          <div>
+            <h2 data-i18n="stock_title">Aktueller Bestand</h2>
+            <p class="section-lead" style="margin-bottom:0" data-i18n="stock_lead">Vorderansicht deines Automaten — Regale nach Ebenen, Preise in Euro.</p>
+          </div>
+          <div class="updated" id="updated-at"></div>
+        </div>
+        <div class="sample-banner" id="sample-banner"></div>
+        <div class="machine-tabs" id="machine-tabs"></div>
+        <div id="vm-root"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 data-i18n="contact_title">Kontakt</h2>
+        <p class="section-lead" data-i18n="contact_lead">Fragen zu Standorten, Befüllung oder Kooperation? Melde dich gerne.</p>
+        <div class="cards-2">
+          <div class="info-card">
+            <h3 data-i18n="address_label">Adresse</h3>
+            <p>SmartDorf24<br>Lindenstraße 35<br>65623 Schiesheim</p>
+          </div>
+          <div class="info-card">
+            <h3 data-i18n="phone_label">Telefon</h3>
+            <p><a href="tel:+4915567429218">0155 67429218</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="legal">
+      <div class="container">
+        <div class="info-card">
+          <h2 data-i18n="legal_title">Impressum</h2>
+          <p data-i18n="legal_placeholder">Platzhalter — vollständige Anbieterkennzeichnung folgt. Bis dahin erreichst du uns über die Kontaktdaten oben.</p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span data-i18n="footer">SmartDorf24 — Automatenaufsteller in Rheinland-Pfalz</span>
+      <span>© <span id="year"></span> SmartDorf24</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
