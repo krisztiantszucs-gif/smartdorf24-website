@@ -21,6 +21,8 @@ import {
   berlinToday,
   discountWindow,
   halfPrice,
+  tierFor,
+  tierPrice,
   laneKey,
   BASE,
 } from "./lib/impressiot.mjs";
@@ -323,66 +325,33 @@ function planForMachine(rtuNumber, row, state, window) {
   const toDiscount = [];
   const toRestore = [];
   const stay = [];
+  const today = window[0];
 
   for (const c of named) {
     const lane = String(c.cargoNumber);
     const key = laneKey(rtuNumber, lane);
     const eff = c.effDate ? String(c.effDate).slice(0, 10) : "";
     const active = state.active[key];
-    const inWindow = eff && window.includes(eff);
+    const pct = tierFor(eff, today);
 
-    if (active) {
-      if (!inWindow || eff !== active.effDate) {
-        toRestore.push({
-          key,
-          lane,
-          name: c.commodityName,
-          currentPrice: Number(c.price),
-          restorePrice: Number(active.originalPrice),
-          effDate: eff,
-          active,
-        });
-      } else {
-        // still valid — ensure price is discount price
-        const want = Number(active.discountPrice);
-        if (Number(c.price) !== want) {
-          const originalCost = Number(active.originalCostPrice ?? c.costPrice ?? 0);
-          toDiscount.push({
-            key,
-            lane,
-            name: c.commodityName,
-            originalPrice: Number(active.originalPrice),
-            originalCostPrice: originalCost,
-            discountPrice: want,
-            discountCostPrice: Math.min(originalCost, want),
-            effDate: eff,
-            already: true,
-            fixPrice: true,
-          });
-        } else {
-          stay.push({ key, lane, name: c.commodityName, effDate: eff });
-        }
-      }
+    if (active && (!pct || eff !== active.effDate)) {
+      toRestore.push({ key, lane, name: c.commodityName, currentPrice: Number(c.price),
+        restorePrice: Number(active.originalPrice), effDate: eff, active });
       continue;
     }
-
-    if (inWindow) {
-      const original = Number(c.price);
-      const discountPrice = halfPrice(original);
-      const originalCost = Number(c.costPrice ?? 0);
-      toDiscount.push({
-        key,
-        lane,
-        name: c.commodityName,
-        originalPrice: original,
-        originalCostPrice: originalCost,
-        discountPrice,
-        // API requires costPrice <= retail price
-        discountCostPrice: Math.min(originalCost, discountPrice),
-        effDate: eff,
-        already: false,
-      });
+    if (!pct) continue;
+    // Always computed from the stored original price (never compound).
+    const original = active ? Number(active.originalPrice) : Number(c.price);
+    const originalCost = Number(active ? active.originalCostPrice ?? c.costPrice ?? 0 : c.costPrice ?? 0);
+    const want = tierPrice(original, pct);
+    if (active && Number(c.price) === want && Number(active.percent || 50) === pct) {
+      stay.push({ key, lane, name: c.commodityName, effDate: eff, percent: pct });
+      continue;
     }
+    toDiscount.push({ key, lane, name: c.commodityName, originalPrice: original, originalCostPrice: originalCost,
+      discountPrice: want, discountCostPrice: Math.min(originalCost, want), // API: costPrice <= price
+      effDate: eff, percent: pct, already: !!active,
+      image: c.commodityImg || c.img || c.imageUrl || active?.image || null });
   }
 
   // Active state entries whose lane disappeared
@@ -578,7 +547,7 @@ async function main() {
     for (const d of plan.toDiscount) {
       discountCount++;
       console.log(
-        `  DISCOUNT lane ${d.lane} ${d.name}: ${money(d.originalPrice)} → ${money(d.discountPrice)} € (eff ${d.effDate})${d.already ? " [fix]" : ""}`
+        `  DISCOUNT lane ${d.lane} ${d.name}: ${money(d.originalPrice)} → ${money(d.discountPrice)} € (−${d.percent}%, eff ${d.effDate})${d.already ? " [tier/fix]" : ""}`
       );
     }
     for (const r of plan.toRestore) {
@@ -647,6 +616,7 @@ async function main() {
         originalCostPrice: d.originalCostPrice,
         discountPrice: d.discountPrice,
         discountCostPrice: d.discountCostPrice,
+        percent: d.percent,
         effDate: d.effDate,
         startedAt: state.active[d.key]?.startedAt || new Date().toISOString(),
         updatedAt: new Date().toISOString(),
@@ -659,7 +629,7 @@ async function main() {
     );
     if (SKIP_ADS) {
       console.log("Skipping ads (--skip-ads)");
-    } else if (state.permanentAds?.combined) {
+    } else if ((state.permanentAds?.combinedByLocation || state.permanentAds?.combined)) {
       // Combined-ad mode: per-machine expiry groups are retired; handled after loop.
     } else if (activeOnMachine.length === 0) {
       if (state.machineAds[rtuNumber]) {
@@ -703,7 +673,7 @@ async function main() {
   state.lastRunDay = today;
   saveState(state);
 
-  if (!SKIP_ADS && state.permanentAds?.combined) {
+  if (!SKIP_ADS && (state.permanentAds?.combinedByLocation || state.permanentAds?.combined)) {
     try {
       const r = await swapCombined(token, state, { root: ROOT, outDir: join(ROOT, ".ads-out"), today });
       console.log(`combined ad: changed=${r.changed}`);

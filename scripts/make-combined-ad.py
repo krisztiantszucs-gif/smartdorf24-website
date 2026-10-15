@@ -131,17 +131,18 @@ def seg_deals(t, deals):
     r = 230*pop(t/0.6)*(1+0.05*math.sin(t*5))
     if r > 5:
         burst(img, 330, 360, r, t, RED); burst(img, 330, 360, r*0.82, -t, YEL); burst(img, 330, 360, r*0.68, t, RED)
-        scaled_text(img, "−50%", font(130), WHITE, 330, 360, min(1,r/230), 5)
+        top = max([dl["pct"] for dl in deals], default=0)
+        scaled_text(img, f"−{top}%" if deals else "TOP", font(130), WHITE, 330, 360, min(1,r/230), 5)
     if deals:
-        d.text((640, 90), "Kurz vor MHD – halber Preis!", font=font(58), fill=YEL, stroke_width=2, stroke_fill=(0,0,0))
+        d.text((640, 90), ("Kurz vor MHD – bis −50%!" if any(x["pct"]==50 for x in deals) else "Kurz vor MHD – −20%!"), font=font(58), fill=YEL, stroke_width=2, stroke_fill=(0,0,0))
         for i, dl in enumerate(deals[:5]):
             st = 0.8 + i*0.45
             if t < st: continue
-            x = 640 + int(1200*(1-ease((t-st)/0.5))); y = 200 + i*130
-            d.rounded_rectangle([x,y,x+1080,y+112], 18, fill=(20,20,30), outline=YEL, width=3)
+            x = 640 + int(1200*(1-ease((t-st)/0.5))); y = 190 + i*122
+            d.rounded_rectangle([x,y,x+1080,y+108], 18, fill=(20,20,30), outline=YEL, width=3)
             name = dl["name"] if len(dl["name"]) < 27 else dl["name"][:25]+"…"
             d.text((x+24,y+12), name, font=font(40), fill=WHITE)
-            d.text((x+24,y+64), f"nur noch bis {dl['until']}", font=font(28,False), fill=(255,190,190))
+            d.text((x+24,y+64), f"−{dl['pct']}%  ·  nur noch bis {dl['until']}", font=font(28,False), fill=(255,190,190))
             old = f"{dl['old']:.2f} €".replace(".",","); new = f"{dl['new']:.2f} €".replace(".",",")
             ow = d.textlength(old, font=font(38,False)); ox = x+690
             d.text((ox,y+36), old, font=font(38,False), fill=(180,180,190)); d.line([ox,y+60,ox+ow,y+60], fill=RED, width=4)
@@ -152,7 +153,7 @@ def seg_deals(t, deals):
         if t > 1: d.text((640, 380), "24/7 Snacks & Getränke", font=font(64), fill=WHITE)
     if t > 3:
         p = 1+0.07*math.sin(t*6)
-        scaled_text(img, "Jetzt zugreifen!  smartdorf24.de", font(56), TEAL, W/2, H-150, p, 4)
+        scaled_text(img, "Jetzt zugreifen!  smartdorf24.de", font(56), TEAL, W/2, H-120, p, 4)
     brand_bar(img, t); return img
 
 def transition(a, b, x):  # slide + fade
@@ -164,12 +165,15 @@ def transition(a, b, x):  # slide + fade
 def main():
     ap = argparse.ArgumentParser()
     for a in ["karamalz","qr","stock","discounts","out","preview"]: ap.add_argument("--"+a, required=True)
+    ap.add_argument("--rtus", default="all")
     o = ap.parse_args()
     kar = fetch_img(o.karamalz); qr = Image.open(o.qr).convert("RGB")
     stock = json.load(open(o.stock)); disc = json.load(open(o.discounts)) if os.path.exists(o.discounts) else {}
+    rtus = None if o.rtus == "all" else set(o.rtus.split(","))
     thumbs = []
     for loc in stock.get("locations",[]):
         for m in loc["machines"]:
+            if rtus and str(m.get("rtuNumber")) not in rtus: continue
             for it in m["items"]:
                 if it.get("image") and it.get("stock",0) > 0 and len(thumbs) < 5:
                     im = fetch_img(it["image"])
@@ -177,10 +181,11 @@ def main():
     today = datetime.date.today()
     deals = []
     for a in (disc.get("active") or {}).values():
+        if rtus and str(a.get("rtuNumber")) not in rtus: continue
         try:
             if datetime.date.fromisoformat(a["effDate"]) >= today:
                 dd = datetime.date.fromisoformat(a["effDate"])
-                deals.append({"name":a["name"],"old":float(a["originalPrice"]),"new":float(a["discountPrice"]),"until":dd.strftime("%d.%m.")})
+                deals.append({"name":a["name"],"old":float(a["originalPrice"]),"new":float(a["discountPrice"]),"until":dd.strftime("%d.%m."),"pct":int(a.get("percent") or 50)})
         except Exception: pass
     segs = [lambda t: seg_karamalz(t, kar), lambda t: seg_live(t, qr, thumbs), lambda t: seg_deals(t, deals)]
     p = subprocess.Popen(["ffmpeg","-y","-loglevel","error","-f","rawvideo","-pix_fmt","rgb24","-s",f"{W}x{H}","-r",str(FPS),"-i","-",

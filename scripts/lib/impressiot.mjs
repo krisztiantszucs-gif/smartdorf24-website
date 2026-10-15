@@ -89,7 +89,20 @@ export function addDaysYmd(ymd, n) {
 }
 
 export function discountWindow(today = berlinToday()) {
-  return [today, addDaysYmd(today, 1), addDaysYmd(today, 2)];
+  return [0, 1, 2, 3, 4].map((n) => addDaysYmd(today, n));
+}
+
+// Tiered: effDate today..+2 => 50%, +3..+4 => 20%, else 0.
+export function tierFor(effYmd, today = berlinToday()) {
+  if (!effYmd) return 0;
+  const d = Math.round((Date.parse(effYmd + "T00:00:00Z") - Date.parse(today + "T00:00:00Z")) / 86400000);
+  if (d < 0 || d > 4) return 0;
+  return d <= 2 ? 50 : 20;
+}
+
+export function tierPrice(original, pct) {
+  const p = roundTo005(Number(original) * (1 - pct / 100));
+  return Math.max(0.1, Math.round(p * 100) / 100);
 }
 
 export function roundTo005(n) {

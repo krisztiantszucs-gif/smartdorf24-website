@@ -43,6 +43,10 @@ window.SD24_I18N = {
     empty_machine: "Für diesen Automaten sind gerade keine Artikeldaten verfügbar.",
     map_popup_machines: "Automaten",
     sale_badge: "−50%",
+    deals_title: "Bald ablaufend – jetzt günstiger",
+    deals_lead: "Kurz vor dem Mindesthaltbarkeitsdatum: −20 % ab 4 Tagen, −50 % ab 2 Tagen vorher.",
+    deals_until: "bis",
+    nav_deals: "Angebote",
   },
   en: {
     nav_how: "How it works",
@@ -88,5 +92,9 @@ window.SD24_I18N = {
     empty_machine: "No item data is available for this machine right now.",
     map_popup_machines: "machines",
     sale_badge: "−50%",
+    deals_title: "Expiring soon – now cheaper",
+    deals_lead: "Close to best-before date: −20% from 4 days before, −50% from 2 days before.",
+    deals_until: "until",
+    nav_deals: "Deals",
   },
 };

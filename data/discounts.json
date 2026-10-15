@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-10-15T17:15:11.015Z",
+  "lastRunAt": "2026-10-15T18:10:57.249Z",
   "lastRunDay": "2026-10-15",
   "active": {
     "7680783:1": {
@@ -15,7 +15,8 @@
       "startedAt": "2026-10-15T17:14:52.737Z",
       "updatedAt": "2026-10-15T17:14:52.737Z",
       "advertiseId": "100001916",
-      "advertiseGroupItemId": "100001199"
+      "advertiseGroupItemId": "100001199",
+      "percent": 50
     },
     "7680783:24": {
       "rtuNumber": "7680783",
@@ -29,7 +30,8 @@
       "startedAt": "2026-10-15T17:14:52.737Z",
       "updatedAt": "2026-10-15T17:14:52.737Z",
       "advertiseId": "100001916",
-      "advertiseGroupItemId": "100001199"
+      "advertiseGroupItemId": "100001199",
+      "percent": 50
     },
     "7680783:42": {
       "rtuNumber": "7680783",
@@ -43,7 +45,47 @@
       "startedAt": "2026-10-15T17:14:52.737Z",
       "updatedAt": "2026-10-15T17:14:52.737Z",
       "advertiseId": "100001916",
-      "advertiseGroupItemId": "100001199"
+      "advertiseGroupItemId": "100001199",
+      "percent": 50
+    },
+    "7680787:22": {
+      "rtuNumber": "7680787",
+      "lane": "22",
+      "name": "Milram Moin Kakao Drink 0,3% 0,5l",
+      "originalPrice": 1.1,
+      "originalCostPrice": 0.65,
+      "discountPrice": 0.9,
+      "discountCostPrice": 0.65,
+      "percent": 20,
+      "effDate": "2026-10-18",
+      "startedAt": "2026-10-15T18:10:55.962Z",
+      "updatedAt": "2026-10-15T18:10:55.963Z"
+    },
+    "7680783:3": {
+      "rtuNumber": "7680783",
+      "lane": "3",
+      "name": "Popp Kartoffelsalat Klassik",
+      "originalPrice": 3.2,
+      "originalCostPrice": 2.49,
+      "discountPrice": 2.55,
+      "discountCostPrice": 2.49,
+      "percent": 20,
+      "effDate": "2026-10-19",
+      "startedAt": "2026-10-15T18:10:57.249Z",
+      "updatedAt": "2026-10-15T18:10:57.249Z"
+    },
+    "7680783:21": {
+      "rtuNumber": "7680783",
+      "lane": "21",
+      "name": "Milram Moin Kakao Drink 0,3% 0,5l",
+      "originalPrice": 1.1,
+      "originalCostPrice": 0.65,
+      "discountPrice": 0.9,
+      "discountCostPrice": 0.65,
+      "percent": 20,
+      "effDate": "2026-10-18",
+      "startedAt": "2026-10-15T18:10:57.249Z",
+      "updatedAt": "2026-10-15T18:10:57.249Z"
     }
   },
   "machineAds": {},
@@ -63,25 +105,43 @@
       "updatedAt": "2026-10-15T17:29:04.711Z",
       "minutes": 10
     },
-    "combined": {
-      "advertiseId": "100001919",
-      "advertiseGroupItemId": "100001203",
-      "adName": "SD24-combined-2026-10-15-d82f45",
-      "groupName": "SD24-combined-grp",
-      "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2d126f044e6a418fbb2ddf584f476423.mp4",
-      "hash": "d82f452ae856f9b0",
-      "nightGroups": [
-        "100000785",
-        "100000786"
-      ],
-      "boundRtus": [
-        "7680787",
-        "7680782",
-        "7680800",
-        "7680783"
-      ],
-      "previousAdvertiseId": null,
-      "updatedAt": "2026-10-15T18:03:32.798Z"
+    "combinedByLocation": {
+      "steinsberg": {
+        "advertiseId": "100001925",
+        "advertiseGroupItemId": "100001203",
+        "adName": "SD24-combined-steinsberg-2026-10-15-dfd4cb",
+        "groupName": "SD24-combined-steinsberg",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/85c6ed971fac495386c431236991bfb6.mp4",
+        "hash": "dfd4cb19255e0b1c",
+        "nightGroups": [
+          "100000785",
+          "100000786"
+        ],
+        "boundRtus": [
+          "7680800",
+          "7680783"
+        ],
+        "previousAdvertiseId": "100001920",
+        "updatedAt": "2026-10-15T18:14:45.213Z"
+      },
+      "schiesheim": {
+        "advertiseId": "100001926",
+        "advertiseGroupItemId": "100001204",
+        "adName": "SD24-combined-schiesheim-2026-10-15-2f9435",
+        "groupName": "SD24-combined-schiesheim",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bd28858093e64ecb8640844206f90152.mp4",
+        "hash": "2f94350ba8e60335",
+        "nightGroups": [
+          "100000785",
+          "100000786"
+        ],
+        "boundRtus": [
+          "7680787",
+          "7680782"
+        ],
+        "previousAdvertiseId": "100001922",
+        "updatedAt": "2026-10-15T18:15:47.624Z"
+      }
     }
   },
   "retiredMachineAds": {

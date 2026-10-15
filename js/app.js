@@ -52,6 +52,7 @@
     $$(".lang-toggle button").forEach((b) => {
       b.classList.toggle("active", b.dataset.lang === state.lang);
     });
+    renderDeals();
     renderLocations();
     renderMachineTabs();
     renderMachine();
@@ -59,6 +60,44 @@
   }
 
   
+  function renderDeals() {
+    const sec = document.getElementById("deals");
+    const grid = document.getElementById("deals-grid");
+    if (!sec || !grid) return;
+    const today = new Date().toISOString().slice(0, 10);
+    const lookup = {};
+    for (const loc of state.stock?.locations || []) {
+      for (const m of loc.machines || []) {
+        for (const it of m.items || []) lookup[m.rtuNumber + ":" + it.lane] = { loc, m, it };
+      }
+    }
+    const items = Object.values(state.discounts?.active || {})
+      .filter((a) => !a.effDate || a.effDate >= today)
+      .map((a) => ({ a, ...(lookup[a.rtuNumber + ":" + a.lane] || {}) }))
+      .filter((x) => !x.it || Number(x.it.stock) > 0)
+      .sort((x, y) => (Number(y.a.percent || 50) - Number(x.a.percent || 50)) || String(x.a.effDate).localeCompare(String(y.a.effDate)));
+    if (!items.length) { sec.hidden = true; grid.innerHTML = ""; return; }
+    sec.hidden = false;
+    const L = state.lang;
+    grid.innerHTML = items.map(({ a, loc, m, it }) => {
+      const pct = Number(a.percent || 50);
+      const [y, mo, d] = String(a.effDate || "").split("-");
+      const until = d ? `${d}.${mo}.` : "";
+      const img = it?.image ? `<img src="${escapeAttr(it.image)}" alt="" loading="lazy" />` : `<div class="slot-fallback">${escapeHtml((a.name || "?").slice(0, 1))}</div>`;
+      const where = [loc?.name?.[L], m?.name?.[L]].filter(Boolean).join(" · ");
+      return `<article class="deal-card tier-${pct}">
+        <span class="deal-badge">−${pct}%</span>
+        <div class="deal-img">${img}</div>
+        <div class="deal-body">
+          <div class="deal-name">${escapeHtml(a.name || "")}</div>
+          <div class="deal-where">${escapeHtml(where)}</div>
+          <div class="deal-prices"><span class="price-old">${formatMoney(a.originalPrice)}</span> <span class="deal-new">${formatMoney(a.discountPrice)}</span></div>
+          <div class="deal-until">${escapeHtml(t("deals_until"))} ${escapeHtml(until)}</div>
+        </div>
+      </article>`;
+    }).join("");
+  }
+
   function discountFor(rtu, lane) {
     const key = String(rtu) + ":" + String(lane);
     return state.discounts?.active?.[key] || null;
@@ -218,7 +257,7 @@
                   const priceHtml = disc
                     ? `<span class="price-wrap"><span class="price-old">${formatMoney(disc.originalPrice)}</span><span class="price">${formatMoney(item.price)}</span></span>`
                     : `<span class="price">${formatMoney(item.price)}</span>`;
-                  const saleBadge = disc ? `<span class="badge-sale">${escapeHtml(t("sale_badge"))}</span>` : "";
+                  const saleBadge = disc ? `<span class="badge-sale">−${Number(disc.percent || 50)}%</span>` : "";
                   return `<div class="slot ${sold ? "soldout" : ""}" data-soldout="${escapeAttr(t("sold_out"))}">
                     ${saleBadge}
                     ${img}

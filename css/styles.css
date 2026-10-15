@@ -293,3 +293,20 @@ section h2 {
 .price-old {
   font-size: 0.68rem; color: var(--muted); text-decoration: line-through;
 }
+
+/* Expiring-soon deals */
+.deals-section{padding:40px 0;background:linear-gradient(135deg,#3a0d16,#5a1a0a);color:#fff}
+.deals-head h2{margin:0 0 6px;color:#ffd54a}
+.deals-head p{margin:0 0 20px;opacity:.85}
+.deals-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.deal-card{position:relative;display:flex;gap:12px;align-items:center;background:rgba(0,0,0,.35);border:2px solid #ffd54a;border-radius:14px;padding:12px}
+.deal-card.tier-20{border-color:#ff9f43}
+.deal-badge{position:absolute;top:-10px;right:-8px;background:#e53935;color:#fff;font-weight:800;padding:4px 10px;border-radius:999px;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.deal-card.tier-20 .deal-badge{background:#ff8f00}
+.deal-img{flex:0 0 72px;height:72px;background:#fff;border-radius:10px;display:grid;place-items:center;overflow:hidden}
+.deal-img img{max-width:100%;max-height:100%;object-fit:contain}
+.deal-name{font-weight:700;line-height:1.2}
+.deal-where{font-size:.85rem;opacity:.8;margin:2px 0 4px}
+.deal-prices .price-old{text-decoration:line-through;opacity:.7}
+.deal-new{font-weight:800;color:#ffd54a;font-size:1.2rem}
+.deal-until{font-size:.85rem;color:#ffbcbc}

@@ -7,23 +7,27 @@ import { join } from "node:path";
 import { MACHINES, api, BASE } from "./impressiot.mjs";
 
 export const NIGHT_GROUPS = ["100000785", "100000786"]; // final1, final2 — never touch
-export const GROUP_NAME = "SD24-combined-grp";
+export const LOCATIONS = {
+  steinsberg: { groupName: "SD24-combined-steinsberg", rtus: ["7680800", "7680783"] },
+  schiesheim: { groupName: "SD24-combined-schiesheim", rtus: ["7680787", "7680782"] },
+};
 
 function ok(r, what) {
   if (r.http !== 200 || r.json.code !== 200) throw new Error(`${what} failed: HTTP ${r.http} ${r.json.msg || ""}`);
   return r.json;
 }
 
-export function discountsHash(state) {
+export function discountsHash(state, rtus) {
   const items = Object.values(state.active || {})
-    .map((a) => [a.rtuNumber, a.lane, a.name, a.originalPrice, a.discountPrice, a.effDate].join("|"))
+    .filter((a) => !rtus || rtus.includes(String(a.rtuNumber)))
+    .map((a) => [a.rtuNumber, a.lane, a.name, a.originalPrice, a.discountPrice, a.percent, a.effDate].join("|"))
     .sort();
   return createHash("sha256").update(JSON.stringify(items)).digest("hex").slice(0, 16);
 }
 
-export function renderCombined(root, outDir) {
+export function renderCombined(root, outDir, loc = "all", rtus = []) {
   mkdirSync(outDir, { recursive: true });
-  const out = join(outDir, "sd24-combined.mp4");
+  const out = join(outDir, `sd24-combined-${loc}.mp4`);
   execFileSync("python3", [
     join(root, "scripts", "make-combined-ad.py"),
     "--karamalz", join(root, "assets", "ads", "karamalz.jpg"),
@@ -31,7 +35,8 @@ export function renderCombined(root, outDir) {
     "--stock", join(root, "data", "stock.json"),
     "--discounts", join(root, "data", "discounts.json"),
     "--out", out,
-    "--preview", join(outDir, "sd24-combined-preview.png"),
+    "--preview", join(outDir, `sd24-combined-${loc}-preview.png`),
+    "--rtus", rtus.join(",") || "all",
   ], { stdio: "inherit" });
   return out;
 }
@@ -69,72 +74,81 @@ async function findByName(token, path, name) {
 }
 
 /**
- * Regenerate (if hash changed or forced), upload new material, point the single
- * combined group at it, bind every machine to night groups + combined group,
- * verify, push update_ads. Rolls back bindings on verification failure.
+ * Per location: regenerate (if hash changed/forced), upload new material, point the
+ * location group at it, bind each machine of that location to night groups + its
+ * location group, verify, push update_ads. Rolls back bindings on failure.
  */
 export async function swapCombined(token, state, { root, outDir, today, force = false, dryRun = false }) {
   state.permanentAds ||= {};
-  const cur = state.permanentAds.combined || {};
-  const hash = discountsHash(state);
-  const needVideo = force || !cur.advertiseId || cur.hash !== hash;
-  console.log(`combined: hash=${hash} prev=${cur.hash || "-"} regenerate=${needVideo}`);
-  if (dryRun) return { changed: false, hash };
-
-  let advertiseId = cur.advertiseId, adName = cur.adName, url = cur.url;
-  if (needVideo) {
-    const file = renderCombined(root, outDir);
-    adName = `SD24-combined-${today}-${hash.slice(0, 6)}`;
-    url = await uploadVideo(token, file, adName);
-    ok(await api(token, "POST", "/advertise/save", {
-      body: { name: adName, url, mediaType: "video", remark: "SmartDorf24 combined 30s", minutes: 0 } }), "advertise/save");
-    const adv = await findByName(token, "/advertise/page", adName);
-    if (!adv?.id) throw new Error("could not resolve new advertise id");
-    advertiseId = String(adv.id);
-  }
-
-  const groupBody = { name: GROUP_NAME, advertiseIds: [String(advertiseId)], beginTime: "00:00:00",
-    endTime: "23:59:59", mediaType: "video", isScreenProtection: "0" };
-  let groupId = cur.advertiseGroupItemId || (await findByName(token, "/advertiseGroupItem/page", GROUP_NAME))?.id;
-  if (!groupId) {
-    ok(await api(token, "POST", "/advertiseGroupItem/save", { body: groupBody }), "group/save");
-    groupId = (await findByName(token, "/advertiseGroupItem/page", GROUP_NAME))?.id;
-    if (!groupId) throw new Error("could not resolve combined group id");
-  } else if (needVideo) {
-    ok(await api(token, "POST", "/advertiseGroupItem/update", { body: { id: String(groupId), ...groupBody } }), "group/update");
-  }
-  groupId = String(groupId);
-
-  const want = [...NIGHT_GROUPS, groupId];
-  const results = [];
+  const byLoc = (state.permanentAds.combinedByLocation ||= {});
+  // migrate legacy single group: reuse its group id for Steinsberg
+  const legacy = state.permanentAds.combined;
+  if (legacy && !byLoc.steinsberg) byLoc.steinsberg = { advertiseGroupItemId: legacy.advertiseGroupItemId, legacy: true };
+  const all = { changed: false, results: [] };
   const rollbacks = [];
+  const pending = [];
   try {
-    for (const m of MACHINES) {
-      const before = await listBound(token, m.rtuNumber);
-      const same = before.length === want.length && want.every((id) => before.includes(id));
-      if (!same) {
-        rollbacks.push({ rtu: m.rtuNumber, before });
-        await bind(token, m.rtuNumber, want);
+    for (const [loc, cfg] of Object.entries(LOCATIONS)) {
+      const cur = byLoc[loc] || {};
+      const hash = discountsHash(state, cfg.rtus);
+      const needVideo = force || !cur.advertiseId || cur.hash !== hash;
+      console.log(`combined[${loc}]: hash=${hash} prev=${cur.hash || "-"} regenerate=${needVideo}`);
+      if (dryRun) continue;
+      let { advertiseId, adName, url } = cur;
+      if (needVideo) {
+        const file = renderCombined(root, outDir, loc, cfg.rtus);
+        adName = `SD24-combined-${loc}-${today}-${hash.slice(0, 6)}`;
+        url = await uploadVideo(token, file, adName);
+        ok(await api(token, "POST", "/advertise/save", {
+          body: { name: adName, url, mediaType: "video", remark: `SmartDorf24 combined 30s ${loc}`, minutes: 0 } }), "advertise/save");
+        const adv = await findByName(token, "/advertise/page", adName);
+        if (!adv?.id) throw new Error("could not resolve new advertise id");
+        advertiseId = String(adv.id);
       }
-      const after = await listBound(token, m.rtuNumber);
-      if (after.length !== want.length || !want.every((id) => after.includes(id)))
-        throw new Error(`verify failed on ${m.rtuNumber}: got [${after}] want [${want}]`);
-      results.push({ rtu: m.rtuNumber, sn: m.serial, before, after });
+      const groupBody = { name: cfg.groupName, advertiseIds: [String(advertiseId)], beginTime: "00:00:00",
+        endTime: "23:59:59", mediaType: "video", isScreenProtection: "0" };
+      let groupId = cur.advertiseGroupItemId || (await findByName(token, "/advertiseGroupItem/page", cfg.groupName))?.id;
+      if (!groupId) {
+        ok(await api(token, "POST", "/advertiseGroupItem/save", { body: groupBody }), "group/save");
+        groupId = (await findByName(token, "/advertiseGroupItem/page", cfg.groupName))?.id;
+        if (!groupId) throw new Error(`could not resolve group id for ${loc}`);
+      } else if (needVideo || cur.legacy) {
+        ok(await api(token, "POST", "/advertiseGroupItem/update", { body: { id: String(groupId), ...groupBody } }), "group/update");
+      }
+      groupId = String(groupId);
+      const want = [...NIGHT_GROUPS, groupId];
+      const locResults = [];
+      for (const rtu of cfg.rtus) {
+        const m = MACHINES.find((x) => String(x.rtuNumber) === rtu);
+        const before = await listBound(token, rtu);
+        const same = before.length === want.length && want.every((id) => before.includes(id));
+        if (!same) { rollbacks.push({ rtu, before }); await bind(token, rtu, want); }
+        const after = await listBound(token, rtu);
+        if (after.length !== want.length || !want.every((id) => after.includes(id)))
+          throw new Error(`verify failed on ${rtu}: got [${after}] want [${want}]`);
+        locResults.push({ loc, rtu, sn: m.serial, before, after, rebound: !same });
+      }
+      pending.push({ loc, needVideo, locResults, entry: { advertiseId: String(advertiseId), advertiseGroupItemId: groupId, adName,
+        groupName: cfg.groupName, url, hash, nightGroups: NIGHT_GROUPS, boundRtus: cfg.rtus,
+        previousAdvertiseId: needVideo && cur.advertiseId !== advertiseId ? cur.advertiseId || null : cur.previousAdvertiseId || null,
+        updatedAt: new Date().toISOString() } });
     }
   } catch (e) {
-    console.error(`combined bind failed: ${e.message} — rolling back`);
+    console.error(`combined swap failed: ${e.message} — rolling back bindings`);
     for (const r of rollbacks.reverse()) {
       try { await bind(token, r.rtu, r.before); console.error(`restored ${r.rtu} -> [${r.before}]`); }
       catch (e2) { console.error(`ROLLBACK FAILED ${r.rtu}: ${e2.message}`); }
     }
     throw e;
   }
-  if (needVideo || rollbacks.length) {
-    for (const r of results) r.updateAds = await pushUpdateAds(token, r.sn);
+  for (const p of pending) {
+    for (const r of p.locResults) {
+      if (p.needVideo || r.rebound) r.updateAds = await pushUpdateAds(token, r.sn);
+      all.results.push(r);
+    }
+    byLoc[p.loc] = p.entry;
+    all.changed ||= p.needVideo;
   }
-  state.permanentAds.combined = { advertiseId: String(advertiseId), advertiseGroupItemId: groupId, adName,
-    groupName: GROUP_NAME, url, hash, nightGroups: NIGHT_GROUPS, boundRtus: MACHINES.map((m) => String(m.rtuNumber)),
-    previousAdvertiseId: needVideo && cur.advertiseId !== advertiseId ? cur.advertiseId || null : cur.previousAdvertiseId || null,
-    updatedAt: new Date().toISOString() };
-  return { changed: needVideo, results };
+  if (pending.length === Object.keys(LOCATIONS).length) delete state.permanentAds.combined;
+  return all;
 }
