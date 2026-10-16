@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-16T05:56:17.804Z",
+  "updatedAt": "2026-10-16T06:04:23.404Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-16T05:56:17.804Z",
+          "fetchedAt": "2026-10-16T06:04:23.404Z",
           "items": [
             {
               "lane": "1",
@@ -409,7 +409,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-16T05:56:17.804Z",
+          "fetchedAt": "2026-10-16T06:04:23.404Z",
           "items": [
             {
               "lane": "1",
@@ -621,7 +621,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-16T05:56:17.804Z",
+          "fetchedAt": "2026-10-16T06:04:23.404Z",
           "items": [
             {
               "lane": "1",
@@ -1010,7 +1010,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-16T05:56:17.804Z",
+          "fetchedAt": "2026-10-16T06:04:23.404Z",
           "items": [
             {
               "lane": "1",
