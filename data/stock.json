@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-16T12:16:57.658Z",
+  "updatedAt": "2026-10-16T12:27:06.768Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-16T12:16:57.658Z",
+          "fetchedAt": "2026-10-16T12:27:06.768Z",
           "items": [
             {
               "lane": "1",
@@ -205,11 +205,11 @@
             {
               "lane": "36",
               "level": 4,
-              "name": "Haribo Happy Cola Sauer",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/04eaa9f558ea40c2a351f7a42646705f.jpg",
-              "price": 2,
+              "name": "Sport Kapuciner",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9ea3981e806f47a29f6f18c5dfc3958b.png",
+              "price": 1.5,
               "stock": 0,
-              "capacity": 5
+              "capacity": 10
             },
             {
               "lane": "37",
@@ -409,7 +409,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-16T12:16:57.658Z",
+          "fetchedAt": "2026-10-16T12:27:06.768Z",
           "items": [
             {
               "lane": "1",
@@ -621,7 +621,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-16T12:16:57.658Z",
+          "fetchedAt": "2026-10-16T12:27:06.768Z",
           "items": [
             {
               "lane": "1",
@@ -1010,7 +1010,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-16T12:16:57.658Z",
+          "fetchedAt": "2026-10-16T12:27:06.768Z",
           "items": [
             {
               "lane": "1",
