@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "lastRunAt": "2026-10-15T18:10:57.249Z",
-  "lastRunDay": "2026-10-15",
+  "lastRunAt": "2026-10-16T05:40:26.330Z",
+  "lastRunDay": "2026-10-16",
   "active": {
     "7680783:1": {
       "rtuNumber": "7680783",
@@ -54,12 +54,12 @@
       "name": "Milram Moin Kakao Drink 0,3% 0,5l",
       "originalPrice": 1.1,
       "originalCostPrice": 0.65,
-      "discountPrice": 0.9,
-      "discountCostPrice": 0.65,
-      "percent": 20,
+      "discountPrice": 0.55,
+      "discountCostPrice": 0.55,
+      "percent": 50,
       "effDate": "2026-10-18",
       "startedAt": "2026-10-15T18:10:55.962Z",
-      "updatedAt": "2026-10-15T18:10:55.963Z"
+      "updatedAt": "2026-10-16T05:40:24.075Z"
     },
     "7680783:3": {
       "rtuNumber": "7680783",
@@ -80,12 +80,25 @@
       "name": "Milram Moin Kakao Drink 0,3% 0,5l",
       "originalPrice": 1.1,
       "originalCostPrice": 0.65,
-      "discountPrice": 0.9,
-      "discountCostPrice": 0.65,
-      "percent": 20,
+      "discountPrice": 0.55,
+      "discountCostPrice": 0.55,
+      "percent": 50,
       "effDate": "2026-10-18",
       "startedAt": "2026-10-15T18:10:57.249Z",
-      "updatedAt": "2026-10-15T18:10:57.249Z"
+      "updatedAt": "2026-10-16T05:40:26.330Z"
+    },
+    "7680800:3": {
+      "rtuNumber": "7680800",
+      "lane": "3",
+      "name": "Golden Toast Vollkorn 250g",
+      "originalPrice": 2,
+      "originalCostPrice": 1.29,
+      "discountPrice": 1.6,
+      "discountCostPrice": 1.29,
+      "percent": 20,
+      "effDate": "2026-10-20",
+      "startedAt": "2026-10-16T05:40:25.251Z",
+      "updatedAt": "2026-10-16T05:40:25.251Z"
     }
   },
   "machineAds": {},
@@ -107,12 +120,12 @@
     },
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100001925",
+        "advertiseId": "100001928",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-10-15-dfd4cb",
+        "adName": "SD24-combined-steinsberg-2026-10-16-933aaf",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/85c6ed971fac495386c431236991bfb6.mp4",
-        "hash": "dfd4cb19255e0b1c",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5c6198d6743743d7b16bc716a3197627.mp4",
+        "hash": "933aaf60061fd142",
         "nightGroups": [
           "100000785",
           "100000786"
@@ -121,16 +134,16 @@
           "7680800",
           "7680783"
         ],
-        "previousAdvertiseId": "100001920",
-        "updatedAt": "2026-10-15T18:14:45.213Z"
+        "previousAdvertiseId": "100001925",
+        "updatedAt": "2026-10-16T05:41:27.131Z"
       },
       "schiesheim": {
-        "advertiseId": "100001926",
+        "advertiseId": "100001929",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-10-15-2f9435",
+        "adName": "SD24-combined-schiesheim-2026-10-16-e517dd",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bd28858093e64ecb8640844206f90152.mp4",
-        "hash": "2f94350ba8e60335",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/14b3639425e54e0fb8c4c9a49b4a3c89.mp4",
+        "hash": "e517dd158cedd639",
         "nightGroups": [
           "100000785",
           "100000786"
@@ -139,8 +152,8 @@
           "7680787",
           "7680782"
         ],
-        "previousAdvertiseId": "100001922",
-        "updatedAt": "2026-10-15T18:15:47.624Z"
+        "previousAdvertiseId": "100001926",
+        "updatedAt": "2026-10-16T05:42:24.529Z"
       }
     }
   },
