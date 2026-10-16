@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-10-16T05:40:26.330Z",
+  "lastRunAt": "2026-10-16T09:25:09.554Z",
   "lastRunDay": "2026-10-16",
   "active": {
     "7680783:1": {
@@ -98,7 +98,7 @@
       "percent": 20,
       "effDate": "2026-10-20",
       "startedAt": "2026-10-16T05:40:25.251Z",
-      "updatedAt": "2026-10-16T05:40:25.251Z"
+      "updatedAt": "2026-10-16T09:25:09.554Z"
     }
   },
   "machineAds": {},
@@ -135,7 +135,7 @@
           "7680783"
         ],
         "previousAdvertiseId": "100001925",
-        "updatedAt": "2026-10-16T05:41:27.131Z"
+        "updatedAt": "2026-10-16T09:25:09.644Z"
       },
       "schiesheim": {
         "advertiseId": "100001929",
@@ -153,7 +153,7 @@
           "7680782"
         ],
         "previousAdvertiseId": "100001926",
-        "updatedAt": "2026-10-16T05:42:24.529Z"
+        "updatedAt": "2026-10-16T09:25:09.735Z"
       }
     }
   },
