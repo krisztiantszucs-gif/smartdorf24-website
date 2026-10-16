@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-16T15:20:24.934Z",
+  "updatedAt": "2026-10-16T16:33:18.859Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-16T15:20:24.934Z",
+          "fetchedAt": "2026-10-16T16:33:18.859Z",
           "items": [
             {
               "lane": "1",
@@ -409,7 +409,7 @@
             "en": "Schiesheim Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-16T15:20:24.934Z",
+          "fetchedAt": "2026-10-16T16:33:18.859Z",
           "items": [
             {
               "lane": "1",
@@ -621,7 +621,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-16T15:20:24.934Z",
+          "fetchedAt": "2026-10-16T16:33:18.859Z",
           "items": [
             {
               "lane": "1",
@@ -1010,7 +1010,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-16T15:20:24.934Z",
+          "fetchedAt": "2026-10-16T16:33:18.859Z",
           "items": [
             {
               "lane": "1",
@@ -1018,7 +1018,7 @@
               "name": "Schlüter's Bio Nürnberger Rostbratwürste",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d66fb02721c545bfbfcf87bf8d691765.png",
               "price": 2,
-              "stock": 2,
+              "stock": 0,
               "capacity": 5
             },
             {
