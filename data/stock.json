@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-17T03:39:49.616Z",
+  "updatedAt": "2026-10-17T05:18:45.363Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-17T03:39:49.616Z",
+          "fetchedAt": "2026-10-17T05:18:45.363Z",
           "items": [
             {
               "lane": "1",
@@ -126,7 +126,7 @@
               "level": 3,
               "name": "Milram Moin Kakao Drink 0,3% 0,5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
-              "price": 0.55,
+              "price": 1.1,
               "stock": 5,
               "capacity": 5
             },
@@ -409,7 +409,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-17T03:39:49.616Z",
+          "fetchedAt": "2026-10-17T05:18:45.363Z",
           "items": [
             {
               "lane": "1",
@@ -621,7 +621,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-17T03:39:49.616Z",
+          "fetchedAt": "2026-10-17T05:18:45.363Z",
           "items": [
             {
               "lane": "1",
@@ -1010,14 +1010,14 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-17T03:39:49.616Z",
+          "fetchedAt": "2026-10-17T05:18:45.363Z",
           "items": [
             {
               "lane": "1",
               "level": 1,
               "name": "Schlüter's Bio Nürnberger Rostbratwürste",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d66fb02721c545bfbfcf87bf8d691765.png",
-              "price": 2,
+              "price": 4,
               "stock": 0,
               "capacity": 5
             },
@@ -1035,7 +1035,7 @@
               "level": 1,
               "name": "Popp Kartoffelsalat Klassik",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d35471b285684c71b4b5c7a7c36d0e05.png",
-              "price": 2.55,
+              "price": 1.6,
               "stock": 2,
               "capacity": 2
             },
@@ -1089,7 +1089,7 @@
               "level": 3,
               "name": "Milram Moin Kakao Drink 0,3% 0,5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
-              "price": 0.55,
+              "price": 1.1,
               "stock": 4,
               "capacity": 5
             },
@@ -1116,7 +1116,7 @@
               "level": 3,
               "name": "Popp Brot-Aufstrich Ei-Bacon Maxi",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/caf6528418524bef92340800768e8668.jpg",
-              "price": 1.4,
+              "price": 2.8,
               "stock": 2,
               "capacity": 5
             },
@@ -1215,7 +1215,7 @@
               "level": 5,
               "name": "Starbucks Hazelnut Macchiato",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d75325ea045341adbce08e43955de5f4.jpeg",
-              "price": 1.25,
+              "price": 2.5,
               "stock": 3,
               "capacity": 5
             },
