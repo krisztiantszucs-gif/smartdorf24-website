@@ -25,6 +25,7 @@
         <a href="#locations" data-i18n="nav_locations">Standorte</a>
         <a href="#stock" data-i18n="nav_stock">Aktueller Bestand</a>
         <a href="#contact" data-i18n="nav_contact">Kontakt</a>
+        <a href="#feedback" data-i18n="nav_feedback">Produktwunsch</a>
         <a href="#legal" data-i18n="nav_legal">Impressum</a>
         <div class="lang-toggle" role="group" aria-label="Language">
           <button type="button" data-lang="de" class="active">DE</button>
@@ -113,7 +114,65 @@
         </div>
         <div class="sample-banner" id="sample-banner"></div>
         <div class="machine-tabs" id="machine-tabs"></div>
+        <div class="stock-cta-row">
+          <a class="btn btn-ghost" href="#feedback" data-i18n="cta_request">Produkt wünschen</a>
+        </div>
         <div id="vm-root"></div>
+      </div>
+    </section>
+
+
+    <section id="feedback">
+      <div class="container">
+        <h2 data-i18n="fb_title">Produktwunsch & Feedback</h2>
+        <p class="section-lead" data-i18n="fb_lead">Sag uns, was du im Automaten sehen willst — oder melde ein Problem. Wir lesen jede Nachricht.</p>
+        <form class="fb-form" id="feedback-form" novalidate>
+          <input type="text" name="_honey" class="fb-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_subject" id="fb-subject" value="SmartDorf24 Website">
+
+          <div class="fb-grid">
+            <label class="fb-field">
+              <span data-i18n="fb_type">Art</span>
+              <select name="type" id="fb-type" required>
+                <option value="Produktwunsch" data-i18n="fb_type_request">Produktwunsch</option>
+                <option value="Feedback" data-i18n="fb_type_feedback">Feedback</option>
+                <option value="Problem mit Automat" data-i18n="fb_type_problem">Problem mit Automat</option>
+              </select>
+            </label>
+            <label class="fb-field">
+              <span data-i18n="fb_location">Standort / Automat</span>
+              <select name="location" id="fb-location">
+                <option value="egal" data-i18n="fb_loc_any">egal</option>
+                <option value="Steinsberg">Steinsberg</option>
+                <option value="Schiesheim">Schiesheim</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="fb-field">
+            <span data-i18n="fb_message">Nachricht</span>
+            <textarea name="message" id="fb-message" rows="5" required data-i18n-placeholder="fb_message_ph" placeholder="Welches Produkt fehlt, oder was ist passiert?"></textarea>
+          </label>
+
+          <div class="fb-grid">
+            <label class="fb-field">
+              <span><span data-i18n="fb_name">Name</span> <em data-i18n="fb_optional">(optional)</em></span>
+              <input type="text" name="name" id="fb-name" autocomplete="name" data-i18n-placeholder="fb_name_ph" placeholder="Dein Name">
+            </label>
+            <label class="fb-field">
+              <span><span data-i18n="fb_email">E-Mail</span> <em data-i18n="fb_optional">(optional)</em></span>
+              <input type="email" name="email" id="fb-email" autocomplete="email" data-i18n-placeholder="fb_email_ph" placeholder="für Rückfragen">
+            </label>
+          </div>
+
+          <p class="fb-privacy"><span data-i18n="fb_privacy">Deine Angaben nutzen wir nur, um zu antworten (DSGVO). Mehr im </span><a href="#legal" data-i18n="fb_privacy_link">Impressum / Datenschutz</a>.</p>
+
+          <div class="fb-actions">
+            <button type="submit" class="btn btn-primary" id="fb-submit" data-i18n="fb_submit">Absenden</button>
+            <p class="fb-status" id="fb-status" role="status" aria-live="polite" hidden></p>
+          </div>
+        </form>
       </div>
     </section>
 

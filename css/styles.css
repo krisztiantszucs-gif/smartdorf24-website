@@ -313,3 +313,27 @@ section h2 {
 .deal-card{padding-top:20px}
 .slot.expired { opacity: 0.5; filter: grayscale(1); }
 .slot.expired::after { background: #6b6b6b; }
+
+/* Feedback form */
+.stock-cta-row { margin: 8px 0 16px; }
+#feedback { padding: 56px 0; }
+.fb-form { max-width: 720px; margin-top: 8px; }
+.fb-honey { position: absolute; left: -9999px; height: 0; width: 0; opacity: 0; }
+.fb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 640px) { .fb-grid { grid-template-columns: 1fr; } }
+.fb-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; color: var(--muted); font-size: 0.92rem; }
+.fb-field em { font-style: normal; opacity: 0.7; font-size: 0.85em; }
+.fb-field input, .fb-field select, .fb-field textarea {
+  background: rgba(255,255,255,0.04); border: 1px solid var(--line); border-radius: 10px;
+  color: var(--text); padding: 12px 14px; font: inherit; outline: none;
+}
+.fb-field input:focus, .fb-field select:focus, .fb-field textarea:focus { border-color: var(--accent); }
+.fb-field textarea { resize: vertical; min-height: 120px; }
+.fb-privacy { color: var(--muted); font-size: 0.88rem; margin: 4px 0 16px; }
+.fb-privacy a { color: var(--accent); }
+.fb-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.fb-actions .btn { border: none; cursor: pointer; }
+.fb-actions .btn:disabled { opacity: 0.6; cursor: wait; }
+.fb-status { margin: 0; font-size: 0.95rem; }
+.fb-status.ok { color: #3dd6c6; }
+.fb-status.err { color: #ff6b7a; }

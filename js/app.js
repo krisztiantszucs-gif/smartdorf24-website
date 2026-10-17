@@ -48,6 +48,9 @@
     $$("[data-i18n]").forEach((el) => {
       el.textContent = t(el.getAttribute("data-i18n"));
     });
+    $$("[data-i18n-placeholder]").forEach((el) => {
+      el.setAttribute("placeholder", t(el.getAttribute("data-i18n-placeholder")));
+    });
     document.documentElement.lang = state.lang;
     $$(".lang-toggle button").forEach((b) => {
       b.classList.toggle("active", b.dataset.lang === state.lang);
@@ -365,12 +368,93 @@
     }
   }
 
+  function setFbSubject() {
+    const typeEl = $("#fb-type");
+    const sub = $("#fb-subject");
+    if (!typeEl || !sub) return;
+    const type = typeEl.value || "Feedback";
+    sub.value = `${t("fb_subject_prefix")} · ${type}`;
+  }
+
+  function bindFeedbackForm() {
+    const form = $("#feedback-form");
+    if (!form || form.dataset.bound) return;
+    form.dataset.bound = "1";
+    const status = $("#fb-status");
+    const btn = $("#fb-submit");
+    const typeEl = $("#fb-type");
+    if (typeEl) typeEl.addEventListener("change", setFbSubject);
+    setFbSubject();
+    form.addEventListener("submit", async (ev) => {
+      ev.preventDefault();
+      const msg = ($("#fb-message")?.value || "").trim();
+      if (!msg) {
+        status.hidden = false;
+        status.className = "fb-status err";
+        status.textContent = t("fb_need_msg");
+        return;
+      }
+      // honeypot filled => pretend success, do not send
+      const honey = form.querySelector('[name="_honey"]');
+      if (honey && honey.value) {
+        status.hidden = false;
+        status.className = "fb-status ok";
+        status.textContent = t("fb_ok");
+        form.reset();
+        setFbSubject();
+        return;
+      }
+      setFbSubject();
+      const payload = {
+        type: $("#fb-type").value,
+        location: $("#fb-location").value,
+        message: msg,
+        name: ($("#fb-name")?.value || "").trim() || undefined,
+        email: ($("#fb-email")?.value || "").trim() || undefined,
+        _subject: $("#fb-subject").value,
+        _template: "table",
+        _honey: "",
+        source: "smartdorf24.de",
+        lang: state.lang,
+      };
+      Object.keys(payload).forEach((k) => payload[k] === undefined && delete payload[k]);
+      btn.disabled = true;
+      status.hidden = false;
+      status.className = "fb-status";
+      status.textContent = t("fb_sending");
+      try {
+        const res = await fetch("https://formsubmit.co/ajax/service@smartdorf24.de", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (res.ok && (data.success === "true" || data.success === true || /ok|success|thank/i.test(JSON.stringify(data)))) {
+          status.className = "fb-status ok";
+          status.textContent = t("fb_ok");
+          form.reset();
+          setFbSubject();
+        } else {
+          throw new Error(data.message || data.error || res.statusText || "fail");
+        }
+      } catch (err) {
+        console.warn("feedback form", err);
+        status.className = "fb-status err";
+        status.textContent = t("fb_err");
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  }
+
   function bindUi() {
+    bindFeedbackForm();
     $$(".lang-toggle button").forEach((btn) => {
       btn.addEventListener("click", () => {
         state.lang = btn.dataset.lang;
         localStorage.setItem("sd24_lang", state.lang);
         applyI18n();
+        setFbSubject();
       });
     });
     const menuBtn = $("#menu-btn");
