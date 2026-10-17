@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-17T00:24:24.592Z",
+  "updatedAt": "2026-10-17T03:39:49.616Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-17T00:24:24.592Z",
+          "fetchedAt": "2026-10-17T03:39:49.616Z",
           "items": [
             {
               "lane": "1",
@@ -409,7 +409,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-17T00:24:24.592Z",
+          "fetchedAt": "2026-10-17T03:39:49.616Z",
           "items": [
             {
               "lane": "1",
@@ -621,7 +621,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-17T00:24:24.592Z",
+          "fetchedAt": "2026-10-17T03:39:49.616Z",
           "items": [
             {
               "lane": "1",
@@ -845,7 +845,7 @@
               "name": "Milka Tuc",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9f88c5fa7ec044c8ab92300767c9608b.png",
               "price": 2.1,
-              "stock": 1,
+              "stock": 0,
               "capacity": 10
             },
             {
@@ -980,7 +980,7 @@
               "name": "Reese's Pieces",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d72ff0b3e214ba5b2a36d2551c60677.png",
               "price": 2.1,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5
             },
             {
@@ -1010,7 +1010,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-17T00:24:24.592Z",
+          "fetchedAt": "2026-10-17T03:39:49.616Z",
           "items": [
             {
               "lane": "1",
@@ -1324,7 +1324,7 @@
               "name": "Fuze Tea Pfirsich 0,4L  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
               "price": 2.2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5
             },
             {
