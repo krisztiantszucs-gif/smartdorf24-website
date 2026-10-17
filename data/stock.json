@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-17T05:44:30.450Z",
+  "updatedAt": "2026-10-17T05:45:39.340Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-17T05:44:30.450Z",
+          "fetchedAt": "2026-10-17T05:45:39.340Z",
           "items": [
             {
               "lane": "1",
@@ -29,7 +29,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/369fe3b29e5f4559baee5414c67f4f14.jpeg",
               "price": 2,
               "stock": 2,
-              "capacity": 3
+              "capacity": 3,
+              "expired": false
             },
             {
               "lane": "2",
@@ -38,7 +39,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/31eb2a4173f048b6a0e6be16e1cec492.png",
               "price": 2.2,
               "stock": 1,
-              "capacity": 3
+              "capacity": 3,
+              "expired": false
             },
             {
               "lane": "3",
@@ -47,7 +49,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg",
               "price": 1.6,
               "stock": 2,
-              "capacity": 3
+              "capacity": 3,
+              "expired": false
             },
             {
               "lane": "4",
@@ -56,7 +59,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/45bdb2b506aa4e4f817a1fa69632e23b.jpeg",
               "price": 2,
               "stock": 2,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "5",
@@ -65,7 +69,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d2a974f4b2742a886b66e76d4be6888.png",
               "price": 3.5,
               "stock": 5,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "11",
@@ -74,7 +79,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
               "price": 2.5,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "12",
@@ -83,7 +89,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png",
               "price": 2.2,
               "stock": 2,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "13",
@@ -92,7 +99,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/751fbcdd61b84fa2aa312f993fff07cd.png",
               "price": 15,
               "stock": 1,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "14",
@@ -101,7 +109,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ad83eeacba7c464798f25516f2700eeb.png",
               "price": 13,
               "stock": 2,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "15",
@@ -110,7 +119,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/e4d09ddbc14045a7bf2f34ae6a6310a9.jpeg",
               "price": 2,
               "stock": 2,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "21",
@@ -119,7 +129,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d91a8269c52b468686ef6de20eabf4d7.png",
               "price": 2,
               "stock": 2,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "22",
@@ -128,7 +139,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
               "price": 1.1,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "23",
@@ -137,7 +149,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
               "price": 3,
               "stock": 1,
-              "capacity": 3
+              "capacity": 3,
+              "expired": false
             },
             {
               "lane": "24",
@@ -146,7 +159,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5bcdf3ec37c94f218c917fb7dd6ff76b.png",
               "price": 2.5,
               "stock": 5,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "25",
@@ -155,7 +169,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3830c0a5e93d4f08bd8f8e543c07615c.png",
               "price": 2,
               "stock": 3,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "31",
@@ -164,7 +179,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/51b41b5d91cb4df480eaacc429084388.png",
               "price": 1,
               "stock": 5,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "32",
@@ -173,7 +189,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
               "price": 1.3,
               "stock": 7,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "33",
@@ -182,7 +199,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
               "price": 1.9,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "34",
@@ -191,7 +209,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg",
               "price": 1.3,
               "stock": 7,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "35",
@@ -200,7 +219,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/590f59b9add746c6beb00de283b64173.jpg",
               "price": 1.3,
               "stock": 2,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "36",
@@ -209,7 +229,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9ea3981e806f47a29f6f18c5dfc3958b.png",
               "price": 1.5,
               "stock": 0,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "37",
@@ -218,7 +239,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png",
               "price": 1,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "38",
@@ -227,7 +249,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ed7b5378c2cf49fd89f1a9e547c0fbff.jpeg",
               "price": 2.4,
               "stock": 3,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "39",
@@ -236,7 +259,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/edb4a6fbf94c483b98aa3fd5c7fd70a1.png",
               "price": 3,
               "stock": 5,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "41",
@@ -245,7 +269,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0d19a0bd2c174af5a3fdc1f611c5efcf.png",
               "price": 1,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "42",
@@ -254,7 +279,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "43",
@@ -263,7 +289,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/dbc4ec1647874649a3fa390bcce36def.jpeg",
               "price": 2.2,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "44",
@@ -272,7 +299,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "45",
@@ -281,7 +309,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
               "price": 2.2,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "46",
@@ -290,7 +319,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
               "price": 2.2,
               "stock": 2,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "47",
@@ -299,7 +329,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
               "price": 2,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "48",
@@ -308,7 +339,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bc904bb2cfd4f06acba2b827b3eba2a.jpeg",
               "price": 2.5,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "49",
@@ -317,7 +349,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
               "price": 1.6,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "51",
@@ -326,7 +359,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
               "price": 1.6,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "52",
@@ -335,7 +369,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
               "price": 1.6,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "53",
@@ -344,7 +379,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "54",
@@ -353,7 +389,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "55",
@@ -362,7 +399,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "56",
@@ -371,7 +409,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
               "price": 1.6,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "57",
@@ -380,7 +419,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
               "price": 1.6,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "58",
@@ -389,7 +429,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "59",
@@ -398,7 +439,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             }
           ]
         },
@@ -409,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-17T05:44:30.450Z",
+          "fetchedAt": "2026-10-17T05:45:39.340Z",
           "items": [
             {
               "lane": "1",
@@ -418,7 +460,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png",
               "price": 2.2,
               "stock": 0,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "23",
@@ -427,7 +470,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
               "price": 1,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": true
             },
             {
               "lane": "24",
@@ -436,7 +480,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/431b28fb18b54f7ba96ac98210dc7632.jpeg",
               "price": 0.7,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": true
             },
             {
               "lane": "41",
@@ -445,7 +490,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
               "price": 1.6,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "42",
@@ -454,7 +500,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg",
               "price": 1.6,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": true
             },
             {
               "lane": "43",
@@ -463,7 +510,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
               "price": 1.9,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "44",
@@ -472,7 +520,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6baacaaf2c06466f9267459c0a57a83f.jpeg",
               "price": 1,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "45",
@@ -481,7 +530,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
               "price": 1.8,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "46",
@@ -490,7 +540,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "47",
@@ -499,7 +550,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
               "price": 2.2,
               "stock": 5,
-              "capacity": 10
+              "capacity": 10,
+              "expired": true
             },
             {
               "lane": "48",
@@ -508,7 +560,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/dbc4ec1647874649a3fa390bcce36def.jpeg",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "49",
@@ -517,7 +570,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "51",
@@ -526,7 +580,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
               "price": 1.7,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "52",
@@ -535,7 +590,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
               "price": 1.7,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "53",
@@ -544,7 +600,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "54",
@@ -553,7 +610,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
               "price": 2.1,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": true
             },
             {
               "lane": "55",
@@ -562,7 +620,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "56",
@@ -571,7 +630,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
               "price": 1.6,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "57",
@@ -580,7 +640,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d7bd7e02a79d4da78a8967d24da8f8c5.png",
               "price": 2,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": true
             },
             {
               "lane": "58",
@@ -589,7 +650,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": true
             },
             {
               "lane": "59",
@@ -598,7 +660,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             }
           ]
         }
@@ -621,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-17T05:44:30.450Z",
+          "fetchedAt": "2026-10-17T05:45:39.340Z",
           "items": [
             {
               "lane": "1",
@@ -630,7 +693,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/369fe3b29e5f4559baee5414c67f4f14.jpeg",
               "price": 2,
               "stock": 3,
-              "capacity": 3
+              "capacity": 3,
+              "expired": false
             },
             {
               "lane": "2",
@@ -639,7 +703,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/45bdb2b506aa4e4f817a1fa69632e23b.jpeg",
               "price": 2,
               "stock": 2,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "3",
@@ -648,7 +713,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/df4e4440188744f6a6dd473a252bcaaa.png",
               "price": 1.6,
               "stock": 2,
-              "capacity": 2
+              "capacity": 2,
+              "expired": false
             },
             {
               "lane": "4",
@@ -657,7 +723,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6d19cf4273e5473fac0019429005b22a.png",
               "price": 3.5,
               "stock": 2,
-              "capacity": 3
+              "capacity": 3,
+              "expired": false
             },
             {
               "lane": "5",
@@ -666,7 +733,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d2a974f4b2742a886b66e76d4be6888.png",
               "price": 3.6,
               "stock": 10,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "11",
@@ -675,7 +743,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg",
               "price": 1.6,
               "stock": 3,
-              "capacity": 3
+              "capacity": 3,
+              "expired": false
             },
             {
               "lane": "12",
@@ -684,7 +753,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
               "price": 2.5,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "13",
@@ -693,7 +763,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
               "price": 3,
               "stock": 0,
-              "capacity": 3
+              "capacity": 3,
+              "expired": false
             },
             {
               "lane": "14",
@@ -702,7 +773,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/4526ecb8de7c4894bc789a7bf66d47ac.png",
               "price": 3,
               "stock": 3,
-              "capacity": 3
+              "capacity": 3,
+              "expired": false
             },
             {
               "lane": "15",
@@ -711,7 +783,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/19ed1a7d28ba4323b2117da96de7bcb0.png",
               "price": 1.5,
               "stock": 6,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "21",
@@ -720,7 +793,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9b9bd38faafe47e8b79f35eced831897.png",
               "price": 2,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "22",
@@ -729,7 +803,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5bcdf3ec37c94f218c917fb7dd6ff76b.png",
               "price": 2.5,
               "stock": 5,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "23",
@@ -738,7 +813,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/751fbcdd61b84fa2aa312f993fff07cd.png",
               "price": 15,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "24",
@@ -747,7 +823,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ad83eeacba7c464798f25516f2700eeb.png",
               "price": 13,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "25",
@@ -756,7 +833,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/edb4a6fbf94c483b98aa3fd5c7fd70a1.png",
               "price": 3,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "31",
@@ -765,7 +843,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/24fdb100b98241e6a7f95ce26ee3a4e5.png",
               "price": 2.1,
               "stock": 4,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "32",
@@ -774,7 +853,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fe511a8730aa4065bb9f5b7232ba325f.png",
               "price": 1.6,
               "stock": 2,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "33",
@@ -783,7 +863,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/304baa5cb88c4acda661fb056a8ab958.png",
               "price": 2.4,
               "stock": 2,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "34",
@@ -792,7 +873,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b22597f3c98b49c895f27b149d2130ce.jpeg",
               "price": 1.6,
               "stock": 2,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "35",
@@ -801,7 +883,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png",
               "price": 1,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "36",
@@ -810,7 +893,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/119a07410be244859196a501e09d45b1.jpeg",
               "price": 2.5,
               "stock": 2,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "37",
@@ -819,7 +903,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/537fcfd985df4edda29937d78af14900.png",
               "price": 2.2,
               "stock": 2,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "38",
@@ -828,7 +913,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ea50b19a795e4218a290e7cebbf00150.png",
               "price": 2.2,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "39",
@@ -837,7 +923,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fc3826465a294e76b32bce15829942ae.jpeg",
               "price": 2.1,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "41",
@@ -846,7 +933,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9f88c5fa7ec044c8ab92300767c9608b.png",
               "price": 2.1,
               "stock": 0,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "42",
@@ -855,7 +943,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/590f59b9add746c6beb00de283b64173.jpg",
               "price": 1.3,
               "stock": 4,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "43",
@@ -864,7 +953,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
               "price": 1.6,
               "stock": 8,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "44",
@@ -873,7 +963,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
               "price": 1.9,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "45",
@@ -882,7 +973,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
               "price": 1.9,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "46",
@@ -891,7 +983,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3f50b805073545368488b956fa847e33.jpeg",
               "price": 2.5,
               "stock": 1,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "47",
@@ -900,7 +993,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg",
               "price": 1.2,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "48",
@@ -909,7 +1003,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/de24003846ac4af6b982be92a01f78ae.jpg",
               "price": 0.8,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "49",
@@ -918,7 +1013,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ff6d807696574fe1934323de18cceaaa.jpg",
               "price": 0.8,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "51",
@@ -927,7 +1023,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
               "price": 1.6,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "52",
@@ -936,7 +1033,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
               "price": 1.9,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "53",
@@ -945,7 +1043,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
               "price": 2.2,
               "stock": 2,
-              "capacity": 3
+              "capacity": 3,
+              "expired": false
             },
             {
               "lane": "54",
@@ -954,7 +1053,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
               "price": 2.2,
               "stock": 3,
-              "capacity": 3
+              "capacity": 3,
+              "expired": false
             },
             {
               "lane": "55",
@@ -963,7 +1063,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ed7b5378c2cf49fd89f1a9e547c0fbff.jpeg",
               "price": 2.3,
               "stock": 2,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "56",
@@ -972,7 +1073,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9440e493398c42ac8c7e82aef9ac1a0d.jpeg",
               "price": 2.3,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "57",
@@ -981,7 +1083,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d72ff0b3e214ba5b2a36d2551c60677.png",
               "price": 2.1,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "58",
@@ -990,7 +1093,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ff6bf09c006840d3bf9b740ec9011da7.png",
               "price": 2.2,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "59",
@@ -999,7 +1103,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ae29a5ec902b457e96ef0922c721afa2.jpeg",
               "price": 1.3,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             }
           ]
         },
@@ -1010,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-17T05:44:30.450Z",
+          "fetchedAt": "2026-10-17T05:45:39.340Z",
           "items": [
             {
               "lane": "1",
@@ -1019,7 +1124,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d66fb02721c545bfbfcf87bf8d691765.png",
               "price": 4,
               "stock": 0,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "2",
@@ -1028,7 +1134,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/a4a3eafe57d34304b708981033db4b67.png",
               "price": 3.5,
               "stock": 2,
-              "capacity": 2
+              "capacity": 2,
+              "expired": false
             },
             {
               "lane": "3",
@@ -1037,7 +1144,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d35471b285684c71b4b5c7a7c36d0e05.png",
               "price": 1.6,
               "stock": 2,
-              "capacity": 2
+              "capacity": 2,
+              "expired": false
             },
             {
               "lane": "4",
@@ -1046,7 +1154,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/203be2d8ff3c4d74a8b4a6a6840733ee.png",
               "price": 2.5,
               "stock": 2,
-              "capacity": 2
+              "capacity": 2,
+              "expired": false
             },
             {
               "lane": "11",
@@ -1055,7 +1164,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7a5d3b9b063e45288bcc085cdc282ea8.png",
               "price": 2,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "12",
@@ -1064,7 +1174,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6896b049df3448f294dfef12ff6b089b.png",
               "price": 3,
               "stock": 2,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "13",
@@ -1073,7 +1184,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/707c24edb06d4270bc6b55b8d5813bff.png",
               "price": 2.8,
               "stock": 2,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "15",
@@ -1082,7 +1194,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/01fa843caec14bc0a8f69484dabd1b35.png",
               "price": 2.5,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "21",
@@ -1091,7 +1204,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
               "price": 1.1,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "22",
@@ -1100,7 +1214,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/431b28fb18b54f7ba96ac98210dc7632.jpeg",
               "price": 1,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "23",
@@ -1109,7 +1224,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8f5389a2fb7e488097764d7913614517.png",
               "price": 2.5,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "24",
@@ -1118,7 +1234,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/caf6528418524bef92340800768e8668.jpg",
               "price": 2.8,
               "stock": 2,
-              "capacity": 5
+              "capacity": 5,
+              "expired": true
             },
             {
               "lane": "31",
@@ -1127,7 +1244,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
               "price": 1,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "32",
@@ -1136,7 +1254,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
               "price": 1,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "33",
@@ -1145,7 +1264,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
               "price": 1.6,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "34",
@@ -1154,7 +1274,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6baacaaf2c06466f9267459c0a57a83f.jpeg",
               "price": 1,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "35",
@@ -1163,7 +1284,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/51b41b5d91cb4df480eaacc429084388.png",
               "price": 1,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "36",
@@ -1172,7 +1294,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0d19a0bd2c174af5a3fdc1f611c5efcf.png",
               "price": 1,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "37",
@@ -1181,7 +1304,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/82cbed567b1146208d8e538e594ce1e2.jpeg",
               "price": 2.2,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "38",
@@ -1190,7 +1314,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg",
               "price": 1.6,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "39",
@@ -1199,7 +1324,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
               "price": 1.6,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "41",
@@ -1208,7 +1334,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/cfa688d0e6504560ab0a32919372d0ca.jpeg",
               "price": 2.5,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "42",
@@ -1217,7 +1344,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d75325ea045341adbce08e43955de5f4.jpeg",
               "price": 2.5,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "43",
@@ -1226,7 +1354,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bc904bb2cfd4f06acba2b827b3eba2a.jpeg",
               "price": 2.7,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "44",
@@ -1235,7 +1364,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
               "price": 2,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "45",
@@ -1244,7 +1374,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
               "price": 1.6,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "46",
@@ -1253,7 +1384,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
               "price": 2.2,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "47",
@@ -1262,7 +1394,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
               "price": 2.2,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "48",
@@ -1271,7 +1404,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "49",
@@ -1280,7 +1414,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "51",
@@ -1289,7 +1424,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
               "price": 2,
               "stock": 5,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "52",
@@ -1298,7 +1434,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
               "price": 2,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "53",
@@ -1307,7 +1444,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
               "price": 2.2,
               "stock": 3,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "54",
@@ -1316,7 +1454,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
               "price": 2.2,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "55",
@@ -1325,7 +1464,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
               "price": 2.2,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "56",
@@ -1334,7 +1474,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
               "price": 2.2,
               "stock": 2,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "57",
@@ -1343,7 +1484,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
               "price": 2,
               "stock": 3,
-              "capacity": 10
+              "capacity": 10,
+              "expired": false
             },
             {
               "lane": "58",
@@ -1352,7 +1494,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
               "price": 2.2,
               "stock": 4,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             },
             {
               "lane": "59",
@@ -1361,7 +1504,8 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
               "price": 2.2,
               "stock": 1,
-              "capacity": 5
+              "capacity": 5,
+              "expired": false
             }
           ]
         }

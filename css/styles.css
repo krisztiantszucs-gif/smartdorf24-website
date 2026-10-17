@@ -311,3 +311,5 @@ section h2 {
 .deal-new{font-weight:800;color:#ffd54a;font-size:1.2rem}
 .deal-until{font-size:.85rem;color:#ffbcbc}
 .deal-card{padding-top:20px}
+.slot.expired { opacity: 0.5; filter: grayscale(1); }
+.slot.expired::after { background: #6b6b6b; }

@@ -100,6 +100,8 @@ function cargoName(c) {
   return String(c.commodityName || commodity.name || commodity.brandName || "").trim();
 }
 
+const TODAY_BERLIN = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Berlin", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+
 function sanitizeCargo(c) {
   const commodity = c.commodity || {};
   const name = cargoName(c);
@@ -112,6 +114,11 @@ function sanitizeCargo(c) {
     price: Number(c.price ?? 0),
     stock: Number(c.stock ?? 0),
     capacity: Number(c.capacity ?? 0),
+    // best-before passed (Berlin) and still stocked -> shown as "Abgelaufen / Expired"
+    expired: (() => {
+      const eff = c.effDate ? String(c.effDate).slice(0, 10) : "";
+      return !!eff && eff < TODAY_BERLIN && Number(c.stock ?? 0) > 0;
+    })(),
   };
 }
 

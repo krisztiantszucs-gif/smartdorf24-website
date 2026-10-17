@@ -74,7 +74,7 @@
     const items = Object.values(state.discounts?.active || {})
       .filter((a) => !a.effDate || a.effDate >= today)
       .map((a) => ({ a, ...(lookup[a.rtuNumber + ":" + a.lane] || {}) }))
-      .filter((x) => !x.it || Number(x.it.stock) > 0)
+      .filter((x) => !x.it || (Number(x.it.stock) > 0 && !x.it.expired))
       .sort((x, y) => (Number(y.a.percent || 50) - Number(x.a.percent || 50)) || String(x.a.effDate).localeCompare(String(y.a.effDate)));
     if (!items.length) { sec.hidden = true; grid.innerHTML = ""; return; }
     sec.hidden = false;
@@ -248,17 +248,18 @@
                 .get(lvl)
                 .map((item) => {
                   const sold = Number(item.stock) <= 0;
+                  const expired = !sold && !!item.expired;
                   const badge = stockBadgeClass(item.stock, item.capacity);
                   const letter = escapeHtml((item.name || "?").slice(0, 1));
                   const img = item.image
                     ? `<img src="${escapeAttr(item.image)}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><div class="slot-fallback" style="display:none">${letter}</div>`
                     : `<div class="slot-fallback">${letter}</div>`;
-                  const disc = discountFor(machine.rtuNumber, item.lane);
+                  const disc = expired ? null : discountFor(machine.rtuNumber, item.lane);
                   const priceHtml = disc
                     ? `<span class="price-wrap"><span class="price-old">${formatMoney(disc.originalPrice)}</span><span class="price">${formatMoney(item.price)}</span></span>`
                     : `<span class="price">${formatMoney(item.price)}</span>`;
                   const saleBadge = disc ? `<span class="badge-sale">−${Number(disc.percent || 50)}%</span>` : "";
-                  return `<div class="slot ${sold ? "soldout" : ""}" data-soldout="${escapeAttr(t("sold_out"))}">
+                  return `<div class="slot ${sold || expired ? "soldout" : ""} ${expired ? "expired" : ""}" data-soldout="${escapeAttr(t(expired ? "expired" : "sold_out"))}">
                     ${saleBadge}
                     ${img}
                     <div class="name" title="${escapeAttr(item.name || "")}">${escapeHtml(item.name || "")}</div>
