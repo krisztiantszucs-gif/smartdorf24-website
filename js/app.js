@@ -429,13 +429,15 @@
           body: JSON.stringify(payload),
         });
         const data = await res.json().catch(() => ({}));
-        if (res.ok && (data.success === "true" || data.success === true || /ok|success|thank/i.test(JSON.stringify(data)))) {
+        const msg = String(data.message || data.error || "");
+        const activatedWait = /activat/i.test(msg);
+        const ok = data.success === "true" || data.success === true || activatedWait;
+        if (res.ok && ok) {
           status.className = "fb-status ok";
-          status.textContent = t("fb_ok");
-          form.reset();
-          setFbSubject();
+          status.textContent = activatedWait ? t("fb_activate") : t("fb_ok");
+          if (!activatedWait) { form.reset(); setFbSubject(); }
         } else {
-          throw new Error(data.message || data.error || res.statusText || "fail");
+          throw new Error(msg || res.statusText || "fail");
         }
       } catch (err) {
         console.warn("feedback form", err);
