@@ -169,6 +169,8 @@ def main():
     ap.add_argument("--rtus", default="all")
     ap.add_argument("--segments", default="karamalz,live,deals",
                     help="comma-separated: karamalz,live,deals")
+    ap.add_argument("--deals-json", default="",
+                    help="optional verified deals JSON from combined.mjs")
     o = ap.parse_args()
     kar = fetch_img(o.karamalz) if o.karamalz else None
     qr = Image.open(o.qr).convert("RGB")
@@ -180,18 +182,33 @@ def main():
         for m in loc["machines"]:
             if rtus and str(m.get("rtuNumber")) not in rtus: continue
             for it in m["items"]:
-                if it.get("image") and it.get("stock",0) > 0 and len(thumbs) < 5:
+                if it.get("image") and it.get("stock",0) > 0 and not it.get("expired") and len(thumbs) < 5:
                     im = fetch_img(it["image"])
                     if im: thumbs.append(im)
-    today = datetime.date.today()
+    # Berlin "today" — Actions runners are UTC
+    today = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=2))).date()  # CEST approx; overridden below
+    try:
+        from zoneinfo import ZoneInfo
+        today = datetime.datetime.now(ZoneInfo("Europe/Berlin")).date()
+    except Exception:
+        pass
     deals = []
-    for a in (disc.get("active") or {}).values():
-        if rtus and str(a.get("rtuNumber")) not in rtus: continue
-        try:
-            if datetime.date.fromisoformat(a["effDate"]) >= today:
-                dd = datetime.date.fromisoformat(a["effDate"])
-                deals.append({"name":a["name"],"old":float(a["originalPrice"]),"new":float(a["discountPrice"]),"until":dd.strftime("%d.%m."),"pct":int(a.get("percent") or 50)})
-        except Exception: pass
+    if o.deals_json and os.path.exists(o.deals_json):
+        raw = json.load(open(o.deals_json)).get("deals") or []
+        for a in raw:
+            try:
+                dd = datetime.date.fromisoformat(str(a["until"])[:10]) if "-" in str(a.get("until","")) else None
+                until = dd.strftime("%d.%m.") if dd else str(a.get("until",""))
+                deals.append({"name":a["name"],"old":float(a["old"]),"new":float(a["new"]),"until":until,"pct":int(a.get("pct") or 50)})
+            except Exception: pass
+    else:
+        for a in (disc.get("active") or {}).values():
+            if rtus and str(a.get("rtuNumber")) not in rtus: continue
+            try:
+                if datetime.date.fromisoformat(a["effDate"]) >= today:
+                    dd = datetime.date.fromisoformat(a["effDate"])
+                    deals.append({"name":a["name"],"old":float(a["originalPrice"]),"new":float(a["discountPrice"]),"until":dd.strftime("%d.%m."),"pct":int(a.get("percent") or 50)})
+            except Exception: pass
     builders = {}
     if kar is not None:
         builders["karamalz"] = lambda t, _k=kar: seg_karamalz(t, _k)

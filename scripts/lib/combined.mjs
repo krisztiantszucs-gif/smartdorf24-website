@@ -1,23 +1,20 @@
-// Combined 30s ad (Karamalz + Live-Bestand + Deals) as ONE group on all machines.
-// Bind set per RTU = night screensavers (final1/final2) + SD24-combined-grp.
-import { readFileSync, existsSync, mkdirSync } from "node:fs";
+// Per-location combined ads. Bind set per RTU = final1/final2 + location group.
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { join } from "node:path";
-import { MACHINES, api, BASE } from "./impressiot.mjs";
+import { MACHINES, api, BASE, fetchReplenish, berlinToday } from "./impressiot.mjs";
 
 export const NIGHT_GROUPS = ["100000785", "100000786"]; // final1, final2 — never touch
 export const LOCATIONS = {
   steinsberg: {
     groupName: "SD24-combined-steinsberg",
     rtus: ["7680800", "7680783"],
-    // Karamalz is stocked here — keep the 30s three-segment cut.
     segments: ["karamalz", "live", "deals"],
   },
   schiesheim: {
     groupName: "SD24-combined-schiesheim",
     rtus: ["7680787", "7680782"],
-    // No Karamalz at this location — live-stock + deals only (~20s).
     segments: ["live", "deals"],
   },
 };
@@ -27,21 +24,67 @@ function ok(r, what) {
   return r.json;
 }
 
+/** Active discounts for rtus whose live machine price still equals discountPrice. */
+export async function verifiedDeals(token, state, rtus, today = berlinToday()) {
+  const priceByLane = new Map();
+  for (const rtu of rtus) {
+    const row = await fetchReplenish(token, rtu);
+    for (const c of row.cargos || []) {
+      if (!c.commodityName) continue;
+      priceByLane.set(`${rtu}:${c.cargoNumber}`, Number(c.price));
+    }
+  }
+  const deals = [];
+  const dropped = [];
+  for (const a of Object.values(state.active || {})) {
+    if (!rtus.includes(String(a.rtuNumber))) continue;
+    const eff = a.effDate ? String(a.effDate).slice(0, 10) : "";
+    if (!eff || eff < today) {
+      dropped.push({ key: `${a.rtuNumber}:${a.lane}`, reason: "effDate-past", name: a.name });
+      continue;
+    }
+    const key = `${a.rtuNumber}:${a.lane}`;
+    const live = priceByLane.get(key);
+    const want = Number(a.discountPrice);
+    if (live == null || Number(live) !== want) {
+      dropped.push({ key, reason: `live=${live} want=${want}`, name: a.name });
+      continue;
+    }
+    deals.push({
+      rtuNumber: String(a.rtuNumber),
+      lane: String(a.lane),
+      name: a.name,
+      old: Number(a.originalPrice),
+      new: want,
+      pct: Number(a.percent || 50),
+      until: eff,
+    });
+  }
+  deals.sort((x, y) => y.pct - x.pct || x.until.localeCompare(y.until) || x.name.localeCompare(y.name));
+  if (dropped.length) console.log(`deals dropped (stale/mismatch): ${dropped.map((d) => `${d.name}(${d.reason})`).join("; ")}`);
+  console.log(`verified deals (${rtus.join(",")}): ${deals.map((d) => `${d.name} −${d.pct}% @${d.new}`).join("; ") || "(none)"}`);
+  return deals;
+}
+
+export function dealsHash(deals, segments = []) {
+  const items = deals.map((d) => [d.rtuNumber, d.lane, d.name, d.old, d.new, d.pct, d.until].join("|"));
+  return createHash("sha256").update(JSON.stringify({ items, segments })).digest("hex").slice(0, 16);
+}
+
+/** @deprecated use dealsHash(verifiedDeals(...)) */
 export function discountsHash(state, rtus, segments = []) {
   const items = Object.values(state.active || {})
     .filter((a) => !rtus || rtus.includes(String(a.rtuNumber)))
     .map((a) => [a.rtuNumber, a.lane, a.name, a.originalPrice, a.discountPrice, a.percent, a.effDate].join("|"))
     .sort();
-  // Include segment layout so a config change (e.g. drop Karamalz) triggers regen.
-  return createHash("sha256")
-    .update(JSON.stringify({ items, segments }))
-    .digest("hex")
-    .slice(0, 16);
+  return createHash("sha256").update(JSON.stringify({ items, segments })).digest("hex").slice(0, 16);
 }
 
-export function renderCombined(root, outDir, loc = "all", rtus = [], segments = ["karamalz", "live", "deals"]) {
+export function renderCombined(root, outDir, loc = "all", rtus = [], segments = ["karamalz", "live", "deals"], deals = null) {
   mkdirSync(outDir, { recursive: true });
   const out = join(outDir, `sd24-combined-${loc}.mp4`);
+  const dealsPath = join(outDir, `deals-${loc}.json`);
+  if (deals) writeFileSync(dealsPath, JSON.stringify({ deals }, null, 2));
   const args = [
     join(root, "scripts", "make-combined-ad.py"),
     "--qr", join(root, "assets", "ads", "qr.png"),
@@ -52,9 +95,8 @@ export function renderCombined(root, outDir, loc = "all", rtus = [], segments = 
     "--rtus", rtus.join(",") || "all",
     "--segments", segments.join(","),
   ];
-  if (segments.includes("karamalz")) {
-    args.push("--karamalz", join(root, "assets", "ads", "karamalz.jpg"));
-  }
+  if (deals) args.push("--deals-json", dealsPath);
+  if (segments.includes("karamalz")) args.push("--karamalz", join(root, "assets", "ads", "karamalz.jpg"));
   execFileSync("python3", args, { stdio: "inherit" });
   return out;
 }
@@ -92,14 +134,13 @@ async function findByName(token, path, name) {
 }
 
 /**
- * Per location: regenerate (if hash changed/forced), upload new material, point the
- * location group at it, bind each machine of that location to night groups + its
- * location group, verify, push update_ads. Rolls back bindings on failure.
+ * Per location: verify deals vs live prices, regenerate when that set/hash changes,
+ * upload, point location group at new material, bind night+location groups, verify,
+ * ALWAYS push update_ads (so devices retry sync even when hash was unchanged).
  */
 export async function swapCombined(token, state, { root, outDir, today, force = false, dryRun = false, onlyLoc = null } = {}) {
   state.permanentAds ||= {};
   const byLoc = (state.permanentAds.combinedByLocation ||= {});
-  // migrate legacy single group: reuse its group id for Steinsberg
   const legacy = state.permanentAds.combined;
   if (legacy && !byLoc.steinsberg) byLoc.steinsberg = { advertiseGroupItemId: legacy.advertiseGroupItemId, legacy: true };
   const all = { changed: false, results: [] };
@@ -110,23 +151,26 @@ export async function swapCombined(token, state, { root, outDir, today, force = 
       if (onlyLoc && loc !== onlyLoc) continue;
       const cur = byLoc[loc] || {};
       const segments = cfg.segments || ["karamalz", "live", "deals"];
-      const hash = discountsHash(state, cfg.rtus, segments);
+      const deals = await verifiedDeals(token, state, cfg.rtus, today);
+      const hash = dealsHash(deals, segments);
       const needVideo = force || !cur.advertiseId || cur.hash !== hash;
-      console.log(`combined[${loc}]: hash=${hash} prev=${cur.hash || "-"} regenerate=${needVideo}`);
+      console.log(`combined[${loc}]: hash=${hash} prev=${cur.hash || "-"} regenerate=${needVideo} deals=${deals.length}`);
       if (dryRun) continue;
       let { advertiseId, adName, url } = cur;
       if (needVideo) {
-        const file = renderCombined(root, outDir, loc, cfg.rtus, segments);
+        const file = renderCombined(root, outDir, loc, cfg.rtus, segments, deals);
         adName = `SD24-combined-${loc}-${today}-${hash.slice(0, 6)}`;
         url = await uploadVideo(token, file, adName);
         ok(await api(token, "POST", "/advertise/save", {
-          body: { name: adName, url, mediaType: "video", remark: `SmartDorf24 combined 30s ${loc}`, minutes: 0 } }), "advertise/save");
+          body: { name: adName, url, mediaType: "video", remark: `SmartDorf24 combined ${loc}`, minutes: 0 } }), "advertise/save");
         const adv = await findByName(token, "/advertise/page", adName);
         if (!adv?.id) throw new Error("could not resolve new advertise id");
         advertiseId = String(adv.id);
       }
-      const groupBody = { name: cfg.groupName, advertiseIds: [String(advertiseId)], beginTime: "00:00:00",
-        endTime: "23:59:59", mediaType: "video", isScreenProtection: "0" };
+      const groupBody = {
+        name: cfg.groupName, advertiseIds: [String(advertiseId)], beginTime: "00:00:00",
+        endTime: "23:59:59", mediaType: "video", isScreenProtection: "0",
+      };
       let groupId = cur.advertiseGroupItemId || (await findByName(token, "/advertiseGroupItem/page", cfg.groupName))?.id;
       if (!groupId) {
         ok(await api(token, "POST", "/advertiseGroupItem/save", { body: groupBody }), "group/save");
@@ -148,10 +192,16 @@ export async function swapCombined(token, state, { root, outDir, today, force = 
           throw new Error(`verify failed on ${rtu}: got [${after}] want [${want}]`);
         locResults.push({ loc, rtu, sn: m.serial, before, after, rebound: !same });
       }
-      pending.push({ loc, needVideo, locResults, entry: { advertiseId: String(advertiseId), advertiseGroupItemId: groupId, adName,
-        groupName: cfg.groupName, url, hash, segments, nightGroups: NIGHT_GROUPS, boundRtus: cfg.rtus,
-        previousAdvertiseId: needVideo && cur.advertiseId !== advertiseId ? cur.advertiseId || null : cur.previousAdvertiseId || null,
-        updatedAt: new Date().toISOString() } });
+      pending.push({
+        loc, needVideo, locResults, deals,
+        entry: {
+          advertiseId: String(advertiseId), advertiseGroupItemId: groupId, adName,
+          groupName: cfg.groupName, url, hash, segments, verifiedDeals: deals,
+          nightGroups: NIGHT_GROUPS, boundRtus: cfg.rtus,
+          previousAdvertiseId: needVideo && cur.advertiseId !== advertiseId ? cur.advertiseId || null : cur.previousAdvertiseId || null,
+          updatedAt: new Date().toISOString(),
+        },
+      });
     }
   } catch (e) {
     console.error(`combined swap failed: ${e.message} — rolling back bindings`);
@@ -163,7 +213,8 @@ export async function swapCombined(token, state, { root, outDir, today, force = 
   }
   for (const p of pending) {
     for (const r of p.locResults) {
-      if (p.needVideo || r.rebound) r.updateAds = await pushUpdateAds(token, r.sn);
+      // Always push update_ads so a missed device sync is retried on every job run.
+      r.updateAds = await pushUpdateAds(token, r.sn);
       all.results.push(r);
     }
     byLoc[p.loc] = p.entry;

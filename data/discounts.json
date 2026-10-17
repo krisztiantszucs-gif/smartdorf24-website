@@ -49,12 +49,37 @@
     },
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100001937",
+        "advertiseId": "100001951",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-10-17-f101ba",
+        "adName": "SD24-combined-steinsberg-2026-10-17-4c597b",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3597094290f74cf7901d91c05c37e4c4.mp4",
-        "hash": "f101ba7235cf0f81",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/06768ecaf08f4dc5894aa0e1cb1c85d4.mp4",
+        "hash": "4c597b48274f0312",
+        "segments": [
+          "karamalz",
+          "live",
+          "deals"
+        ],
+        "verifiedDeals": [
+          {
+            "rtuNumber": "7680783",
+            "lane": "3",
+            "name": "Popp Kartoffelsalat Klassik",
+            "old": 3.2,
+            "new": 1.6,
+            "pct": 50,
+            "until": "2026-10-19"
+          },
+          {
+            "rtuNumber": "7680800",
+            "lane": "3",
+            "name": "Golden Toast Vollkorn 250g",
+            "old": 2,
+            "new": 1.6,
+            "pct": 20,
+            "until": "2026-10-20"
+          }
+        ],
         "nightGroups": [
           "100000785",
           "100000786"
@@ -63,8 +88,8 @@
           "7680800",
           "7680783"
         ],
-        "previousAdvertiseId": "100001928",
-        "updatedAt": "2026-10-17T09:54:43.687Z"
+        "previousAdvertiseId": "100001937",
+        "updatedAt": "2026-10-17T17:31:23.739Z"
       },
       "schiesheim": {
         "advertiseId": "100001950",
@@ -77,6 +102,7 @@
           "live",
           "deals"
         ],
+        "verifiedDeals": [],
         "nightGroups": [
           "100000785",
           "100000786"
@@ -86,7 +112,7 @@
           "7680782"
         ],
         "previousAdvertiseId": "100001938",
-        "updatedAt": "2026-10-17T15:58:33.685Z"
+        "updatedAt": "2026-10-17T17:31:33.062Z"
       }
     }
   },
