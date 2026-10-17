@@ -199,14 +199,14 @@ async function findGroupByName(token, name) {
 
 async function removeAdvertise(token, id) {
   const { http, json } = await api(token, "POST", "/advertise/remove", {
-    body: { ids: [String(id)] },
+    body: { id: String(id) },
   });
   console.log(`advertise/remove ${id} HTTP ${http} code=${json.code}`);
 }
 
 async function removeGroup(token, id) {
   const { http, json } = await api(token, "POST", "/advertiseGroupItem/remove", {
-    body: { ids: [String(id)] },
+    body: { id: String(id) },
   });
   console.log(`group/remove ${id} HTTP ${http} code=${json.code}`);
 }

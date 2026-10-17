@@ -1,4 +1,8 @@
-// Per-location combined ads. Bind set per RTU = final1/final2 + location group.
+// Per-location combined ads.
+// In the ImpressIoT panel, "广告策略" (Advertising Strategy) under /market-strategy
+// IS the program-group↔device bind list (POST /advertiseGroupItemBindRtu/page).
+// There is no separate strategy/playlist entity — binding groups to RTUs is the strategy.
+// Bind set per RTU = final1/final2 (night schedules) + location combined group.
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
@@ -128,6 +132,14 @@ async function uploadVideo(token, file, name) {
   return url.startsWith("http") ? url : BASE + (url.startsWith("/") ? "" : "/") + url;
 }
 
+
+async function removeAdvertise(token, id) {
+  if (!id) return false;
+  const r = await api(token, "POST", "/advertise/remove", { body: { id: String(id) } });
+  console.log(`advertise/remove ${id} HTTP ${r.http} code=${r.json.code} msg=${r.json.msg || ""}`);
+  return r.http === 200 && r.json.code === 200;
+}
+
 async function findByName(token, path, name) {
   const j = ok(await api(token, "POST", path, { body: { page: 1, pageSize: 50, name } }), path);
   return (j.data?.list || []).filter((x) => x.name === name).sort((a, b) => Number(b.id) - Number(a.id))[0] || null;
@@ -176,7 +188,7 @@ export async function swapCombined(token, state, { root, outDir, today, force = 
         ok(await api(token, "POST", "/advertiseGroupItem/save", { body: groupBody }), "group/save");
         groupId = (await findByName(token, "/advertiseGroupItem/page", cfg.groupName))?.id;
         if (!groupId) throw new Error(`could not resolve group id for ${loc}`);
-      } else if (needVideo || cur.legacy) {
+      } else {
         ok(await api(token, "POST", "/advertiseGroupItem/update", { body: { id: String(groupId), ...groupBody } }), "group/update");
       }
       groupId = String(groupId);
@@ -186,7 +198,10 @@ export async function swapCombined(token, state, { root, outDir, today, force = 
         const m = MACHINES.find((x) => String(x.rtuNumber) === rtu);
         const before = await listBound(token, rtu);
         const same = before.length === want.length && want.every((id) => before.includes(id));
-        if (!same) { rollbacks.push({ rtu, before }); await bind(token, rtu, want); }
+        // Always re-bind (bind replaces) so the panel's 广告策略 list refreshes
+        // denormalized group names after a rename/material swap.
+        rollbacks.push({ rtu, before });
+        await bind(token, rtu, want);
         const after = await listBound(token, rtu);
         if (after.length !== want.length || !want.every((id) => after.includes(id)))
           throw new Error(`verify failed on ${rtu}: got [${after}] want [${want}]`);
@@ -217,8 +232,14 @@ export async function swapCombined(token, state, { root, outDir, today, force = 
       r.updateAds = await pushUpdateAds(token, r.sn);
       all.results.push(r);
     }
+    const prevId = p.entry.previousAdvertiseId;
     byLoc[p.loc] = p.entry;
     all.changed ||= p.needVideo;
+    // After a successful swap, delete the previous SD24-combined material (panel remove wants {id}).
+    if (p.needVideo && prevId && prevId !== p.entry.advertiseId) {
+      const removed = await removeAdvertise(token, prevId);
+      if (removed) byLoc[p.loc].previousAdvertiseId = null;
+    }
   }
   if (!onlyLoc && pending.length === Object.keys(LOCATIONS).length) delete state.permanentAds.combined;
   return all;
