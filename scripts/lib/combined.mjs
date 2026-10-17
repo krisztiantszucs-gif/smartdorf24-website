@@ -8,8 +8,18 @@ import { MACHINES, api, BASE } from "./impressiot.mjs";
 
 export const NIGHT_GROUPS = ["100000785", "100000786"]; // final1, final2 — never touch
 export const LOCATIONS = {
-  steinsberg: { groupName: "SD24-combined-steinsberg", rtus: ["7680800", "7680783"] },
-  schiesheim: { groupName: "SD24-combined-schiesheim", rtus: ["7680787", "7680782"] },
+  steinsberg: {
+    groupName: "SD24-combined-steinsberg",
+    rtus: ["7680800", "7680783"],
+    // Karamalz is stocked here — keep the 30s three-segment cut.
+    segments: ["karamalz", "live", "deals"],
+  },
+  schiesheim: {
+    groupName: "SD24-combined-schiesheim",
+    rtus: ["7680787", "7680782"],
+    // No Karamalz at this location — live-stock + deals only (~20s).
+    segments: ["live", "deals"],
+  },
 };
 
 function ok(r, what) {
@@ -17,27 +27,35 @@ function ok(r, what) {
   return r.json;
 }
 
-export function discountsHash(state, rtus) {
+export function discountsHash(state, rtus, segments = []) {
   const items = Object.values(state.active || {})
     .filter((a) => !rtus || rtus.includes(String(a.rtuNumber)))
     .map((a) => [a.rtuNumber, a.lane, a.name, a.originalPrice, a.discountPrice, a.percent, a.effDate].join("|"))
     .sort();
-  return createHash("sha256").update(JSON.stringify(items)).digest("hex").slice(0, 16);
+  // Include segment layout so a config change (e.g. drop Karamalz) triggers regen.
+  return createHash("sha256")
+    .update(JSON.stringify({ items, segments }))
+    .digest("hex")
+    .slice(0, 16);
 }
 
-export function renderCombined(root, outDir, loc = "all", rtus = []) {
+export function renderCombined(root, outDir, loc = "all", rtus = [], segments = ["karamalz", "live", "deals"]) {
   mkdirSync(outDir, { recursive: true });
   const out = join(outDir, `sd24-combined-${loc}.mp4`);
-  execFileSync("python3", [
+  const args = [
     join(root, "scripts", "make-combined-ad.py"),
-    "--karamalz", join(root, "assets", "ads", "karamalz.jpg"),
     "--qr", join(root, "assets", "ads", "qr.png"),
     "--stock", join(root, "data", "stock.json"),
     "--discounts", join(root, "data", "discounts.json"),
     "--out", out,
     "--preview", join(outDir, `sd24-combined-${loc}-preview.png`),
     "--rtus", rtus.join(",") || "all",
-  ], { stdio: "inherit" });
+    "--segments", segments.join(","),
+  ];
+  if (segments.includes("karamalz")) {
+    args.push("--karamalz", join(root, "assets", "ads", "karamalz.jpg"));
+  }
+  execFileSync("python3", args, { stdio: "inherit" });
   return out;
 }
 
@@ -78,7 +96,7 @@ async function findByName(token, path, name) {
  * location group at it, bind each machine of that location to night groups + its
  * location group, verify, push update_ads. Rolls back bindings on failure.
  */
-export async function swapCombined(token, state, { root, outDir, today, force = false, dryRun = false }) {
+export async function swapCombined(token, state, { root, outDir, today, force = false, dryRun = false, onlyLoc = null } = {}) {
   state.permanentAds ||= {};
   const byLoc = (state.permanentAds.combinedByLocation ||= {});
   // migrate legacy single group: reuse its group id for Steinsberg
@@ -89,14 +107,16 @@ export async function swapCombined(token, state, { root, outDir, today, force = 
   const pending = [];
   try {
     for (const [loc, cfg] of Object.entries(LOCATIONS)) {
+      if (onlyLoc && loc !== onlyLoc) continue;
       const cur = byLoc[loc] || {};
-      const hash = discountsHash(state, cfg.rtus);
+      const segments = cfg.segments || ["karamalz", "live", "deals"];
+      const hash = discountsHash(state, cfg.rtus, segments);
       const needVideo = force || !cur.advertiseId || cur.hash !== hash;
       console.log(`combined[${loc}]: hash=${hash} prev=${cur.hash || "-"} regenerate=${needVideo}`);
       if (dryRun) continue;
       let { advertiseId, adName, url } = cur;
       if (needVideo) {
-        const file = renderCombined(root, outDir, loc, cfg.rtus);
+        const file = renderCombined(root, outDir, loc, cfg.rtus, segments);
         adName = `SD24-combined-${loc}-${today}-${hash.slice(0, 6)}`;
         url = await uploadVideo(token, file, adName);
         ok(await api(token, "POST", "/advertise/save", {
@@ -129,7 +149,7 @@ export async function swapCombined(token, state, { root, outDir, today, force = 
         locResults.push({ loc, rtu, sn: m.serial, before, after, rebound: !same });
       }
       pending.push({ loc, needVideo, locResults, entry: { advertiseId: String(advertiseId), advertiseGroupItemId: groupId, adName,
-        groupName: cfg.groupName, url, hash, nightGroups: NIGHT_GROUPS, boundRtus: cfg.rtus,
+        groupName: cfg.groupName, url, hash, segments, nightGroups: NIGHT_GROUPS, boundRtus: cfg.rtus,
         previousAdvertiseId: needVideo && cur.advertiseId !== advertiseId ? cur.advertiseId || null : cur.previousAdvertiseId || null,
         updatedAt: new Date().toISOString() } });
     }
@@ -149,6 +169,6 @@ export async function swapCombined(token, state, { root, outDir, today, force = 
     byLoc[p.loc] = p.entry;
     all.changed ||= p.needVideo;
   }
-  if (pending.length === Object.keys(LOCATIONS).length) delete state.permanentAds.combined;
+  if (!onlyLoc && pending.length === Object.keys(LOCATIONS).length) delete state.permanentAds.combined;
   return all;
 }

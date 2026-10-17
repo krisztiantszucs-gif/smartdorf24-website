@@ -67,12 +67,16 @@
         "updatedAt": "2026-10-17T09:54:43.687Z"
       },
       "schiesheim": {
-        "advertiseId": "100001938",
+        "advertiseId": "100001950",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-10-17-4f53cd",
+        "adName": "SD24-combined-schiesheim-2026-10-17-9f682e",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9a5c32aa410a4ae1b49d3f823b261fdc.mp4",
-        "hash": "4f53cda18c2baa0c",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bb9cc99c60a47338a0b45097a87ad9c.mp4",
+        "hash": "9f682e0b22e0eef4",
+        "segments": [
+          "live",
+          "deals"
+        ],
         "nightGroups": [
           "100000785",
           "100000786"
@@ -81,8 +85,8 @@
           "7680787",
           "7680782"
         ],
-        "previousAdvertiseId": "100001929",
-        "updatedAt": "2026-10-17T09:54:43.987Z"
+        "previousAdvertiseId": "100001938",
+        "updatedAt": "2026-10-17T15:58:33.685Z"
       }
     }
   },

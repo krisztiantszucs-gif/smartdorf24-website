@@ -164,10 +164,15 @@ def transition(a, b, x):  # slide + fade
 
 def main():
     ap = argparse.ArgumentParser()
-    for a in ["karamalz","qr","stock","discounts","out","preview"]: ap.add_argument("--"+a, required=True)
+    for a in ["qr","stock","discounts","out","preview"]: ap.add_argument("--"+a, required=True)
+    ap.add_argument("--karamalz", default="")
     ap.add_argument("--rtus", default="all")
+    ap.add_argument("--segments", default="karamalz,live,deals",
+                    help="comma-separated: karamalz,live,deals")
     o = ap.parse_args()
-    kar = fetch_img(o.karamalz); qr = Image.open(o.qr).convert("RGB")
+    kar = fetch_img(o.karamalz) if o.karamalz else None
+    qr = Image.open(o.qr).convert("RGB")
+    wanted = [x.strip() for x in o.segments.split(",") if x.strip()]
     stock = json.load(open(o.stock)); disc = json.load(open(o.discounts)) if os.path.exists(o.discounts) else {}
     rtus = None if o.rtus == "all" else set(o.rtus.split(","))
     thumbs = []
@@ -187,23 +192,34 @@ def main():
                 dd = datetime.date.fromisoformat(a["effDate"])
                 deals.append({"name":a["name"],"old":float(a["originalPrice"]),"new":float(a["discountPrice"]),"until":dd.strftime("%d.%m."),"pct":int(a.get("percent") or 50)})
         except Exception: pass
-    segs = [lambda t: seg_karamalz(t, kar), lambda t: seg_live(t, qr, thumbs), lambda t: seg_deals(t, deals)]
+    builders = {}
+    if kar is not None:
+        builders["karamalz"] = lambda t, _k=kar: seg_karamalz(t, _k)
+    builders["live"] = lambda t: seg_live(t, qr, thumbs)
+    builders["deals"] = lambda t: seg_deals(t, deals)
+    segs = []
+    for name in wanted:
+        if name not in builders:
+            raise SystemExit(f"unknown/unavailable segment: {name}")
+        segs.append(builders[name])
+    if not segs:
+        raise SystemExit("no segments selected")
     p = subprocess.Popen(["ffmpeg","-y","-loglevel","error","-f","rawvideo","-pix_fmt","rgb24","-s",f"{W}x{H}","-r",str(FPS),"-i","-",
         "-c:v","libx264","-preset","medium","-crf","21","-pix_fmt","yuv420p","-color_range","tv","-movflags","+faststart","-an",o.out], stdin=subprocess.PIPE)
     frames, TR = [], 0.5
     for si, seg in enumerate(segs):
         for f in range(SEG*FPS):
             t = f/FPS; fr = seg(t)
-            if si < 2 and t > SEG-TR:  # crossfade into next segment
+            if si < len(segs) - 1 and t > SEG-TR:  # crossfade into next segment
                 fr = transition(fr, segs[si+1](0.0), (t-(SEG-TR))/TR)
             if f == int(5.5*FPS): frames.append(fr.copy())
             p.stdin.write(fr.tobytes())
     p.stdin.close(); p.wait()
-    sheet = Image.new("RGB", (W, H*3//3 + 40), (0,0,0))
+    n = max(1, len(frames))
     tw, th = W//3, H//3
-    sheet = Image.new("RGB", (tw*3+40, th+20), (20,20,20))
+    sheet = Image.new("RGB", (tw*n + 10*(n+1), th+20), (20,20,20))
     for i, fr in enumerate(frames): sheet.paste(fr.resize((tw,th)), (10+i*(tw+10), 10))
     sheet.save(o.preview)
-    print(json.dumps({"deals":len(deals),"thumbs":len(thumbs)}))
+    print(json.dumps({"segments": wanted, "deals": len(deals), "thumbs": len(thumbs), "duration_s": len(segs)*SEG}))
 
 if __name__ == "__main__": main()
