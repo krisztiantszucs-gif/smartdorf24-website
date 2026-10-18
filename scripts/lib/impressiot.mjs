@@ -92,12 +92,18 @@ export function discountWindow(today = berlinToday()) {
   return [0, 1, 2, 3, 4].map((n) => addDaysYmd(today, n));
 }
 
-// Tiered: effDate today..+2 => 50%, +3..+4 => 20%, else 0.
+// Tiered (Berlin calendar days from today):
+//   effDate == today     => 70%
+//   +1 .. +2 days        => 50%
+//   +3 .. +4 days        => 20%
+// else 0.
 export function tierFor(effYmd, today = berlinToday()) {
   if (!effYmd) return 0;
   const d = Math.round((Date.parse(effYmd + "T00:00:00Z") - Date.parse(today + "T00:00:00Z")) / 86400000);
   if (d < 0 || d > 4) return 0;
-  return d <= 2 ? 50 : 20;
+  if (d === 0) return 70;
+  if (d <= 2) return 50;
+  return 20;
 }
 
 export function tierPrice(original, pct) {
@@ -105,8 +111,14 @@ export function tierPrice(original, pct) {
   return Math.max(0.1, Math.round(p * 100) / 100);
 }
 
+/** Nearest 0.05 EUR; exact midpoints (.x25 / .x75) round DOWN. Machine rejects 1–2¢ steps. */
 export function roundTo005(n) {
-  return Math.round(Number(n) / 0.05) * 0.05;
+  const cents = Number(n) * 100;
+  const q = cents / 5;
+  const base = Math.floor(q + 1e-9);
+  const frac = q - base;
+  const steps = frac > 0.5 + 1e-9 ? base + 1 : base; // tie (frac≈0.5) → down
+  return Math.round(steps * 5) / 100;
 }
 
 export function halfPrice(original) {

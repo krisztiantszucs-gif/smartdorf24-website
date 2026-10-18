@@ -11,6 +11,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { spawnSync } from "node:child_process";
 import { imageToStillMp4 } from "./lib/stillvideo.mjs";
 import { swapCombined } from "./lib/combined.mjs";
 import {
@@ -508,6 +509,30 @@ async function main() {
     console.error("Specify --dry-run, --noop-test, or --apply");
     process.exit(2);
   }
+
+  // Serialize with the box refresh loop (and any other apply) via a dedicated flock.
+  const EXPIRY_LOCK = process.env.SD24_EXPIRY_LOCK || "/tmp/smartdorf24-expiry.lock";
+  if (APPLY && process.env.SD24_EXPIRY_LOCKED !== "1") {
+    const self = fileURLToPath(import.meta.url);
+    const args = process.argv.slice(2).map((a) => JSON.stringify(a)).join(" ");
+    const inner = `SD24_EXPIRY_LOCKED=1 exec ${JSON.stringify(process.execPath)} ${JSON.stringify(self)} ${args}`;
+    const wait = process.env.SD24_EXPIRY_LOCK_WAIT || "180";
+    console.log(`Acquiring expiry lock ${EXPIRY_LOCK} (wait ${wait}s)…`);
+    const r = spawnSync("flock", ["-w", String(wait), EXPIRY_LOCK, "-c", inner], {
+      stdio: "inherit",
+      env: process.env,
+    });
+    if (r.error) {
+      console.error("flock failed:", r.error.message);
+      process.exit(1);
+    }
+    if (r.status === 1) {
+      console.error("Could not acquire expiry lock — another run is in progress. Skipping.");
+      process.exit(0);
+    }
+    process.exit(r.status ?? 1);
+  }
+
   const username = process.env.IMPRESSIOT_USERNAME;
   const password = process.env.IMPRESSIOT_PASSWORD;
   if (!username || !password) {

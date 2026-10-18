@@ -8,6 +8,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 W, H, FPS, SEG = 1792, 1008, 30, 10
 TEAL, BLUE, RED, YEL, BG, WHITE = (61,214,198), (110,168,255), (255,77,94), (255,208,64), (8,12,22), (240,245,255)
+DEEP, PINK = (139, 0, 0), (255, 23, 68)
 FB = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 FR = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 _fc = {}
@@ -128,13 +129,19 @@ def burst(img, cx, cy, r, t, col):
 
 def seg_deals(t, deals):
     img = background(t, (40,8,20), (60,20,10)); d = ImageDraw.Draw(img)
-    r = 230*pop(t/0.6)*(1+0.05*math.sin(t*5))
+    top = max([dl["pct"] for dl in deals], default=0)
+    # −70% gets a deeper red, faster "flash" pulse
+    pulse = (1+0.12*math.sin(t*(14 if top>=70 else 5)))
+    r = 230*pop(t/0.6)*pulse
     if r > 5:
-        burst(img, 330, 360, r, t, RED); burst(img, 330, 360, r*0.82, -t, YEL); burst(img, 330, 360, r*0.68, t, RED)
-        top = max([dl["pct"] for dl in deals], default=0)
+        c1, c2 = (DEEP, PINK) if top >= 70 else (RED, YEL)
+        burst(img, 330, 360, r, t, c1); burst(img, 330, 360, r*0.82, -t, c2); burst(img, 330, 360, r*0.68, t, c1)
         scaled_text(img, f"−{top}%" if deals else "TOP", font(130), WHITE, 330, 360, min(1,r/230), 5)
     if deals:
-        d.text((640, 90), ("Kurz vor MHD – bis −50%!" if any(x["pct"]==50 for x in deals) else "Kurz vor MHD – −20%!"), font=font(58), fill=YEL, stroke_width=2, stroke_fill=(0,0,0))
+        if top >= 70: headline = "Kurz vor MHD – bis −70%!"
+        elif any(x["pct"]==50 for x in deals): headline = "Kurz vor MHD – bis −50%!"
+        else: headline = "Kurz vor MHD – −20%!"
+        d.text((640, 90), headline, font=font(58), fill=YEL, stroke_width=2, stroke_fill=(0,0,0))
         for i, dl in enumerate(deals[:5]):
             st = 0.8 + i*0.45
             if t < st: continue

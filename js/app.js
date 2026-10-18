@@ -261,7 +261,7 @@
                   const priceHtml = disc
                     ? `<span class="price-wrap"><span class="price-old">${formatMoney(disc.originalPrice)}</span><span class="price">${formatMoney(item.price)}</span></span>`
                     : `<span class="price">${formatMoney(item.price)}</span>`;
-                  const saleBadge = disc ? `<span class="badge-sale">−${Number(disc.percent || 50)}%</span>` : "";
+                  const saleBadge = disc ? `<span class="badge-sale tier-${Number(disc.percent || 50)}">−${Number(disc.percent || 50)}%</span>` : "";
                   return `<div class="slot ${sold || expired ? "soldout" : ""} ${expired ? "expired" : ""}" data-soldout="${escapeAttr(t(expired ? "expired" : "sold_out"))}">
                     ${saleBadge}
                     ${img}
