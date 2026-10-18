@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-10-18T10:06:45.371Z",
+  "lastRunAt": "2026-10-18T16:00:20.344Z",
   "lastRunDay": "2026-10-18",
   "active": {
     "7680783:3": {
@@ -9,12 +9,12 @@
       "name": "Popp Kartoffelsalat Klassik",
       "originalPrice": 3.2,
       "originalCostPrice": 2.49,
-      "discountPrice": 1.6,
-      "discountCostPrice": 1.6,
-      "percent": 50,
+      "discountPrice": 0.95,
+      "discountCostPrice": 0.95,
+      "percent": 70,
       "effDate": "2026-10-19",
       "startedAt": "2026-10-15T18:10:57.249Z",
-      "updatedAt": "2026-10-17T05:16:19.426Z"
+      "updatedAt": "2026-10-18T16:00:20.344Z"
     },
     "7680800:3": {
       "rtuNumber": "7680800",
@@ -46,12 +46,12 @@
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100001956",
+        "advertiseId": "100001962",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-10-18-3c923c",
+        "adName": "SD24-combined-steinsberg-2026-10-18-f4c078",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/38b265c9b6194629858b8f45c2da65a9.mp4",
-        "hash": "3c923c90828d1f0d",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/86e4568730c6456788c57a7e95f2bb9f.mp4",
+        "hash": "f4c078f35d24199f",
         "segments": [
           "karamalz",
           "live",
@@ -63,8 +63,8 @@
             "lane": "3",
             "name": "Popp Kartoffelsalat Klassik",
             "old": 3.2,
-            "new": 1.6,
-            "pct": 50,
+            "new": 0.95,
+            "pct": 70,
             "until": "2026-10-19"
           },
           {
@@ -95,7 +95,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-18T10:06:45.620Z"
+        "updatedAt": "2026-10-18T16:01:19.531Z"
       },
       "schiesheim": {
         "advertiseId": "100001950",
@@ -118,9 +118,10 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-18T10:06:45.848Z"
+        "updatedAt": "2026-10-18T16:01:21.891Z"
       }
     }
   },
-  "machineAds": {}
+  "machineAds": {},
+  "lastEveningRunDay": "2026-10-18"
 }
