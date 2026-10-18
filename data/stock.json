@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-18T13:14:09.934Z",
+  "updatedAt": "2026-10-18T16:03:24.477Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-18T13:14:09.934Z",
+          "fetchedAt": "2026-10-18T16:03:24.477Z",
           "items": [
             {
               "lane": "1",
@@ -168,7 +168,7 @@
               "name": "Milka LU",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3830c0a5e93d4f08bd8f8e543c07615c.png",
               "price": 2,
-              "stock": 3,
+              "stock": 0,
               "capacity": 10,
               "expired": false
             },
@@ -278,7 +278,7 @@
               "name": "Red Bull White Edition inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
               "price": 2.2,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -408,7 +408,7 @@
               "name": "Paulaner Spezi 330ml Cola-Orange",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
               "price": 1.6,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-18T13:14:09.934Z",
+          "fetchedAt": "2026-10-18T16:03:24.477Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-18T13:14:09.934Z",
+          "fetchedAt": "2026-10-18T16:03:24.477Z",
           "items": [
             {
               "lane": "1",
@@ -692,7 +692,7 @@
               "name": "Choco Chip Cookies",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/369fe3b29e5f4559baee5414c67f4f14.jpeg",
               "price": 2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 3,
               "expired": false
             },
@@ -992,7 +992,7 @@
               "name": "KitKat",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg",
               "price": 1.2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-18T13:14:09.934Z",
+          "fetchedAt": "2026-10-18T16:03:24.477Z",
           "items": [
             {
               "lane": "1",
@@ -1142,7 +1142,7 @@
               "level": 1,
               "name": "Popp Kartoffelsalat Klassik",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d35471b285684c71b4b5c7a7c36d0e05.png",
-              "price": 1.6,
+              "price": 0.95,
               "stock": 2,
               "capacity": 2,
               "expired": false
@@ -1273,7 +1273,7 @@
               "name": "Capri Sun MultiVitamin 200ml",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6baacaaf2c06466f9267459c0a57a83f.jpeg",
               "price": 1,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -1433,7 +1433,7 @@
               "name": "Vio Medium 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
               "price": 2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1443,7 +1443,7 @@
               "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
               "price": 2.2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
