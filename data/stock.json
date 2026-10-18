@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-18T04:34:43.962Z",
+  "updatedAt": "2026-10-18T05:13:57.499Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-18T04:34:43.962Z",
+          "fetchedAt": "2026-10-18T05:13:57.499Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-18T04:34:43.962Z",
+          "fetchedAt": "2026-10-18T05:13:57.499Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-18T04:34:43.962Z",
+          "fetchedAt": "2026-10-18T05:13:57.499Z",
           "items": [
             {
               "lane": "1",
@@ -711,7 +711,7 @@
               "level": 1,
               "name": "Golden Toast Vollkorn 250g",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/df4e4440188744f6a6dd473a252bcaaa.png",
-              "price": 1.6,
+              "price": 1,
               "stock": 2,
               "capacity": 2,
               "expired": false
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-18T04:34:43.962Z",
+          "fetchedAt": "2026-10-18T05:13:57.499Z",
           "items": [
             {
               "lane": "1",
@@ -1162,7 +1162,7 @@
               "level": 2,
               "name": "Wiesenhof Geflügel Mortadella",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7a5d3b9b063e45288bcc085cdc282ea8.png",
-              "price": 2,
+              "price": 1.6,
               "stock": 3,
               "capacity": 5,
               "expired": false
