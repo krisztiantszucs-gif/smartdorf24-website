@@ -20,6 +20,7 @@ import {
   api,
   fetchReplenish,
   berlinToday,
+  berlinHour,
   discountWindow,
   halfPrice,
   tierFor,
@@ -695,7 +696,10 @@ async function main() {
   }
 
   state.lastRunAt = new Date().toISOString();
-  state.lastRunDay = today;
+  state.lastRunDay = today; // backward-compat: last successful apply day
+  const hour = berlinHour();
+  if (hour >= 18) state.lastEveningRunDay = today;
+  else state.lastMorningRunDay = today;
   saveState(state);
 
   if (!SKIP_ADS && (state.permanentAds?.combinedByLocation || state.permanentAds?.combined)) {

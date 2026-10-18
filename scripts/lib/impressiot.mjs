@@ -82,6 +82,16 @@ export function berlinToday() {
   }).format(new Date());
 }
 
+/** Current hour 0–23 in Europe/Berlin. */
+export function berlinHour(date = new Date()) {
+  const h = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/Berlin",
+    hour: "2-digit",
+    hour12: false,
+  }).format(date);
+  return Number(h);
+}
+
 export function addDaysYmd(ymd, n) {
   const [y, m, d] = ymd.split("-").map(Number);
   const dt = new Date(Date.UTC(y, m - 1, d + n));
@@ -92,16 +102,18 @@ export function discountWindow(today = berlinToday()) {
   return [0, 1, 2, 3, 4].map((n) => addDaysYmd(today, n));
 }
 
-// Tiered (Berlin calendar days from today):
-//   effDate == today     => 70%
-//   +1 .. +2 days        => 50%
-//   +3 .. +4 days        => 20%
+// Tiered (Berlin calendar days from today; hour for the evening cut-over):
+//   effDate == today                              => 70%
+//   effDate == tomorrow AND Berlin hour >= 18     => 70%  (starts 18:00 the evening before)
+//   +1 (before 18:00) .. +2                       => 50%
+//   +3 .. +4                                      => 20%
 // else 0.
-export function tierFor(effYmd, today = berlinToday()) {
+export function tierFor(effYmd, today = berlinToday(), hour = berlinHour()) {
   if (!effYmd) return 0;
   const d = Math.round((Date.parse(effYmd + "T00:00:00Z") - Date.parse(today + "T00:00:00Z")) / 86400000);
   if (d < 0 || d > 4) return 0;
   if (d === 0) return 70;
+  if (d === 1 && Number(hour) >= 18) return 70;
   if (d <= 2) return 50;
   return 20;
 }

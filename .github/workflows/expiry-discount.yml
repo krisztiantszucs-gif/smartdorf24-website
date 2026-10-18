@@ -2,10 +2,12 @@ name: Expiry discounts
 
 on:
   schedule:
-    # 07:00 Europe/Berlin in CEST (UTC+2) = 05:00 UTC; winter CET (UTC+1) = 06:00 UTC
+    # Morning ~07:00 Europe/Berlin (CEST=05:00 UTC, CET=06:00 UTC)
     - cron: "0 5 * * *"
-    # Fallback ~08:00 Berlin CEST — no-ops if already ran today (script is idempotent)
     - cron: "0 6 * * *"
+    # Evening −70% cut-over ~18:00 Berlin (CEST=16:00 UTC, CET=17:00 UTC)
+    - cron: "0 16 * * *"
+    - cron: "0 17 * * *"
   workflow_dispatch:
 
 permissions:
