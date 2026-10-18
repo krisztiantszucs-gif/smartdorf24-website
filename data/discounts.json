@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-10-18T05:12:43.420Z",
+  "lastRunAt": "2026-10-18T05:12:49.742Z",
   "lastRunDay": "2026-10-18",
   "active": {
     "7680783:3": {
@@ -46,11 +46,11 @@
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100001955",
+        "advertiseId": "100001956",
         "advertiseGroupItemId": "100001203",
         "adName": "SD24-combined-steinsberg-2026-10-18-3c923c",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7fa50341ff554ca2aef1e1297ef24489.mp4",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/38b265c9b6194629858b8f45c2da65a9.mp4",
         "hash": "3c923c90828d1f0d",
         "segments": [
           "karamalz",
@@ -95,7 +95,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-18T05:13:48.452Z"
+        "updatedAt": "2026-10-18T05:13:54.567Z"
       },
       "schiesheim": {
         "advertiseId": "100001950",
@@ -118,7 +118,7 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-18T05:13:50.923Z"
+        "updatedAt": "2026-10-18T05:13:57.249Z"
       }
     }
   },
