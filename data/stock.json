@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-18T10:06:46.853Z",
+  "updatedAt": "2026-10-18T13:14:09.934Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-18T10:06:46.853Z",
+          "fetchedAt": "2026-10-18T13:14:09.934Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-18T10:06:46.853Z",
+          "fetchedAt": "2026-10-18T13:14:09.934Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-18T10:06:46.853Z",
+          "fetchedAt": "2026-10-18T13:14:09.934Z",
           "items": [
             {
               "lane": "1",
@@ -882,7 +882,7 @@
               "name": "Huober Minis",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png",
               "price": 1,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -1082,7 +1082,7 @@
               "name": "Reese's Pieces",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d72ff0b3e214ba5b2a36d2551c60677.png",
               "price": 2.1,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-18T10:06:46.853Z",
+          "fetchedAt": "2026-10-18T13:14:09.934Z",
           "items": [
             {
               "lane": "1",
