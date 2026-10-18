@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-10-18T16:23:55.273Z",
+  "lastRunAt": "2026-10-18T16:34:15.028Z",
   "lastRunDay": "2026-10-18",
   "active": {
     "7680783:3": {
@@ -95,7 +95,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-18T16:23:57.496Z"
+        "updatedAt": "2026-10-18T16:34:17.368Z"
       },
       "schiesheim": {
         "advertiseId": "100001950",
@@ -118,7 +118,7 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-18T16:23:59.699Z"
+        "updatedAt": "2026-10-18T16:34:19.712Z"
       }
     }
   },
