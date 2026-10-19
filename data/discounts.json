@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "lastRunAt": "2026-10-18T21:20:43.558Z",
-  "lastRunDay": "2026-10-18",
+  "lastRunAt": "2026-10-19T05:04:33.686Z",
+  "lastRunDay": "2026-10-19",
   "active": {
     "7680783:3": {
       "rtuNumber": "7680783",
@@ -95,7 +95,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-18T21:20:46.081Z"
+        "updatedAt": "2026-10-19T05:04:36.087Z"
       },
       "schiesheim": {
         "advertiseId": "100001950",
@@ -118,10 +118,11 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-18T21:20:48.573Z"
+        "updatedAt": "2026-10-19T05:04:38.488Z"
       }
     }
   },
   "machineAds": {},
-  "lastEveningRunDay": "2026-10-18"
+  "lastEveningRunDay": "2026-10-18",
+  "lastMorningRunDay": "2026-10-19"
 }
