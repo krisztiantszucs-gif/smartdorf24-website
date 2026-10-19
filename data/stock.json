@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-19T15:57:33.432Z",
+  "updatedAt": "2026-10-19T16:08:52.126Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-19T15:57:33.432Z",
+          "fetchedAt": "2026-10-19T16:08:52.126Z",
           "items": [
             {
               "lane": "1",
@@ -368,7 +368,7 @@
               "name": "Vio Medium 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
               "price": 1.6,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-19T15:57:33.432Z",
+          "fetchedAt": "2026-10-19T16:08:52.126Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-19T15:57:33.432Z",
+          "fetchedAt": "2026-10-19T16:08:52.126Z",
           "items": [
             {
               "lane": "1",
@@ -711,7 +711,7 @@
               "level": 1,
               "name": "Golden Toast Vollkorn 250g",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/df4e4440188744f6a6dd473a252bcaaa.png",
-              "price": 1,
+              "price": 0.6,
               "stock": 2,
               "capacity": 2,
               "expired": false
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-19T15:57:33.432Z",
+          "fetchedAt": "2026-10-19T16:08:52.126Z",
           "items": [
             {
               "lane": "1",

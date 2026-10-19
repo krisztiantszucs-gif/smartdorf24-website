@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-10-19T11:35:34.888Z",
+  "lastRunAt": "2026-10-19T16:07:45.049Z",
   "lastRunDay": "2026-10-19",
   "active": {
     "7680783:3": {
@@ -22,12 +22,12 @@
       "name": "Golden Toast Vollkorn 250g",
       "originalPrice": 2,
       "originalCostPrice": 1.29,
-      "discountPrice": 1,
-      "discountCostPrice": 1,
-      "percent": 50,
+      "discountPrice": 0.6,
+      "discountCostPrice": 0.6,
+      "percent": 70,
       "effDate": "2026-10-20",
       "startedAt": "2026-10-16T05:40:25.251Z",
-      "updatedAt": "2026-10-18T05:12:42.122Z"
+      "updatedAt": "2026-10-19T16:07:45.049Z"
     },
     "7680783:11": {
       "rtuNumber": "7680783",
@@ -46,12 +46,12 @@
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100001962",
+        "advertiseId": "100001966",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-10-18-f4c078",
+        "adName": "SD24-combined-steinsberg-2026-10-19-c02c4e",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/86e4568730c6456788c57a7e95f2bb9f.mp4",
-        "hash": "f4c078f35d24199f",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1053c8b25c8e42339bc1232545241f26.mp4",
+        "hash": "c02c4eb43535e75b",
         "segments": [
           "karamalz",
           "live",
@@ -72,8 +72,8 @@
             "lane": "3",
             "name": "Golden Toast Vollkorn 250g",
             "old": 2,
-            "new": 1,
-            "pct": 50,
+            "new": 0.6,
+            "pct": 70,
             "until": "2026-10-20"
           },
           {
@@ -95,7 +95,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-19T11:35:35.695Z"
+        "updatedAt": "2026-10-19T16:08:43.115Z"
       },
       "schiesheim": {
         "advertiseId": "100001950",
@@ -118,11 +118,11 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-19T11:35:36.411Z"
+        "updatedAt": "2026-10-19T16:08:45.642Z"
       }
     }
   },
   "machineAds": {},
-  "lastEveningRunDay": "2026-10-18",
+  "lastEveningRunDay": "2026-10-19",
   "lastMorningRunDay": "2026-10-19"
 }
