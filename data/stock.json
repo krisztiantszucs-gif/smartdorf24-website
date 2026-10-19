@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-19T14:35:14.318Z",
+  "updatedAt": "2026-10-19T14:46:24.128Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-19T14:35:14.318Z",
+          "fetchedAt": "2026-10-19T14:46:24.128Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-19T14:35:14.318Z",
+          "fetchedAt": "2026-10-19T14:46:24.128Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-19T14:35:14.318Z",
+          "fetchedAt": "2026-10-19T14:46:24.128Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-19T14:35:14.318Z",
+          "fetchedAt": "2026-10-19T14:46:24.128Z",
           "items": [
             {
               "lane": "1",
@@ -1493,7 +1493,7 @@
               "name": "Coca Cola Zero 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
               "price": 2.2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
