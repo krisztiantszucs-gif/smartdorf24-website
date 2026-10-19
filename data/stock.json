@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-19T10:04:55.349Z",
+  "updatedAt": "2026-10-19T10:15:04.393Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-19T10:04:55.349Z",
+          "fetchedAt": "2026-10-19T10:15:04.393Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-19T10:04:55.349Z",
+          "fetchedAt": "2026-10-19T10:15:04.393Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-19T10:04:55.349Z",
+          "fetchedAt": "2026-10-19T10:15:04.393Z",
           "items": [
             {
               "lane": "1",
@@ -892,7 +892,7 @@
               "name": "Ültje Erdnüsse, geröstet und gesalzen",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/119a07410be244859196a501e09d45b1.jpeg",
               "price": 2.5,
-              "stock": 1,
+              "stock": 0,
               "capacity": 10,
               "expired": false
             },
@@ -922,7 +922,7 @@
               "name": "Haribo Pasta Penne",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fc3826465a294e76b32bce15829942ae.jpeg",
               "price": 2.1,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -952,7 +952,7 @@
               "name": "Kinder Bueno",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
               "price": 1.6,
-              "stock": 8,
+              "stock": 7,
               "capacity": 10,
               "expired": false
             },
@@ -1052,7 +1052,7 @@
               "name": "Monster Viking Berry 0.5l inkl pfand.",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
               "price": 2.2,
-              "stock": 3,
+              "stock": 2,
               "capacity": 3,
               "expired": false
             },
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-19T10:04:55.349Z",
+          "fetchedAt": "2026-10-19T10:15:04.393Z",
           "items": [
             {
               "lane": "1",
@@ -1203,7 +1203,7 @@
               "name": "Milram Moin Kakao Drink 0,3% 0,5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
               "price": 1.1,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
