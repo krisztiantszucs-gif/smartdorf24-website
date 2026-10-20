@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-20T07:35:06.044Z",
+  "updatedAt": "2026-10-20T07:45:14.584Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T07:35:06.044Z",
+          "fetchedAt": "2026-10-20T07:45:14.584Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-20T07:35:06.044Z",
+          "fetchedAt": "2026-10-20T07:45:14.584Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T07:35:06.044Z",
+          "fetchedAt": "2026-10-20T07:45:14.584Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T07:35:06.044Z",
+          "fetchedAt": "2026-10-20T07:45:14.584Z",
           "items": [
             {
               "lane": "2",
@@ -1183,7 +1183,7 @@
               "name": "Milram Moin Kakao Drink 0,3% 0,5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
               "price": 1.1,
-              "stock": 2,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -1213,7 +1213,7 @@
               "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
               "price": 1,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1230,10 +1230,10 @@
             {
               "lane": "33",
               "level": 4,
-              "name": "Paulaner Spezi 330ml Cola-Orange",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
-              "price": 1.6,
-              "stock": 1,
+              "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
+              "price": 1,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1350,10 +1350,10 @@
             {
               "lane": "46",
               "level": 5,
-              "name": "Red Bull White Edition inkl. pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
-              "price": 2.2,
-              "stock": 1,
+              "name": "Paulaner Spezi 330ml Cola-Orange",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
+              "price": 1.6,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -1363,7 +1363,7 @@
               "name": "Red Bull White Edition inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
               "price": 2.2,
-              "stock": 0,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -1373,7 +1373,7 @@
               "name": "RedBull Original 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
-              "stock": 4,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -1403,7 +1403,7 @@
               "name": "Vio Medium 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
               "price": 2,
-              "stock": 3,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -1413,7 +1413,7 @@
               "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
               "price": 2.2,
-              "stock": 1,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -1423,7 +1423,7 @@
               "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
               "price": 2.2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1433,17 +1433,17 @@
               "name": "Fuze Tea Pfirsich 0,4L  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
               "price": 2.2,
-              "stock": 1,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "56",
               "level": 6,
-              "name": "Monster Viking Berry 0.5l inkl pfand.",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
+              "name": "Monster Juiced Mango Loco Energy",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/65cd22d69f0e4a419dab481a4b959826.png",
               "price": 2.2,
-              "stock": 1,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1463,7 +1463,7 @@
               "name": "Coca Cola Zero 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
               "price": 2.2,
-              "stock": 3,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -1473,7 +1473,7 @@
               "name": "Coca Cola 0.5l Original inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
               "price": 2.2,
-              "stock": 1,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             }
