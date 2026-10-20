@@ -23,7 +23,7 @@
   const state = {
     lang: localStorage.getItem("sd24_lang") || "de",
     stock: null,
-    discounts: { active: {} },
+    discounts: { active: {}, clearance: {} },
     locationId: "schiesheim",
     machineId: null,
     map: null,
@@ -63,39 +63,57 @@
   }
 
   
+  function berlinTodayYmd() {
+    try {
+      return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Berlin", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+    } catch { return new Date().toISOString().slice(0, 10); }
+  }
+
   function renderDeals() {
     const sec = document.getElementById("deals");
     const grid = document.getElementById("deals-grid");
     if (!sec || !grid) return;
-    const today = new Date().toISOString().slice(0, 10);
+    const today = berlinTodayYmd();
     const lookup = {};
     for (const loc of state.stock?.locations || []) {
       for (const m of loc.machines || []) {
         for (const it of m.items || []) lookup[m.rtuNumber + ":" + it.lane] = { loc, m, it };
       }
     }
-    const items = Object.values(state.discounts?.active || {})
+    const expiry = Object.values(state.discounts?.active || {})
       .filter((a) => !a.effDate || a.effDate >= today)
-      .map((a) => ({ a, ...(lookup[a.rtuNumber + ":" + a.lane] || {}) }))
+      .map((a) => ({ kind: "expiry", a, price: a.discountPrice, until: a.effDate, ...(lookup[a.rtuNumber + ":" + a.lane] || {}) }));
+    const clearance = Object.values(state.discounts?.clearance || {})
+      .filter((a) => !a.endsAt || String(a.endsAt).slice(0, 10) >= today)
+      .map((a) => ({ kind: "clearance", a, price: a.clearancePrice, until: a.endsAt, ...(lookup[a.rtuNumber + ":" + a.lane] || {}) }));
+    // Prefer higher % when same lane appears in both
+    const byKey = {};
+    for (const x of [...expiry, ...clearance]) {
+      const key = x.a.rtuNumber + ":" + x.a.lane;
+      const prev = byKey[key];
+      if (!prev || Number(x.a.percent || 0) > Number(prev.a.percent || 0)) byKey[key] = x;
+    }
+    const items = Object.values(byKey)
       .filter((x) => !x.it || (Number(x.it.stock) > 0 && !x.it.expired))
-      .sort((x, y) => (Number(y.a.percent || 50) - Number(x.a.percent || 50)) || String(x.a.effDate).localeCompare(String(y.a.effDate)));
+      .sort((x, y) => (Number(y.a.percent || 0) - Number(x.a.percent || 0)) || String(x.until || "").localeCompare(String(y.until || "")));
     if (!items.length) { sec.hidden = true; grid.innerHTML = ""; return; }
     sec.hidden = false;
     const L = state.lang;
-    grid.innerHTML = items.map(({ a, loc, m, it }) => {
-      const pct = Number(a.percent || 50);
-      const [y, mo, d] = String(a.effDate || "").split("-");
-      const until = d ? `${d}.${mo}.` : "";
+    grid.innerHTML = items.map(({ a, loc, m, it, kind, price, until }) => {
+      const pct = Number(a.percent || 20);
+      const [y, mo, d] = String(until || "").split("-");
+      const untilFmt = d ? `${d}.${mo}.` : "";
       const img = it?.image ? `<img src="${escapeAttr(it.image)}" alt="" loading="lazy" />` : `<div class="slot-fallback">${escapeHtml((a.name || "?").slice(0, 1))}</div>`;
       const where = [loc?.name?.[L], m?.name?.[L]].filter(Boolean).join(" · ");
-      return `<article class="deal-card tier-${pct}">
-        <span class="deal-badge">−${pct}%</span>
+      const badge = kind === "clearance" ? t("clearance_badge") : `−${pct}%`;
+      return `<article class="deal-card tier-${pct} ${kind === "clearance" ? "clearance" : ""}">
+        <span class="deal-badge">${escapeHtml(badge)}</span>
         <div class="deal-img">${img}</div>
         <div class="deal-body">
           <div class="deal-name">${escapeHtml(a.name || "")}</div>
           <div class="deal-where">${escapeHtml(where)}</div>
-          <div class="deal-prices"><span class="price-old">${formatMoney(a.originalPrice)}</span> <span class="deal-new">${formatMoney(a.discountPrice)}</span></div>
-          <div class="deal-until">${escapeHtml(t("deals_until"))} ${escapeHtml(until)}</div>
+          <div class="deal-prices"><span class="price-old">${formatMoney(a.originalPrice)}</span> <span class="deal-new">${formatMoney(price)}</span></div>
+          <div class="deal-until">${escapeHtml(kind === "clearance" ? t("clearance_until") : t("deals_until"))} ${escapeHtml(untilFmt)}</div>
         </div>
       </article>`;
     }).join("");
@@ -103,7 +121,12 @@
 
   function discountFor(rtu, lane) {
     const key = String(rtu) + ":" + String(lane);
-    return state.discounts?.active?.[key] || null;
+    const ex = state.discounts?.active?.[key] || null;
+    const cl = state.discounts?.clearance?.[key] || null;
+    if (ex && cl) return Number(ex.percent || 0) >= Number(cl.percent || 0) ? { ...ex, _kind: "expiry" } : { ...cl, discountPrice: cl.clearancePrice, _kind: "clearance" };
+    if (ex) return { ...ex, _kind: "expiry" };
+    if (cl) return { ...cl, discountPrice: cl.clearancePrice, _kind: "clearance" };
+    return null;
   }
 
   function formatMoney(n) {
@@ -261,7 +284,11 @@
                   const priceHtml = disc
                     ? `<span class="price-wrap"><span class="price-old">${formatMoney(disc.originalPrice)}</span><span class="price">${formatMoney(item.price)}</span></span>`
                     : `<span class="price">${formatMoney(item.price)}</span>`;
-                  const saleBadge = disc ? `<span class="badge-sale tier-${Number(disc.percent || 50)}">−${Number(disc.percent || 50)}%</span>` : "";
+                  const saleBadge = disc
+                    ? (disc._kind === "clearance"
+                        ? `<span class="badge-sale badge-clearance tier-${Number(disc.percent || 20)}">${escapeHtml(t("clearance_badge"))}</span>`
+                        : `<span class="badge-sale tier-${Number(disc.percent || 50)}">−${Number(disc.percent || 50)}%</span>`)
+                    : "";
                   return `<div class="slot ${sold || expired ? "soldout" : ""} ${expired ? "expired" : ""}" data-soldout="${escapeAttr(t(expired ? "expired" : "sold_out"))}">
                     ${saleBadge}
                     ${img}

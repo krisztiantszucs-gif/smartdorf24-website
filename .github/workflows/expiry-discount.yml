@@ -8,6 +8,9 @@ on:
     # Evening −70% cut-over ~18:00 Berlin (CEST=16:00 UTC, CET=17:00 UTC)
     - cron: "0 16 * * *"
     - cron: "0 17 * * *"
+    # Weekly clearance re-eval backup ~07:15 Berlin Monday (CEST=05:15 UTC)
+    - cron: "15 5 * * 1"
+    - cron: "15 6 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -35,6 +38,17 @@ jobs:
           IMPRESSIOT_USERNAME: ${{ secrets.IMPRESSIOT_USERNAME }}
           IMPRESSIOT_PASSWORD: ${{ secrets.IMPRESSIOT_PASSWORD }}
         run: node scripts/fetch-stock.mjs
+      - name: Weekly clearance re-eval (Monday Berlin)
+        env:
+          IMPRESSIOT_USERNAME: ${{ secrets.IMPRESSIOT_USERNAME }}
+          IMPRESSIOT_PASSWORD: ${{ secrets.IMPRESSIOT_PASSWORD }}
+        run: |
+          day=$(TZ=Europe/Berlin date +%u)
+          if [[ "$day" == "1" ]]; then
+            node scripts/clearance-eval.mjs --reeval
+          else
+            echo "Not Monday (Berlin weekday=$day) — skip clearance re-eval"
+          fi
       - name: Run expiry discount job
         env:
           IMPRESSIOT_USERNAME: ${{ secrets.IMPRESSIOT_USERNAME }}

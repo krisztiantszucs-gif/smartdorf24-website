@@ -69,7 +69,7 @@ def brand_bar(img, t):
     d.rectangle([x,H-72,x+200,H-68], fill=TEAL)
 
 # --- segment 1: Karamalz Ken Burns ---
-def seg_karamalz(t, src):
+def seg_karamalz(t, src, price=None):
     z = 1.0 + 0.18*ease(t/SEG); pan = 60*math.sin(t*0.35)
     cw, ch = int(W/z), int(H/z)
     base = cover(src, W+160, H+160)
@@ -79,8 +79,21 @@ def seg_karamalz(t, src):
     ov = Image.new("RGBA",(W,H),(0,0,0,0)); od = ImageDraw.Draw(ov)
     od.rectangle([0,H-260,W,H], fill=(0,0,0,150))
     img = Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
+    d = ImageDraw.Draw(img)
     s = pop((t-1.0)/0.6)
     scaled_text(img, "Jetzt im Automaten!", font(78), YEL, W/2, H-200, s)
+    if price and t > 1.4:
+        old = f"{float(price['old']):.2f} €".replace(".", ","); new = f"{float(price['new']):.2f} €".replace(".", ",")
+        label = price.get("label") or "Abverkauf"
+        # price badge top-right
+        bx, by, bw, bh = W-520, 60, 480, 200
+        d.rounded_rectangle([bx, by, bx+bw, by+bh], 24, fill=(20, 10, 10), outline=YEL, width=4)
+        d.text((bx+28, by+16), label, font=font(36), fill=YEL)
+        ow = d.textlength(old, font=font(40, False))
+        d.text((bx+28, by+70), old, font=font(40, False), fill=(190,190,200))
+        d.line([bx+28, by+96, bx+28+ow, by+96], fill=RED, width=4)
+        ps = 1 + 0.06*math.sin(t*6)
+        scaled_text(img, new, font(72), YEL, bx+bw-140, by+130, ps*ease((t-1.4)/0.4), 4)
     if t > 2.2:
         p = 1 + 0.06*math.sin((t-2.2)*5)
         scaled_text(img, "Eiskalt · 24/7 · Kontaktlos zahlen", font(40), WHITE, W/2, H-120, p*ease((t-2.2)/0.5), 3)
@@ -163,6 +176,44 @@ def seg_deals(t, deals):
         scaled_text(img, "Jetzt zugreifen!  smartdorf24.de", font(56), TEAL, W/2, H-120, p, 4)
     brand_bar(img, t); return img
 
+
+GREEN = (60, 220, 120)
+PER_PAGE, MAX_SALE = 6, 12
+
+def seg_sale(t, items, thumbs):
+    img = background(t, (8,30,20), (10,48,40)); d = ImageDraw.Draw(img)
+    pages = [items[i:i+PER_PAGE] for i in range(0, min(len(items), MAX_SALE), PER_PAGE)] or [[]]
+    plen = SEG/max(1,len(pages)); pi = min(len(pages)-1, int(t//plen)); pt = t - pi*plen
+    top = max([x["pct"] for x in items], default=0)
+    r = 120*pop(t/0.6)*(1+0.08*math.sin(t*6))
+    if r > 5:
+        burst(img, 150, 120, r, t, RED); burst(img, 150, 120, r*0.8, -t, YEL)
+        scaled_text(img, f"−{top}%", font(64), WHITE, 150, 120, min(1, r/120), 4)
+    x0 = -900 + 1190*ease(t/0.7)
+    d.text((x0, 40), "Schnäppchen / Sale", font=font(86), fill=YEL, stroke_width=3, stroke_fill=(0,0,0))
+    d.text((300, 150), "Restposten – solange der Vorrat reicht", font=font(36, False), fill=WHITE)
+    if len(pages) > 1: d.text((W-170, 160), f"{pi+1}/{len(pages)}", font=font(34), fill=TEAL)
+    for i, it in enumerate(pages[pi]):
+        st = 0.25 + i*0.18
+        if pt < st: continue
+        col, row = i % 2, i // 2
+        x = 80 + col*830 + int(900*(1-ease((pt-st)/0.45))) * (1 if col else -1)
+        y = 220 + row*225
+        d.rounded_rectangle([x, y, x+800, y+205], 22, fill=(16,24,30), outline=GREEN, width=3)
+        th = thumbs.get(it.get("lane") or it.get("key") or i)
+        if th is not None:
+            tile = Image.new("RGB", (175,175), (255,255,255)); tile.paste(cover(th,165,165), (5,5)); img.paste(tile, (x+15, y+15))
+        name = it["name"].replace(" inkl. pfand","").replace(" inkl pfand.","")
+        name = name if len(name) < 24 else name[:22] + "…"
+        d.text((x+205, y+18), name, font=font(38), fill=WHITE)
+        old = f"{it['old']:.2f} €".replace(".", ","); new = f"{it['new']:.2f} €".replace(".", ",")
+        f2 = font(36, False); ow = d.textlength(old, font=f2)
+        d.text((x+205, y+92), old, font=f2, fill=(170,175,185)); d.line([x+205, y+114, x+205+ow, y+114], fill=RED, width=4)
+        d.rounded_rectangle([x+205, y+145, x+330, y+190], 12, fill=RED); d.text((x+218, y+148), f"−{it['pct']}%", font=font(34), fill=WHITE)
+        ps = 1 + 0.07*math.sin((pt-st)*6)
+        scaled_text(img, new, font(64), YEL, x+640, y+110, ps*ease((pt-st)/0.35), 3)
+    brand_bar(img, t); return img
+
 def transition(a, b, x):  # slide + fade
     x = ease(x); off = int(W*0.25*(1-x))
     out = Image.blend(a, b, x)
@@ -173,13 +224,19 @@ def main():
     ap = argparse.ArgumentParser()
     for a in ["qr","stock","discounts","out","preview"]: ap.add_argument("--"+a, required=True)
     ap.add_argument("--karamalz", default="")
+    ap.add_argument("--karamalz-old", type=float, default=0)
+    ap.add_argument("--karamalz-new", type=float, default=0)
+    ap.add_argument("--karamalz-label", default="Abverkauf")
     ap.add_argument("--rtus", default="all")
     ap.add_argument("--segments", default="karamalz,live,deals",
-                    help="comma-separated: karamalz,live,deals")
+                    help="comma-separated: karamalz,live,deals,sale")
     ap.add_argument("--deals-json", default="",
                     help="optional verified deals JSON from combined.mjs")
+    ap.add_argument("--sale-json", default="",
+                    help="optional verified clearance/sale JSON")
     o = ap.parse_args()
     kar = fetch_img(o.karamalz) if o.karamalz else None
+    kar_price = {"old": o.karamalz_old, "new": o.karamalz_new, "label": o.karamalz_label} if o.karamalz_new else None
     qr = Image.open(o.qr).convert("RGB")
     wanted = [x.strip() for x in o.segments.split(",") if x.strip()]
     stock = json.load(open(o.stock)); disc = json.load(open(o.discounts)) if os.path.exists(o.discounts) else {}
@@ -216,11 +273,35 @@ def main():
                     dd = datetime.date.fromisoformat(a["effDate"])
                     deals.append({"name":a["name"],"old":float(a["originalPrice"]),"new":float(a["discountPrice"]),"until":dd.strftime("%d.%m."),"pct":int(a.get("percent") or 50)})
             except Exception: pass
+    sale_items = []
+    sale_thumbs = {}
+    if o.sale_json and os.path.exists(o.sale_json):
+        for a in (json.load(open(o.sale_json)).get("sale") or [])[:MAX_SALE]:
+            try:
+                it = {"name": a["name"], "old": float(a["old"]), "new": float(a["new"]),
+                      "pct": int(a.get("pct") or 20), "lane": f"{a.get('rtuNumber','')}:{a.get('lane','')}",
+                      "until": str(a.get("until") or "")}
+                sale_items.append(it)
+                if a.get("image"):
+                    im = fetch_img(a["image"])
+                    if im: sale_thumbs[it["lane"]] = im
+            except Exception: pass
+    # Also try stock images by lane if missing
+    if sale_items and stock.get("locations"):
+        for loc in stock["locations"]:
+            for m in loc["machines"]:
+                for it in m["items"]:
+                    k = f"{m.get('rtuNumber')}:{it.get('lane')}"
+                    if k in sale_thumbs: continue
+                    if any(s["lane"] == k for s in sale_items) and it.get("image"):
+                        im = fetch_img(it["image"])
+                        if im: sale_thumbs[k] = im
     builders = {}
     if kar is not None:
-        builders["karamalz"] = lambda t, _k=kar: seg_karamalz(t, _k)
+        builders["karamalz"] = lambda t, _k=kar, _p=kar_price: seg_karamalz(t, _k, _p)
     builders["live"] = lambda t: seg_live(t, qr, thumbs)
     builders["deals"] = lambda t: seg_deals(t, deals)
+    builders["sale"] = lambda t: seg_sale(t, sale_items, sale_thumbs)
     segs = []
     for name in wanted:
         if name not in builders:
@@ -229,7 +310,7 @@ def main():
     if not segs:
         raise SystemExit("no segments selected")
     p = subprocess.Popen(["ffmpeg","-y","-loglevel","error","-f","rawvideo","-pix_fmt","rgb24","-s",f"{W}x{H}","-r",str(FPS),"-i","-",
-        "-c:v","libx264","-preset","medium","-crf","21","-pix_fmt","yuv420p","-color_range","tv","-movflags","+faststart","-an",o.out], stdin=subprocess.PIPE)
+        "-c:v","libx264","-preset","medium","-crf","26","-pix_fmt","yuv420p","-color_range","tv","-movflags","+faststart","-an",o.out], stdin=subprocess.PIPE)
     frames, TR = [], 0.5
     for si, seg in enumerate(segs):
         for f in range(SEG*FPS):
@@ -244,6 +325,6 @@ def main():
     sheet = Image.new("RGB", (tw*n + 10*(n+1), th+20), (20,20,20))
     for i, fr in enumerate(frames): sheet.paste(fr.resize((tw,th)), (10+i*(tw+10), 10))
     sheet.save(o.preview)
-    print(json.dumps({"segments": wanted, "deals": len(deals), "thumbs": len(thumbs), "duration_s": len(segs)*SEG}))
+    print(json.dumps({"segments": wanted, "deals": len(deals), "sale": len(sale_items), "thumbs": len(thumbs), "duration_s": len(segs)*SEG, "karamalzPrice": kar_price}))
 
 if __name__ == "__main__": main()

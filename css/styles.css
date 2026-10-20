@@ -344,3 +344,11 @@ section h2 {
 @keyframes sale-pulse { 0%,100%{ transform: scale(1); } 50%{ transform: scale(1.08); } }
 .deal-card.tier-70{border-color:#ff1744; box-shadow:0 0 16px rgba(255,23,68,.35)}
 .deal-card.tier-70 .deal-badge{background:#8b0000; animation: sale-pulse 1.1s ease-in-out infinite}
+
+/* Clearance / Schnäppchen */
+.deal-card.clearance{border-color:#3dd68c;background:rgba(8,40,28,.55)}
+.deal-card.clearance .deal-badge{background:#1b8a54;font-size:.78rem;letter-spacing:.02em}
+.badge-sale.badge-clearance{background:#1b8a54;font-size:.72rem}
+.badge-sale.tier-30{background:#c62828}
+.deal-card.tier-30{border-color:#ef5350}
+.deal-card.tier-30 .deal-badge{background:#c62828}

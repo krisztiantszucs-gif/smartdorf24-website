@@ -14,12 +14,13 @@ export const LOCATIONS = {
   steinsberg: {
     groupName: "SD24-combined-steinsberg",
     rtus: ["7680800", "7680783"],
-    segments: ["karamalz", "live", "deals"],
+    segments: ["karamalz", "live", "deals", "sale"],
+    karamalzPrice: { old: 1.0, new: 0.8, label: "Abverkauf" },
   },
   schiesheim: {
     groupName: "SD24-combined-schiesheim",
     rtus: ["7680787", "7680782"],
-    segments: ["live", "deals"],
+    segments: ["live", "deals", "sale"],
   },
 };
 
@@ -70,9 +71,55 @@ export async function verifiedDeals(token, state, rtus, today = berlinToday()) {
   return deals;
 }
 
-export function dealsHash(deals, segments = []) {
+/** Clearance items for rtus whose live price equals clearancePrice; hideFromAd excluded. */
+export async function verifiedSale(token, state, rtus, today = berlinToday()) {
+  const priceByLane = new Map();
+  const stockByLane = new Map();
+  const imgByLane = new Map();
+  for (const rtu of rtus) {
+    const row = await fetchReplenish(token, rtu);
+    for (const c of row.cargos || []) {
+      if (!c.commodityName) continue;
+      const key = `${rtu}:${c.cargoNumber}`;
+      priceByLane.set(key, Number(c.price));
+      stockByLane.set(key, Number(c.stock || 0));
+      imgByLane.set(key, c.commodityImg || c.img || c.imageUrl || null);
+    }
+  }
+  const sale = [];
+  const dropped = [];
+  for (const a of Object.values(state.clearance || {})) {
+    if (!rtus.includes(String(a.rtuNumber))) continue;
+    if (a.hideFromAd) { dropped.push({ key: `${a.rtuNumber}:${a.lane}`, reason: "hideFromAd", name: a.name }); continue; }
+    if (a.endsAt && String(a.endsAt).slice(0, 10) < today) {
+      dropped.push({ key: `${a.rtuNumber}:${a.lane}`, reason: "endsAt-past", name: a.name }); continue;
+    }
+    const key = `${a.rtuNumber}:${a.lane}`;
+    if ((stockByLane.get(key) || 0) <= 0) {
+      dropped.push({ key, reason: "soldout", name: a.name }); continue;
+    }
+    const live = priceByLane.get(key);
+    const want = Number(a.clearancePrice);
+    if (live == null || Number(live) !== want) {
+      dropped.push({ key, reason: `live=${live} want=${want}`, name: a.name }); continue;
+    }
+    // If a bigger expiry discount is the live price, clearancePrice won't match — correctly excluded.
+    sale.push({
+      rtuNumber: String(a.rtuNumber), lane: String(a.lane), name: a.name,
+      old: Number(a.originalPrice), new: want, pct: Number(a.percent || 20),
+      until: a.endsAt ? String(a.endsAt).slice(0, 10) : "", image: imgByLane.get(key),
+    });
+  }
+  sale.sort((x, y) => y.pct - x.pct || (y.old - y.new) - (x.old - x.new) || x.name.localeCompare(y.name));
+  if (dropped.length) console.log(`sale dropped: ${dropped.map((d) => `${d.name}(${d.reason})`).join("; ")}`);
+  console.log(`verified sale (${rtus.join(",")}): ${sale.map((d) => `${d.name} −${d.pct}% @${d.new}`).join("; ") || "(none)"}`);
+  return sale;
+}
+
+export function dealsHash(deals, segments = [], sale = [], karamalzPrice = null) {
   const items = deals.map((d) => [d.rtuNumber, d.lane, d.name, d.old, d.new, d.pct, d.until].join("|"));
-  return createHash("sha256").update(JSON.stringify({ items, segments })).digest("hex").slice(0, 16);
+  const saleItems = sale.map((d) => [d.rtuNumber, d.lane, d.name, d.old, d.new, d.pct, d.until].join("|"));
+  return createHash("sha256").update(JSON.stringify({ items, saleItems, segments, karamalzPrice })).digest("hex").slice(0, 16);
 }
 
 /** @deprecated use dealsHash(verifiedDeals(...)) */
@@ -84,11 +131,17 @@ export function discountsHash(state, rtus, segments = []) {
   return createHash("sha256").update(JSON.stringify({ items, segments })).digest("hex").slice(0, 16);
 }
 
-export function renderCombined(root, outDir, loc = "all", rtus = [], segments = ["karamalz", "live", "deals"], deals = null) {
+export function renderCombined(root, outDir, loc = "all", rtus = [], segments = ["karamalz", "live", "deals"], deals = null, sale = null, karamalzPrice = null) {
   mkdirSync(outDir, { recursive: true });
   const out = join(outDir, `sd24-combined-${loc}.mp4`);
   const dealsPath = join(outDir, `deals-${loc}.json`);
+  const salePath = join(outDir, `sale-${loc}.json`);
+  // Drop empty deals segment when sale has items (keeps runtime shorter)
+  let segs = segments.slice();
+  if (sale && sale.length && (!deals || !deals.length)) segs = segs.filter((x) => x !== "deals");
+  if (!sale || !sale.length) segs = segs.filter((x) => x !== "sale");
   if (deals) writeFileSync(dealsPath, JSON.stringify({ deals }, null, 2));
+  if (sale) writeFileSync(salePath, JSON.stringify({ sale }, null, 2));
   const args = [
     join(root, "scripts", "make-combined-ad.py"),
     "--qr", join(root, "assets", "ads", "qr.png"),
@@ -97,10 +150,14 @@ export function renderCombined(root, outDir, loc = "all", rtus = [], segments = 
     "--out", out,
     "--preview", join(outDir, `sd24-combined-${loc}-preview.png`),
     "--rtus", rtus.join(",") || "all",
-    "--segments", segments.join(","),
+    "--segments", segs.join(","),
   ];
   if (deals) args.push("--deals-json", dealsPath);
-  if (segments.includes("karamalz")) args.push("--karamalz", join(root, "assets", "ads", "karamalz.jpg"));
+  if (sale && sale.length) args.push("--sale-json", salePath);
+  if (segs.includes("karamalz")) {
+    args.push("--karamalz", join(root, "assets", "ads", "karamalz.jpg"));
+    if (karamalzPrice) args.push("--karamalz-old", String(karamalzPrice.old), "--karamalz-new", String(karamalzPrice.new), "--karamalz-label", karamalzPrice.label || "Abverkauf");
+  }
   execFileSync("python3", args, { stdio: "inherit" });
   return out;
 }
@@ -123,13 +180,25 @@ export async function pushUpdateAds(token, sn) {
   return r.http === 200 && r.json.code === 200;
 }
 
-async function uploadVideo(token, file, name) {
-  const form = new FormData();
-  form.append("file", new Blob([readFileSync(file)], { type: "video/mp4" }), `${name}.mp4`);
-  const j = ok(await api(token, "POST", "/file/upload", { formData: form }), "upload");
-  const url = typeof j.data === "string" ? j.data : j.data?.url || j.data?.path;
-  if (!url) throw new Error("upload returned no url");
-  return url.startsWith("http") ? url : BASE + (url.startsWith("/") ? "" : "/") + url;
+async function uploadVideo(token, file, name, { retries = 3 } = {}) {
+  const buf = readFileSync(file);
+  console.log(`upload ${name}.mp4 size=${buf.length}`);
+  let lastErr;
+  for (let i = 1; i <= retries; i++) {
+    try {
+      const form = new FormData();
+      form.append("file", new Blob([buf], { type: "video/mp4" }), `${name}.mp4`);
+      const j = ok(await api(token, "POST", "/file/upload", { formData: form }), "upload");
+      const url = typeof j.data === "string" ? j.data : j.data?.url || j.data?.path;
+      if (!url) throw new Error("upload returned no url");
+      return url.startsWith("http") ? url : BASE + (url.startsWith("/") ? "" : "/") + url;
+    } catch (e) {
+      lastErr = e;
+      console.warn(`upload attempt ${i}/${retries} failed: ${e.message}`);
+      if (i < retries) await new Promise((r) => setTimeout(r, 2000 * i));
+    }
+  }
+  throw lastErr;
 }
 
 
@@ -162,15 +231,17 @@ export async function swapCombined(token, state, { root, outDir, today, force = 
     for (const [loc, cfg] of Object.entries(LOCATIONS)) {
       if (onlyLoc && loc !== onlyLoc) continue;
       const cur = byLoc[loc] || {};
-      const segments = cfg.segments || ["karamalz", "live", "deals"];
+      const segments = cfg.segments || ["karamalz", "live", "deals", "sale"];
       const deals = await verifiedDeals(token, state, cfg.rtus, today);
-      const hash = dealsHash(deals, segments);
+      const sale = await verifiedSale(token, state, cfg.rtus, today);
+      const karamalzPrice = cfg.karamalzPrice || null;
+      const hash = dealsHash(deals, segments, sale, karamalzPrice);
       const needVideo = force || !cur.advertiseId || cur.hash !== hash;
-      console.log(`combined[${loc}]: hash=${hash} prev=${cur.hash || "-"} regenerate=${needVideo} deals=${deals.length}`);
+      console.log(`combined[${loc}]: hash=${hash} prev=${cur.hash || "-"} regenerate=${needVideo} deals=${deals.length} sale=${sale.length}`);
       if (dryRun) continue;
       let { advertiseId, adName, url } = cur;
       if (needVideo) {
-        const file = renderCombined(root, outDir, loc, cfg.rtus, segments, deals);
+        const file = renderCombined(root, outDir, loc, cfg.rtus, segments, deals, sale, karamalzPrice);
         adName = `SD24-combined-${loc}-${today}-${hash.slice(0, 6)}`;
         url = await uploadVideo(token, file, adName);
         ok(await api(token, "POST", "/advertise/save", {
@@ -211,7 +282,8 @@ export async function swapCombined(token, state, { root, outDir, today, force = 
         loc, needVideo, locResults, deals,
         entry: {
           advertiseId: String(advertiseId), advertiseGroupItemId: groupId, adName,
-          groupName: cfg.groupName, url, hash, segments, verifiedDeals: deals,
+          groupName: cfg.groupName, url, hash, segments, verifiedDeals: deals, verifiedSale: sale,
+          karamalzPrice,
           nightGroups: NIGHT_GROUPS, boundRtus: cfg.rtus,
           previousAdvertiseId: needVideo && cur.advertiseId !== advertiseId ? cur.advertiseId || null : cur.previousAdvertiseId || null,
           updatedAt: new Date().toISOString(),

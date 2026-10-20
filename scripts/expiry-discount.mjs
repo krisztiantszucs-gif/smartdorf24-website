@@ -28,6 +28,7 @@ import {
   laneKey,
   BASE,
 } from "./lib/impressiot.mjs";
+import { clearanceEndReason, OFFLINE_RTUS } from "./lib/clearance.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -44,7 +45,7 @@ const FORCE = args.has("--force"); // ignore lastRunDay guard
 
 function loadState() {
   if (!existsSync(STATE_PATH)) {
-    return { version: 1, lastRunAt: null, lastRunDay: null, active: {}, machineAds: {} };
+    return { version: 1, lastRunAt: null, lastRunDay: null, active: {}, clearance: {}, machineAds: {} };
   }
   return JSON.parse(readFileSync(STATE_PATH, "utf8"));
 }
@@ -327,53 +328,114 @@ function planForMachine(rtuNumber, row, state, window) {
   const toDiscount = [];
   const toRestore = [];
   const stay = [];
+  const clearanceEnd = [];
   const today = window[0];
+  state.clearance ||= {};
+  state.active ||= {};
+
+  const offline = OFFLINE_RTUS.has(String(rtuNumber));
 
   for (const c of named) {
     const lane = String(c.cargoNumber);
     const key = laneKey(rtuNumber, lane);
     const eff = c.effDate ? String(c.effDate).slice(0, 10) : "";
-    const active = state.active[key];
-    const pct = tierFor(eff, today);
+    let active = state.active[key];
+    let clearance = state.clearance[key];
 
-    if (active && (!pct || eff !== active.effDate)) {
-      toRestore.push({ key, lane, name: c.commodityName, currentPrice: Number(c.price),
-        restorePrice: Number(active.originalPrice), effDate: eff, active });
+    // End clearance on sell-out / product change / refill / endsAt (even on offline — drop state)
+    if (clearance) {
+      const why = clearanceEndReason(clearance, c, today);
+      if (why) {
+        clearanceEnd.push({ key, lane, name: c.commodityName, why, entry: clearance });
+        clearance = null;
+      }
+    }
+
+    // Offline machines: never write prices; still allow clearance state cleanup above
+    if (offline) continue;
+
+    const expiryPct = tierFor(eff, today);
+    // Drop expiry active when no longer in window
+    if (active && !expiryPct) {
+      // will restore unless clearance still wants a price
+      if (!clearance) {
+        toRestore.push({
+          key, lane, name: c.commodityName, currentPrice: Number(c.price),
+          restorePrice: Number(active.originalPrice),
+          restoreCostPrice: active.originalCostPrice,
+          effDate: eff, active, reason: "expiry-end",
+        });
+        continue;
+      }
+      // clearance continues — drop active, keep clearance
+      active = null;
+    }
+
+    const clearancePct = clearance ? Number(clearance.percent || 0) : 0;
+    const wantPct = Math.max(expiryPct, clearancePct);
+    if (!wantPct) {
+      // No promo. If we just ended clearance and had no expiry, restore original.
+      const ended = clearanceEnd.find((x) => x.key === key);
+      if (ended && !active) {
+        toRestore.push({
+          key, lane, name: c.commodityName, currentPrice: Number(c.price),
+          restorePrice: Number(ended.entry.originalPrice),
+          restoreCostPrice: ended.entry.originalCostPrice,
+          effDate: eff, active: ended.entry, reason: `clearance-${ended.why}`,
+        });
+      }
       continue;
     }
-    if (!pct) continue;
-    // Always computed from the stored original price (never compound).
-    const original = active ? Number(active.originalPrice) : Number(c.price);
-    const originalCost = Number(active ? active.originalCostPrice ?? c.costPrice ?? 0 : c.costPrice ?? 0);
-    const want = tierPrice(original, pct);
-    if (active && Number(c.price) === want && Number(active.percent || 50) === pct) {
-      stay.push({ key, lane, name: c.commodityName, effDate: eff, percent: pct });
+
+    const original = Number(
+      clearance?.originalPrice ?? active?.originalPrice ?? c.price
+    );
+    const originalCost = Number(
+      clearance?.originalCostPrice ?? active?.originalCostPrice ?? c.costPrice ?? 0
+    );
+    const want = tierPrice(original, wantPct);
+    const source = expiryPct >= clearancePct && expiryPct > 0 ? "expiry" : "clearance";
+    const keepActive = expiryPct > 0 && expiryPct >= clearancePct;
+
+    if (Number(c.price) === want) {
+      toDiscount.push({
+        key, lane, name: c.commodityName, originalPrice: original, originalCostPrice: originalCost,
+        discountPrice: want, discountCostPrice: Math.min(originalCost, want),
+        effDate: eff, percent: wantPct, already: true, noop: true,
+        source, keepActive, clearance, expiryPct, clearancePct,
+        image: c.commodityImg || c.img || c.imageUrl || active?.image || null,
+      });
       continue;
     }
-    toDiscount.push({ key, lane, name: c.commodityName, originalPrice: original, originalCostPrice: originalCost,
-      discountPrice: want, discountCostPrice: Math.min(originalCost, want), // API: costPrice <= price
-      effDate: eff, percent: pct, already: !!active,
-      image: c.commodityImg || c.img || c.imageUrl || active?.image || null });
+    toDiscount.push({
+      key, lane, name: c.commodityName, originalPrice: original, originalCostPrice: originalCost,
+      discountPrice: want, discountCostPrice: Math.min(originalCost, want),
+      effDate: eff, percent: wantPct, already: !!(active || clearance), noop: false,
+      source, keepActive, clearance, expiryPct, clearancePct,
+      image: c.commodityImg || c.img || c.imageUrl || active?.image || null,
+    });
   }
 
-  // Active state entries whose lane disappeared
+  // Active expiry entries whose lane disappeared
   for (const [key, active] of Object.entries(state.active)) {
     if (!key.startsWith(rtuNumber + ":")) continue;
     if (!named.find((c) => String(c.cargoNumber) === String(active.lane))) {
       toRestore.push({
-        key,
-        lane: String(active.lane),
-        name: active.name,
-        currentPrice: null,
-        restorePrice: Number(active.originalPrice),
-        effDate: active.effDate,
-        active,
-        missing: true,
+        key, lane: String(active.lane), name: active.name, currentPrice: null,
+        restorePrice: Number(active.originalPrice), restoreCostPrice: active.originalCostPrice,
+        effDate: active.effDate, active, missing: true, reason: "lane-gone",
       });
     }
   }
+  // Clearance entries whose lane disappeared
+  for (const [key, cl] of Object.entries(state.clearance)) {
+    if (!key.startsWith(rtuNumber + ":")) continue;
+    if (!named.find((c) => String(c.cargoNumber) === String(cl.lane))) {
+      clearanceEnd.push({ key, lane: String(cl.lane), name: cl.name, why: "missing", entry: cl });
+    }
+  }
 
-  return { meta, cargos, toDiscount, toRestore, stay };
+  return { meta, cargos, toDiscount, toRestore, stay, clearanceEnd, offline };
 }
 
 async function applyPriceChanges(token, rtuNumber, cargos, changes) {
@@ -570,10 +632,17 @@ async function main() {
   let restoreCount = 0;
   for (const { rtuNumber, plan } of plans) {
     console.log(`\n== ${plan.meta.name.en} (${rtuNumber})`);
+    for (const e of plan.clearanceEnd || []) {
+      console.log(`  CLEARANCE-END lane ${e.lane} ${e.name}: ${e.why}`);
+    }
     for (const d of plan.toDiscount) {
+      if (d.noop) {
+        console.log(`  KEEP lane ${d.lane} ${d.name} (−${d.percent}% via ${d.source})`);
+        continue;
+      }
       discountCount++;
       console.log(
-        `  DISCOUNT lane ${d.lane} ${d.name}: ${money(d.originalPrice)} → ${money(d.discountPrice)} € (−${d.percent}%, eff ${d.effDate})${d.already ? " [tier/fix]" : ""}`
+        `  DISCOUNT lane ${d.lane} ${d.name}: ${money(d.originalPrice)} → ${money(d.discountPrice)} € (−${d.percent}% ${d.source}, eff ${d.effDate || "—"})${d.already ? " [update]" : ""}`
       );
     }
     for (const r of plan.toRestore) {
@@ -608,13 +677,17 @@ async function main() {
         delete state.active[r.key];
         continue;
       }
+      if (plan.offline) continue;
       priceChanges.push({
         lane: r.lane,
         newPrice: r.restorePrice,
-        newCostPrice: r.active?.originalCostPrice,
+        newCostPrice: r.restoreCostPrice ?? r.active?.originalCostPrice,
       });
     }
-    for (const d of plan.toDiscount) {
+    if (plan.offline) {
+      console.log(`  skip writes — offline/excluded RTU ${rtuNumber}`);
+    } else for (const d of plan.toDiscount) {
+      if (d.noop) continue;
       priceChanges.push({
         lane: d.lane,
         newPrice: d.discountPrice,
@@ -629,24 +702,46 @@ async function main() {
       cargos = (await fetchReplenish(token, rtuNumber)).cargos;
     }
 
+    // Clearance endings (always drop from map)
+    for (const e of plan.clearanceEnd || []) {
+      delete state.clearance[e.key];
+      console.log(`  CLEARANCE END ${e.key} (${e.why})`);
+    }
     // Update state for restores/discounts
     for (const r of plan.toRestore) {
       delete state.active[r.key];
+      // If restore was only because expiry ended but clearance remains, re-seed active skip — clearance kept separately
     }
     for (const d of plan.toDiscount) {
-      state.active[d.key] = {
-        rtuNumber: String(rtuNumber),
-        lane: String(d.lane),
-        name: d.name,
-        originalPrice: d.originalPrice,
-        originalCostPrice: d.originalCostPrice,
-        discountPrice: d.discountPrice,
-        discountCostPrice: d.discountCostPrice,
-        percent: d.percent,
-        effDate: d.effDate,
-        startedAt: state.active[d.key]?.startedAt || new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
-      };
+      if (d.keepActive) {
+        state.active[d.key] = {
+          rtuNumber: String(rtuNumber),
+          lane: String(d.lane),
+          name: d.name,
+          originalPrice: d.originalPrice,
+          originalCostPrice: d.originalCostPrice,
+          discountPrice: d.discountPrice,
+          discountCostPrice: d.discountCostPrice,
+          percent: d.expiryPct || d.percent,
+          effDate: d.effDate,
+          startedAt: state.active[d.key]?.startedAt || new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+        };
+      } else {
+        // Clearance won (or expiry absent) — do not keep a stale expiry active entry
+        delete state.active[d.key];
+      }
+      if (d.clearance && state.clearance[d.key]) {
+        // Keep clearance book aligned with originals; price may be overridden by bigger expiry
+        state.clearance[d.key] = {
+          ...state.clearance[d.key],
+          originalPrice: d.originalPrice,
+          originalCostPrice: d.originalCostPrice,
+          clearancePrice: tierPrice(d.originalPrice, d.clearancePct || state.clearance[d.key].percent),
+          clearanceCostPrice: Math.min(d.originalCostPrice, tierPrice(d.originalPrice, d.clearancePct || state.clearance[d.key].percent)),
+          updatedAt: new Date().toISOString(),
+        };
+      }
     }
 
     // Ads for this machine
@@ -714,9 +809,15 @@ async function main() {
   }
   console.log(`\nWrote ${STATE_PATH}`);
   console.log(
-    "Active discounts:",
+    "Active expiry discounts:",
     Object.values(state.active).map(
       (a) => `${a.rtuNumber}:${a.lane} ${a.name} ${a.originalPrice}->${a.discountPrice}`
+    )
+  );
+  console.log(
+    "Clearance:",
+    Object.values(state.clearance || {}).map(
+      (a) => `${a.rtuNumber}:${a.lane} ${a.name} ${a.originalPrice}->${a.clearancePrice} (−${a.percent}% ${a.reason} until ${a.endsAt})`
     )
   );
 }
