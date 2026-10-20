@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-20T07:15:47.299Z",
+  "updatedAt": "2026-10-20T07:35:06.044Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T07:15:47.299Z",
+          "fetchedAt": "2026-10-20T07:35:06.044Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-20T07:15:47.299Z",
+          "fetchedAt": "2026-10-20T07:35:06.044Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T07:15:47.299Z",
+          "fetchedAt": "2026-10-20T07:35:06.044Z",
           "items": [
             {
               "lane": "1",
@@ -1115,18 +1115,8 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T07:15:47.299Z",
+          "fetchedAt": "2026-10-20T07:35:06.044Z",
           "items": [
-            {
-              "lane": "1",
-              "level": 1,
-              "name": "Schlüter's Bio Nürnberger Rostbratwürste",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d66fb02721c545bfbfcf87bf8d691765.png",
-              "price": 4,
-              "stock": 0,
-              "capacity": 5,
-              "expired": false
-            },
             {
               "lane": "2",
               "level": 1,
@@ -1136,16 +1126,6 @@
               "stock": 2,
               "capacity": 2,
               "expired": false
-            },
-            {
-              "lane": "3",
-              "level": 1,
-              "name": "Popp Kartoffelsalat Klassik",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d35471b285684c71b4b5c7a7c36d0e05.png",
-              "price": 3.2,
-              "stock": 2,
-              "capacity": 2,
-              "expired": true
             },
             {
               "lane": "4",
@@ -1226,16 +1206,6 @@
               "stock": 1,
               "capacity": 5,
               "expired": false
-            },
-            {
-              "lane": "24",
-              "level": 3,
-              "name": "Popp Brot-Aufstrich Ei-Bacon Maxi",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/caf6528418524bef92340800768e8668.jpg",
-              "price": 2.8,
-              "stock": 2,
-              "capacity": 5,
-              "expired": true
             },
             {
               "lane": "31",
