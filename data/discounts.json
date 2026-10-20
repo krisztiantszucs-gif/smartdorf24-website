@@ -1,21 +1,8 @@
 {
   "version": 1,
-  "lastRunAt": "2026-10-19T21:21:01.187Z",
-  "lastRunDay": "2026-10-19",
+  "lastRunAt": "2026-10-20T05:06:44.433Z",
+  "lastRunDay": "2026-10-20",
   "active": {
-    "7680783:3": {
-      "rtuNumber": "7680783",
-      "lane": "3",
-      "name": "Popp Kartoffelsalat Klassik",
-      "originalPrice": 3.2,
-      "originalCostPrice": 2.49,
-      "discountPrice": 0.95,
-      "discountCostPrice": 0.95,
-      "percent": 70,
-      "effDate": "2026-10-19",
-      "startedAt": "2026-10-15T18:10:57.249Z",
-      "updatedAt": "2026-10-18T16:00:20.344Z"
-    },
     "7680800:3": {
       "rtuNumber": "7680800",
       "lane": "3",
@@ -35,38 +22,29 @@
       "name": "Wiesenhof Geflügel Mortadella",
       "originalPrice": 2,
       "originalCostPrice": 1.19,
-      "discountPrice": 1.6,
-      "discountCostPrice": 1.19,
-      "percent": 20,
+      "discountPrice": 1,
+      "discountCostPrice": 1,
+      "percent": 50,
       "effDate": "2026-10-22",
       "startedAt": "2026-10-18T05:12:43.420Z",
-      "updatedAt": "2026-10-18T05:12:43.420Z"
+      "updatedAt": "2026-10-20T05:06:44.433Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100001966",
+        "advertiseId": "100001973",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-10-19-c02c4e",
+        "adName": "SD24-combined-steinsberg-2026-10-20-8637c0",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1053c8b25c8e42339bc1232545241f26.mp4",
-        "hash": "c02c4eb43535e75b",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6772de0e820545d893616c359c9ae438.mp4",
+        "hash": "8637c088aa5f0feb",
         "segments": [
           "karamalz",
           "live",
           "deals"
         ],
         "verifiedDeals": [
-          {
-            "rtuNumber": "7680783",
-            "lane": "3",
-            "name": "Popp Kartoffelsalat Klassik",
-            "old": 3.2,
-            "new": 0.95,
-            "pct": 70,
-            "until": "2026-10-19"
-          },
           {
             "rtuNumber": "7680800",
             "lane": "3",
@@ -81,8 +59,8 @@
             "lane": "11",
             "name": "Wiesenhof Geflügel Mortadella",
             "old": 2,
-            "new": 1.6,
-            "pct": 20,
+            "new": 1,
+            "pct": 50,
             "until": "2026-10-22"
           }
         ],
@@ -95,7 +73,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-19T21:21:01.881Z"
+        "updatedAt": "2026-10-20T05:07:43.263Z"
       },
       "schiesheim": {
         "advertiseId": "100001950",
@@ -118,11 +96,11 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-19T21:21:02.578Z"
+        "updatedAt": "2026-10-20T05:07:45.711Z"
       }
     }
   },
   "machineAds": {},
   "lastEveningRunDay": "2026-10-19",
-  "lastMorningRunDay": "2026-10-19"
+  "lastMorningRunDay": "2026-10-20"
 }
