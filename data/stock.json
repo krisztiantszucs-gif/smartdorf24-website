@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-20T07:55:22.754Z",
+  "updatedAt": "2026-10-20T08:05:31.198Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T07:55:22.754Z",
+          "fetchedAt": "2026-10-20T08:05:31.198Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-20T07:55:22.754Z",
+          "fetchedAt": "2026-10-20T08:05:31.198Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T07:55:22.754Z",
+          "fetchedAt": "2026-10-20T08:05:31.198Z",
           "items": [
             {
               "lane": "1",
@@ -692,7 +692,7 @@
               "name": "Choco Chip Cookies",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/369fe3b29e5f4559baee5414c67f4f14.jpeg",
               "price": 2,
-              "stock": 1,
+              "stock": 3,
               "capacity": 3,
               "expired": false
             },
@@ -709,21 +709,21 @@
             {
               "lane": "3",
               "level": 1,
-              "name": "Golden Toast Vollkorn 250g",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/df4e4440188744f6a6dd473a252bcaaa.png",
-              "price": 0.6,
-              "stock": 2,
-              "capacity": 2,
+              "name": "Milka Choco Brownie",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
+              "price": 3,
+              "stock": 1,
+              "capacity": 3,
               "expired": false
             },
             {
               "lane": "4",
               "level": 1,
-              "name": "Werther's Original Caramel Popcorn",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6d19cf4273e5473fac0019429005b22a.png",
-              "price": 3.5,
-              "stock": 2,
-              "capacity": 3,
+              "name": "LEGO Minecraft The Nether Lava Battle",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ad83eeacba7c464798f25516f2700eeb.png",
+              "price": 13,
+              "stock": 1,
+              "capacity": 1,
               "expired": false
             },
             {
@@ -759,21 +759,21 @@
             {
               "lane": "13",
               "level": 2,
-              "name": "Milka Choco Brownie",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
+              "name": "Milka Sensations Cookies",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d29fa3d86e242629a04df86d40a725e.png",
               "price": 3,
-              "stock": 0,
-              "capacity": 3,
+              "stock": 4,
+              "capacity": 5,
               "expired": false
             },
             {
               "lane": "14",
               "level": 2,
-              "name": "Twist'n'Taste Cocoa Roll Wafers",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/4526ecb8de7c4894bc789a7bf66d47ac.png",
-              "price": 3,
-              "stock": 3,
-              "capacity": 3,
+              "name": "Milka Sensations Cookies Oreo Creme",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9d491aa58fb442e98c14e32d4ec5a5d2.png",
+              "price": 2.9,
+              "stock": 2,
+              "capacity": 5,
               "expired": false
             },
             {
@@ -792,7 +792,7 @@
               "name": "funny-frisch goldfischli sesam",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9b9bd38faafe47e8b79f35eced831897.png",
               "price": 2,
-              "stock": 1,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -809,20 +809,20 @@
             {
               "lane": "23",
               "level": 3,
-              "name": "LEGO Technic Backhoe Loader",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/751fbcdd61b84fa2aa312f993fff07cd.png",
-              "price": 15,
-              "stock": 1,
-              "capacity": 5,
+              "name": "Chocolate Egg Waffles",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bdbfc1cd40b84ec580513f5493327765.jpg",
+              "price": 2.6,
+              "stock": 2,
+              "capacity": 10,
               "expired": false
             },
             {
               "lane": "24",
               "level": 3,
-              "name": "LEGO Minecraft The Nether Lava Battle",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ad83eeacba7c464798f25516f2700eeb.png",
-              "price": 13,
-              "stock": 1,
+              "name": "Patisserie Apple Cakes",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/797d5c3d51e24263921077e070203df4.png",
+              "price": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -872,7 +872,7 @@
               "name": "BiFi Roll 40g",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b22597f3c98b49c895f27b149d2130ce.jpeg",
               "price": 1.6,
-              "stock": 2,
+              "stock": 5,
               "capacity": 10,
               "expired": false
             },
@@ -889,10 +889,10 @@
             {
               "lane": "36",
               "level": 4,
-              "name": "Ültje Erdnüsse, geröstet und gesalzen",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/119a07410be244859196a501e09d45b1.jpeg",
-              "price": 2.5,
-              "stock": 0,
+              "name": "Mikado Keks-Sticks Milchschokolade 75g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ed7b5378c2cf49fd89f1a9e547c0fbff.jpeg",
+              "price": 2.4,
+              "stock": 5,
               "capacity": 10,
               "expired": false
             },
@@ -932,7 +932,7 @@
               "name": "Milka Tuc",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9f88c5fa7ec044c8ab92300767c9608b.png",
               "price": 2.1,
-              "stock": 0,
+              "stock": 5,
               "capacity": 10,
               "expired": false
             },
@@ -983,7 +983,7 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3f50b805073545368488b956fa847e33.jpeg",
               "price": 2.5,
               "stock": 1,
-              "capacity": 10,
+              "capacity": 5,
               "expired": false
             },
             {
@@ -1052,17 +1052,17 @@
               "name": "Monster Viking Berry 0.5l inkl pfand.",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
               "price": 2.2,
-              "stock": 2,
+              "stock": 3,
               "capacity": 3,
               "expired": false
             },
             {
               "lane": "55",
               "level": 6,
-              "name": "Mikado Keks-Sticks Milchschokolade 75g",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ed7b5378c2cf49fd89f1a9e547c0fbff.jpeg",
-              "price": 2.3,
-              "stock": 0,
+              "name": "RedBull Original 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
+              "price": 2.2,
+              "stock": 1,
               "capacity": 10,
               "expired": false
             },
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T07:55:22.754Z",
+          "fetchedAt": "2026-10-20T08:05:31.198Z",
           "items": [
             {
               "lane": "2",
