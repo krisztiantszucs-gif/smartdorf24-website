@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-20T17:33:53.140Z",
+  "updatedAt": "2026-10-20T17:44:01.647Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,14 +20,14 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T17:33:53.140Z",
+          "fetchedAt": "2026-10-20T17:44:01.647Z",
           "items": [
             {
               "lane": "1",
               "level": 1,
               "name": "Choco Chip Cookies",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/369fe3b29e5f4559baee5414c67f4f14.jpeg",
-              "price": 2,
+              "price": 1.6,
               "stock": 3,
               "capacity": 3,
               "expired": false
@@ -87,7 +87,7 @@
               "level": 2,
               "name": "Capico Knusper Röllchen Haselnuss",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png",
-              "price": 2.2,
+              "price": 1.55,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -117,7 +117,7 @@
               "level": 2,
               "name": "Doritos Bits Honey BBQ",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/e4d09ddbc14045a7bf2f34ae6a6310a9.jpeg",
-              "price": 2,
+              "price": 1.6,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -137,7 +137,7 @@
               "level": 3,
               "name": "Milram Moin Kakao Drink 0,3% 0,5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
-              "price": 1.1,
+              "price": 0.9,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -197,7 +197,7 @@
               "level": 4,
               "name": "Nutella Go",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
-              "price": 1.9,
+              "price": 1.5,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -207,7 +207,7 @@
               "level": 4,
               "name": "KitKat",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg",
-              "price": 1.3,
+              "price": 1.05,
               "stock": 7,
               "capacity": 10,
               "expired": false
@@ -237,7 +237,7 @@
               "level": 4,
               "name": "Huober Minis",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png",
-              "price": 1,
+              "price": 0.8,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -247,7 +247,7 @@
               "level": 4,
               "name": "Mikado Keks-Sticks Milchschokolade 75g",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ed7b5378c2cf49fd89f1a9e547c0fbff.jpeg",
-              "price": 2.4,
+              "price": 1.9,
               "stock": 3,
               "capacity": 10,
               "expired": false
@@ -337,7 +337,7 @@
               "level": 5,
               "name": "Starbucks Frappuccino Caramel Eiskaffee 250ml",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bc904bb2cfd4f06acba2b827b3eba2a.jpeg",
-              "price": 2.5,
+              "price": 2,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -357,7 +357,7 @@
               "level": 6,
               "name": "Vio Still 0.5l Wasser  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
-              "price": 1.6,
+              "price": 1.3,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -397,7 +397,7 @@
               "level": 6,
               "name": "Fuze Tea Pfirsich 0,4L  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
-              "price": 2.2,
+              "price": 1.75,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-20T17:33:53.140Z",
+          "fetchedAt": "2026-10-20T17:44:01.647Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T17:33:53.140Z",
+          "fetchedAt": "2026-10-20T17:44:01.647Z",
           "items": [
             {
               "lane": "1",
@@ -731,7 +731,7 @@
               "level": 1,
               "name": "durex gefühlsecht",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d2a974f4b2742a886b66e76d4be6888.png",
-              "price": 3.6,
+              "price": 2.5,
               "stock": 10,
               "capacity": 10,
               "expired": false
@@ -741,7 +741,7 @@
               "level": 2,
               "name": "Pringles",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg",
-              "price": 1.6,
+              "price": 1.3,
               "stock": 3,
               "capacity": 3,
               "expired": false
@@ -751,7 +751,7 @@
               "level": 2,
               "name": "Toffifee",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
-              "price": 2.5,
+              "price": 2,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -801,7 +801,7 @@
               "level": 3,
               "name": "MrBeast Beef Jerky Original",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5bcdf3ec37c94f218c917fb7dd6ff76b.png",
-              "price": 2.5,
+              "price": 2,
               "stock": 5,
               "capacity": 10,
               "expired": false
@@ -841,7 +841,7 @@
               "level": 4,
               "name": "Milka Haselnuss",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/24fdb100b98241e6a7f95ce26ee3a4e5.png",
-              "price": 2.2,
+              "price": 1.55,
               "stock": 4,
               "capacity": 10,
               "expired": false
@@ -851,7 +851,7 @@
               "level": 4,
               "name": "Crackzel Pretzel Pieces",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fe511a8730aa4065bb9f5b7232ba325f.png",
-              "price": 1.6,
+              "price": 1.3,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -861,7 +861,7 @@
               "level": 4,
               "name": "Nut & Fruit Mix",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/304baa5cb88c4acda661fb056a8ab958.png",
-              "price": 2.4,
+              "price": 1.9,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -901,7 +901,7 @@
               "level": 4,
               "name": "Haribo Pasta Flagga",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/537fcfd985df4edda29937d78af14900.png",
-              "price": 2.2,
+              "price": 1.55,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -911,7 +911,7 @@
               "level": 4,
               "name": "Haribo Pico Balla Sauer",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ea50b19a795e4218a290e7cebbf00150.png",
-              "price": 2.2,
+              "price": 1.55,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -941,7 +941,7 @@
               "level": 5,
               "name": "Smarties",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/590f59b9add746c6beb00de283b64173.jpg",
-              "price": 1.3,
+              "price": 1.05,
               "stock": 4,
               "capacity": 10,
               "expired": false
@@ -1115,14 +1115,14 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T17:33:53.140Z",
+          "fetchedAt": "2026-10-20T17:44:01.647Z",
           "items": [
             {
               "lane": "2",
               "level": 1,
               "name": "Popp Coleslaw-Salat",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/a4a3eafe57d34304b708981033db4b67.png",
-              "price": 3.5,
+              "price": 2.45,
               "stock": 2,
               "capacity": 2,
               "expired": false
@@ -1132,7 +1132,7 @@
               "level": 1,
               "name": "Grünländer Bärlauch",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/203be2d8ff3c4d74a8b4a6a6840733ee.png",
-              "price": 2.5,
+              "price": 1.75,
               "stock": 2,
               "capacity": 2,
               "expired": false
@@ -1152,7 +1152,7 @@
               "level": 2,
               "name": "Pick Ungarische Salami",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6896b049df3448f294dfef12ff6b089b.png",
-              "price": 3,
+              "price": 2.1,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -1162,7 +1162,7 @@
               "level": 2,
               "name": "Pick Puszta-Kolbasz",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/707c24edb06d4270bc6b55b8d5813bff.png",
-              "price": 2.8,
+              "price": 1.95,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -1172,7 +1172,7 @@
               "level": 2,
               "name": "Sonntags-Brötchen",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/01fa843caec14bc0a8f69484dabd1b35.png",
-              "price": 2.5,
+              "price": 1.75,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -1192,7 +1192,7 @@
               "level": 3,
               "name": "Vollmilch 3.5% 0.5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/431b28fb18b54f7ba96ac98210dc7632.jpeg",
-              "price": 1,
+              "price": 0.7,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -1212,7 +1212,7 @@
               "level": 4,
               "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
-              "price": 1,
+              "price": 0.8,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -1222,7 +1222,7 @@
               "level": 4,
               "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
-              "price": 1,
+              "price": 0.8,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -1232,7 +1232,7 @@
               "level": 4,
               "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
-              "price": 1,
+              "price": 0.8,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -1262,7 +1262,7 @@
               "level": 4,
               "name": "Capri-Sun Fairy Drink",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0d19a0bd2c174af5a3fdc1f611c5efcf.png",
-              "price": 1,
+              "price": 0.7,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -1282,7 +1282,7 @@
               "level": 4,
               "name": "Fanta Mango DragonFruit",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg",
-              "price": 1.6,
+              "price": 1.1,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -1332,7 +1332,7 @@
               "level": 5,
               "name": "Gösser Natur Radler",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
-              "price": 2,
+              "price": 1.6,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -1392,7 +1392,7 @@
               "level": 6,
               "name": "Vio Still 0.5l Wasser  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
-              "price": 2,
+              "price": 1.6,
               "stock": 5,
               "capacity": 5,
               "expired": false
