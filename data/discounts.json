@@ -1,21 +1,8 @@
 {
   "version": 1,
-  "lastRunAt": "2026-10-20T05:06:44.433Z",
+  "lastRunAt": "2026-10-20T09:44:45.559Z",
   "lastRunDay": "2026-10-20",
   "active": {
-    "7680800:3": {
-      "rtuNumber": "7680800",
-      "lane": "3",
-      "name": "Golden Toast Vollkorn 250g",
-      "originalPrice": 2,
-      "originalCostPrice": 1.29,
-      "discountPrice": 0.6,
-      "discountCostPrice": 0.6,
-      "percent": 70,
-      "effDate": "2026-10-20",
-      "startedAt": "2026-10-16T05:40:25.251Z",
-      "updatedAt": "2026-10-19T16:07:45.049Z"
-    },
     "7680783:11": {
       "rtuNumber": "7680783",
       "lane": "11",
@@ -33,27 +20,18 @@
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100001973",
+        "advertiseId": "100001974",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-10-20-8637c0",
+        "adName": "SD24-combined-steinsberg-2026-10-20-a98ea6",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6772de0e820545d893616c359c9ae438.mp4",
-        "hash": "8637c088aa5f0feb",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/061e4d998ec24eb88fc23d4426b9164a.mp4",
+        "hash": "a98ea67d88c2e8c4",
         "segments": [
           "karamalz",
           "live",
           "deals"
         ],
         "verifiedDeals": [
-          {
-            "rtuNumber": "7680800",
-            "lane": "3",
-            "name": "Golden Toast Vollkorn 250g",
-            "old": 2,
-            "new": 0.6,
-            "pct": 70,
-            "until": "2026-10-20"
-          },
           {
             "rtuNumber": "7680783",
             "lane": "11",
@@ -73,7 +51,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-20T05:07:43.263Z"
+        "updatedAt": "2026-10-20T09:45:35.917Z"
       },
       "schiesheim": {
         "advertiseId": "100001950",
@@ -96,7 +74,7 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-20T05:07:45.711Z"
+        "updatedAt": "2026-10-20T09:45:36.187Z"
       }
     }
   },
