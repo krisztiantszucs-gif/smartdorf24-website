@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-20T11:36:37.787Z",
+  "updatedAt": "2026-10-20T11:46:46.411Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T11:36:37.787Z",
+          "fetchedAt": "2026-10-20T11:46:46.411Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-20T11:36:37.787Z",
+          "fetchedAt": "2026-10-20T11:46:46.411Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T11:36:37.787Z",
+          "fetchedAt": "2026-10-20T11:46:46.411Z",
           "items": [
             {
               "lane": "1",
@@ -711,7 +711,7 @@
               "level": 1,
               "name": "Milka Choco Brownie",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
-              "price": 2,
+              "price": 3,
               "stock": 1,
               "capacity": 3,
               "expired": false
@@ -841,7 +841,7 @@
               "level": 4,
               "name": "Milka Haselnuss",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/24fdb100b98241e6a7f95ce26ee3a4e5.png",
-              "price": 2.1,
+              "price": 2.2,
               "stock": 4,
               "capacity": 10,
               "expired": false
@@ -931,7 +931,7 @@
               "level": 5,
               "name": "Milka Tuc",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9f88c5fa7ec044c8ab92300767c9608b.png",
-              "price": 2.1,
+              "price": 2.2,
               "stock": 5,
               "capacity": 10,
               "expired": false
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T11:36:37.787Z",
+          "fetchedAt": "2026-10-20T11:46:46.411Z",
           "items": [
             {
               "lane": "2",
