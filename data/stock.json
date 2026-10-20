@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-20T11:06:12.250Z",
+  "updatedAt": "2026-10-20T11:16:20.512Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T11:06:12.250Z",
+          "fetchedAt": "2026-10-20T11:16:20.512Z",
           "items": [
             {
               "lane": "1",
@@ -28,17 +28,17 @@
               "name": "Choco Chip Cookies",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/369fe3b29e5f4559baee5414c67f4f14.jpeg",
               "price": 2,
-              "stock": 2,
+              "stock": 3,
               "capacity": 3,
               "expired": false
             },
             {
               "lane": "2",
               "level": 1,
-              "name": "Haribo Happy Mix",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/31eb2a4173f048b6a0e6be16e1cec492.png",
-              "price": 2.2,
-              "stock": 0,
+              "name": "Werther's Original Caramel Popcorn",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6d19cf4273e5473fac0019429005b22a.png",
+              "price": 3.5,
+              "stock": 2,
               "capacity": 3,
               "expired": false
             },
@@ -145,11 +145,11 @@
             {
               "lane": "23",
               "level": 3,
-              "name": "Milka Choco Brownie",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
+              "name": "Patisserie Apple Cakes",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/797d5c3d51e24263921077e070203df4.png",
               "price": 3,
-              "stock": 0,
-              "capacity": 3,
+              "stock": 2,
+              "capacity": 5,
               "expired": false
             },
             {
@@ -167,8 +167,8 @@
               "level": 3,
               "name": "Milka LU",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3830c0a5e93d4f08bd8f8e543c07615c.png",
-              "price": 2,
-              "stock": 0,
+              "price": 2.2,
+              "stock": 3,
               "capacity": 10,
               "expired": false
             },
@@ -225,11 +225,11 @@
             {
               "lane": "36",
               "level": 4,
-              "name": "Sport Kapuciner",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9ea3981e806f47a29f6f18c5dfc3958b.png",
-              "price": 1.5,
-              "stock": 0,
-              "capacity": 10,
+              "name": "BiFi Roll 40g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b22597f3c98b49c895f27b149d2130ce.jpeg",
+              "price": 1.6,
+              "stock": 5,
+              "capacity": 5,
               "expired": false
             },
             {
@@ -275,30 +275,30 @@
             {
               "lane": "42",
               "level": 5,
-              "name": "Red Bull White Edition inkl. pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
-              "price": 2.2,
-              "stock": 0,
-              "capacity": 5,
+              "name": "RedBull Peach 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/dbc4ec1647874649a3fa390bcce36def.jpeg",
+              "price": 2.25,
+              "stock": 3,
+              "capacity": 10,
               "expired": false
             },
             {
               "lane": "43",
               "level": 5,
-              "name": "RedBull Peach 250ml  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/dbc4ec1647874649a3fa390bcce36def.jpeg",
-              "price": 2.2,
-              "stock": 3,
-              "capacity": 5,
+              "name": "RedBull Original 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
+              "price": 2.25,
+              "stock": 5,
+              "capacity": 10,
               "expired": false
             },
             {
               "lane": "44",
               "level": 5,
-              "name": "RedBull Original 250ml  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
-              "price": 2.2,
-              "stock": 5,
+              "name": "Monster Juiced Mango Loco Energy",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/65cd22d69f0e4a419dab481a4b959826.png",
+              "price": 2,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -327,7 +327,7 @@
               "level": 5,
               "name": "Gösser Natur Radler",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
-              "price": 2,
+              "price": 1.5,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-20T11:06:12.250Z",
+          "fetchedAt": "2026-10-20T11:16:20.512Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T11:06:12.250Z",
+          "fetchedAt": "2026-10-20T11:16:20.512Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-20T11:06:12.250Z",
+          "fetchedAt": "2026-10-20T11:16:20.512Z",
           "items": [
             {
               "lane": "2",
