@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-21T06:13:45.571Z",
+  "updatedAt": "2026-10-21T06:35:50.876Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-21T06:13:45.571Z",
+          "fetchedAt": "2026-10-21T06:35:50.876Z",
           "items": [
             {
               "lane": "1",
@@ -451,219 +451,8 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-21T06:13:45.571Z",
-          "items": [
-            {
-              "lane": "1",
-              "level": 1,
-              "name": "Capico Knusper Röllchen Haselnuss",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png",
-              "price": 2.2,
-              "stock": 0,
-              "capacity": 10,
-              "expired": false
-            },
-            {
-              "lane": "23",
-              "level": 3,
-              "name": "Milram Moin Kakao Drink 0,3% 0,5l",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
-              "price": 1,
-              "stock": 4,
-              "capacity": 5,
-              "expired": true
-            },
-            {
-              "lane": "24",
-              "level": 3,
-              "name": "Vollmilch 3.5% 0.5l",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/431b28fb18b54f7ba96ac98210dc7632.jpeg",
-              "price": 0.7,
-              "stock": 4,
-              "capacity": 5,
-              "expired": true
-            },
-            {
-              "lane": "41",
-              "level": 5,
-              "name": "Fanta Exotic 330ml  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
-              "price": 1.6,
-              "stock": 1,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "42",
-              "level": 5,
-              "name": "Fanta Mango DragonFruit",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg",
-              "price": 1.6,
-              "stock": 4,
-              "capacity": 5,
-              "expired": true
-            },
-            {
-              "lane": "43",
-              "level": 5,
-              "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
-              "price": 1.9,
-              "stock": 5,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "44",
-              "level": 5,
-              "name": "Capri Sun MultiVitamin 200ml",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6baacaaf2c06466f9267459c0a57a83f.jpeg",
-              "price": 1,
-              "stock": 3,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "45",
-              "level": 5,
-              "name": "Gösser Natur Radler",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
-              "price": 1.8,
-              "stock": 5,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "46",
-              "level": 5,
-              "name": "Monster Viking Berry 0.5l inkl pfand.",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
-              "price": 2.2,
-              "stock": 5,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "47",
-              "level": 5,
-              "name": "Monster Energy 0.5l inkl. pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
-              "price": 2.2,
-              "stock": 5,
-              "capacity": 10,
-              "expired": true
-            },
-            {
-              "lane": "48",
-              "level": 5,
-              "name": "RedBull Peach 250ml  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/dbc4ec1647874649a3fa390bcce36def.jpeg",
-              "price": 2.2,
-              "stock": 5,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "49",
-              "level": 5,
-              "name": "RedBull Original 250ml  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
-              "price": 2.2,
-              "stock": 3,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "51",
-              "level": 6,
-              "name": "Vio Still 0.5l Wasser  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
-              "price": 1.7,
-              "stock": 4,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "52",
-              "level": 6,
-              "name": "Vio Medium 0.5l  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
-              "price": 1.7,
-              "stock": 4,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "53",
-              "level": 6,
-              "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
-              "price": 2.2,
-              "stock": 5,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "54",
-              "level": 6,
-              "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
-              "price": 2.1,
-              "stock": 1,
-              "capacity": 5,
-              "expired": true
-            },
-            {
-              "lane": "55",
-              "level": 6,
-              "name": "Fuze Tea Pfirsich 0,4L  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
-              "price": 2.2,
-              "stock": 5,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "56",
-              "level": 6,
-              "name": "Paulaner Spezi 330ml Cola-Orange",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
-              "price": 1.6,
-              "stock": 4,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "57",
-              "level": 6,
-              "name": "AriZona Cowboy Cocktail Watermelon",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d7bd7e02a79d4da78a8967d24da8f8c5.png",
-              "price": 2,
-              "stock": 1,
-              "capacity": 5,
-              "expired": true
-            },
-            {
-              "lane": "58",
-              "level": 6,
-              "name": "Coca Cola Zero 0.5l  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
-              "price": 2.2,
-              "stock": 5,
-              "capacity": 5,
-              "expired": true
-            },
-            {
-              "lane": "59",
-              "level": 6,
-              "name": "Coca Cola 0.5l Original inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
-              "price": 2.2,
-              "stock": 5,
-              "capacity": 5,
-              "expired": false
-            }
-          ]
+          "fetchedAt": "2026-10-21T06:35:50.876Z",
+          "items": []
         }
       ]
     },
@@ -684,7 +473,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-21T06:13:45.571Z",
+          "fetchedAt": "2026-10-21T06:35:50.876Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +904,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-21T06:13:45.571Z",
+          "fetchedAt": "2026-10-21T06:35:50.876Z",
           "items": [
             {
               "lane": "2",
