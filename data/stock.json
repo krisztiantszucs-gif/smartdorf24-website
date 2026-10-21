@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-21T08:00:04.260Z",
+  "updatedAt": "2026-10-21T08:29:34.168Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-21T08:00:04.260Z",
+          "fetchedAt": "2026-10-21T08:29:34.168Z",
           "items": [
             {
               "lane": "1",
@@ -28,7 +28,7 @@
               "name": "Choco Chip Cookies",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/369fe3b29e5f4559baee5414c67f4f14.jpeg",
               "price": 1.6,
-              "stock": 3,
+              "stock": 2,
               "capacity": 3,
               "expired": false
             },
@@ -158,7 +158,7 @@
               "name": "MrBeast Beef Jerky Original",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5bcdf3ec37c94f218c917fb7dd6ff76b.png",
               "price": 2.5,
-              "stock": 4,
+              "stock": 2,
               "capacity": 10,
               "expired": false
             },
@@ -428,7 +428,7 @@
               "name": "Coca Cola Zero 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
               "price": 2.2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-21T08:00:04.260Z",
+          "fetchedAt": "2026-10-21T08:29:34.168Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-21T08:00:04.260Z",
+          "fetchedAt": "2026-10-21T08:29:34.168Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-21T08:00:04.260Z",
+          "fetchedAt": "2026-10-21T08:29:34.168Z",
           "items": [
             {
               "lane": "2",
