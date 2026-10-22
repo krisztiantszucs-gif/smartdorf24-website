@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-22T09:45:33.149Z",
+  "updatedAt": "2026-10-22T09:58:04.161Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-22T09:45:33.149Z",
+          "fetchedAt": "2026-10-22T09:58:04.161Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-22T09:45:33.149Z",
+          "fetchedAt": "2026-10-22T09:58:04.161Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-22T09:45:33.149Z",
+          "fetchedAt": "2026-10-22T09:58:04.161Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-22T09:45:33.149Z",
+          "fetchedAt": "2026-10-22T09:58:04.161Z",
           "items": [
             {
               "lane": "2",
@@ -1253,7 +1253,7 @@
               "name": "Capri-Sun Mystic Dragon",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/51b41b5d91cb4df480eaacc429084388.png",
               "price": 1,
-              "stock": 5,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
