@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-23T05:13:03.549Z",
+  "updatedAt": "2026-10-23T09:42:10.790Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-23T05:13:03.549Z",
+          "fetchedAt": "2026-10-23T09:42:10.790Z",
           "items": [
             {
               "lane": "1",
@@ -148,7 +148,7 @@
               "name": "Patisserie Apple Cakes",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/797d5c3d51e24263921077e070203df4.png",
               "price": 3,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -318,7 +318,7 @@
               "name": "Monster Viking Berry 0.5l inkl pfand.",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
               "price": 2.2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-23T05:13:03.549Z",
+          "fetchedAt": "2026-10-23T09:42:10.790Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-23T05:13:03.549Z",
+          "fetchedAt": "2026-10-23T09:42:10.790Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-23T05:13:03.549Z",
+          "fetchedAt": "2026-10-23T09:42:10.790Z",
           "items": [
             {
               "lane": "2",
@@ -1142,7 +1142,7 @@
               "level": 2,
               "name": "Wiesenhof Geflügel Mortadella",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7a5d3b9b063e45288bcc085cdc282ea8.png",
-              "price": 0.6,
+              "price": 2,
               "stock": 3,
               "capacity": 5,
               "expired": true
