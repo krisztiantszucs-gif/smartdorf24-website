@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-23T10:43:16.847Z",
+  "updatedAt": "2026-10-23T15:01:30.204Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-23T10:43:16.847Z",
+          "fetchedAt": "2026-10-23T15:01:30.204Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-23T10:43:16.847Z",
+          "fetchedAt": "2026-10-23T15:01:30.204Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-23T10:43:16.847Z",
+          "fetchedAt": "2026-10-23T15:01:30.204Z",
           "items": [
             {
               "lane": "1",
@@ -812,7 +812,7 @@
               "name": "Chocolate Egg Waffles",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bdbfc1cd40b84ec580513f5493327765.jpg",
               "price": 2.6,
-              "stock": 2,
+              "stock": 1,
               "capacity": 10,
               "expired": false
             },
@@ -952,7 +952,7 @@
               "name": "Kinder Bueno",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
               "price": 1.6,
-              "stock": 7,
+              "stock": 6,
               "capacity": 10,
               "expired": false
             },
@@ -1022,7 +1022,7 @@
               "name": "Fanta Exotic 330ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
               "price": 1.6,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -1042,7 +1042,7 @@
               "name": "Monster Energy 0.5l inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
               "price": 2.2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 3,
               "expired": false
             },
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-23T10:43:16.847Z",
+          "fetchedAt": "2026-10-23T15:01:30.204Z",
           "items": [
             {
               "lane": "2",
@@ -1213,7 +1213,7 @@
               "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
               "price": 0.8,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -1443,7 +1443,7 @@
               "name": "Monster Juiced Mango Loco Energy",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/65cd22d69f0e4a419dab481a4b959826.png",
               "price": 2.2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
