@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-24T09:31:58.178Z",
+  "updatedAt": "2026-10-24T09:42:10.196Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-24T09:31:58.178Z",
+          "fetchedAt": "2026-10-24T09:42:10.196Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-24T09:31:58.178Z",
+          "fetchedAt": "2026-10-24T09:42:10.196Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-24T09:31:58.178Z",
+          "fetchedAt": "2026-10-24T09:42:10.196Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-24T09:31:58.178Z",
+          "fetchedAt": "2026-10-24T09:42:10.196Z",
           "items": [
             {
               "lane": "2",
@@ -1183,7 +1183,7 @@
               "name": "Milram Moin Kakao Drink 0,3% 0,5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
               "price": 1.1,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1323,7 +1323,7 @@
               "name": "Starbucks Frappuccino Caramel Eiskaffee 250ml",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bc904bb2cfd4f06acba2b827b3eba2a.jpeg",
               "price": 2.7,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
