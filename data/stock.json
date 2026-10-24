@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-24T18:05:34.363Z",
+  "updatedAt": "2026-10-24T18:36:06.379Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-24T18:05:34.363Z",
+          "fetchedAt": "2026-10-24T18:36:06.379Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-24T18:05:34.363Z",
+          "fetchedAt": "2026-10-24T18:36:06.379Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-24T18:05:34.363Z",
+          "fetchedAt": "2026-10-24T18:36:06.379Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-24T18:05:34.363Z",
+          "fetchedAt": "2026-10-24T18:36:06.379Z",
           "items": [
             {
               "lane": "2",
@@ -1136,16 +1136,6 @@
               "stock": 2,
               "capacity": 2,
               "expired": false
-            },
-            {
-              "lane": "11",
-              "level": 2,
-              "name": "Wiesenhof Geflügel Mortadella",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7a5d3b9b063e45288bcc085cdc282ea8.png",
-              "price": 2,
-              "stock": 3,
-              "capacity": 5,
-              "expired": true
             },
             {
               "lane": "12",
