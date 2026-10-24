@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-24T18:41:40.827Z",
+  "updatedAt": "2026-10-24T19:08:08.439Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-24T18:41:40.827Z",
+          "fetchedAt": "2026-10-24T19:08:08.439Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-24T18:41:40.827Z",
+          "fetchedAt": "2026-10-24T19:08:08.439Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-24T18:41:40.827Z",
+          "fetchedAt": "2026-10-24T19:08:08.439Z",
           "items": [
             {
               "lane": "1",
@@ -742,7 +742,7 @@
               "name": "Pringles",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg",
               "price": 1.3,
-              "stock": 3,
+              "stock": 1,
               "capacity": 3,
               "expired": false
             },
@@ -752,7 +752,7 @@
               "name": "Toffifee",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
               "price": 2,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-24T18:41:40.827Z",
+          "fetchedAt": "2026-10-24T19:08:08.439Z",
           "items": [
             {
               "lane": "2",
