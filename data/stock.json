@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-26T16:39:45.383Z",
+  "updatedAt": "2026-10-26T17:02:18.185Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-26T16:39:45.383Z",
+          "fetchedAt": "2026-10-26T17:02:18.185Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-26T16:39:45.383Z",
+          "fetchedAt": "2026-10-26T17:02:18.185Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-26T16:39:45.383Z",
+          "fetchedAt": "2026-10-26T17:02:18.185Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-26T16:39:45.383Z",
+          "fetchedAt": "2026-10-26T17:02:18.185Z",
           "items": [
             {
               "lane": "2",
@@ -1162,7 +1162,7 @@
               "level": 2,
               "name": "Sonntags-Brötchen",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/01fa843caec14bc0a8f69484dabd1b35.png",
-              "price": 1.25,
+              "price": 0.75,
               "stock": 3,
               "capacity": 5,
               "expired": false
