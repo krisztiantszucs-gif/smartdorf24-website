@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-26T15:16:06.082Z",
+  "updatedAt": "2026-10-26T15:26:19.537Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-26T15:16:06.082Z",
+          "fetchedAt": "2026-10-26T15:26:19.537Z",
           "items": [
             {
               "lane": "1",
@@ -95,20 +95,20 @@
             {
               "lane": "13",
               "level": 2,
-              "name": "LEGO Technic Backhoe Loader",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/751fbcdd61b84fa2aa312f993fff07cd.png",
-              "price": 15,
-              "stock": 1,
+              "name": "LEGO Minecraft The Nether Lava Battle",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ad83eeacba7c464798f25516f2700eeb.png",
+              "price": 13,
+              "stock": 2,
               "capacity": 10,
               "expired": false
             },
             {
               "lane": "14",
               "level": 2,
-              "name": "LEGO Minecraft The Nether Lava Battle",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ad83eeacba7c464798f25516f2700eeb.png",
-              "price": 13,
-              "stock": 2,
+              "name": "Vollmilch 3.5% 0.5l",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/431b28fb18b54f7ba96ac98210dc7632.jpeg",
+              "price": 1,
+              "stock": 5,
               "capacity": 10,
               "expired": false
             },
@@ -348,7 +348,7 @@
               "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
               "price": 1.6,
-              "stock": 0,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-26T15:16:06.082Z",
+          "fetchedAt": "2026-10-26T15:26:19.537Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-26T15:16:06.082Z",
+          "fetchedAt": "2026-10-26T15:26:19.537Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-26T15:16:06.082Z",
+          "fetchedAt": "2026-10-26T15:26:19.537Z",
           "items": [
             {
               "lane": "2",
@@ -1433,7 +1433,7 @@
               "name": "Monster Juiced Mango Loco Energy",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/65cd22d69f0e4a419dab481a4b959826.png",
               "price": 2.2,
-              "stock": 1,
+              "stock": 0,
               "capacity": 5,
               "expired": false
             },
