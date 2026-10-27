@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-27T15:13:00.815Z",
+  "updatedAt": "2026-10-27T15:50:11.114Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-27T15:13:00.815Z",
+          "fetchedAt": "2026-10-27T15:50:11.114Z",
           "items": [
             {
               "lane": "1",
@@ -168,7 +168,7 @@
               "name": "Milka",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/99a7c182cca548d0afa44a879cbaa578.png",
               "price": 2.2,
-              "stock": 3,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -188,7 +188,7 @@
               "name": "Kinder Bueno",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
               "price": 1.3,
-              "stock": 7,
+              "stock": 6,
               "capacity": 10,
               "expired": false
             },
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-27T15:13:00.815Z",
+          "fetchedAt": "2026-10-27T15:50:11.114Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-27T15:13:00.815Z",
+          "fetchedAt": "2026-10-27T15:50:11.114Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-27T15:13:00.815Z",
+          "fetchedAt": "2026-10-27T15:50:11.114Z",
           "items": [
             {
               "lane": "2",
