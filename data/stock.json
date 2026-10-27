@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-27T07:31:34.729Z",
+  "updatedAt": "2026-10-27T08:09:32.405Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-27T07:31:34.729Z",
+          "fetchedAt": "2026-10-27T08:09:32.405Z",
           "items": [
             {
               "lane": "1",
@@ -378,7 +378,7 @@
               "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
               "price": 2.2,
-              "stock": 3,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -428,7 +428,7 @@
               "name": "Coca Cola Zero 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
               "price": 2.2,
-              "stock": 3,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -438,7 +438,7 @@
               "name": "Coca Cola 0.5l Original inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
               "price": 2.2,
-              "stock": 0,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             }
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-27T07:31:34.729Z",
+          "fetchedAt": "2026-10-27T08:09:32.405Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-27T07:31:34.729Z",
+          "fetchedAt": "2026-10-27T08:09:32.405Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-27T07:31:34.729Z",
+          "fetchedAt": "2026-10-27T08:09:32.405Z",
           "items": [
             {
               "lane": "2",
