@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-28T05:25:34.548Z",
+  "updatedAt": "2026-10-28T06:04:05.475Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-28T05:25:34.548Z",
+          "fetchedAt": "2026-10-28T06:04:05.475Z",
           "items": [
             {
               "lane": "1",
@@ -77,7 +77,7 @@
               "level": 2,
               "name": "Toffifee",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
-              "price": 2.5,
+              "price": 2,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-28T05:25:34.548Z",
+          "fetchedAt": "2026-10-28T06:04:05.475Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-28T05:25:34.548Z",
+          "fetchedAt": "2026-10-28T06:04:05.475Z",
           "items": [
             {
               "lane": "1",
@@ -981,7 +981,7 @@
               "level": 5,
               "name": "Kinder Schokolade 100g",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3f50b805073545368488b956fa847e33.jpeg",
-              "price": 2,
+              "price": 1.25,
               "stock": 1,
               "capacity": 5,
               "expired": false
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-28T05:25:34.548Z",
+          "fetchedAt": "2026-10-28T06:04:05.475Z",
           "items": [
             {
               "lane": "2",
@@ -1162,7 +1162,7 @@
               "level": 2,
               "name": "Sonntags-Brötchen",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/01fa843caec14bc0a8f69484dabd1b35.png",
-              "price": 0.75,
+              "price": 1.75,
               "stock": 3,
               "capacity": 5,
               "expired": true

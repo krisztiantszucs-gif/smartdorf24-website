@@ -1,33 +1,20 @@
 {
   "version": 1,
-  "lastRunAt": "2026-10-27T21:07:46.695Z",
-  "lastRunDay": "2026-10-27",
+  "lastRunAt": "2026-10-28T06:00:52.289Z",
+  "lastRunDay": "2026-10-28",
   "active": {
-    "7680783:15": {
-      "rtuNumber": "7680783",
-      "lane": "15",
-      "name": "Sonntags-Brötchen",
-      "originalPrice": 2.5,
-      "originalCostPrice": 1.59,
-      "discountPrice": 0.75,
-      "discountCostPrice": 0.75,
-      "percent": 70,
-      "effDate": "2026-10-27",
-      "startedAt": "2026-10-25T06:06:53.566Z",
-      "updatedAt": "2026-10-27T21:07:46.695Z"
-    },
     "7680800:46": {
       "rtuNumber": "7680800",
       "lane": "46",
       "name": "Kinder Schokolade 100g",
       "originalPrice": 2.5,
       "originalCostPrice": 1,
-      "discountPrice": 2,
+      "discountPrice": 1.25,
       "discountCostPrice": 1,
-      "percent": 20,
+      "percent": 50,
       "effDate": "2026-10-30",
       "startedAt": "2026-10-26T06:20:27.107Z",
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:50.822Z"
     },
     "7680783:2": {
       "rtuNumber": "7680783",
@@ -40,7 +27,7 @@
       "percent": 70,
       "effDate": "2026-10-28",
       "startedAt": "2026-10-26T06:20:28.798Z",
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680800:42": {
       "rtuNumber": "7680800",
@@ -53,18 +40,44 @@
       "percent": 20,
       "effDate": "2026-10-31",
       "startedAt": "2026-10-27T06:10:55.637Z",
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:50.822Z"
+    },
+    "7680787:11": {
+      "rtuNumber": "7680787",
+      "lane": "11",
+      "name": "Toffifee ",
+      "originalPrice": 2.5,
+      "originalCostPrice": 1.49,
+      "discountPrice": 2,
+      "discountCostPrice": 1.49,
+      "percent": 20,
+      "effDate": "2026-11-01",
+      "startedAt": "2026-10-28T06:00:49.130Z",
+      "updatedAt": "2026-10-28T06:00:49.130Z"
+    },
+    "7680800:12": {
+      "rtuNumber": "7680800",
+      "lane": "12",
+      "name": "Toffifee ",
+      "originalPrice": 2.5,
+      "originalCostPrice": 1.49,
+      "discountPrice": 2,
+      "discountCostPrice": 1.49,
+      "percent": 20,
+      "effDate": "2026-11-01",
+      "startedAt": "2026-10-28T06:00:50.822Z",
+      "updatedAt": "2026-10-28T06:00:50.822Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002081",
+        "advertiseId": "100002086",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-10-27-0ae45f",
+        "adName": "SD24-combined-steinsberg-2026-10-28-364039",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7154fbee0b0b49ca8364617d76d945ed.mp4",
-        "hash": "0ae45f5a22ed5b5e",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/92a0c1e9b18b4da6940f0259b223285a.mp4",
+        "hash": "364039c83f67e1df",
         "segments": [
           "karamalz",
           "live",
@@ -72,15 +85,6 @@
           "sale"
         ],
         "verifiedDeals": [
-          {
-            "rtuNumber": "7680783",
-            "lane": "15",
-            "name": "Sonntags-Brötchen",
-            "old": 2.5,
-            "new": 0.75,
-            "pct": 70,
-            "until": "2026-10-27"
-          },
           {
             "rtuNumber": "7680783",
             "lane": "2",
@@ -95,8 +99,8 @@
             "lane": "46",
             "name": "Kinder Schokolade 100g",
             "old": 2.5,
-            "new": 2,
-            "pct": 20,
+            "new": 1.25,
+            "pct": 50,
             "until": "2026-10-30"
           },
           {
@@ -107,6 +111,15 @@
             "new": 1.05,
             "pct": 20,
             "until": "2026-10-31"
+          },
+          {
+            "rtuNumber": "7680800",
+            "lane": "12",
+            "name": "Toffifee ",
+            "old": 2.5,
+            "new": 2,
+            "pct": 20,
+            "until": "2026-11-01"
           }
         ],
         "verifiedSale": [
@@ -139,6 +152,16 @@
             "pct": 30,
             "until": "2026-11-03",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/203be2d8ff3c4d74a8b4a6a6840733ee.png"
+          },
+          {
+            "rtuNumber": "7680783",
+            "lane": "15",
+            "name": "Sonntags-Brötchen",
+            "old": 2.5,
+            "new": 1.75,
+            "pct": 30,
+            "until": "2026-11-03",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/01fa843caec14bc0a8f69484dabd1b35.png"
           },
           {
             "rtuNumber": "7680800",
@@ -325,21 +348,31 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-27T21:07:47.304Z"
+        "updatedAt": "2026-10-28T06:02:47.817Z"
       },
       "schiesheim": {
-        "advertiseId": "100001980",
+        "advertiseId": "100002087",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-10-20-0b7d8f",
+        "adName": "SD24-combined-schiesheim-2026-10-28-a4f82a",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0a63327a6ed84b9fb541098ecb20697a.mp4",
-        "hash": "0b7d8f090229b49a",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d2bed44ca27049e1b2273883d2d699fb.mp4",
+        "hash": "a4f82a3a3e5d8058",
         "segments": [
           "live",
           "deals",
           "sale"
         ],
-        "verifiedDeals": [],
+        "verifiedDeals": [
+          {
+            "rtuNumber": "7680787",
+            "lane": "11",
+            "name": "Toffifee ",
+            "old": 2.5,
+            "new": 2,
+            "pct": 20,
+            "until": "2026-11-01"
+          }
+        ],
         "verifiedSale": [
           {
             "rtuNumber": "7680787",
@@ -462,13 +495,13 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-10-27T21:07:47.831Z"
+        "updatedAt": "2026-10-28T06:03:57.572Z"
       }
     }
   },
   "machineAds": {},
   "lastEveningRunDay": "2026-10-27",
-  "lastMorningRunDay": "2026-10-27",
+  "lastMorningRunDay": "2026-10-28",
   "clearance": {
     "7680800:5": {
       "rtuNumber": "7680800",
@@ -485,7 +518,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 10,
       "hideFromAd": true,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:50.822Z"
     },
     "7680800:31": {
       "rtuNumber": "7680800",
@@ -502,7 +535,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:50.822Z"
     },
     "7680800:37": {
       "rtuNumber": "7680800",
@@ -519,7 +552,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:50.822Z"
     },
     "7680800:38": {
       "rtuNumber": "7680800",
@@ -536,7 +569,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:50.822Z"
     },
     "7680800:11": {
       "rtuNumber": "7680800",
@@ -553,7 +586,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:50.822Z"
     },
     "7680800:12": {
       "rtuNumber": "7680800",
@@ -570,7 +603,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:50.822Z"
     },
     "7680800:22": {
       "rtuNumber": "7680800",
@@ -587,7 +620,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:50.822Z"
     },
     "7680800:32": {
       "rtuNumber": "7680800",
@@ -604,7 +637,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:50.822Z"
     },
     "7680800:33": {
       "rtuNumber": "7680800",
@@ -621,7 +654,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:50.822Z"
     },
     "7680800:42": {
       "rtuNumber": "7680800",
@@ -638,7 +671,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:50.822Z"
     },
     "7680783:2": {
       "rtuNumber": "7680783",
@@ -655,7 +688,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680783:4": {
       "rtuNumber": "7680783",
@@ -672,7 +705,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680783:12": {
       "rtuNumber": "7680783",
@@ -689,7 +722,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680783:13": {
       "rtuNumber": "7680783",
@@ -706,7 +739,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680783:15": {
       "rtuNumber": "7680783",
@@ -723,7 +756,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680783:22": {
       "rtuNumber": "7680783",
@@ -740,7 +773,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680783:36": {
       "rtuNumber": "7680783",
@@ -757,7 +790,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680783:38": {
       "rtuNumber": "7680783",
@@ -774,7 +807,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -791,7 +824,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680783:32": {
       "rtuNumber": "7680783",
@@ -808,7 +841,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680783:33": {
       "rtuNumber": "7680783",
@@ -825,7 +858,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680783:44": {
       "rtuNumber": "7680783",
@@ -842,7 +875,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680783:51": {
       "rtuNumber": "7680783",
@@ -859,7 +892,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.695Z"
+      "updatedAt": "2026-10-28T06:00:52.289Z"
     },
     "7680787:12": {
       "rtuNumber": "7680787",
@@ -876,7 +909,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.694Z"
+      "updatedAt": "2026-10-28T06:00:49.130Z"
     },
     "7680787:1": {
       "rtuNumber": "7680787",
@@ -893,7 +926,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.694Z"
+      "updatedAt": "2026-10-28T06:00:49.130Z"
     },
     "7680787:15": {
       "rtuNumber": "7680787",
@@ -910,7 +943,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.694Z"
+      "updatedAt": "2026-10-28T06:00:49.130Z"
     },
     "7680787:22": {
       "rtuNumber": "7680787",
@@ -927,7 +960,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.694Z"
+      "updatedAt": "2026-10-28T06:00:49.130Z"
     },
     "7680787:33": {
       "rtuNumber": "7680787",
@@ -944,7 +977,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.694Z"
+      "updatedAt": "2026-10-28T06:00:49.130Z"
     },
     "7680787:34": {
       "rtuNumber": "7680787",
@@ -961,7 +994,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 7,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.694Z"
+      "updatedAt": "2026-10-28T06:00:49.130Z"
     },
     "7680787:37": {
       "rtuNumber": "7680787",
@@ -978,7 +1011,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.694Z"
+      "updatedAt": "2026-10-28T06:00:49.130Z"
     },
     "7680787:38": {
       "rtuNumber": "7680787",
@@ -995,7 +1028,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.694Z"
+      "updatedAt": "2026-10-28T06:00:49.130Z"
     },
     "7680787:48": {
       "rtuNumber": "7680787",
@@ -1012,7 +1045,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.694Z"
+      "updatedAt": "2026-10-28T06:00:49.130Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -1029,7 +1062,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.694Z"
+      "updatedAt": "2026-10-28T06:00:49.130Z"
     },
     "7680787:55": {
       "rtuNumber": "7680787",
@@ -1046,7 +1079,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-10-27T21:07:46.694Z"
+      "updatedAt": "2026-10-28T06:00:49.130Z"
     }
   },
   "lastClearanceEvalAt": "2026-10-26T21:22:24.020Z",
