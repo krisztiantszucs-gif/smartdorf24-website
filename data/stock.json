@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-28T19:42:29.150Z",
+  "updatedAt": "2026-10-28T20:02:50.971Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-28T19:42:29.150Z",
+          "fetchedAt": "2026-10-28T20:02:50.971Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-28T19:42:29.150Z",
+          "fetchedAt": "2026-10-28T20:02:50.971Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-28T19:42:29.150Z",
+          "fetchedAt": "2026-10-28T20:02:50.971Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-28T19:42:29.150Z",
+          "fetchedAt": "2026-10-28T20:02:50.971Z",
           "items": [
             {
               "lane": "2",
@@ -1183,7 +1183,7 @@
               "name": "Vollmilch 3.5% 0.5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/431b28fb18b54f7ba96ac98210dc7632.jpeg",
               "price": 0.7,
-              "stock": 5,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -1363,7 +1363,7 @@
               "name": "RedBull Original 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
-              "stock": 5,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
