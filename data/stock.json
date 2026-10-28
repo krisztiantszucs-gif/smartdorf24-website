@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-28T16:45:35.654Z",
+  "updatedAt": "2026-10-28T17:02:49.667Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-28T16:45:35.654Z",
+          "fetchedAt": "2026-10-28T17:02:49.667Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-28T16:45:35.654Z",
+          "fetchedAt": "2026-10-28T17:02:49.667Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-28T16:45:35.654Z",
+          "fetchedAt": "2026-10-28T17:02:49.667Z",
           "items": [
             {
               "lane": "1",
@@ -1002,7 +1002,7 @@
               "name": "Twix",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/de24003846ac4af6b982be92a01f78ae.jpg",
               "price": 0.8,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -1032,7 +1032,7 @@
               "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
               "price": 1.9,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -1072,7 +1072,7 @@
               "name": "Skittles",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9440e493398c42ac8c7e82aef9ac1a0d.jpeg",
               "price": 2.3,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-28T16:45:35.654Z",
+          "fetchedAt": "2026-10-28T17:02:49.667Z",
           "items": [
             {
               "lane": "2",
