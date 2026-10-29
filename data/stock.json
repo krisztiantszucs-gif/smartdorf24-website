@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-29T01:18:03.456Z",
+  "updatedAt": "2026-10-29T06:20:00.894Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-29T01:18:03.456Z",
+          "fetchedAt": "2026-10-29T06:20:00.894Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-29T01:18:03.456Z",
+          "fetchedAt": "2026-10-29T06:20:00.894Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-29T01:18:03.456Z",
+          "fetchedAt": "2026-10-29T06:20:00.894Z",
           "items": [
             {
               "lane": "1",
@@ -941,7 +941,7 @@
               "level": 5,
               "name": "Smarties",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/590f59b9add746c6beb00de283b64173.jpg",
-              "price": 1.05,
+              "price": 0.65,
               "stock": 4,
               "capacity": 10,
               "expired": false
@@ -1115,14 +1115,14 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-29T01:18:03.456Z",
+          "fetchedAt": "2026-10-29T06:20:00.894Z",
           "items": [
             {
               "lane": "2",
               "level": 1,
               "name": "Popp Coleslaw-Salat",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/a4a3eafe57d34304b708981033db4b67.png",
-              "price": 1.05,
+              "price": 2.45,
               "stock": 2,
               "capacity": 2,
               "expired": true
