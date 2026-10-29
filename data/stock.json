@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-29T16:51:30.456Z",
+  "updatedAt": "2026-10-29T17:11:11.571Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-29T16:51:30.456Z",
+          "fetchedAt": "2026-10-29T17:11:11.571Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-29T16:51:30.456Z",
+          "fetchedAt": "2026-10-29T17:11:11.571Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-29T16:51:30.456Z",
+          "fetchedAt": "2026-10-29T17:11:11.571Z",
           "items": [
             {
               "lane": "1",
@@ -981,7 +981,7 @@
               "level": 5,
               "name": "Kinder Schokolade 100g",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3f50b805073545368488b956fa847e33.jpeg",
-              "price": 1.25,
+              "price": 0.75,
               "stock": 1,
               "capacity": 5,
               "expired": false
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-29T16:51:30.456Z",
+          "fetchedAt": "2026-10-29T17:11:11.571Z",
           "items": [
             {
               "lane": "2",
