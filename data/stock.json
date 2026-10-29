@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-29T21:41:01.761Z",
+  "updatedAt": "2026-10-29T21:51:14.802Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-29T21:41:01.761Z",
+          "fetchedAt": "2026-10-29T21:51:14.802Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-29T21:41:01.761Z",
+          "fetchedAt": "2026-10-29T21:51:14.802Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-29T21:41:01.761Z",
+          "fetchedAt": "2026-10-29T21:51:14.802Z",
           "items": [
             {
               "lane": "1",
@@ -1115,18 +1115,8 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-29T21:41:01.761Z",
+          "fetchedAt": "2026-10-29T21:51:14.802Z",
           "items": [
-            {
-              "lane": "2",
-              "level": 1,
-              "name": "Popp Coleslaw-Salat",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/a4a3eafe57d34304b708981033db4b67.png",
-              "price": 2.45,
-              "stock": 2,
-              "capacity": 2,
-              "expired": true
-            },
             {
               "lane": "4",
               "level": 1,
@@ -1156,16 +1146,6 @@
               "stock": 2,
               "capacity": 5,
               "expired": false
-            },
-            {
-              "lane": "15",
-              "level": 2,
-              "name": "Sonntags-Brötchen",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/01fa843caec14bc0a8f69484dabd1b35.png",
-              "price": 1.75,
-              "stock": 3,
-              "capacity": 5,
-              "expired": true
             },
             {
               "lane": "21",
