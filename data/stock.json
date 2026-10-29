@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-29T14:40:54.155Z",
+  "updatedAt": "2026-10-29T15:36:40.009Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-29T14:40:54.155Z",
+          "fetchedAt": "2026-10-29T15:36:40.009Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-29T14:40:54.155Z",
+          "fetchedAt": "2026-10-29T15:36:40.009Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-29T14:40:54.155Z",
+          "fetchedAt": "2026-10-29T15:36:40.009Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-29T14:40:54.155Z",
+          "fetchedAt": "2026-10-29T15:36:40.009Z",
           "items": [
             {
               "lane": "2",
@@ -1173,7 +1173,7 @@
               "name": "Milram Moin Kakao Drink 0,3% 0,5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
               "price": 1.1,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
