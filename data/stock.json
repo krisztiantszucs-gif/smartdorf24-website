@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-30T16:17:00.467Z",
+  "updatedAt": "2026-10-30T18:24:17.947Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-30T16:17:00.467Z",
+          "fetchedAt": "2026-10-30T18:24:17.947Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-30T16:17:00.467Z",
+          "fetchedAt": "2026-10-30T18:24:17.947Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-30T16:17:00.467Z",
+          "fetchedAt": "2026-10-30T18:24:17.947Z",
           "items": [
             {
               "lane": "1",
@@ -941,7 +941,7 @@
               "level": 5,
               "name": "Smarties",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/590f59b9add746c6beb00de283b64173.jpg",
-              "price": 0.65,
+              "price": 0.4,
               "stock": 4,
               "capacity": 10,
               "expired": false
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-30T16:17:00.467Z",
+          "fetchedAt": "2026-10-30T18:24:17.947Z",
           "items": [
             {
               "lane": "4",
