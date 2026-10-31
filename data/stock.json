@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-10-31T11:06:32.768Z",
+  "updatedAt": "2026-10-31T12:04:40.339Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-31T11:06:32.768Z",
+          "fetchedAt": "2026-10-31T12:04:40.339Z",
           "items": [
             {
               "lane": "1",
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-10-31T11:06:32.768Z",
+          "fetchedAt": "2026-10-31T12:04:40.339Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-10-31T11:06:32.768Z",
+          "fetchedAt": "2026-10-31T12:04:40.339Z",
           "items": [
             {
               "lane": "1",
@@ -802,7 +802,7 @@
               "name": "MrBeast Beef Jerky Original",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5bcdf3ec37c94f218c917fb7dd6ff76b.png",
               "price": 2,
-              "stock": 5,
+              "stock": 4,
               "capacity": 10,
               "expired": false
             },
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-10-31T11:06:32.768Z",
+          "fetchedAt": "2026-10-31T12:04:40.339Z",
           "items": [
             {
               "lane": "4",
