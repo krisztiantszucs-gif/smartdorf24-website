@@ -13,6 +13,16 @@ import {
 export const CLEARANCE_DAYS = 14;
 export const OFFLINE_RTUS = new Set(["7680782"]);
 export const HIDE_FROM_AD = new Set(["durex"]); // name substring match, lowercase
+/**
+ * Low-stock guard (Krisztian 2026-11-02): a clearance lane with <= LOW_STOCK_MAX units left
+ * goes back to its normal price (suspended, not ended). It resumes if refilled to >= 2 before
+ * endsAt. Expiry-tier discounts are NOT affected by this guard.
+ */
+export const LOW_STOCK_MAX = 1;
+export function isLowStock(cargo) {
+  const n = Number(cargo?.stock || 0);
+  return n > 0 && n <= LOW_STOCK_MAX;
+}
 
 /** Approved Phase-2 seed (Berlin 2026-10-20). Karamalz included per Krisztian. */
 export const APPROVED_SEED = [
@@ -100,7 +110,8 @@ export function clearanceEndReason(entry, cargo, today = berlinToday()) {
   const name = String(cargo.commodityName || "").trim();
   if (entry.cid && cid && entry.cid !== cid) return "product-change";
   if (entry.name && name && entry.name !== name) return "product-change";
-  if (Number(cargo.stock || 0) > Number(entry.stockAtStart || 0)) return "refill";
+  // A low-stock-suspended entry is resumed (not ended) by a refill — see planForMachine.
+  if (!entry.suspended && Number(cargo.stock || 0) > Number(entry.stockAtStart || 0)) return "refill";
   return null;
 }
 

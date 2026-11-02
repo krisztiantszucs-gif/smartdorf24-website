@@ -76,12 +76,14 @@ export async function verifiedSale(token, state, rtus, today = berlinToday()) {
   const priceByLane = new Map();
   const stockByLane = new Map();
   const imgByLane = new Map();
+  const effByLane = new Map();
   for (const rtu of rtus) {
     const row = await fetchReplenish(token, rtu);
     for (const c of row.cargos || []) {
       if (!c.commodityName) continue;
       const key = `${rtu}:${c.cargoNumber}`;
       priceByLane.set(key, Number(c.price));
+      effByLane.set(key, c.effDate ? String(c.effDate).slice(0, 10) : "");
       stockByLane.set(key, Number(c.stock || 0));
       imgByLane.set(key, c.commodityImg || c.img || c.imageUrl || null);
     }
@@ -90,6 +92,7 @@ export async function verifiedSale(token, state, rtus, today = berlinToday()) {
   const dropped = [];
   for (const a of Object.values(state.clearance || {})) {
     if (!rtus.includes(String(a.rtuNumber))) continue;
+    if (a.suspended) { dropped.push({ key: `${a.rtuNumber}:${a.lane}`, reason: "suspended-lowstock", name: a.name }); continue; }
     if (a.hideFromAd) { dropped.push({ key: `${a.rtuNumber}:${a.lane}`, reason: "hideFromAd", name: a.name }); continue; }
     if (a.endsAt && String(a.endsAt).slice(0, 10) < today) {
       dropped.push({ key: `${a.rtuNumber}:${a.lane}`, reason: "endsAt-past", name: a.name }); continue;
@@ -97,6 +100,11 @@ export async function verifiedSale(token, state, rtus, today = berlinToday()) {
     const key = `${a.rtuNumber}:${a.lane}`;
     if ((stockByLane.get(key) || 0) <= 0) {
       dropped.push({ key, reason: "soldout", name: a.name }); continue;
+    }
+    // Past best-before: the machine locks the lane, so never advertise it.
+    const eff = effByLane.get(key) || "";
+    if (eff && eff < today) {
+      dropped.push({ key, reason: `expired-${eff}`, name: a.name }); continue;
     }
     const live = priceByLane.get(key);
     const want = Number(a.clearancePrice);

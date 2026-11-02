@@ -84,6 +84,7 @@
       .filter((a) => !a.effDate || a.effDate >= today)
       .map((a) => ({ kind: "expiry", a, price: a.discountPrice, until: a.effDate, ...(lookup[a.rtuNumber + ":" + a.lane] || {}) }));
     const clearance = Object.values(state.discounts?.clearance || {})
+      .filter((a) => !a.suspended)
       .filter((a) => !a.endsAt || String(a.endsAt).slice(0, 10) >= today)
       .map((a) => ({ kind: "clearance", a, price: a.clearancePrice, until: a.endsAt, ...(lookup[a.rtuNumber + ":" + a.lane] || {}) }));
     // Prefer higher % when same lane appears in both
@@ -122,7 +123,8 @@
   function discountFor(rtu, lane) {
     const key = String(rtu) + ":" + String(lane);
     const ex = state.discounts?.active?.[key] || null;
-    const cl = state.discounts?.clearance?.[key] || null;
+    const rawCl = state.discounts?.clearance?.[key] || null;
+    const cl = rawCl && !rawCl.suspended ? rawCl : null; // low-stock: normal price, no badge
     if (ex && cl) return Number(ex.percent || 0) >= Number(cl.percent || 0) ? { ...ex, _kind: "expiry" } : { ...cl, discountPrice: cl.clearancePrice, _kind: "clearance" };
     if (ex) return { ...ex, _kind: "expiry" };
     if (cl) return { ...cl, discountPrice: cl.clearancePrice, _kind: "clearance" };

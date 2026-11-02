@@ -16,7 +16,7 @@ import {
 } from "./lib/impressiot.mjs";
 import {
   APPROVED_SEED, CLEARANCE_DAYS, OFFLINE_RTUS, seedClearance, makeClearanceEntry,
-  shouldHideFromAd, locationOfRtu,
+  shouldHideFromAd, locationOfRtu, isLowStock,
 } from "./lib/clearance.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -175,6 +175,12 @@ function reevalClearance(state, rows, { today = berlinToday() } = {}) {
       }
     }
     if (state.clearance[r.key]) continue; // keep existing end date / originals
+    // Low-stock guard: never start a clearance on a lane with <= 1 unit left
+    if (isLowStock(r.cargo)) {
+      console.log(`  skip ${r.key} ${r.name}: low stock (qty ${r.stock})`);
+      skipped++;
+      continue;
+    }
     const pct = r.klass === "dead" ? 30 : 20;
     const active = state.active?.[r.key];
     const entry = makeClearanceEntry(r.rtu, r.cargo, {

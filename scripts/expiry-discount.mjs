@@ -28,7 +28,7 @@ import {
   laneKey,
   BASE,
 } from "./lib/impressiot.mjs";
-import { clearanceEndReason, OFFLINE_RTUS } from "./lib/clearance.mjs";
+import { clearanceEndReason, OFFLINE_RTUS, isLowStock } from "./lib/clearance.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -42,6 +42,9 @@ const NOOP = args.has("--noop-test");
 const APPLY = args.has("--apply");
 const SKIP_ADS = args.has("--skip-ads");
 const FORCE = args.has("--force"); // ignore lastRunDay guard
+// --guard: low-stock guard tick (box loop, every ~10 min). Exits early unless a clearance lane
+// must be suspended (qty <= 1) or resumed (refilled); never stamps the morning/evening slot days.
+const GUARD = args.has("--guard");
 
 function loadState() {
   if (!existsSync(STATE_PATH)) {
@@ -329,6 +332,8 @@ function planForMachine(rtuNumber, row, state, window) {
   const toRestore = [];
   const stay = [];
   const clearanceEnd = [];
+  const suspend = []; // clearance lanes going to normal price because qty <= 1
+  const resume = []; // suspended clearance lanes refilled (qty >= 2) before endsAt
   const today = window[0];
   state.clearance ||= {};
   state.active ||= {};
@@ -354,16 +359,27 @@ function planForMachine(rtuNumber, row, state, window) {
     // Offline machines: never write prices; still allow clearance state cleanup above
     if (offline) continue;
 
+    // Low-stock guard: clearance does not apply at qty <= 1 (expiry tiers still do).
+    let clearanceSuspended = false;
+    if (clearance) {
+      if (isLowStock(c)) {
+        clearanceSuspended = true;
+        if (!clearance.suspended) suspend.push({ key, lane, name: c.commodityName, stock: Number(c.stock || 0) });
+      } else if (clearance.suspended) {
+        resume.push({ key, lane, name: c.commodityName, stock: Number(c.stock || 0) });
+      }
+    }
+
     const expiryPct = tierFor(eff, today);
     // Drop expiry active when no longer in window
     if (active && !expiryPct) {
       // will restore unless clearance still wants a price
-      if (!clearance) {
+      if (!clearance || clearanceSuspended) {
         toRestore.push({
           key, lane, name: c.commodityName, currentPrice: Number(c.price),
-          restorePrice: Number(active.originalPrice),
-          restoreCostPrice: active.originalCostPrice,
-          effDate: eff, active, reason: "expiry-end",
+          restorePrice: Number(clearance?.originalPrice ?? active.originalPrice),
+          restoreCostPrice: clearance?.originalCostPrice ?? active.originalCostPrice,
+          effDate: eff, active, reason: clearanceSuspended ? "expiry-end+clearance-lowstock" : "expiry-end",
         });
         continue;
       }
@@ -371,7 +387,7 @@ function planForMachine(rtuNumber, row, state, window) {
       active = null;
     }
 
-    const clearancePct = clearance ? Number(clearance.percent || 0) : 0;
+    const clearancePct = clearance && !clearanceSuspended ? Number(clearance.percent || 0) : 0;
     const wantPct = Math.max(expiryPct, clearancePct);
     if (!wantPct) {
       // No promo. If we just ended clearance and had no expiry, restore original.
@@ -382,6 +398,13 @@ function planForMachine(rtuNumber, row, state, window) {
           restorePrice: Number(ended.entry.originalPrice),
           restoreCostPrice: ended.entry.originalCostPrice,
           effDate: eff, active: ended.entry, reason: `clearance-${ended.why}`,
+        });
+      } else if (clearanceSuspended && Number(c.price) !== Number(clearance.originalPrice)) {
+        toRestore.push({
+          key, lane, name: c.commodityName, currentPrice: Number(c.price),
+          restorePrice: Number(clearance.originalPrice),
+          restoreCostPrice: clearance.originalCostPrice,
+          effDate: eff, active: null, reason: "clearance-lowstock",
         });
       }
       continue;
@@ -435,7 +458,7 @@ function planForMachine(rtuNumber, row, state, window) {
     }
   }
 
-  return { meta, cargos, toDiscount, toRestore, stay, clearanceEnd, offline };
+  return { meta, cargos, toDiscount, toRestore, stay, clearanceEnd, suspend, resume, offline };
 }
 
 async function applyPriceChanges(token, rtuNumber, cargos, changes) {
@@ -635,6 +658,12 @@ async function main() {
     for (const e of plan.clearanceEnd || []) {
       console.log(`  CLEARANCE-END lane ${e.lane} ${e.name}: ${e.why}`);
     }
+    for (const e of plan.suspend || []) {
+      console.log(`  CLEARANCE-SUSPEND lane ${e.lane} ${e.name}: low stock (qty ${e.stock}) → normal price`);
+    }
+    for (const e of plan.resume || []) {
+      console.log(`  CLEARANCE-RESUME lane ${e.lane} ${e.name}: refilled (qty ${e.stock})`);
+    }
     for (const d of plan.toDiscount) {
       if (d.noop) {
         console.log(`  KEEP lane ${d.lane} ${d.name} (−${d.percent}% via ${d.source})`);
@@ -648,7 +677,7 @@ async function main() {
     for (const r of plan.toRestore) {
       restoreCount++;
       console.log(
-        `  RESTORE lane ${r.lane} ${r.name}: → ${money(r.restorePrice)} € (eff ${r.effDate || "—"})${r.missing ? " [lane gone]" : ""}`
+        `  RESTORE lane ${r.lane} ${r.name}: ${r.currentPrice != null ? money(r.currentPrice) + " " : ""}→ ${money(r.restorePrice)} € (${r.reason || "?"}, eff ${r.effDate || "—"})${r.missing ? " [lane gone]" : ""}`
       );
     }
     for (const s of plan.stay) {
@@ -663,6 +692,15 @@ async function main() {
   if (DRY) {
     console.log("Dry-run only — no writes.");
     return;
+  }
+
+  if (GUARD) {
+    const n = plans.reduce((s, p) => s + (p.plan.suspend?.length || 0) + (p.plan.resume?.length || 0), 0);
+    if (!n) {
+      console.log("low-stock guard: nothing to suspend/resume — no writes.");
+      return;
+    }
+    console.log(`low-stock guard: ${n} clearance lane(s) to suspend/resume — applying.`);
   }
 
   if (!APPLY) return;
@@ -702,6 +740,25 @@ async function main() {
       cargos = (await fetchReplenish(token, rtuNumber)).cargos;
     }
 
+    // Low-stock guard bookkeeping (after successful price writes)
+    for (const e of plan.suspend || []) {
+      const cl = state.clearance[e.key];
+      if (!cl) continue;
+      state.clearance[e.key] = {
+        ...cl, suspended: true, suspendedReason: "low-stock", suspendedAt: new Date().toISOString(),
+        suspendedStock: e.stock, updatedAt: new Date().toISOString(),
+      };
+      console.log(`  CLEARANCE SUSPENDED ${e.key} (qty ${e.stock})`);
+    }
+    for (const e of plan.resume || []) {
+      const cl = state.clearance[e.key];
+      if (!cl) continue;
+      const { suspended, suspendedReason, suspendedAt, suspendedStock, ...rest } = cl;
+      state.clearance[e.key] = {
+        ...rest, stockAtStart: e.stock, resumedAt: new Date().toISOString(), updatedAt: new Date().toISOString(),
+      };
+      console.log(`  CLEARANCE RESUMED ${e.key} (qty ${e.stock})`);
+    }
     // Clearance endings (always drop from map)
     for (const e of plan.clearanceEnd || []) {
       delete state.clearance[e.key];
@@ -790,11 +847,15 @@ async function main() {
     }
   }
 
-  state.lastRunAt = new Date().toISOString();
-  state.lastRunDay = today; // backward-compat: last successful apply day
-  const hour = berlinHour();
-  if (hour >= 18) state.lastEveningRunDay = today;
-  else state.lastMorningRunDay = today;
+  if (GUARD) {
+    state.lastLowStockGuardAt = new Date().toISOString();
+  } else {
+    state.lastRunAt = new Date().toISOString();
+    state.lastRunDay = today; // backward-compat: last successful apply day
+    const hour = berlinHour();
+    if (hour >= 18) state.lastEveningRunDay = today;
+    else state.lastMorningRunDay = today;
+  }
   saveState(state);
 
   if (!SKIP_ADS && (state.permanentAds?.combinedByLocation || state.permanentAds?.combined)) {
