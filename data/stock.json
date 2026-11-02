@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-02T21:13:56.806Z",
+  "updatedAt": "2026-11-02T21:35:25.293Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-11-02T21:13:56.806Z",
+          "fetchedAt": "2026-11-02T21:35:25.293Z",
           "items": [
             {
               "lane": "1",
@@ -47,7 +47,7 @@
               "level": 1,
               "name": "Pringles",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg",
-              "price": 1.1,
+              "price": 1.2,
               "stock": 2,
               "capacity": 3,
               "expired": false
@@ -197,7 +197,7 @@
               "level": 4,
               "name": "Nutella Go",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
-              "price": 1.5,
+              "price": 1.55,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -337,7 +337,7 @@
               "level": 5,
               "name": "Starbucks Frappuccino Caramel Eiskaffee 250ml",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bc904bb2cfd4f06acba2b827b3eba2a.jpeg",
-              "price": 2,
+              "price": 2.05,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-11-02T21:13:56.806Z",
+          "fetchedAt": "2026-11-02T21:35:25.293Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-11-02T21:13:56.806Z",
+          "fetchedAt": "2026-11-02T21:35:25.293Z",
           "items": [
             {
               "lane": "1",
@@ -1011,7 +1011,7 @@
               "level": 5,
               "name": "Nestle Lion",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ff6d807696574fe1934323de18cceaaa.jpg",
-              "price": 0.65,
+              "price": 0.8,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-11-02T21:13:56.806Z",
+          "fetchedAt": "2026-11-02T21:35:25.293Z",
           "items": [
             {
               "lane": "4",
@@ -1132,7 +1132,7 @@
               "level": 2,
               "name": "Pick Ungarische Salami",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6896b049df3448f294dfef12ff6b089b.png",
-              "price": 2.1,
+              "price": 2.65,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -1142,7 +1142,7 @@
               "level": 2,
               "name": "Pick Puszta-Kolbasz",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/707c24edb06d4270bc6b55b8d5813bff.png",
-              "price": 1.95,
+              "price": 2.4,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -1172,7 +1172,7 @@
               "level": 4,
               "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
-              "price": 0.8,
+              "price": 0.9,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -1182,7 +1182,7 @@
               "level": 4,
               "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
-              "price": 0.8,
+              "price": 0.9,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -1192,7 +1192,7 @@
               "level": 4,
               "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
-              "price": 0.8,
+              "price": 0.9,
               "stock": 3,
               "capacity": 5,
               "expired": false

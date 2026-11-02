@@ -114,7 +114,8 @@ export async function verifiedSale(token, state, rtus, today = berlinToday()) {
     // If a bigger expiry discount is the live price, clearancePrice won't match — correctly excluded.
     sale.push({
       rtuNumber: String(a.rtuNumber), lane: String(a.lane), name: a.name,
-      old: Number(a.originalPrice), new: want, pct: Number(a.percent || 20),
+      old: Number(a.originalPrice), new: want,
+      pct: Math.round((1 - want / Number(a.originalPrice)) * 100) || Number(a.percent || 20),
       until: a.endsAt ? String(a.endsAt).slice(0, 10) : "", image: imgByLane.get(key),
     });
   }
@@ -242,7 +243,9 @@ export async function swapCombined(token, state, { root, outDir, today, force = 
       const segments = cfg.segments || ["karamalz", "live", "deals", "sale"];
       const deals = await verifiedDeals(token, state, cfg.rtus, today);
       const sale = await verifiedSale(token, state, cfg.rtus, today);
-      const karamalzPrice = cfg.karamalzPrice || null;
+      // Karamalz segment shows the live verified clearance price (cost floor applies); none → no price.
+      const kar = cfg.karamalzPrice ? sale.find((s) => /karamalz/i.test(s.name)) : null;
+      const karamalzPrice = kar ? { old: kar.old, new: kar.new, label: cfg.karamalzPrice.label || "Abverkauf" } : null;
       const hash = dealsHash(deals, segments, sale, karamalzPrice);
       const needVideo = force || !cur.advertiseId || cur.hash !== hash;
       console.log(`combined[${loc}]: hash=${hash} prev=${cur.hash || "-"} regenerate=${needVideo} deals=${deals.length} sale=${sale.length}`);

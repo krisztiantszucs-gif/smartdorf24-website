@@ -19,6 +19,32 @@ export const HIDE_FROM_AD = new Set(["durex"]); // name substring match, lowerca
  * endsAt. Expiry-tier discounts are NOT affected by this guard.
  */
 export const LOW_STOCK_MAX = 1;
+
+/**
+ * Cost floor (Krisztian 2026-11-02): a clearance price is never below true cost × 1.20,
+ * rounded UP to the next €0.05, and never above the normal price. If the floor reaches the
+ * normal price the deal is dropped. True cost = originalCostPrice stored in discounts.json
+ * (the machine's costPrice is skewed by past discount writes). Expiry tiers are NOT floored.
+ */
+export const COST_FLOOR_MARKUP = 1.2;
+export function ceilTo005(n) {
+  const cents = Math.round(Number(n) * 100 * 1000) / 1000; // kill float noise
+  return Math.ceil(cents / 5 - 1e-9) * 5 / 100;
+}
+export function clearancePriceFor(original, pct, cost) {
+  const orig = Number(original);
+  const base = tierPrice(orig, pct);
+  const c = Number(cost);
+  if (!(c > 0)) return { price: base, base, floor: null, costKnown: false, blocked: false, floored: false };
+  const floor = Math.round(ceilTo005(c * COST_FLOOR_MARKUP) * 100) / 100;
+  if (floor >= orig) return { price: orig, base, floor, costKnown: true, blocked: true, floored: true };
+  const price = Math.round(Math.max(base, floor) * 100) / 100;
+  return { price, base, floor, costKnown: true, blocked: false, floored: price > base };
+}
+export function effectivePercent(original, price) {
+  const o = Number(original);
+  return o > 0 ? Math.round((1 - Number(price) / o) * 100) : 0;
+}
 export function isLowStock(cargo) {
   const n = Number(cargo?.stock || 0);
   return n > 0 && n <= LOW_STOCK_MAX;
@@ -79,7 +105,8 @@ export function makeClearanceEntry(rtuNumber, cargo, { pct, reason, originalPric
   const name = String(cargo.commodityName || "").trim();
   const orig = Number(originalPrice ?? cargo.price);
   const origCost = Number(originalCostPrice ?? cargo.costPrice ?? 0);
-  const price = tierPrice(orig, pct);
+  const cp = clearancePriceFor(orig, pct, origCost);
+  const price = cp.price;
   const today = berlinToday();
   return {
     rtuNumber: String(rtuNumber),
@@ -91,6 +118,10 @@ export function makeClearanceEntry(rtuNumber, cargo, { pct, reason, originalPric
     clearancePrice: price,
     clearanceCostPrice: Math.min(origCost, price),
     percent: pct,
+    effectivePercent: effectivePercent(orig, price),
+    costFloor: cp.floor,
+    costKnown: cp.costKnown,
+    floorBlocked: cp.blocked,
     reason: reason || "slow",
     startedAt: startedAt || new Date().toISOString(),
     endsAt: endsAt || addDaysYmd(today, CLEARANCE_DAYS),
@@ -148,6 +179,12 @@ export function seedClearance(state, cargoByRtu, { today = berlinToday(), forceE
       startedAt: prev?.startedAt,
       hideFromAd: s.hideFromAd,
     });
+    if (entry.floorBlocked) {
+      console.warn(`seed skip ${s.rtu}:${s.lane} ${entry.name} — cost floor ${entry.costFloor} >= normal ${entry.originalPrice}`);
+      delete state.clearance[key];
+      continue;
+    }
+    if (!entry.costKnown) console.warn(`seed ${s.rtu}:${s.lane} ${entry.name} — COST UNKNOWN, no floor`);
     state.clearance[key] = entry;
     seeded.push(entry);
   }

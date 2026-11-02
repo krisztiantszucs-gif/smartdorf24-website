@@ -28,7 +28,7 @@ import {
   laneKey,
   BASE,
 } from "./lib/impressiot.mjs";
-import { clearanceEndReason, OFFLINE_RTUS, isLowStock } from "./lib/clearance.mjs";
+import { clearanceEndReason, OFFLINE_RTUS, isLowStock, clearancePriceFor, effectivePercent } from "./lib/clearance.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -359,6 +359,15 @@ function planForMachine(rtuNumber, row, state, window) {
     // Offline machines: never write prices; still allow clearance state cleanup above
     if (offline) continue;
 
+    // Cost floor: drop a clearance deal whose floor (true cost × 1.2, up to €0.05) reaches normal price.
+    if (clearance) {
+      const cp = clearancePriceFor(clearance.originalPrice, clearance.percent, clearance.originalCostPrice);
+      if (cp.blocked) {
+        clearanceEnd.push({ key, lane, name: c.commodityName, why: `cost-floor(${cp.floor}>=${clearance.originalPrice})`, entry: clearance });
+        clearance = null;
+      }
+    }
+
     // Low-stock guard: clearance does not apply at qty <= 1 (expiry tiers still do).
     let clearanceSuspended = false;
     if (clearance) {
@@ -416,9 +425,16 @@ function planForMachine(rtuNumber, row, state, window) {
     const originalCost = Number(
       clearance?.originalCostPrice ?? active?.originalCostPrice ?? c.costPrice ?? 0
     );
-    const want = tierPrice(original, wantPct);
-    const source = expiryPct >= clearancePct && expiryPct > 0 ? "expiry" : "clearance";
-    const keepActive = expiryPct > 0 && expiryPct >= clearancePct;
+    // Expiry tiers are never floored; clearance is floored at true cost × 1.2. Lower price wins
+    // (tie → expiry).
+    const expiryPrice = expiryPct ? tierPrice(original, expiryPct) : null;
+    const clearancePrice = clearancePct
+      ? clearancePriceFor(original, clearancePct, clearance.originalCostPrice).price
+      : null;
+    const source =
+      expiryPrice != null && (clearancePrice == null || expiryPrice <= clearancePrice) ? "expiry" : "clearance";
+    const want = source === "expiry" ? expiryPrice : clearancePrice;
+    const keepActive = source === "expiry";
 
     if (Number(c.price) === want) {
       toDiscount.push({
@@ -671,7 +687,7 @@ async function main() {
       }
       discountCount++;
       console.log(
-        `  DISCOUNT lane ${d.lane} ${d.name}: ${money(d.originalPrice)} → ${money(d.discountPrice)} € (−${d.percent}% ${d.source}, eff ${d.effDate || "—"})${d.already ? " [update]" : ""}`
+        `  DISCOUNT lane ${d.lane} ${d.name}: ${money(d.originalPrice)} → ${money(d.discountPrice)} € (−${d.percent}% ${d.source}, cost ${d.clearance?.originalCostPrice ?? "?"}, eff ${d.effDate || "—"})${d.already ? " [update]" : ""}`
       );
     }
     for (const r of plan.toRestore) {
@@ -695,12 +711,18 @@ async function main() {
   }
 
   if (GUARD) {
-    const n = plans.reduce((s, p) => s + (p.plan.suspend?.length || 0) + (p.plan.resume?.length || 0), 0);
+    // Any clearance-side change (suspend/resume, end, floor or price drift) is applied now;
+    // pure expiry-tier changes are left to the morning/evening slots.
+    const n = plans.reduce((s, p) => s
+      + (p.plan.suspend?.length || 0) + (p.plan.resume?.length || 0)
+      + (p.plan.clearanceEnd?.length || 0)
+      + p.plan.toDiscount.filter((d) => !d.noop && d.source === "clearance").length
+      + p.plan.toRestore.filter((r) => String(r.reason || "").includes("clearance")).length, 0);
     if (!n) {
-      console.log("low-stock guard: nothing to suspend/resume — no writes.");
+      console.log("low-stock guard: no clearance changes — no writes.");
       return;
     }
-    console.log(`low-stock guard: ${n} clearance lane(s) to suspend/resume — applying.`);
+    console.log(`low-stock guard: ${n} clearance change(s) — applying.`);
   }
 
   if (!APPLY) return;
@@ -790,12 +812,17 @@ async function main() {
       }
       if (d.clearance && state.clearance[d.key]) {
         // Keep clearance book aligned with originals; price may be overridden by bigger expiry
+        const pct = d.clearancePct || state.clearance[d.key].percent;
+        const cp = clearancePriceFor(d.originalPrice, pct, state.clearance[d.key].originalCostPrice);
         state.clearance[d.key] = {
           ...state.clearance[d.key],
           originalPrice: d.originalPrice,
           originalCostPrice: d.originalCostPrice,
-          clearancePrice: tierPrice(d.originalPrice, d.clearancePct || state.clearance[d.key].percent),
-          clearanceCostPrice: Math.min(d.originalCostPrice, tierPrice(d.originalPrice, d.clearancePct || state.clearance[d.key].percent)),
+          clearancePrice: cp.price,
+          clearanceCostPrice: Math.min(d.originalCostPrice, cp.price),
+          effectivePercent: effectivePercent(d.originalPrice, cp.price),
+          costFloor: cp.floor,
+          costKnown: cp.costKnown,
           updatedAt: new Date().toISOString(),
         };
       }

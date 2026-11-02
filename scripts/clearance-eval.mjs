@@ -188,6 +188,12 @@ function reevalClearance(state, rows, { today = berlinToday() } = {}) {
       originalPrice: active?.originalPrice,
       originalCostPrice: active?.originalCostPrice,
     });
+    if (entry.floorBlocked) {
+      console.log(`  skip ${r.key} ${r.name}: cost floor ${entry.costFloor} >= normal ${entry.originalPrice}`);
+      skipped++;
+      continue;
+    }
+    if (!entry.costKnown) console.log(`  WARN ${r.key} ${r.name}: cost unknown — no floor`);
     state.clearance[r.key] = entry;
     console.log(`  ADD ${r.key} ${r.name} −${pct}% ${r.klass} → ${entry.clearancePrice}€ until ${entry.endsAt}`);
     added++;

@@ -14,18 +14,18 @@
       "percent": 50,
       "effDate": "2026-11-04",
       "startedAt": "2026-10-31T06:05:01.973Z",
-      "updatedAt": "2026-11-02T21:11:48.218Z"
+      "updatedAt": "2026-11-02T21:33:42.377Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002146",
+        "advertiseId": "100002148",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-02-5d9327",
+        "adName": "SD24-combined-steinsberg-2026-11-02-f9c647",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/60a5656f86264dbe8ba9a55aecc1ed92.mp4",
-        "hash": "5d93272f7db0a54d",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/eb23088646aa456c88d270c834186389.mp4",
+        "hash": "f9c6471152968fae",
         "segments": [
           "karamalz",
           "live",
@@ -46,23 +46,13 @@
         "verifiedSale": [
           {
             "rtuNumber": "7680783",
-            "lane": "12",
-            "name": "Pick Ungarische Salami",
-            "old": 3,
-            "new": 2.1,
-            "pct": 30,
+            "lane": "38",
+            "name": "Fanta Mango DragonFruit",
+            "old": 1.6,
+            "new": 1.1,
+            "pct": 31,
             "until": "2026-11-03",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6896b049df3448f294dfef12ff6b089b.png"
-          },
-          {
-            "rtuNumber": "7680783",
-            "lane": "13",
-            "name": "Pick Puszta-Kolbasz",
-            "old": 2.8,
-            "new": 1.95,
-            "pct": 30,
-            "until": "2026-11-03",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/707c24edb06d4270bc6b55b8d5813bff.png"
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg"
           },
           {
             "rtuNumber": "7680783",
@@ -105,16 +95,6 @@
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/24fdb100b98241e6a7f95ce26ee3a4e5.png"
           },
           {
-            "rtuNumber": "7680783",
-            "lane": "38",
-            "name": "Fanta Mango DragonFruit",
-            "old": 1.6,
-            "new": 1.1,
-            "pct": 30,
-            "until": "2026-11-03",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg"
-          },
-          {
             "rtuNumber": "7680800",
             "lane": "15",
             "name": "Sport",
@@ -136,6 +116,16 @@
           },
           {
             "rtuNumber": "7680800",
+            "lane": "33",
+            "name": "Nut & Fruit Mix",
+            "old": 2.4,
+            "new": 1.9,
+            "pct": 21,
+            "until": "2026-11-03",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/304baa5cb88c4acda661fb056a8ab958.png"
+          },
+          {
+            "rtuNumber": "7680800",
             "lane": "22",
             "name": "MrBeast Beef Jerky Original",
             "old": 2.5,
@@ -143,16 +133,6 @@
             "pct": 20,
             "until": "2026-11-03",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5bcdf3ec37c94f218c917fb7dd6ff76b.png"
-          },
-          {
-            "rtuNumber": "7680800",
-            "lane": "33",
-            "name": "Nut & Fruit Mix",
-            "old": 2.4,
-            "new": 1.9,
-            "pct": 20,
-            "until": "2026-11-03",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/304baa5cb88c4acda661fb056a8ab958.png"
           },
           {
             "rtuNumber": "7680800",
@@ -196,16 +176,6 @@
           },
           {
             "rtuNumber": "7680800",
-            "lane": "32",
-            "name": "Crackzel Pretzel Pieces",
-            "old": 1.6,
-            "new": 1.3,
-            "pct": 20,
-            "until": "2026-11-03",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fe511a8730aa4065bb9f5b7232ba325f.png"
-          },
-          {
-            "rtuNumber": "7680800",
             "lane": "35",
             "name": "Huober Minis",
             "old": 1,
@@ -215,12 +185,42 @@
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png"
           },
           {
+            "rtuNumber": "7680800",
+            "lane": "32",
+            "name": "Crackzel Pretzel Pieces",
+            "old": 1.6,
+            "new": 1.3,
+            "pct": 19,
+            "until": "2026-11-03",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fe511a8730aa4065bb9f5b7232ba325f.png"
+          },
+          {
+            "rtuNumber": "7680783",
+            "lane": "13",
+            "name": "Pick Puszta-Kolbasz",
+            "old": 2.8,
+            "new": 2.4,
+            "pct": 14,
+            "until": "2026-11-03",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/707c24edb06d4270bc6b55b8d5813bff.png"
+          },
+          {
+            "rtuNumber": "7680783",
+            "lane": "12",
+            "name": "Pick Ungarische Salami",
+            "old": 3,
+            "new": 2.65,
+            "pct": 12,
+            "until": "2026-11-03",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6896b049df3448f294dfef12ff6b089b.png"
+          },
+          {
             "rtuNumber": "7680783",
             "lane": "31",
             "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
             "old": 1,
-            "new": 0.8,
-            "pct": 20,
+            "new": 0.9,
+            "pct": 10,
             "until": "2026-11-03",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png"
           },
@@ -229,8 +229,8 @@
             "lane": "32",
             "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
             "old": 1,
-            "new": 0.8,
-            "pct": 20,
+            "new": 0.9,
+            "pct": 10,
             "until": "2026-11-03",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png"
           },
@@ -239,25 +239,15 @@
             "lane": "33",
             "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
             "old": 1,
-            "new": 0.8,
-            "pct": 20,
+            "new": 0.9,
+            "pct": 10,
             "until": "2026-11-03",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png"
-          },
-          {
-            "rtuNumber": "7680800",
-            "lane": "49",
-            "name": "Nestle Lion",
-            "old": 0.8,
-            "new": 0.65,
-            "pct": 20,
-            "until": "2026-11-16",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ff6d807696574fe1934323de18cceaaa.jpg"
           }
         ],
         "karamalzPrice": {
           "old": 1,
-          "new": 0.8,
+          "new": 0.9,
           "label": "Abverkauf"
         },
         "nightGroups": [
@@ -269,15 +259,15 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-02T21:12:49.317Z"
+        "updatedAt": "2026-11-02T21:34:41.423Z"
       },
       "schiesheim": {
-        "advertiseId": "100002147",
+        "advertiseId": "100002149",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-11-02-85cfea",
+        "adName": "SD24-combined-schiesheim-2026-11-02-91c39a",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fa58af04d33e4b13b48cd73d6fbc45f4.mp4",
-        "hash": "85cfea0be10a9511",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f26fcfc9929a40fa8facb752215dcae5.mp4",
+        "hash": "91c39aa278d76257",
         "segments": [
           "live",
           "deals",
@@ -310,8 +300,8 @@
             "lane": "3",
             "name": "Pringles",
             "old": 1.6,
-            "new": 1.1,
-            "pct": 30,
+            "new": 1.2,
+            "pct": 25,
             "until": "2026-11-16",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg"
           },
@@ -321,19 +311,9 @@
             "name": "Mikado Keks-Sticks Milchschokolade 75g",
             "old": 2.4,
             "new": 1.9,
-            "pct": 20,
+            "pct": 21,
             "until": "2026-11-03",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ed7b5378c2cf49fd89f1a9e547c0fbff.jpeg"
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "48",
-            "name": "Starbucks Frappuccino Caramel Eiskaffee 250ml",
-            "old": 2.5,
-            "new": 2,
-            "pct": 20,
-            "until": "2026-11-03",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bc904bb2cfd4f06acba2b827b3eba2a.jpeg"
           },
           {
             "rtuNumber": "7680787",
@@ -367,16 +347,6 @@
           },
           {
             "rtuNumber": "7680787",
-            "lane": "33",
-            "name": "Nutella Go",
-            "old": 1.9,
-            "new": 1.5,
-            "pct": 20,
-            "until": "2026-11-03",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png"
-          },
-          {
-            "rtuNumber": "7680787",
             "lane": "47",
             "name": "Gösser Natur Radler",
             "old": 1.5,
@@ -384,46 +354,6 @@
             "pct": 20,
             "until": "2026-11-16",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png"
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "56",
-            "name": "Paulaner Spezi 330ml Cola-Orange",
-            "old": 1.6,
-            "new": 1.3,
-            "pct": 20,
-            "until": "2026-11-16",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png"
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "51",
-            "name": "Vio Still 0.5l Wasser  inkl. Pfand",
-            "old": 1.6,
-            "new": 1.3,
-            "pct": 20,
-            "until": "2026-11-03",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg"
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "34",
-            "name": "KitKat",
-            "old": 1.3,
-            "new": 1.05,
-            "pct": 20,
-            "until": "2026-11-03",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg"
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "22",
-            "name": "Milram Moin Kakao Drink 0,3% 0,5l",
-            "old": 1.1,
-            "new": 0.9,
-            "pct": 20,
-            "until": "2026-11-03",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg"
           },
           {
             "rtuNumber": "7680787",
@@ -444,6 +374,66 @@
             "pct": 20,
             "until": "2026-11-03",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png"
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "56",
+            "name": "Paulaner Spezi 330ml Cola-Orange",
+            "old": 1.6,
+            "new": 1.3,
+            "pct": 19,
+            "until": "2026-11-16",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png"
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "51",
+            "name": "Vio Still 0.5l Wasser  inkl. Pfand",
+            "old": 1.6,
+            "new": 1.3,
+            "pct": 19,
+            "until": "2026-11-03",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg"
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "34",
+            "name": "KitKat",
+            "old": 1.3,
+            "new": 1.05,
+            "pct": 19,
+            "until": "2026-11-03",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg"
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "48",
+            "name": "Starbucks Frappuccino Caramel Eiskaffee 250ml",
+            "old": 2.5,
+            "new": 2.05,
+            "pct": 18,
+            "until": "2026-11-03",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bc904bb2cfd4f06acba2b827b3eba2a.jpeg"
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "33",
+            "name": "Nutella Go",
+            "old": 1.9,
+            "new": 1.55,
+            "pct": 18,
+            "until": "2026-11-03",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png"
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "22",
+            "name": "Milram Moin Kakao Drink 0,3% 0,5l",
+            "old": 1.1,
+            "new": 0.9,
+            "pct": 18,
+            "until": "2026-11-03",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg"
           }
         ],
         "karamalzPrice": null,
@@ -456,7 +446,7 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-02T21:13:18.266Z"
+        "updatedAt": "2026-11-02T21:35:08.223Z"
       }
     }
   },
@@ -479,7 +469,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 10,
       "hideFromAd": true,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
+      "updatedAt": "2026-11-02T21:33:42.119Z",
+      "effectivePercent": 31,
+      "costFloor": 2.3,
+      "costKnown": true
     },
     "7680800:31": {
       "rtuNumber": "7680800",
@@ -496,7 +489,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
+      "updatedAt": "2026-11-02T21:33:42.119Z",
+      "effectivePercent": 30,
+      "costFloor": 1.1,
+      "costKnown": true
     },
     "7680800:37": {
       "rtuNumber": "7680800",
@@ -513,7 +509,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
+      "updatedAt": "2026-11-02T21:33:42.119Z",
+      "effectivePercent": 30,
+      "costFloor": 1.1,
+      "costKnown": true
     },
     "7680800:38": {
       "rtuNumber": "7680800",
@@ -530,7 +529,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
+      "updatedAt": "2026-11-02T21:33:42.119Z",
+      "effectivePercent": 30,
+      "costFloor": 1.2,
+      "costKnown": true
     },
     "7680800:11": {
       "rtuNumber": "7680800",
@@ -568,7 +570,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
+      "updatedAt": "2026-11-02T21:33:42.119Z",
+      "effectivePercent": 20,
+      "costFloor": 1.8,
+      "costKnown": true
     },
     "7680800:22": {
       "rtuNumber": "7680800",
@@ -585,7 +590,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
+      "updatedAt": "2026-11-02T21:33:42.119Z",
+      "effectivePercent": 20,
+      "costFloor": 1.8,
+      "costKnown": true
     },
     "7680800:32": {
       "rtuNumber": "7680800",
@@ -602,7 +610,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
+      "updatedAt": "2026-11-02T21:33:42.119Z",
+      "effectivePercent": 19,
+      "costFloor": 1.15,
+      "costKnown": true
     },
     "7680800:33": {
       "rtuNumber": "7680800",
@@ -619,7 +630,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
+      "updatedAt": "2026-11-02T21:33:42.119Z",
+      "effectivePercent": 21,
+      "costFloor": 1.8,
+      "costKnown": true
     },
     "7680800:42": {
       "rtuNumber": "7680800",
@@ -636,7 +650,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
+      "updatedAt": "2026-11-02T21:33:42.119Z",
+      "effectivePercent": 19,
+      "costFloor": 0.95,
+      "costKnown": true
     },
     "7680783:4": {
       "rtuNumber": "7680783",
@@ -653,7 +670,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:48.218Z"
+      "updatedAt": "2026-11-02T21:33:42.377Z",
+      "effectivePercent": 30,
+      "costFloor": 1.55,
+      "costKnown": true
     },
     "7680783:12": {
       "rtuNumber": "7680783",
@@ -662,15 +682,18 @@
       "cid": "100025398",
       "originalPrice": 3,
       "originalCostPrice": 2.19,
-      "clearancePrice": 2.1,
-      "clearanceCostPrice": 2.1,
+      "clearancePrice": 2.65,
+      "clearanceCostPrice": 2.19,
       "percent": 30,
       "reason": "dead",
       "startedAt": "2026-10-20T17:41:38.154Z",
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:48.218Z"
+      "updatedAt": "2026-11-02T21:33:42.377Z",
+      "effectivePercent": 12,
+      "costFloor": 2.65,
+      "costKnown": true
     },
     "7680783:13": {
       "rtuNumber": "7680783",
@@ -679,15 +702,18 @@
       "cid": "100029428",
       "originalPrice": 2.8,
       "originalCostPrice": 1.99,
-      "clearancePrice": 1.95,
-      "clearanceCostPrice": 1.95,
+      "clearancePrice": 2.4,
+      "clearanceCostPrice": 1.99,
       "percent": 30,
       "reason": "dead",
       "startedAt": "2026-10-20T17:41:38.154Z",
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:48.218Z"
+      "updatedAt": "2026-11-02T21:33:42.377Z",
+      "effectivePercent": 14,
+      "costFloor": 2.4,
+      "costKnown": true
     },
     "7680783:36": {
       "rtuNumber": "7680783",
@@ -704,7 +730,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:48.218Z"
+      "updatedAt": "2026-11-02T21:33:42.377Z",
+      "effectivePercent": 30,
+      "costFloor": 0.4,
+      "costKnown": true
     },
     "7680783:38": {
       "rtuNumber": "7680783",
@@ -721,7 +750,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:48.218Z"
+      "updatedAt": "2026-11-02T21:33:42.377Z",
+      "effectivePercent": 31,
+      "costFloor": 1.1,
+      "costKnown": true
     },
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -730,7 +762,7 @@
       "cid": "100025268",
       "originalPrice": 1,
       "originalCostPrice": 0.75,
-      "clearancePrice": 0.8,
+      "clearancePrice": 0.9,
       "clearanceCostPrice": 0.75,
       "percent": 20,
       "reason": "slow",
@@ -738,7 +770,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:48.218Z"
+      "updatedAt": "2026-11-02T21:33:42.377Z",
+      "effectivePercent": 10,
+      "costFloor": 0.9,
+      "costKnown": true
     },
     "7680783:32": {
       "rtuNumber": "7680783",
@@ -747,7 +782,7 @@
       "cid": "100025268",
       "originalPrice": 1,
       "originalCostPrice": 0.75,
-      "clearancePrice": 0.8,
+      "clearancePrice": 0.9,
       "clearanceCostPrice": 0.75,
       "percent": 20,
       "reason": "slow",
@@ -755,7 +790,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:48.218Z"
+      "updatedAt": "2026-11-02T21:33:42.377Z",
+      "effectivePercent": 10,
+      "costFloor": 0.9,
+      "costKnown": true
     },
     "7680783:33": {
       "rtuNumber": "7680783",
@@ -764,7 +802,7 @@
       "cid": "100025268",
       "originalPrice": 1,
       "originalCostPrice": 0.75,
-      "clearancePrice": 0.8,
+      "clearancePrice": 0.9,
       "clearanceCostPrice": 0.75,
       "percent": 20,
       "reason": "slow",
@@ -772,7 +810,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:48.218Z"
+      "updatedAt": "2026-11-02T21:33:42.377Z",
+      "effectivePercent": 10,
+      "costFloor": 0.9,
+      "costKnown": true
     },
     "7680783:44": {
       "rtuNumber": "7680783",
@@ -789,7 +830,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:48.218Z"
+      "updatedAt": "2026-11-02T21:33:42.377Z",
+      "effectivePercent": 20,
+      "costFloor": 1.1,
+      "costKnown": true
     },
     "7680783:51": {
       "rtuNumber": "7680783",
@@ -806,7 +850,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:48.218Z"
+      "updatedAt": "2026-11-02T21:33:42.377Z",
+      "effectivePercent": 20,
+      "costFloor": 1.2,
+      "costKnown": true
     },
     "7680787:12": {
       "rtuNumber": "7680787",
@@ -823,7 +870,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 30,
+      "costFloor": 1.45,
+      "costKnown": true
     },
     "7680787:1": {
       "rtuNumber": "7680787",
@@ -861,7 +911,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 20,
+      "costFloor": 1.45,
+      "costKnown": true
     },
     "7680787:22": {
       "rtuNumber": "7680787",
@@ -878,7 +931,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 18,
+      "costFloor": 0.8,
+      "costKnown": true
     },
     "7680787:33": {
       "rtuNumber": "7680787",
@@ -887,7 +943,7 @@
       "cid": "100025112",
       "originalPrice": 1.9,
       "originalCostPrice": 1.29,
-      "clearancePrice": 1.5,
+      "clearancePrice": 1.55,
       "clearanceCostPrice": 1.29,
       "percent": 20,
       "reason": "slow",
@@ -895,7 +951,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 18,
+      "costFloor": 1.55,
+      "costKnown": true
     },
     "7680787:34": {
       "rtuNumber": "7680787",
@@ -912,7 +971,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 7,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 19,
+      "costFloor": 0.9,
+      "costKnown": true
     },
     "7680787:37": {
       "rtuNumber": "7680787",
@@ -929,7 +991,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 20,
+      "costFloor": 0.6,
+      "costKnown": true
     },
     "7680787:38": {
       "rtuNumber": "7680787",
@@ -946,7 +1011,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 21,
+      "costFloor": 1.8,
+      "costKnown": true
     },
     "7680787:48": {
       "rtuNumber": "7680787",
@@ -955,7 +1023,7 @@
       "cid": "100025072",
       "originalPrice": 2.5,
       "originalCostPrice": 1.69,
-      "clearancePrice": 2,
+      "clearancePrice": 2.05,
       "clearanceCostPrice": 1.69,
       "percent": 20,
       "reason": "slow",
@@ -963,7 +1031,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 18,
+      "costFloor": 2.05,
+      "costKnown": true
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -980,7 +1051,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 19,
+      "costFloor": 0.9,
+      "costKnown": true
     },
     "7680787:55": {
       "rtuNumber": "7680787",
@@ -997,7 +1071,10 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 20,
+      "costFloor": 1.3,
+      "costKnown": true
     },
     "7680787:3": {
       "rtuNumber": "7680787",
@@ -1006,7 +1083,7 @@
       "cid": "100022635",
       "originalPrice": 1.6,
       "originalCostPrice": 1,
-      "clearancePrice": 1.1,
+      "clearancePrice": 1.2,
       "clearanceCostPrice": 1,
       "percent": 30,
       "reason": "dead",
@@ -1014,7 +1091,10 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 25,
+      "costFloor": 1.2,
+      "costKnown": true
     },
     "7680787:11": {
       "rtuNumber": "7680787",
@@ -1031,7 +1111,10 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 20,
+      "costFloor": 1.8,
+      "costKnown": true
     },
     "7680787:31": {
       "rtuNumber": "7680787",
@@ -1048,7 +1131,10 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 20,
+      "costFloor": 0.4,
+      "costKnown": true
     },
     "7680787:39": {
       "rtuNumber": "7680787",
@@ -1065,7 +1151,10 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 30,
+      "costFloor": 1.8,
+      "costKnown": true
     },
     "7680787:47": {
       "rtuNumber": "7680787",
@@ -1082,7 +1171,10 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.693Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 20,
+      "costFloor": 1.1,
+      "costKnown": true
     },
     "7680787:56": {
       "rtuNumber": "7680787",
@@ -1099,7 +1191,10 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.694Z"
+      "updatedAt": "2026-11-02T21:33:41.835Z",
+      "effectivePercent": 19,
+      "costFloor": 1.15,
+      "costKnown": true
     },
     "7680800:15": {
       "rtuNumber": "7680800",
@@ -1116,7 +1211,10 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 6,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
+      "updatedAt": "2026-11-02T21:33:42.119Z",
+      "effectivePercent": 30,
+      "costFloor": 0.7,
+      "costKnown": true
     },
     "7680800:35": {
       "rtuNumber": "7680800",
@@ -1133,24 +1231,10 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
-    },
-    "7680800:49": {
-      "rtuNumber": "7680800",
-      "lane": "49",
-      "name": "Nestle Lion",
-      "cid": "100023321",
-      "originalPrice": 0.8,
-      "originalCostPrice": 0.74,
-      "clearancePrice": 0.65,
-      "clearanceCostPrice": 0.65,
-      "percent": 20,
-      "reason": "slow",
-      "startedAt": "2026-11-02T06:08:23.102Z",
-      "endsAt": "2026-11-16",
-      "stockAtStart": 5,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
+      "updatedAt": "2026-11-02T21:33:42.119Z",
+      "effectivePercent": 20,
+      "costFloor": 0.6,
+      "costKnown": true
     },
     "7680783:52": {
       "rtuNumber": "7680783",
@@ -1167,7 +1251,10 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:48.218Z"
+      "updatedAt": "2026-11-02T21:33:42.377Z",
+      "effectivePercent": 20,
+      "costFloor": 1.2,
+      "costKnown": true
     },
     "7680800:54": {
       "rtuNumber": "7680800",
@@ -1184,10 +1271,13 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-02T21:11:47.959Z"
+      "updatedAt": "2026-11-02T21:33:42.119Z",
+      "effectivePercent": 20,
+      "costFloor": 1.6,
+      "costKnown": true
     }
   },
   "lastClearanceEvalAt": "2026-11-02T15:55:53.035Z",
   "lastClearanceEvalDay": "2026-11-02",
-  "lastLowStockGuardAt": "2026-11-02T21:11:48.218Z"
+  "lastLowStockGuardAt": "2026-11-02T21:33:42.377Z"
 }
