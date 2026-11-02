@@ -1,57 +1,31 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-01T20:58:08.082Z",
-  "lastRunDay": "2026-11-01",
+  "lastRunAt": "2026-11-02T06:08:34.583Z",
+  "lastRunDay": "2026-11-02",
   "active": {
-    "7680787:11": {
-      "rtuNumber": "7680787",
-      "lane": "11",
-      "name": "Toffifee ",
-      "originalPrice": 2.5,
-      "originalCostPrice": 1.49,
-      "discountPrice": 0.75,
-      "discountCostPrice": 0.75,
-      "percent": 70,
-      "effDate": "2026-11-01",
-      "startedAt": "2026-10-28T06:00:49.130Z",
-      "updatedAt": "2026-11-01T20:58:08.081Z"
-    },
-    "7680800:12": {
-      "rtuNumber": "7680800",
-      "lane": "12",
-      "name": "Toffifee ",
-      "originalPrice": 2.5,
-      "originalCostPrice": 1.49,
-      "discountPrice": 0.75,
-      "discountCostPrice": 0.75,
-      "percent": 70,
-      "effDate": "2026-11-01",
-      "startedAt": "2026-10-28T06:00:50.822Z",
-      "updatedAt": "2026-11-01T20:58:08.081Z"
-    },
     "7680783:42": {
       "rtuNumber": "7680783",
       "lane": "42",
       "name": "Starbucks Hazelnut Macchiato",
       "originalPrice": 2.5,
       "originalCostPrice": 1.49,
-      "discountPrice": 2,
-      "discountCostPrice": 1.49,
-      "percent": 20,
+      "discountPrice": 1.25,
+      "discountCostPrice": 1.25,
+      "percent": 50,
       "effDate": "2026-11-04",
       "startedAt": "2026-10-31T06:05:01.973Z",
-      "updatedAt": "2026-11-01T20:58:08.082Z"
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002139",
+        "advertiseId": "100002140",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-01-8c31a7",
+        "adName": "SD24-combined-steinsberg-2026-11-02-ff1ffb",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/85634f04c207414a9b2791c6f14dc6d4.mp4",
-        "hash": "8c31a7e4a01dab5a",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d0ce78097da44e8889cf318c834c26e3.mp4",
+        "hash": "ff1ffb066999bca6",
         "segments": [
           "karamalz",
           "live",
@@ -60,21 +34,12 @@
         ],
         "verifiedDeals": [
           {
-            "rtuNumber": "7680800",
-            "lane": "12",
-            "name": "Toffifee ",
-            "old": 2.5,
-            "new": 0.75,
-            "pct": 70,
-            "until": "2026-11-01"
-          },
-          {
             "rtuNumber": "7680783",
             "lane": "42",
             "name": "Starbucks Hazelnut Macchiato",
             "old": 2.5,
-            "new": 2,
-            "pct": 20,
+            "new": 1.25,
+            "pct": 50,
             "until": "2026-11-04"
           }
         ],
@@ -150,6 +115,16 @@
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg"
           },
           {
+            "rtuNumber": "7680800",
+            "lane": "15",
+            "name": "Sport",
+            "old": 1.5,
+            "new": 1.05,
+            "pct": 30,
+            "until": "2026-11-16",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/19ed1a7d28ba4323b2117da96de7bcb0.png"
+          },
+          {
             "rtuNumber": "7680783",
             "lane": "36",
             "name": "Capri-Sun Fairy Drink",
@@ -190,6 +165,16 @@
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/304baa5cb88c4acda661fb056a8ab958.png"
           },
           {
+            "rtuNumber": "7680800",
+            "lane": "12",
+            "name": "Toffifee",
+            "old": 2.5,
+            "new": 2,
+            "pct": 20,
+            "until": "2026-11-03",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png"
+          },
+          {
             "rtuNumber": "7680783",
             "lane": "44",
             "name": "Gösser Natur Radler",
@@ -198,6 +183,16 @@
             "pct": 20,
             "until": "2026-11-03",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png"
+          },
+          {
+            "rtuNumber": "7680783",
+            "lane": "52",
+            "name": "Vio Medium 0.5l  inkl. Pfand",
+            "old": 2,
+            "new": 1.6,
+            "pct": 20,
+            "until": "2026-11-16",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg"
           },
           {
             "rtuNumber": "7680783",
@@ -240,6 +235,16 @@
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/590f59b9add746c6beb00de283b64173.jpg"
           },
           {
+            "rtuNumber": "7680800",
+            "lane": "35",
+            "name": "Huober Minis",
+            "old": 1,
+            "new": 0.8,
+            "pct": 20,
+            "until": "2026-11-16",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png"
+          },
+          {
             "rtuNumber": "7680783",
             "lane": "31",
             "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
@@ -268,6 +273,16 @@
             "pct": 20,
             "until": "2026-11-03",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png"
+          },
+          {
+            "rtuNumber": "7680800",
+            "lane": "49",
+            "name": "Nestle Lion",
+            "old": 0.8,
+            "new": 0.65,
+            "pct": 20,
+            "until": "2026-11-16",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ff6d807696574fe1934323de18cceaaa.jpg"
           }
         ],
         "karamalzPrice": {
@@ -284,32 +299,32 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-01T20:58:08.385Z"
+        "updatedAt": "2026-11-02T06:10:19.968Z"
       },
       "schiesheim": {
-        "advertiseId": "100002131",
+        "advertiseId": "100002141",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-10-31-6463a9",
+        "adName": "SD24-combined-schiesheim-2026-11-02-7d57ef",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2a547cd9080b4d93a1b200c828a80684.mp4",
-        "hash": "6463a966bfcc53d7",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/dfb279c5e0644d8596e531fb1e1b3dd5.mp4",
+        "hash": "7d57efdb65cd78c7",
         "segments": [
           "live",
           "deals",
           "sale"
         ],
-        "verifiedDeals": [
+        "verifiedDeals": [],
+        "verifiedSale": [
           {
             "rtuNumber": "7680787",
-            "lane": "11",
-            "name": "Toffifee ",
-            "old": 2.5,
-            "new": 0.75,
-            "pct": 70,
-            "until": "2026-11-01"
-          }
-        ],
-        "verifiedSale": [
+            "lane": "39",
+            "name": "Minecraft Figure",
+            "old": 3,
+            "new": 2.1,
+            "pct": 30,
+            "until": "2026-11-16",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/edb4a6fbf94c483b98aa3fd5c7fd70a1.png"
+          },
           {
             "rtuNumber": "7680787",
             "lane": "12",
@@ -319,6 +334,16 @@
             "pct": 30,
             "until": "2026-11-03",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png"
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "3",
+            "name": "Pringles",
+            "old": 1.6,
+            "new": 1.1,
+            "pct": 30,
+            "until": "2026-11-16",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg"
           },
           {
             "rtuNumber": "7680787",
@@ -339,6 +364,16 @@
             "pct": 20,
             "until": "2026-11-03",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bc904bb2cfd4f06acba2b827b3eba2a.jpeg"
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "11",
+            "name": "Toffifee",
+            "old": 2.5,
+            "new": 2,
+            "pct": 20,
+            "until": "2026-11-16",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png"
           },
           {
             "rtuNumber": "7680787",
@@ -382,6 +417,26 @@
           },
           {
             "rtuNumber": "7680787",
+            "lane": "47",
+            "name": "Gösser Natur Radler",
+            "old": 1.5,
+            "new": 1.2,
+            "pct": 20,
+            "until": "2026-11-16",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png"
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "56",
+            "name": "Paulaner Spezi 330ml Cola-Orange",
+            "old": 1.6,
+            "new": 1.3,
+            "pct": 20,
+            "until": "2026-11-16",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png"
+          },
+          {
+            "rtuNumber": "7680787",
             "lane": "51",
             "name": "Vio Still 0.5l Wasser  inkl. Pfand",
             "old": 1.6,
@@ -412,6 +467,16 @@
           },
           {
             "rtuNumber": "7680787",
+            "lane": "31",
+            "name": "Capri-Sun Mystic Dragon",
+            "old": 1,
+            "new": 0.8,
+            "pct": 20,
+            "until": "2026-11-16",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/51b41b5d91cb4df480eaacc429084388.png"
+          },
+          {
+            "rtuNumber": "7680787",
             "lane": "37",
             "name": "Huober Minis",
             "old": 1,
@@ -431,13 +496,13 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-01T20:58:08.679Z"
+        "updatedAt": "2026-11-02T06:11:25.687Z"
       }
     }
   },
   "machineAds": {},
   "lastEveningRunDay": "2026-11-01",
-  "lastMorningRunDay": "2026-11-01",
+  "lastMorningRunDay": "2026-11-02",
   "clearance": {
     "7680800:5": {
       "rtuNumber": "7680800",
@@ -454,7 +519,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 10,
       "hideFromAd": true,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:32.981Z"
     },
     "7680800:31": {
       "rtuNumber": "7680800",
@@ -471,7 +536,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:32.981Z"
     },
     "7680800:37": {
       "rtuNumber": "7680800",
@@ -488,7 +553,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:32.981Z"
     },
     "7680800:38": {
       "rtuNumber": "7680800",
@@ -505,7 +570,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:32.981Z"
     },
     "7680800:11": {
       "rtuNumber": "7680800",
@@ -522,7 +587,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:32.981Z"
     },
     "7680800:12": {
       "rtuNumber": "7680800",
@@ -539,7 +604,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:32.981Z"
     },
     "7680800:22": {
       "rtuNumber": "7680800",
@@ -556,7 +621,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:32.981Z"
     },
     "7680800:32": {
       "rtuNumber": "7680800",
@@ -573,7 +638,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:32.981Z"
     },
     "7680800:33": {
       "rtuNumber": "7680800",
@@ -590,7 +655,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:32.981Z"
     },
     "7680800:42": {
       "rtuNumber": "7680800",
@@ -607,7 +672,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:32.981Z"
     },
     "7680783:4": {
       "rtuNumber": "7680783",
@@ -624,7 +689,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     },
     "7680783:12": {
       "rtuNumber": "7680783",
@@ -641,7 +706,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     },
     "7680783:13": {
       "rtuNumber": "7680783",
@@ -658,7 +723,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.082Z"
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     },
     "7680783:22": {
       "rtuNumber": "7680783",
@@ -675,7 +740,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.082Z"
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     },
     "7680783:36": {
       "rtuNumber": "7680783",
@@ -692,7 +757,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.082Z"
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     },
     "7680783:38": {
       "rtuNumber": "7680783",
@@ -709,7 +774,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.082Z"
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     },
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -726,7 +791,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.082Z"
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     },
     "7680783:32": {
       "rtuNumber": "7680783",
@@ -743,7 +808,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.082Z"
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     },
     "7680783:33": {
       "rtuNumber": "7680783",
@@ -760,7 +825,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.082Z"
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     },
     "7680783:44": {
       "rtuNumber": "7680783",
@@ -777,7 +842,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.082Z"
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     },
     "7680783:51": {
       "rtuNumber": "7680783",
@@ -794,7 +859,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.082Z"
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     },
     "7680787:12": {
       "rtuNumber": "7680787",
@@ -811,7 +876,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:31.230Z"
     },
     "7680787:1": {
       "rtuNumber": "7680787",
@@ -828,7 +893,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:31.230Z"
     },
     "7680787:15": {
       "rtuNumber": "7680787",
@@ -845,7 +910,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:31.230Z"
     },
     "7680787:22": {
       "rtuNumber": "7680787",
@@ -862,7 +927,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:31.230Z"
     },
     "7680787:33": {
       "rtuNumber": "7680787",
@@ -879,7 +944,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:31.230Z"
     },
     "7680787:34": {
       "rtuNumber": "7680787",
@@ -896,7 +961,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 7,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:31.230Z"
     },
     "7680787:37": {
       "rtuNumber": "7680787",
@@ -913,7 +978,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:31.230Z"
     },
     "7680787:38": {
       "rtuNumber": "7680787",
@@ -930,7 +995,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:31.230Z"
     },
     "7680787:48": {
       "rtuNumber": "7680787",
@@ -947,7 +1012,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:31.230Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -964,7 +1029,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:31.230Z"
     },
     "7680787:55": {
       "rtuNumber": "7680787",
@@ -981,9 +1046,179 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-01T20:58:08.081Z"
+      "updatedAt": "2026-11-02T06:08:31.230Z"
+    },
+    "7680787:3": {
+      "rtuNumber": "7680787",
+      "lane": "3",
+      "name": "Pringles",
+      "cid": "100022635",
+      "originalPrice": 1.6,
+      "originalCostPrice": 1,
+      "clearancePrice": 1.1,
+      "clearanceCostPrice": 1,
+      "percent": 30,
+      "reason": "dead",
+      "startedAt": "2026-11-02T06:08:23.101Z",
+      "endsAt": "2026-11-16",
+      "stockAtStart": 2,
+      "hideFromAd": false,
+      "updatedAt": "2026-11-02T06:08:31.230Z"
+    },
+    "7680787:11": {
+      "rtuNumber": "7680787",
+      "lane": "11",
+      "name": "Toffifee",
+      "cid": "100031233",
+      "originalPrice": 2.5,
+      "originalCostPrice": 1.49,
+      "clearancePrice": 2,
+      "clearanceCostPrice": 1.49,
+      "percent": 20,
+      "reason": "slow",
+      "startedAt": "2026-11-02T06:08:23.102Z",
+      "endsAt": "2026-11-16",
+      "stockAtStart": 4,
+      "hideFromAd": false,
+      "updatedAt": "2026-11-02T06:08:31.230Z"
+    },
+    "7680787:31": {
+      "rtuNumber": "7680787",
+      "lane": "31",
+      "name": "Capri-Sun Mystic Dragon",
+      "cid": "100035405",
+      "originalPrice": 1,
+      "originalCostPrice": 0.3,
+      "clearancePrice": 0.8,
+      "clearanceCostPrice": 0.3,
+      "percent": 20,
+      "reason": "slow",
+      "startedAt": "2026-11-02T06:08:23.102Z",
+      "endsAt": "2026-11-16",
+      "stockAtStart": 5,
+      "hideFromAd": false,
+      "updatedAt": "2026-11-02T06:08:31.230Z"
+    },
+    "7680787:39": {
+      "rtuNumber": "7680787",
+      "lane": "39",
+      "name": "Minecraft Figure",
+      "cid": "100039720",
+      "originalPrice": 3,
+      "originalCostPrice": 1.5,
+      "clearancePrice": 2.1,
+      "clearanceCostPrice": 1.5,
+      "percent": 30,
+      "reason": "dead",
+      "startedAt": "2026-11-02T06:08:23.102Z",
+      "endsAt": "2026-11-16",
+      "stockAtStart": 5,
+      "hideFromAd": false,
+      "updatedAt": "2026-11-02T06:08:31.230Z"
+    },
+    "7680787:47": {
+      "rtuNumber": "7680787",
+      "lane": "47",
+      "name": "Gösser Natur Radler",
+      "cid": "100026167",
+      "originalPrice": 1.5,
+      "originalCostPrice": 0.89,
+      "clearancePrice": 1.2,
+      "clearanceCostPrice": 0.89,
+      "percent": 20,
+      "reason": "slow",
+      "startedAt": "2026-11-02T06:08:23.102Z",
+      "endsAt": "2026-11-16",
+      "stockAtStart": 4,
+      "hideFromAd": false,
+      "updatedAt": "2026-11-02T06:08:31.230Z"
+    },
+    "7680787:56": {
+      "rtuNumber": "7680787",
+      "lane": "56",
+      "name": "Paulaner Spezi 330ml Cola-Orange",
+      "cid": "100025968",
+      "originalPrice": 1.6,
+      "originalCostPrice": 0.95,
+      "clearancePrice": 1.3,
+      "clearanceCostPrice": 0.95,
+      "percent": 20,
+      "reason": "slow",
+      "startedAt": "2026-11-02T06:08:23.102Z",
+      "endsAt": "2026-11-16",
+      "stockAtStart": 3,
+      "hideFromAd": false,
+      "updatedAt": "2026-11-02T06:08:31.230Z"
+    },
+    "7680800:15": {
+      "rtuNumber": "7680800",
+      "lane": "15",
+      "name": "Sport",
+      "cid": "100039739",
+      "originalPrice": 1.5,
+      "originalCostPrice": 0.55,
+      "clearancePrice": 1.05,
+      "clearanceCostPrice": 0.55,
+      "percent": 30,
+      "reason": "dead",
+      "startedAt": "2026-11-02T06:08:23.102Z",
+      "endsAt": "2026-11-16",
+      "stockAtStart": 6,
+      "hideFromAd": false,
+      "updatedAt": "2026-11-02T06:08:32.981Z"
+    },
+    "7680800:35": {
+      "rtuNumber": "7680800",
+      "lane": "35",
+      "name": "Huober Minis",
+      "cid": "100028983",
+      "originalPrice": 1,
+      "originalCostPrice": 0.49,
+      "clearancePrice": 0.8,
+      "clearanceCostPrice": 0.49,
+      "percent": 20,
+      "reason": "slow",
+      "startedAt": "2026-11-02T06:08:23.102Z",
+      "endsAt": "2026-11-16",
+      "stockAtStart": 4,
+      "hideFromAd": false,
+      "updatedAt": "2026-11-02T06:08:32.981Z"
+    },
+    "7680800:49": {
+      "rtuNumber": "7680800",
+      "lane": "49",
+      "name": "Nestle Lion",
+      "cid": "100023321",
+      "originalPrice": 0.8,
+      "originalCostPrice": 0.74,
+      "clearancePrice": 0.65,
+      "clearanceCostPrice": 0.65,
+      "percent": 20,
+      "reason": "slow",
+      "startedAt": "2026-11-02T06:08:23.102Z",
+      "endsAt": "2026-11-16",
+      "stockAtStart": 5,
+      "hideFromAd": false,
+      "updatedAt": "2026-11-02T06:08:32.981Z"
+    },
+    "7680783:52": {
+      "rtuNumber": "7680783",
+      "lane": "52",
+      "name": "Vio Medium 0.5l  inkl. Pfand",
+      "cid": "100021792",
+      "originalPrice": 2,
+      "originalCostPrice": 0.99,
+      "clearancePrice": 1.6,
+      "clearanceCostPrice": 0.99,
+      "percent": 20,
+      "reason": "slow",
+      "startedAt": "2026-11-02T06:08:23.103Z",
+      "endsAt": "2026-11-16",
+      "stockAtStart": 5,
+      "hideFromAd": false,
+      "updatedAt": "2026-11-02T06:08:34.583Z"
     }
   },
-  "lastClearanceEvalAt": "2026-10-26T21:22:24.020Z",
-  "lastClearanceEvalDay": "2026-10-26"
+  "lastClearanceEvalAt": "2026-11-02T06:08:23.103Z",
+  "lastClearanceEvalDay": "2026-11-02"
 }

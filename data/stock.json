@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-02T05:10:33.307Z",
+  "updatedAt": "2026-11-02T06:11:33.339Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -20,7 +20,7 @@
             "en": "Schiesheim Right"
           },
           "online": true,
-          "fetchedAt": "2026-11-02T05:10:33.307Z",
+          "fetchedAt": "2026-11-02T06:11:33.339Z",
           "items": [
             {
               "lane": "1",
@@ -47,7 +47,7 @@
               "level": 1,
               "name": "Pringles",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg",
-              "price": 1.6,
+              "price": 1.1,
               "stock": 2,
               "capacity": 3,
               "expired": false
@@ -77,7 +77,7 @@
               "level": 2,
               "name": "Toffifee",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
-              "price": 0.75,
+              "price": 2,
               "stock": 4,
               "capacity": 5,
               "expired": true
@@ -177,7 +177,7 @@
               "level": 4,
               "name": "Capri-Sun Mystic Dragon",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/51b41b5d91cb4df480eaacc429084388.png",
-              "price": 1,
+              "price": 0.8,
               "stock": 5,
               "capacity": 10,
               "expired": false
@@ -257,7 +257,7 @@
               "level": 4,
               "name": "Minecraft Figure",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/edb4a6fbf94c483b98aa3fd5c7fd70a1.png",
-              "price": 3,
+              "price": 2.1,
               "stock": 5,
               "capacity": 10,
               "expired": false
@@ -327,7 +327,7 @@
               "level": 5,
               "name": "Gösser Natur Radler",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
-              "price": 1.5,
+              "price": 1.2,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -407,7 +407,7 @@
               "level": 6,
               "name": "Paulaner Spezi 330ml Cola-Orange",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
-              "price": 1.6,
+              "price": 1.3,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -451,7 +451,7 @@
             "en": "Schiesheim Left"
           },
           "online": false,
-          "fetchedAt": "2026-11-02T05:10:33.307Z",
+          "fetchedAt": "2026-11-02T06:11:33.339Z",
           "items": [
             {
               "lane": "1",
@@ -684,7 +684,7 @@
             "en": "Steinsberg Right"
           },
           "online": true,
-          "fetchedAt": "2026-11-02T05:10:33.307Z",
+          "fetchedAt": "2026-11-02T06:11:33.339Z",
           "items": [
             {
               "lane": "1",
@@ -751,7 +751,7 @@
               "level": 2,
               "name": "Toffifee",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
-              "price": 0.75,
+              "price": 2,
               "stock": 2,
               "capacity": 5,
               "expired": true
@@ -781,7 +781,7 @@
               "level": 2,
               "name": "Sport",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/19ed1a7d28ba4323b2117da96de7bcb0.png",
-              "price": 1.5,
+              "price": 1.05,
               "stock": 6,
               "capacity": 10,
               "expired": false
@@ -881,7 +881,7 @@
               "level": 4,
               "name": "Huober Minis",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png",
-              "price": 1,
+              "price": 0.8,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -1011,7 +1011,7 @@
               "level": 5,
               "name": "Nestle Lion",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ff6d807696574fe1934323de18cceaaa.jpg",
-              "price": 0.8,
+              "price": 0.65,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -1115,7 +1115,7 @@
             "en": "Steinsberg Left"
           },
           "online": true,
-          "fetchedAt": "2026-11-02T05:10:33.307Z",
+          "fetchedAt": "2026-11-02T06:11:33.339Z",
           "items": [
             {
               "lane": "4",
@@ -1272,7 +1272,7 @@
               "level": 5,
               "name": "Starbucks Hazelnut Macchiato",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d75325ea045341adbce08e43955de5f4.jpeg",
-              "price": 2,
+              "price": 1.25,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -1362,7 +1362,7 @@
               "level": 6,
               "name": "Vio Medium 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
-              "price": 2,
+              "price": 1.6,
               "stock": 5,
               "capacity": 5,
               "expired": false
