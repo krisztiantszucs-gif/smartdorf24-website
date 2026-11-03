@@ -223,10 +223,15 @@ function buildOutput(machineResults, prevByRtu = {}) {
       .filter(Boolean)
       .sort((a, b) => a.level - b.level || String(a.lane).localeCompare(String(b.lane), undefined, { numeric: true }));
 
+    const online = result != null && isOnline(row);
     byLoc[meta.locationId].machines.push({
       rtuNumber: meta.rtuNumber,
       name: meta.name,
-      online: result != null && isOnline(row),
+      online,
+      // Real API offline status (successful fetch, machine reports offline). The website hides
+      // such machines until a later fetch reports them online. Fetch failures / stale keeps do
+      // NOT set this (the stale branch above keeps the last fetched value).
+      apiOffline: result != null && !online,
       fetchedAt: updatedAt,
       items,
     });

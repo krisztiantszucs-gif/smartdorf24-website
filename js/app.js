@@ -24,6 +24,7 @@
     lang: localStorage.getItem("sd24_lang") || "de",
     stock: null,
     discounts: { active: {}, clearance: {} },
+    hiddenRtus: new Set(), // machines the API reports offline — hidden until back online
     locationId: "schiesheim",
     machineId: null,
     map: null,
@@ -48,6 +49,11 @@
     $$("[data-i18n]").forEach((el) => {
       el.textContent = t(el.getAttribute("data-i18n"));
     });
+    const lead = document.querySelector('[data-i18n="loc_lead"]');
+    if (lead && state.visibleMachineCount != null) {
+      const words = (window.SD24_I18N[state.lang] || window.SD24_I18N.de).num_words || [];
+      lead.textContent = t("loc_lead_n").replace("{n}", words[state.visibleMachineCount] || String(state.visibleMachineCount));
+    }
     $$("[data-i18n-placeholder]").forEach((el) => {
       el.setAttribute("placeholder", t(el.getAttribute("data-i18n-placeholder")));
     });
@@ -80,11 +86,14 @@
         for (const it of m.items || []) lookup[m.rtuNumber + ":" + it.lane] = { loc, m, it };
       }
     }
+    const visible = (a) => !state.hiddenRtus.has(String(a.rtuNumber));
     const expiry = Object.values(state.discounts?.active || {})
+      .filter(visible)
       .filter((a) => !a.effDate || a.effDate >= today)
       .map((a) => ({ kind: "expiry", a, price: a.discountPrice, until: a.effDate, ...(lookup[a.rtuNumber + ":" + a.lane] || {}) }));
     const clearance = Object.values(state.discounts?.clearance || {})
       .filter((a) => !a.suspended)
+      .filter(visible)
       .filter((a) => !a.endsAt || String(a.endsAt).slice(0, 10) >= today)
       .map((a) => ({ kind: "clearance", a, price: a.clearancePrice, until: a.endsAt, ...(lookup[a.rtuNumber + ":" + a.lane] || {}) }));
     // Prefer higher % when same lane appears in both
@@ -179,8 +188,10 @@
           <h3>${escapeHtml(locName(loc.name))}</h3>
           <p>${escapeHtml(loc.address || "")}</p>
           <div class="loc-meta">
-            <span class="pill">${total} ${t("machines_label")}</span>
-            <span class="pill ${online ? "ok" : "off"}">${online}/${total} ${t("online")}</span>
+            ${loc.unavailable
+              ? `<span class="pill off">${escapeHtml(t("loc_unavailable"))}</span>`
+              : `<span class="pill">${total} ${t("machines_label")}</span>
+            <span class="pill ${online ? "ok" : "off"}">${online}/${total} ${t("online")}</span>`}
           </div>
         </button>`;
       })
@@ -254,7 +265,8 @@
 
     const machine = currentMachine();
     if (!machine) {
-      root.innerHTML = `<div class="empty-state">${escapeHtml(t("empty_machine"))}</div>`;
+      const msg = currentLocation()?.unavailable ? t("loc_unavailable_long") : t("empty_machine");
+      root.innerHTML = `<div class="empty-state">${escapeHtml(msg)}</div>`;
       return;
     }
 
@@ -381,6 +393,7 @@
         locations: FALLBACK_LOCATIONS,
       };
     }
+    applyVisibility();
     try {
       const dres = await fetch("data/discounts.json", { cache: "no-store" });
       if (dres.ok) state.discounts = await dres.json();
@@ -395,6 +408,24 @@
     } else {
       initMap();
     }
+  }
+
+  // Hide machines the API reports offline (apiOffline:true). Purely data-driven: the next
+  // stock.json that reports the machine online shows it again. Older stock.json without the
+  // flag keeps every machine visible.
+  function applyVisibility() {
+    state.hiddenRtus = new Set();
+    for (const loc of state.stock?.locations || []) {
+      const all = loc.allMachines || loc.machines || [];
+      loc.allMachines = all;
+      loc.machines = all.filter((m) => m.apiOffline !== true);
+      all.filter((m) => m.apiOffline === true).forEach((m) => state.hiddenRtus.add(String(m.rtuNumber)));
+      loc.unavailable = all.length > 0 && loc.machines.length === 0;
+    }
+    const n = (state.stock?.locations || []).reduce((s, l) => s + (l.machines || []).length, 0);
+    state.visibleMachineCount = n;
+    const stat = document.getElementById("stat-machines-count");
+    if (stat && state.stock && !state.stock.sample) stat.textContent = String(n);
   }
 
   function setFbSubject() {
