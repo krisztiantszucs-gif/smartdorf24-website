@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-03T16:33:17.175Z",
+  "updatedAt": "2026-11-03T16:47:15.993Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T16:33:17.175Z",
+          "fetchedAt": "2026-11-03T16:47:15.993Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-03T16:33:17.175Z",
+          "fetchedAt": "2026-11-03T16:47:15.993Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T16:33:17.175Z",
+          "fetchedAt": "2026-11-03T16:47:15.993Z",
           "items": [
             {
               "lane": "1",
@@ -905,7 +905,7 @@
               "name": "Haribo Pasta Flagga",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/537fcfd985df4edda29937d78af14900.png",
               "price": 1.55,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T16:33:17.175Z",
+          "fetchedAt": "2026-11-03T16:47:15.993Z",
           "items": [
             {
               "lane": "4",
@@ -1307,7 +1307,7 @@
               "name": "Red Bull White Edition inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
               "price": 2.2,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
