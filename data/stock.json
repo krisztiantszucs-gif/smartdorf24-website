@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-03T12:14:04.428Z",
+  "updatedAt": "2026-11-03T12:48:58.471Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T12:14:04.428Z",
+          "fetchedAt": "2026-11-03T12:48:58.471Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-03T12:14:04.428Z",
+          "fetchedAt": "2026-11-03T12:48:58.471Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T12:14:04.428Z",
+          "fetchedAt": "2026-11-03T12:48:58.471Z",
           "items": [
             {
               "lane": "1",
@@ -757,7 +757,7 @@
               "price": 2,
               "stock": 2,
               "capacity": 5,
-              "expired": true
+              "expired": false
             },
             {
               "lane": "13",
@@ -940,16 +940,6 @@
               "expired": false
             },
             {
-              "lane": "42",
-              "level": 5,
-              "name": "Smarties",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/590f59b9add746c6beb00de283b64173.jpg",
-              "price": 1.05,
-              "stock": 4,
-              "capacity": 10,
-              "expired": true
-            },
-            {
               "lane": "43",
               "level": 5,
               "name": "Kinder Bueno",
@@ -978,16 +968,6 @@
               "stock": 5,
               "capacity": 5,
               "expired": false
-            },
-            {
-              "lane": "46",
-              "level": 5,
-              "name": "Kinder Schokolade 100g",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3f50b805073545368488b956fa847e33.jpeg",
-              "price": 2.5,
-              "stock": 1,
-              "capacity": 5,
-              "expired": true
             },
             {
               "lane": "47",
@@ -1119,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T12:14:04.428Z",
+          "fetchedAt": "2026-11-03T12:48:58.471Z",
           "items": [
             {
               "lane": "4",
