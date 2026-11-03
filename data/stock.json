@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-03T21:42:27.915Z",
+  "updatedAt": "2026-11-03T22:03:07.872Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T21:42:27.915Z",
+          "fetchedAt": "2026-11-03T22:03:07.872Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-03T21:42:27.915Z",
+          "fetchedAt": "2026-11-03T22:03:07.872Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T21:42:27.915Z",
+          "fetchedAt": "2026-11-03T22:03:07.872Z",
           "items": [
             {
               "lane": "1",
@@ -735,7 +735,7 @@
               "name": "durex gefühlsecht",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d2a974f4b2742a886b66e76d4be6888.png",
               "price": 2.5,
-              "stock": 10,
+              "stock": 9,
               "capacity": 10,
               "expired": false
             },
@@ -765,7 +765,7 @@
               "name": "Milka Sensations Cookies",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d29fa3d86e242629a04df86d40a725e.png",
               "price": 3,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -1065,7 +1065,7 @@
               "name": "Reese's Pieces",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d72ff0b3e214ba5b2a36d2551c60677.png",
               "price": 2.1,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T21:42:27.915Z",
+          "fetchedAt": "2026-11-03T22:03:07.872Z",
           "items": [
             {
               "lane": "4",
