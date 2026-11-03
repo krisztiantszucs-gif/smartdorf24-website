@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-03T16:50:23.778Z",
+  "updatedAt": "2026-11-03T17:02:51.750Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T16:50:23.778Z",
+          "fetchedAt": "2026-11-03T17:02:51.750Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-03T16:50:23.778Z",
+          "fetchedAt": "2026-11-03T17:02:51.750Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T16:50:23.778Z",
+          "fetchedAt": "2026-11-03T17:02:51.750Z",
           "items": [
             {
               "lane": "1",
@@ -904,7 +904,7 @@
               "level": 4,
               "name": "Haribo Pasta Flagga",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/537fcfd985df4edda29937d78af14900.png",
-              "price": 1.55,
+              "price": 2.2,
               "stock": 1,
               "capacity": 5,
               "expired": false
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T16:50:23.778Z",
+          "fetchedAt": "2026-11-03T17:02:51.750Z",
           "items": [
             {
               "lane": "4",
@@ -1256,7 +1256,7 @@
               "level": 5,
               "name": "Starbucks Hazelnut Macchiato",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d75325ea045341adbce08e43955de5f4.jpeg",
-              "price": 1.25,
+              "price": 0.75,
               "stock": 3,
               "capacity": 5,
               "expired": false

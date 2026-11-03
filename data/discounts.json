@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-03T13:17:17.336Z",
+  "lastRunAt": "2026-11-03T17:00:43.317Z",
   "lastRunDay": "2026-11-03",
   "active": {
     "7680783:42": {
@@ -9,12 +9,12 @@
       "name": "Starbucks Hazelnut Macchiato",
       "originalPrice": 2.5,
       "originalCostPrice": 1.49,
-      "discountPrice": 1.25,
-      "discountCostPrice": 1.25,
-      "percent": 50,
+      "discountPrice": 0.75,
+      "discountCostPrice": 0.75,
+      "percent": 70,
       "effDate": "2026-11-04",
       "startedAt": "2026-10-31T06:05:01.973Z",
-      "updatedAt": "2026-11-03T13:17:17.336Z"
+      "updatedAt": "2026-11-03T17:00:43.317Z"
     },
     "7680787:32": {
       "rtuNumber": "7680787",
@@ -27,7 +27,7 @@
       "percent": 20,
       "effDate": "2026-11-07",
       "startedAt": "2026-11-02T23:19:11.071Z",
-      "updatedAt": "2026-11-03T13:17:17.335Z"
+      "updatedAt": "2026-11-03T17:00:39.860Z"
     },
     "7680783:41": {
       "rtuNumber": "7680783",
@@ -40,18 +40,18 @@
       "percent": 20,
       "effDate": "2026-11-07",
       "startedAt": "2026-11-02T23:19:11.626Z",
-      "updatedAt": "2026-11-03T13:17:17.336Z"
+      "updatedAt": "2026-11-03T17:00:43.317Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002155",
+        "advertiseId": "100002156",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-03-87da96",
+        "adName": "SD24-combined-steinsberg-2026-11-03-612d7a",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/95679963863d4b3693a22237a96558b6.mp4",
-        "hash": "87da96729ef936f0",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f13132fb43e84a6989b6df81adba4387.mp4",
+        "hash": "612d7ad71480b10a",
         "segments": [
           "karamalz",
           "live",
@@ -64,8 +64,8 @@
             "lane": "42",
             "name": "Starbucks Hazelnut Macchiato",
             "old": 2.5,
-            "new": 1.25,
-            "pct": 50,
+            "new": 0.75,
+            "pct": 70,
             "until": "2026-11-04"
           },
           {
@@ -98,16 +98,6 @@
             "pct": 30,
             "until": "2026-11-03",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/203be2d8ff3c4d74a8b4a6a6840733ee.png"
-          },
-          {
-            "rtuNumber": "7680800",
-            "lane": "37",
-            "name": "Haribo Pasta Flagga",
-            "old": 2.2,
-            "new": 1.55,
-            "pct": 30,
-            "until": "2026-11-03",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/537fcfd985df4edda29937d78af14900.png"
           },
           {
             "rtuNumber": "7680800",
@@ -304,7 +294,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-03T13:17:17.719Z"
+        "updatedAt": "2026-11-03T17:02:38.794Z"
       },
       "schiesheim": {
         "advertiseId": "100002151",
@@ -501,12 +491,12 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-03T13:17:18.105Z"
+        "updatedAt": "2026-11-03T17:02:44.351Z"
       }
     }
   },
   "machineAds": {},
-  "lastEveningRunDay": "2026-11-02",
+  "lastEveningRunDay": "2026-11-03",
   "lastMorningRunDay": "2026-11-03",
   "clearance": {
     "7680800:5": {
@@ -524,7 +514,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 10,
       "hideFromAd": true,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:41.614Z",
       "effectivePercent": 31,
       "costFloor": 2.3,
       "costKnown": true
@@ -544,7 +534,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:41.614Z",
       "effectivePercent": 30,
       "costFloor": 1.1,
       "costKnown": true
@@ -564,10 +554,14 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:41.614Z",
       "effectivePercent": 30,
       "costFloor": 1.1,
-      "costKnown": true
+      "costKnown": true,
+      "suspended": true,
+      "suspendedReason": "low-stock",
+      "suspendedAt": "2026-11-03T17:00:41.614Z",
+      "suspendedStock": 1
     },
     "7680800:38": {
       "rtuNumber": "7680800",
@@ -584,7 +578,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:41.614Z",
       "effectivePercent": 30,
       "costFloor": 1.2,
       "costKnown": true
@@ -625,7 +619,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:41.614Z",
       "effectivePercent": 20,
       "costFloor": 1.8,
       "costKnown": true
@@ -645,7 +639,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:41.614Z",
       "effectivePercent": 20,
       "costFloor": 1.8,
       "costKnown": true
@@ -665,7 +659,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:41.614Z",
       "effectivePercent": 19,
       "costFloor": 1.15,
       "costKnown": true
@@ -685,7 +679,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:41.614Z",
       "effectivePercent": 21,
       "costFloor": 1.8,
       "costKnown": true
@@ -705,7 +699,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:43.317Z",
       "effectivePercent": 30,
       "costFloor": 1.55,
       "costKnown": true
@@ -725,7 +719,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:43.317Z",
       "effectivePercent": 12,
       "costFloor": 2.65,
       "costKnown": true
@@ -745,7 +739,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:43.317Z",
       "effectivePercent": 14,
       "costFloor": 2.4,
       "costKnown": true
@@ -765,7 +759,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:43.317Z",
       "effectivePercent": 30,
       "costFloor": 0.4,
       "costKnown": true
@@ -785,7 +779,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:43.317Z",
       "effectivePercent": 31,
       "costFloor": 1.1,
       "costKnown": true
@@ -805,7 +799,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:43.317Z",
       "effectivePercent": 10,
       "costFloor": 0.9,
       "costKnown": true
@@ -825,7 +819,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:43.317Z",
       "effectivePercent": 10,
       "costFloor": 0.9,
       "costKnown": true
@@ -845,7 +839,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:43.317Z",
       "effectivePercent": 10,
       "costFloor": 0.9,
       "costKnown": true
@@ -865,7 +859,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:43.317Z",
       "effectivePercent": 20,
       "costFloor": 1.1,
       "costKnown": true
@@ -885,7 +879,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:43.317Z",
       "effectivePercent": 20,
       "costFloor": 1.2,
       "costKnown": true
@@ -905,7 +899,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.335Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 30,
       "costFloor": 1.45,
       "costKnown": true
@@ -946,7 +940,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.335Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 20,
       "costFloor": 1.45,
       "costKnown": true
@@ -966,7 +960,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.335Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 18,
       "costFloor": 0.8,
       "costKnown": true
@@ -986,7 +980,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.335Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 18,
       "costFloor": 1.55,
       "costKnown": true
@@ -1006,7 +1000,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 7,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 19,
       "costFloor": 0.9,
       "costKnown": true
@@ -1026,7 +1020,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 20,
       "costFloor": 0.6,
       "costKnown": true
@@ -1046,7 +1040,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 21,
       "costFloor": 1.8,
       "costKnown": true
@@ -1066,7 +1060,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 18,
       "costFloor": 2.05,
       "costKnown": true
@@ -1086,7 +1080,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 19,
       "costFloor": 0.9,
       "costKnown": true
@@ -1106,7 +1100,7 @@
       "endsAt": "2026-11-03",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 20,
       "costFloor": 1.3,
       "costKnown": true
@@ -1126,7 +1120,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.335Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 25,
       "costFloor": 1.2,
       "costKnown": true
@@ -1146,7 +1140,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.335Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 20,
       "costFloor": 1.8,
       "costKnown": true
@@ -1166,7 +1160,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.335Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 20,
       "costFloor": 0.4,
       "costKnown": true
@@ -1186,7 +1180,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 30,
       "costFloor": 1.8,
       "costKnown": true
@@ -1206,7 +1200,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 20,
       "costFloor": 1.1,
       "costKnown": true
@@ -1226,7 +1220,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:39.860Z",
       "effectivePercent": 19,
       "costFloor": 1.15,
       "costKnown": true
@@ -1246,7 +1240,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 6,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:41.614Z",
       "effectivePercent": 30,
       "costFloor": 0.7,
       "costKnown": true
@@ -1266,7 +1260,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:41.614Z",
       "effectivePercent": 20,
       "costFloor": 0.6,
       "costKnown": true
@@ -1286,7 +1280,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:43.317Z",
       "effectivePercent": 20,
       "costFloor": 1.2,
       "costKnown": true
@@ -1306,7 +1300,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-03T13:17:17.336Z",
+      "updatedAt": "2026-11-03T17:00:41.614Z",
       "effectivePercent": 20,
       "costFloor": 1.6,
       "costKnown": true
