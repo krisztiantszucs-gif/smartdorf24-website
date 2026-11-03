@@ -39,6 +39,11 @@
     return pack[key] || window.SD24_I18N.de[key] || key;
   }
 
+  // "1 Automat" / "2 Automaten": key_one is used when n === 1.
+  function tn(key, n) {
+    return Number(n) === 1 ? t(key + "_one") : t(key);
+  }
+
   function locName(obj) {
     if (!obj) return "";
     if (typeof obj === "string") return obj;
@@ -49,10 +54,12 @@
     $$("[data-i18n]").forEach((el) => {
       el.textContent = t(el.getAttribute("data-i18n"));
     });
+    const statLabel = document.querySelector('[data-i18n="stat_machines"]');
+    if (statLabel && state.visibleMachineCount != null) statLabel.textContent = tn("stat_machines", state.visibleMachineCount);
     const lead = document.querySelector('[data-i18n="loc_lead"]');
     if (lead && state.visibleMachineCount != null) {
       const words = (window.SD24_I18N[state.lang] || window.SD24_I18N.de).num_words || [];
-      lead.textContent = t("loc_lead_n").replace("{n}", words[state.visibleMachineCount] || String(state.visibleMachineCount));
+      lead.textContent = tn("loc_lead_n", state.visibleMachineCount).replace("{n}", words[state.visibleMachineCount] || String(state.visibleMachineCount));
     }
     $$("[data-i18n-placeholder]").forEach((el) => {
       el.setAttribute("placeholder", t(el.getAttribute("data-i18n-placeholder")));
@@ -190,7 +197,7 @@
           <div class="loc-meta">
             ${loc.unavailable
               ? `<span class="pill off">${escapeHtml(t("loc_unavailable"))}</span>`
-              : `<span class="pill">${total} ${t("machines_label")}</span>
+              : `<span class="pill">${total} ${tn("machines_label", total)}</span>
             <span class="pill ${online ? "ok" : "off"}">${online}/${total} ${t("online")}</span>`}
           </div>
         </button>`;
@@ -369,7 +376,7 @@
       const count = (loc.machines || []).length;
       const marker = L.marker([loc.lat, loc.lng]).addTo(state.map);
       marker.bindPopup(
-        `<strong>${escapeHtml(locName(loc.name))}</strong><br>${escapeHtml(loc.address || "")}<br>${count} ${t("map_popup_machines")}`
+        `<strong>${escapeHtml(locName(loc.name))}</strong><br>${escapeHtml(loc.address || "")}<br>${count} ${tn("map_popup_machines", count)}`
       );
       marker.on("click", () => selectLocation(loc.id, true));
       state.markers.push(marker);
