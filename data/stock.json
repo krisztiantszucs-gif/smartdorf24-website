@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-03T13:36:39.866Z",
+  "updatedAt": "2026-11-03T13:46:58.487Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T13:36:39.866Z",
+          "fetchedAt": "2026-11-03T13:46:58.487Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-03T13:36:39.866Z",
+          "fetchedAt": "2026-11-03T13:46:58.487Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T13:36:39.866Z",
+          "fetchedAt": "2026-11-03T13:46:58.487Z",
           "items": [
             {
               "lane": "1",
@@ -935,7 +935,7 @@
               "name": "Milka Tuc",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9f88c5fa7ec044c8ab92300767c9608b.png",
               "price": 2.2,
-              "stock": 3,
+              "stock": 1,
               "capacity": 10,
               "expired": false
             },
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-03T13:36:39.866Z",
+          "fetchedAt": "2026-11-03T13:46:58.487Z",
           "items": [
             {
               "lane": "4",
@@ -1377,7 +1377,7 @@
               "name": "Fuze Tea Pfirsich 0,4L  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
               "price": 2.2,
-              "stock": 1,
+              "stock": 0,
               "capacity": 5,
               "expired": false
             },
