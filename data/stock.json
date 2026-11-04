@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-04T12:04:49.736Z",
+  "updatedAt": "2026-11-04T12:32:17.960Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-04T12:04:49.736Z",
+          "fetchedAt": "2026-11-04T12:32:17.960Z",
           "items": [
             {
               "lane": "1",
@@ -109,7 +109,7 @@
               "name": "Milka Choco Brownie",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
               "price": 3,
-              "stock": 2,
+              "stock": 1,
               "capacity": 3,
               "expired": false
             },
@@ -189,7 +189,7 @@
               "name": "Kinder Bueno",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
               "price": 1.05,
-              "stock": 6,
+              "stock": 5,
               "capacity": 10,
               "expired": false
             },
@@ -379,7 +379,7 @@
               "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
               "price": 2.2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-04T12:04:49.736Z",
+          "fetchedAt": "2026-11-04T12:32:17.960Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-04T12:04:49.736Z",
+          "fetchedAt": "2026-11-04T12:32:17.960Z",
           "items": [
             {
               "lane": "1",
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-04T12:04:49.736Z",
+          "fetchedAt": "2026-11-04T12:32:17.960Z",
           "items": [
             {
               "lane": "4",
