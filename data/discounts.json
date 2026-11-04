@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-04T17:11:59.526Z",
+  "lastRunAt": "2026-11-04T22:04:06.309Z",
   "lastRunDay": "2026-11-04",
   "active": {
     "7680783:42": {
@@ -14,7 +14,7 @@
       "percent": 70,
       "effDate": "2026-11-04",
       "startedAt": "2026-10-31T06:05:01.973Z",
-      "updatedAt": "2026-11-04T17:11:59.526Z"
+      "updatedAt": "2026-11-04T22:04:06.309Z"
     },
     "7680787:32": {
       "rtuNumber": "7680787",
@@ -27,7 +27,7 @@
       "percent": 20,
       "effDate": "2026-11-07",
       "startedAt": "2026-11-02T23:19:11.071Z",
-      "updatedAt": "2026-11-04T17:11:59.526Z"
+      "updatedAt": "2026-11-04T22:04:06.309Z"
     },
     "7680783:41": {
       "rtuNumber": "7680783",
@@ -40,7 +40,7 @@
       "percent": 20,
       "effDate": "2026-11-07",
       "startedAt": "2026-11-02T23:19:11.626Z",
-      "updatedAt": "2026-11-04T17:11:59.526Z"
+      "updatedAt": "2026-11-04T22:04:06.309Z"
     }
   },
   "permanentAds": {
@@ -130,7 +130,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-04T17:12:03.488Z"
+        "updatedAt": "2026-11-04T22:04:06.738Z"
       },
       "schiesheim": {
         "advertiseId": "100002160",
@@ -227,7 +227,7 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-04T17:12:07.413Z"
+        "updatedAt": "2026-11-04T22:04:07.143Z"
       }
     }
   },
@@ -250,7 +250,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-04T17:11:59.526Z",
+      "updatedAt": "2026-11-04T22:04:06.309Z",
       "effectivePercent": 25,
       "costFloor": 1.2,
       "costKnown": true
@@ -270,7 +270,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-04T17:11:59.526Z",
+      "updatedAt": "2026-11-04T22:04:06.309Z",
       "effectivePercent": 20,
       "costFloor": 1.8,
       "costKnown": true
@@ -290,7 +290,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-04T17:11:59.526Z",
+      "updatedAt": "2026-11-04T22:04:06.309Z",
       "effectivePercent": 20,
       "costFloor": 0.4,
       "costKnown": true
@@ -310,7 +310,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-04T17:11:59.526Z",
+      "updatedAt": "2026-11-04T22:04:06.309Z",
       "effectivePercent": 30,
       "costFloor": 1.8,
       "costKnown": true
@@ -330,7 +330,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-04T17:11:59.526Z",
+      "updatedAt": "2026-11-04T22:04:06.309Z",
       "effectivePercent": 20,
       "costFloor": 1.1,
       "costKnown": true
@@ -350,7 +350,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-04T17:11:59.526Z",
+      "updatedAt": "2026-11-04T22:04:06.309Z",
       "effectivePercent": 19,
       "costFloor": 1.15,
       "costKnown": true
@@ -370,7 +370,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 6,
       "hideFromAd": false,
-      "updatedAt": "2026-11-04T17:11:59.526Z",
+      "updatedAt": "2026-11-04T22:04:06.309Z",
       "effectivePercent": 30,
       "costFloor": 0.7,
       "costKnown": true
@@ -390,7 +390,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-04T17:11:59.526Z",
+      "updatedAt": "2026-11-04T22:04:06.309Z",
       "effectivePercent": 20,
       "costFloor": 0.6,
       "costKnown": true
@@ -410,7 +410,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-04T17:11:59.526Z",
+      "updatedAt": "2026-11-04T22:04:06.309Z",
       "effectivePercent": 20,
       "costFloor": 1.2,
       "costKnown": true
@@ -430,7 +430,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-04T17:11:59.526Z",
+      "updatedAt": "2026-11-04T22:04:06.309Z",
       "effectivePercent": 20,
       "costFloor": 1.6,
       "costKnown": true
