@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-04T13:29:57.552Z",
+  "updatedAt": "2026-11-04T17:12:14.855Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-04T13:29:57.552Z",
+          "fetchedAt": "2026-11-04T17:12:14.855Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-04T13:29:57.552Z",
+          "fetchedAt": "2026-11-04T17:12:14.855Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-04T13:29:57.552Z",
+          "fetchedAt": "2026-11-04T17:12:14.855Z",
           "items": [
             {
               "lane": "1",
@@ -1035,7 +1035,7 @@
               "name": "Monster Viking Berry 0.5l inkl pfand.",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
               "price": 1.75,
-              "stock": 3,
+              "stock": 2,
               "capacity": 3,
               "expired": false
             },
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-04T13:29:57.552Z",
+          "fetchedAt": "2026-11-04T17:12:14.855Z",
           "items": [
             {
               "lane": "4",
@@ -1407,7 +1407,7 @@
               "name": "Coca Cola Zero 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
               "price": 2.2,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
