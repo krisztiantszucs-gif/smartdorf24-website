@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-05T13:43:39.078Z",
+  "updatedAt": "2026-11-05T20:47:49.506Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-05T13:43:39.078Z",
+          "fetchedAt": "2026-11-05T20:47:49.506Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-05T13:43:39.078Z",
+          "fetchedAt": "2026-11-05T20:47:49.506Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-05T13:43:39.078Z",
+          "fetchedAt": "2026-11-05T20:47:49.506Z",
           "items": [
             {
               "lane": "1",
@@ -815,7 +815,7 @@
               "name": "Chocolate Egg Waffles",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bdbfc1cd40b84ec580513f5493327765.jpg",
               "price": 2.6,
-              "stock": 1,
+              "stock": 0,
               "capacity": 10,
               "expired": false
             },
@@ -1005,7 +1005,7 @@
               "name": "Fanta Exotic 330ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
               "price": 1.6,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-05T13:43:39.078Z",
+          "fetchedAt": "2026-11-05T20:47:49.506Z",
           "items": [
             {
               "lane": "4",
@@ -1147,7 +1147,7 @@
               "name": "Vollmilch 3.5% 0.5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/431b28fb18b54f7ba96ac98210dc7632.jpeg",
               "price": 1,
-              "stock": 2,
+              "stock": 0,
               "capacity": 5,
               "expired": false
             },
@@ -1317,7 +1317,7 @@
               "name": "RedBull Original 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
-              "stock": 1,
+              "stock": 0,
               "capacity": 5,
               "expired": false
             },
@@ -1327,7 +1327,7 @@
               "name": "RedBull Original 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
-              "stock": 4,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
