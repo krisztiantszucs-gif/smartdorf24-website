@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-05T12:53:41.131Z",
+  "updatedAt": "2026-11-05T13:31:40.454Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-05T12:53:41.131Z",
+          "fetchedAt": "2026-11-05T13:31:40.454Z",
           "items": [
             {
               "lane": "1",
@@ -79,7 +79,7 @@
               "name": "Toffifee",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
               "price": 2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -99,7 +99,7 @@
               "name": "Milka Choco Jaffa Raspberry",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/461ecc2f268049649cf5c0ec9299d829.png",
               "price": 3,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -399,7 +399,7 @@
               "name": "Fuze Tea Pfirsich 0,4L  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
               "price": 2.2,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-05T12:53:41.131Z",
+          "fetchedAt": "2026-11-05T13:31:40.454Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-05T12:53:41.131Z",
+          "fetchedAt": "2026-11-05T13:31:40.454Z",
           "items": [
             {
               "lane": "1",
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-05T12:53:41.131Z",
+          "fetchedAt": "2026-11-05T13:31:40.454Z",
           "items": [
             {
               "lane": "4",
