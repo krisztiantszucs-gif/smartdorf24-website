@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-06T13:27:34.945Z",
+  "updatedAt": "2026-11-06T15:47:06.661Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-06T13:27:34.945Z",
+          "fetchedAt": "2026-11-06T15:47:06.661Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-06T13:27:34.945Z",
+          "fetchedAt": "2026-11-06T15:47:06.661Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-06T13:27:34.945Z",
+          "fetchedAt": "2026-11-06T15:47:06.661Z",
           "items": [
             {
               "lane": "1",
@@ -845,7 +845,7 @@
               "name": "Milka Haselnuss",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/24fdb100b98241e6a7f95ce26ee3a4e5.png",
               "price": 2.2,
-              "stock": 3,
+              "stock": 1,
               "capacity": 10,
               "expired": false
             },
@@ -925,7 +925,7 @@
               "name": "Haribo Pasta Penne",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fc3826465a294e76b32bce15829942ae.jpeg",
               "price": 2.1,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -995,7 +995,7 @@
               "name": "Nestle Lion",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ff6d807696574fe1934323de18cceaaa.jpg",
               "price": 0.8,
-              "stock": 5,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1035,7 +1035,7 @@
               "name": "Monster Viking Berry 0.5l inkl pfand.",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
               "price": 1.75,
-              "stock": 2,
+              "stock": 1,
               "capacity": 3,
               "expired": false
             },
@@ -1085,7 +1085,7 @@
               "name": "Snickers",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ae29a5ec902b457e96ef0922c721afa2.jpeg",
               "price": 1.3,
-              "stock": 5,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             }
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-06T13:27:34.945Z",
+          "fetchedAt": "2026-11-06T15:47:06.661Z",
           "items": [
             {
               "lane": "4",
