@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-06T15:47:06.661Z",
+  "updatedAt": "2026-11-06T18:39:56.084Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-06T15:47:06.661Z",
+          "fetchedAt": "2026-11-06T18:39:56.084Z",
           "items": [
             {
               "lane": "1",
@@ -139,7 +139,7 @@
               "name": "Milram Moin Kakao Drink 0,3% 0,5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
               "price": 1.1,
-              "stock": 5,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -188,7 +188,7 @@
               "level": 4,
               "name": "Kinder Bueno",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
-              "price": 0.65,
+              "price": 0.4,
               "stock": 5,
               "capacity": 10,
               "expired": false
@@ -199,7 +199,7 @@
               "name": "Nutella Go",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
               "price": 1.9,
-              "stock": 5,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -399,7 +399,7 @@
               "name": "Fuze Tea Pfirsich 0,4L  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
               "price": 2.2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-06T15:47:06.661Z",
+          "fetchedAt": "2026-11-06T18:39:56.084Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-06T15:47:06.661Z",
+          "fetchedAt": "2026-11-06T18:39:56.084Z",
           "items": [
             {
               "lane": "1",
@@ -1034,7 +1034,7 @@
               "level": 6,
               "name": "Monster Viking Berry 0.5l inkl pfand.",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
-              "price": 1.75,
+              "price": 2.2,
               "stock": 1,
               "capacity": 3,
               "expired": false
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-06T15:47:06.661Z",
+          "fetchedAt": "2026-11-06T18:39:56.084Z",
           "items": [
             {
               "lane": "4",
@@ -1246,7 +1246,7 @@
               "level": 5,
               "name": "Starbucks Caramel Macchiato",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/cfa688d0e6504560ab0a32919372d0ca.jpeg",
-              "price": 1.25,
+              "price": 0.75,
               "stock": 0,
               "capacity": 5,
               "expired": false
