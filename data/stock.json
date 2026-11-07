@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-07T12:36:42.988Z",
+  "updatedAt": "2026-11-07T13:03:24.428Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-07T12:36:42.988Z",
+          "fetchedAt": "2026-11-07T13:03:24.428Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-07T12:36:42.988Z",
+          "fetchedAt": "2026-11-07T13:03:24.428Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-07T12:36:42.988Z",
+          "fetchedAt": "2026-11-07T13:03:24.428Z",
           "items": [
             {
               "lane": "1",
@@ -985,7 +985,7 @@
               "name": "Twix",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/de24003846ac4af6b982be92a01f78ae.jpg",
               "price": 0.8,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-07T12:36:42.988Z",
+          "fetchedAt": "2026-11-07T13:03:24.428Z",
           "items": [
             {
               "lane": "4",
@@ -1337,7 +1337,7 @@
               "name": "Vio Still 0.5l Wasser  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
               "price": 2,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -1367,7 +1367,7 @@
               "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
               "price": 2.2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -1417,7 +1417,7 @@
               "name": "Coca Cola 0.5l Original inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
               "price": 2.2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             }
