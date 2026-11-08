@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-07T21:48:08.846Z",
+  "updatedAt": "2026-11-08T01:15:52.972Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-07T21:48:08.846Z",
+          "fetchedAt": "2026-11-08T01:15:52.972Z",
           "items": [
             {
               "lane": "1",
@@ -191,7 +191,7 @@
               "price": 0.4,
               "stock": 5,
               "capacity": 10,
-              "expired": false
+              "expired": true
             },
             {
               "lane": "33",
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-07T21:48:08.846Z",
+          "fetchedAt": "2026-11-08T01:15:52.972Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-07T21:48:08.846Z",
+          "fetchedAt": "2026-11-08T01:15:52.972Z",
           "items": [
             {
               "lane": "1",
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-07T21:48:08.846Z",
+          "fetchedAt": "2026-11-08T01:15:52.972Z",
           "items": [
             {
               "lane": "4",
