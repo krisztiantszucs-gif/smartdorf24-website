@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-08T14:45:12.171Z",
+  "updatedAt": "2026-11-08T15:05:43.168Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-08T14:45:12.171Z",
+          "fetchedAt": "2026-11-08T15:05:43.168Z",
           "items": [
             {
               "lane": "1",
@@ -39,7 +39,7 @@
               "name": "Werther's Original Caramel Popcorn",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6d19cf4273e5473fac0019429005b22a.png",
               "price": 3.5,
-              "stock": 1,
+              "stock": 0,
               "capacity": 3,
               "expired": false
             },
@@ -279,7 +279,7 @@
               "name": "RedBull Peach 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/dbc4ec1647874649a3fa390bcce36def.jpeg",
               "price": 2.2,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -339,7 +339,7 @@
               "name": "Starbucks Frappuccino Caramel Eiskaffee 250ml",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bc904bb2cfd4f06acba2b827b3eba2a.jpeg",
               "price": 2.5,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -453,7 +453,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-08T14:45:12.171Z",
+          "fetchedAt": "2026-11-08T15:05:43.168Z",
           "items": [
             {
               "lane": "1",
@@ -687,7 +687,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-08T14:45:12.171Z",
+          "fetchedAt": "2026-11-08T15:05:43.168Z",
           "items": [
             {
               "lane": "1",
@@ -1099,7 +1099,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-08T14:45:12.171Z",
+          "fetchedAt": "2026-11-08T15:05:43.168Z",
           "items": [
             {
               "lane": "4",
