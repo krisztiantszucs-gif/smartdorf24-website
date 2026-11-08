@@ -1,61 +1,24 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-07T20:40:23.630Z",
-  "lastRunDay": "2026-11-07",
-  "active": {
-    "7680787:32": {
-      "rtuNumber": "7680787",
-      "lane": "32",
-      "name": "Kinder Bueno",
-      "originalPrice": 1.3,
-      "originalCostPrice": 0.82,
-      "discountPrice": 0.4,
-      "discountCostPrice": 0.4,
-      "percent": 70,
-      "effDate": "2026-11-07",
-      "startedAt": "2026-11-02T23:19:11.071Z",
-      "updatedAt": "2026-11-07T20:40:23.630Z"
-    },
-    "7680783:41": {
-      "rtuNumber": "7680783",
-      "lane": "41",
-      "name": "Starbucks Caramel Macchiato",
-      "originalPrice": 2.5,
-      "originalCostPrice": 1.49,
-      "discountPrice": 0.75,
-      "discountCostPrice": 0.75,
-      "percent": 70,
-      "effDate": "2026-11-07",
-      "startedAt": "2026-11-02T23:19:11.626Z",
-      "updatedAt": "2026-11-07T20:40:23.630Z"
-    }
-  },
+  "lastRunAt": "2026-11-08T06:00:55.020Z",
+  "lastRunDay": "2026-11-08",
+  "active": {},
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002180",
+        "advertiseId": "100002187",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-06-0bfc87",
+        "adName": "SD24-combined-steinsberg-2026-11-08-3cca7e",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47f97d0f71134355859f346499e6ff37.mp4",
-        "hash": "0bfc87828bf42e59",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/617ad891c94546348220be519d9902eb.mp4",
+        "hash": "3cca7ec4481de6d6",
         "segments": [
           "karamalz",
           "live",
           "deals",
           "sale"
         ],
-        "verifiedDeals": [
-          {
-            "rtuNumber": "7680783",
-            "lane": "41",
-            "name": "Starbucks Caramel Macchiato",
-            "old": 2.5,
-            "new": 0.75,
-            "pct": 70,
-            "until": "2026-11-07"
-          }
-        ],
+        "verifiedDeals": [],
         "verifiedSale": [
           {
             "rtuNumber": "7680800",
@@ -98,31 +61,21 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-07T20:40:24.281Z"
+        "updatedAt": "2026-11-08T06:01:57.375Z"
       },
       "schiesheim": {
-        "advertiseId": "100002181",
+        "advertiseId": "100002188",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-11-06-a9d3af",
+        "adName": "SD24-combined-schiesheim-2026-11-08-c7024b",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3d9ef5a9befc4b4da73500ef9ba3889e.mp4",
-        "hash": "a9d3afad7de0f474",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/620f79007bd14b94a78b94a4b33c287c.mp4",
+        "hash": "c7024bd53457a0cf",
         "segments": [
           "live",
           "deals",
           "sale"
         ],
-        "verifiedDeals": [
-          {
-            "rtuNumber": "7680787",
-            "lane": "32",
-            "name": "Kinder Bueno",
-            "old": 1.3,
-            "new": 0.4,
-            "pct": 70,
-            "until": "2026-11-07"
-          }
-        ],
+        "verifiedDeals": [],
         "verifiedSale": [
           {
             "rtuNumber": "7680787",
@@ -195,13 +148,13 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-07T20:40:24.886Z"
+        "updatedAt": "2026-11-08T06:02:45.026Z"
       }
     }
   },
   "machineAds": {},
   "lastEveningRunDay": "2026-11-07",
-  "lastMorningRunDay": "2026-11-07",
+  "lastMorningRunDay": "2026-11-08",
   "clearance": {
     "7680787:3": {
       "rtuNumber": "7680787",
@@ -218,7 +171,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-07T20:40:23.630Z",
+      "updatedAt": "2026-11-08T06:00:53.430Z",
       "effectivePercent": 25,
       "costFloor": 1.2,
       "costKnown": true
@@ -238,7 +191,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-07T20:40:23.630Z",
+      "updatedAt": "2026-11-08T06:00:53.430Z",
       "effectivePercent": 20,
       "costFloor": 1.8,
       "costKnown": true
@@ -258,7 +211,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-07T20:40:23.630Z",
+      "updatedAt": "2026-11-08T06:00:53.430Z",
       "effectivePercent": 20,
       "costFloor": 0.4,
       "costKnown": true
@@ -278,7 +231,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-07T20:40:23.630Z",
+      "updatedAt": "2026-11-08T06:00:53.430Z",
       "effectivePercent": 30,
       "costFloor": 1.8,
       "costKnown": true
@@ -298,7 +251,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-07T20:40:23.630Z",
+      "updatedAt": "2026-11-08T06:00:53.430Z",
       "effectivePercent": 20,
       "costFloor": 1.1,
       "costKnown": true
@@ -318,7 +271,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-07T20:40:23.630Z",
+      "updatedAt": "2026-11-08T06:00:53.430Z",
       "effectivePercent": 19,
       "costFloor": 1.15,
       "costKnown": true
@@ -338,7 +291,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 6,
       "hideFromAd": false,
-      "updatedAt": "2026-11-07T20:40:23.630Z",
+      "updatedAt": "2026-11-08T06:00:53.430Z",
       "effectivePercent": 30,
       "costFloor": 0.7,
       "costKnown": true
@@ -358,7 +311,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-07T20:40:23.630Z",
+      "updatedAt": "2026-11-08T06:00:53.430Z",
       "effectivePercent": 20,
       "costFloor": 0.6,
       "costKnown": true
@@ -378,7 +331,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-07T20:40:23.630Z",
+      "updatedAt": "2026-11-08T06:00:55.020Z",
       "effectivePercent": 20,
       "costFloor": 1.2,
       "costKnown": true
