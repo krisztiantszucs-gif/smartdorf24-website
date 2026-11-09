@@ -101,7 +101,7 @@
     const clearance = Object.values(state.discounts?.clearance || {})
       .filter((a) => !a.suspended)
       .filter(visible)
-      .filter((a) => !a.endsAt || String(a.endsAt).slice(0, 10) >= today)
+      .filter((a) => a.pinned || !a.endsAt || String(a.endsAt).slice(0, 10) >= today)
       .map((a) => ({ kind: "clearance", a, price: a.clearancePrice, until: a.endsAt, ...(lookup[a.rtuNumber + ":" + a.lane] || {}) }));
     // Prefer higher % when same lane appears in both
     const byKey = {};

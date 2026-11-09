@@ -117,7 +117,7 @@ export async function verifiedSale(token, state, rtus, today = berlinToday()) {
     if (!rtus.includes(String(a.rtuNumber))) continue;
     if (a.suspended) { dropped.push({ key: `${a.rtuNumber}:${a.lane}`, reason: "suspended-lowstock", name: a.name }); continue; }
     if (a.hideFromAd) { dropped.push({ key: `${a.rtuNumber}:${a.lane}`, reason: "hideFromAd", name: a.name }); continue; }
-    if (a.endsAt && String(a.endsAt).slice(0, 10) < today) {
+    if (!a.pinned && a.endsAt && String(a.endsAt).slice(0, 10) < today) {
       dropped.push({ key: `${a.rtuNumber}:${a.lane}`, reason: "endsAt-past", name: a.name }); continue;
     }
     const key = `${a.rtuNumber}:${a.lane}`;

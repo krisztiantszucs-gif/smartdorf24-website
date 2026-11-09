@@ -110,7 +110,51 @@ export function expiryBlocked(state, rtuNumber, lane, name, today = berlinToday(
   return prot;
 }
 
-/** Approved Phase-2 seed (Berlin 2026-10-20). Karamalz included per Krisztian. */
+/**
+ * Lean clearance policy (Krisztian approved 2026-11-09 15:12). Expiry tiers are separate and unchanged.
+ * A lane is eligible only if it has a best-before date (effDate) and either
+ *   waste  — best-before within WASTE_DAYS and the 30-day sales rate won't clear the stock by then, or
+ *   dead   — 0 sales in 30 days, stocked >= 30 days, best-before within DEAD_PERISHABLE_DAYS.
+ * Lanes without a date, long-life slow sellers, NEW (<14 d) lanes, protected products, qty <= 1 and
+ * lanes inside the expiry window (<= 4 d) are not eligible. Max MAX_PER_LOCATION non-pinned deals per
+ * location: running deals keep their slot while still eligible (no weekly churn); free slots go to the
+ * highest waste risk = expected unsold units × true cost, then soonest best-before. −20% default; −30%
+ * only for dead stock with best-before < 30 d. Cost floor ×1.2 applies (clearancePriceFor).
+ */
+export const POLICY = {
+  WASTE_DAYS: 30,
+  DEAD_PERISHABLE_DAYS: 90,
+  DEAD_MIN_STOCKED_DAYS: 30,
+  RATE_WINDOW_DAYS: 30,
+  MIN_LEFTOVER: 1, // waste rule: at least 1 unit expected unsold at best-before
+  MAX_PER_LOCATION: 3,
+  DEFAULT_PCT: 20,
+  DEAD_SOON_PCT: 30,
+};
+/**
+ * @param {{stock:number, days:number, u30:number, effDate:string}} r  days = days since current product stocked
+ * @returns {{eligible:boolean, why:string, kind?:string, pct?:number, dLeft?:number}}
+ */
+export function leanEligibility(r, today = berlinToday()) {
+  const eff = r.effDate ? String(r.effDate).slice(0, 10) : "";
+  if (!eff) return { eligible: false, why: "no best-before date" };
+  const dLeft = Math.round((Date.parse(eff + "T00:00:00Z") - Date.parse(today + "T00:00:00Z")) / 86400000);
+  if (dLeft < 0) return { eligible: false, why: `expired ${eff}`, dLeft };
+  if (dLeft <= 4) return { eligible: false, why: `expiry window d=${dLeft} (expiry tiers own it)`, dLeft };
+  const stock = Number(r.stock || 0);
+  const dead = Number(r.u30 || 0) === 0 && Number(r.days || 0) >= POLICY.DEAD_MIN_STOCKED_DAYS;
+  const rateDays = Math.max(1, Math.min(POLICY.RATE_WINDOW_DAYS, Number(r.days || 0)));
+  const projected = (Number(r.u30 || 0) / rateDays) * dLeft;
+  const pct = dead && dLeft < POLICY.WASTE_DAYS ? POLICY.DEAD_SOON_PCT : POLICY.DEFAULT_PCT;
+  const leftover = Math.max(0, stock - projected); // units expected unsold at best-before
+  if (dLeft <= POLICY.WASTE_DAYS && leftover >= POLICY.MIN_LEFTOVER)
+    return { eligible: true, kind: "waste", why: `bb in ${dLeft}d, ~${projected.toFixed(1)} of ${stock} would sell`, pct, dLeft, leftover };
+  if (dead && dLeft <= POLICY.DEAD_PERISHABLE_DAYS)
+    return { eligible: true, kind: "dead", why: `0 sold 30d, stocked ${Math.round(r.days)}d, bb in ${dLeft}d`, pct, dLeft, leftover };
+  return { eligible: false, why: dLeft > POLICY.DEAD_PERISHABLE_DAYS ? `long shelf life (bb in ${dLeft}d)` : `sells fast enough (~${projected.toFixed(1)}/${stock})`, dLeft };
+}
+
+/** LEGACY Phase-2 seed (Berlin 2026-10-20) — superseded by POLICY; clearance-eval --seed needs --legacy. */
 export const APPROVED_SEED = [
   // Steinsberg Right — dead −30%
   { rtu: "7680800", lane: "5", pct: 30, reason: "dead", hideFromAd: true },
@@ -191,16 +235,23 @@ export function makeClearanceEntry(rtuNumber, cargo, { pct, reason, originalPric
   };
 }
 
-/** Why a clearance entry should end now (or null). */
+/**
+ * Why a clearance entry should end now (or null).
+ * - entry.endRequested (string): set by the weekly re-eval (rule/cap) or by hand → ends on next run.
+ * - entry.pinned: manual exception (Karamalz, Krisztian 2026-11-09). Ignores endsAt, sell-out and
+ *   refill; ends only on product change / lane gone / endRequested. Outside the per-location cap.
+ */
 export function clearanceEndReason(entry, cargo, today = berlinToday()) {
   if (!entry) return null;
-  if (entry.endsAt && String(entry.endsAt).slice(0, 10) < today) return "endsAt";
+  if (entry.endRequested) return `requested(${entry.endRequested})`;
   if (!cargo) return "missing";
-  if (Number(cargo.stock || 0) <= 0) return "soldout";
   const cid = String(cargo.commodityId || "");
   const name = String(cargo.commodityName || "").trim();
   if (entry.cid && cid && entry.cid !== cid) return "product-change";
   if (entry.name && name && entry.name !== name) return "product-change";
+  if (entry.pinned) return null;
+  if (entry.endsAt && String(entry.endsAt).slice(0, 10) < today) return "endsAt";
+  if (Number(cargo.stock || 0) <= 0) return "soldout";
   // A low-stock-suspended entry is resumed (not ended) by a refill — see planForMachine.
   if (!entry.suspended && Number(cargo.stock || 0) > Number(entry.stockAtStart || 0)) return "refill";
   return null;

@@ -4,7 +4,7 @@
  * Does NOT write machine prices — run expiry-discount.mjs --apply afterwards.
  *
  *   node scripts/clearance-eval.mjs --seed          # Phase-2 approved list
- *   node scripts/clearance-eval.mjs --reeval         # weekly NEW/dead/slow scan
+ *   node scripts/clearance-eval.mjs --reeval [--dry-run]  # weekly lean-policy scan (see POLICY)
  *   node scripts/clearance-eval.mjs --seed --apply   # seed then apply prices+ads
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
@@ -16,7 +16,7 @@ import {
 } from "./lib/impressiot.mjs";
 import {
   APPROVED_SEED, CLEARANCE_DAYS, OFFLINE_RTUS, seedClearance, makeClearanceEntry,
-  shouldHideFromAd, locationOfRtu, isLowStock, clearanceBlocked,
+  shouldHideFromAd, locationOfRtu, isLowStock, clearanceBlocked, leanEligibility, POLICY,
 } from "./lib/clearance.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -26,6 +26,7 @@ const args = new Set(process.argv.slice(2));
 const SEED = args.has("--seed");
 const REEVAL = args.has("--reeval");
 const APPLY = args.has("--apply");
+const DRY = args.has("--dry-run");
 const DAY_MS = 86400000;
 
 function loadState() {
@@ -128,6 +129,7 @@ function analyzeLanes(orders, hist, cargoByRtu) {
       const sold = mine.filter((e) => e.kind === "o" && e.units > 0);
       const units = sold.reduce((s, e) => s + e.units, 0);
       const u14 = sold.filter((e) => e.t > NOW - 14 * DAY_MS).reduce((s, e) => s + e.units, 0);
+      const u30 = sold.filter((e) => e.t > NOW - 30 * DAY_MS).reduce((s, e) => s + e.units, 0);
       const rate = days >= 1 ? units / days : null;
       let klass = "steady";
       if (!start || days < 14) klass = "NEW";
@@ -135,77 +137,89 @@ function analyzeLanes(orders, hist, cargoByRtu) {
       else if (days >= 28 && rate < 0.05 && u14 === 0 && Number(c.stock) >= 2) klass = "slow";
       rows.push({
         rtu, lane, key, cid, name: String(c.commodityName).trim(),
-        stock: Number(c.stock), days, units, u14, rate, klass, cargo: c,
+        stock: Number(c.stock), days, units, u14, u30, rate, klass, cargo: c,
+        effDate: c.effDate ? String(c.effDate).slice(0, 10) : "",
       });
     }
   }
   return rows;
 }
 
+/**
+ * Weekly re-eval under the lean POLICY (lib/clearance.mjs). Evaluates every analysed lane plus every
+ * existing non-pinned clearance entry; picks max POLICY.MAX_PER_LOCATION per location (running deals
+ * first, then waste risk € = expected unsold × cost, then soonest best-before); existing entries that fail the rules or the cap get endRequested
+ * (expiry-discount.mjs ends them and restores the normal price). Pinned entries are untouched except
+ * that their endsAt is rolled forward.
+ */
 function reevalClearance(state, rows, { today = berlinToday() } = {}) {
   state.clearance ||= {};
-  // Selling siblings: same loc+cid with u14>0
+  const byKey = new Map(rows.map((r) => [r.key, r]));
+  // Selling siblings: same loc+cid with u14>0 → don't discount a duplicate lane of a seller
   const byLocCid = new Map();
   for (const r of rows) {
-    const loc = locationOfRtu(r.rtu);
-    const k = `${loc}|${r.cid}`;
+    const k = `${locationOfRtu(r.rtu)}|${r.cid}`;
     if (!byLocCid.has(k)) byLocCid.set(k, []);
     byLocCid.get(k).push(r);
   }
-  let added = 0, skipped = 0;
+  const cands = [];
+  let skipped = 0;
+  const reject = (r, why) => {
+    const ex = state.clearance[r.key];
+    if (ex && !ex.pinned) { ex.endRequested = why; console.log(`  END ${r.key} ${r.name}: ${why}`); }
+    else if (!ex) { if (r.klass !== "steady" || why.startsWith("bb in")) console.log(`  skip ${r.key} ${r.name}: ${why}`); skipped++; }
+  };
   for (const r of rows) {
-    if (r.klass !== "dead" && r.klass !== "slow") continue;
-    // Protected products (Red Bull, Monster, Milka, Patisserie Apple Cakes): never clearance.
+    const ex = state.clearance[r.key];
+    if (ex?.pinned) {
+      ex.endsAt = addDaysYmd(today, CLEARANCE_DAYS);
+      console.log(`  PINNED ${r.key} ${r.name} (manual exception, outside cap) until ${ex.endsAt}`);
+      continue;
+    }
     const prot = clearanceBlocked(state, r.rtu, r.lane, r.name, today);
-    if (prot) {
-      console.log(`  skip ${r.key} ${r.name}: protected (${prot.id}, group ${prot.group})`);
-      skipped++;
-      continue;
-    }
-    // Karamalz: always allow (clearance desired)
-    const isKaramalz = /karamalz/i.test(r.name);
-    const loc = locationOfRtu(r.rtu);
-    const sibs = (byLocCid.get(`${loc}|${r.cid}`) || []).filter((x) => x.key !== r.key && x.u14 > 0);
-    if (sibs.length && !isKaramalz) {
-      console.log(`  skip ${r.key} ${r.name}: duplicate of selling ${sibs.map((s) => s.key).join(",")}`);
-      skipped++;
-      continue;
-    }
-    // Don't steal lanes inside expiry window ≤4d — expiry job owns them (unless already clearance)
-    const eff = r.cargo.effDate ? String(r.cargo.effDate).slice(0, 10) : "";
-    if (eff) {
-      const d = Math.round((Date.parse(eff + "T00:00:00Z") - Date.parse(today + "T00:00:00Z")) / DAY_MS);
-      if (d >= 0 && d <= 4 && !state.clearance[r.key]) {
-        console.log(`  skip ${r.key} ${r.name}: expiry window d=${d}`);
-        skipped++;
-        continue;
-      }
-    }
-    if (state.clearance[r.key]) continue; // keep existing end date / originals
-    // Low-stock guard: never start a clearance on a lane with <= 1 unit left
-    if (isLowStock(r.cargo)) {
-      console.log(`  skip ${r.key} ${r.name}: low stock (qty ${r.stock})`);
-      skipped++;
-      continue;
-    }
-    const pct = r.klass === "dead" ? 30 : 20;
-    const active = state.active?.[r.key];
-    const entry = makeClearanceEntry(r.rtu, r.cargo, {
-      pct, reason: r.klass,
-      originalPrice: active?.originalPrice,
-      originalCostPrice: active?.originalCostPrice,
-    });
-    if (entry.floorBlocked) {
-      console.log(`  skip ${r.key} ${r.name}: cost floor ${entry.costFloor} >= normal ${entry.originalPrice}`);
-      skipped++;
-      continue;
-    }
-    if (!entry.costKnown) console.log(`  WARN ${r.key} ${r.name}: cost unknown — no floor`);
-    state.clearance[r.key] = entry;
-    console.log(`  ADD ${r.key} ${r.name} −${pct}% ${r.klass} → ${entry.clearancePrice}€ until ${entry.endsAt}`);
-    added++;
+    if (prot) { reject(r, `protected (${prot.id}, group ${prot.group})`); continue; }
+    if (r.klass === "NEW") { reject(r, "new product (<14 d)"); continue; }
+    if (isLowStock(r.cargo) && !ex) { reject(r, `low stock (qty ${r.stock})`); continue; }
+    const sibs = (byLocCid.get(`${locationOfRtu(r.rtu)}|${r.cid}`) || []).filter((x) => x.key !== r.key && x.u14 > 0);
+    if (sibs.length) { reject(r, `duplicate of selling ${sibs.map((x) => x.key).join(",")}`); continue; }
+    const el = leanEligibility(r, today);
+    if (!el.eligible) { reject(r, el.why); continue; }
+    const origCost = Number(ex?.originalCostPrice ?? state.active?.[r.key]?.originalCostPrice ?? r.cargo.costPrice ?? 0);
+    cands.push({ r, el, ex, risk: origCost * el.leftover });
   }
-  return { added, skipped };
+  // Existing entries whose lane vanished from analysis (not named / status≠0) are left to expiry-discount.
+  const byLoc = new Map();
+  for (const c of cands) {
+    const loc = locationOfRtu(c.r.rtu);
+    if (!byLoc.has(loc)) byLoc.set(loc, []);
+    byLoc.get(loc).push(c);
+  }
+  let added = 0, kept = 0, ended = 0;
+  for (const [loc, list] of byLoc) {
+    // Running (eligible) deals keep their slot; then highest waste risk (€ expected unsold), then soonest bb.
+    list.sort((a, b) => (a.ex ? 0 : 1) - (b.ex ? 0 : 1) || b.risk - a.risk || a.el.dLeft - b.el.dLeft);
+    list.forEach((c, i) => {
+      const { r, el, ex } = c;
+      if (i >= POLICY.MAX_PER_LOCATION) {
+        if (ex) { ex.endRequested = `over cap (${loc} #${i + 1})`; console.log(`  END ${r.key} ${r.name}: over cap #${i + 1}`); ended++; }
+        else console.log(`  skip ${r.key} ${r.name}: eligible (${el.why}) but over cap #${i + 1}`);
+        return;
+      }
+      if (ex) { delete ex.endRequested; console.log(`  KEEP ${r.key} ${r.name} −${ex.percent}% (${el.kind}: ${el.why}) until ${ex.endsAt}`); kept++; return; }
+      const active = state.active?.[r.key];
+      const entry = makeClearanceEntry(r.rtu, r.cargo, {
+        pct: el.pct, reason: el.kind,
+        originalPrice: active?.originalPrice, originalCostPrice: active?.originalCostPrice,
+      });
+      if (entry.floorBlocked) { console.log(`  skip ${r.key} ${r.name}: cost floor ${entry.costFloor} >= normal ${entry.originalPrice}`); return; }
+      if (!entry.costKnown) console.log(`  WARN ${r.key} ${r.name}: cost unknown — no floor`);
+      state.clearance[r.key] = entry;
+      console.log(`  ADD ${r.key} ${r.name} −${el.pct}% ${el.kind} (${el.why}) → ${entry.clearancePrice}€ until ${entry.endsAt}`);
+      added++;
+    });
+  }
+  ended = Object.values(state.clearance).filter((e) => e.endRequested).length;
+  return { added, kept, ended, skipped };
 }
 
 async function main() {
@@ -229,6 +243,10 @@ async function main() {
     cargoByRtu.set(m.rtuNumber, await fetchReplenish(token, m.rtuNumber));
   }
 
+  if (SEED && !args.has("--legacy")) {
+    console.error("--seed re-adds the old Phase-2 list and is superseded by the lean policy; add --legacy to force.");
+    process.exit(2);
+  }
   if (SEED) {
     const seeded = seedClearance(state, cargoByRtu, { today });
     console.log(`Seeded ${seeded.length} clearance entries`);
@@ -243,10 +261,11 @@ async function main() {
     const hist = await pullReplenishHistory(token);
     const rows = analyzeLanes(orders, hist, cargoByRtu);
     console.log(`Analyzed ${rows.length} named lanes`);
-    const { added, skipped } = reevalClearance(state, rows, { today });
-    console.log(`Re-eval: added=${added} skipped=${skipped} total clearance=${Object.keys(state.clearance).length}`);
+    const { added, kept, ended, skipped } = reevalClearance(state, rows, { today });
+    console.log(`Re-eval: added=${added} kept=${kept} endRequested=${ended} skipped=${skipped} total clearance=${Object.keys(state.clearance).length}`);
   }
 
+  if (DRY) { console.log("Dry-run — discounts.json not written."); return; }
   state.lastClearanceEvalAt = new Date().toISOString();
   state.lastClearanceEvalDay = today;
   saveState(state);
