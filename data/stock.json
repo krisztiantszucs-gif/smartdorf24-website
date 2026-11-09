@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-09T14:57:07.333Z",
+  "updatedAt": "2026-11-09T15:14:05.907Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:57:07.333Z",
+          "fetchedAt": "2026-11-09T15:14:05.907Z",
           "items": [
             {
               "lane": "1",
@@ -433,8 +433,159 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:57:07.333Z",
-          "items": []
+          "fetchedAt": "2026-11-09T15:14:05.907Z",
+          "items": [
+            {
+              "lane": "11",
+              "level": 2,
+              "name": "Capico Knusper Röllchen Haselnuss",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png",
+              "price": 2,
+              "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "21",
+              "level": 3,
+              "name": "Patisserie Coconut Rings",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/77724f4c64374a50bb444860bdf7d07c.png",
+              "price": 2.5,
+              "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "22",
+              "level": 3,
+              "name": "Patisserie Apple Cakes",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/797d5c3d51e24263921077e070203df4.png",
+              "price": 3,
+              "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "23",
+              "level": 3,
+              "name": "Patisserie Apple Cakes",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/797d5c3d51e24263921077e070203df4.png",
+              "price": 3,
+              "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "24",
+              "level": 3,
+              "name": "Oreo Wafer Roll Vanilla 54g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/45bdb2b506aa4e4f817a1fa69632e23b.jpeg",
+              "price": 2,
+              "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "25",
+              "level": 3,
+              "name": "Mikado Keks-Sticks Milchschokolade 75g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ed7b5378c2cf49fd89f1a9e547c0fbff.jpeg",
+              "price": 2.4,
+              "stock": 2,
+              "capacity": 10,
+              "expired": false
+            },
+            {
+              "lane": "41",
+              "level": 5,
+              "name": "Red Bull The Green Edition",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/46b7d01c58eb4ae3950e67a50b4921ed.png",
+              "price": 2.2,
+              "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "42",
+              "level": 5,
+              "name": "Red Bull The Winter Edition",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/39497939be614b6aab4d64471e61a228.png",
+              "price": 2.2,
+              "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "44",
+              "level": 5,
+              "name": "RedBull Original 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
+              "price": 2.25,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "45",
+              "level": 5,
+              "name": "Fanta Zero Sugar Lemon",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/41b2e9395e184afdaa8cfefce325145f.png",
+              "price": 1.7,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "46",
+              "level": 5,
+              "name": "Mezzo Mix",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c9e0708331ec404db13e071112ed5bcd.png",
+              "price": 1.7,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "47",
+              "level": 5,
+              "name": "Fanta Exotic 330ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
+              "price": 1.6,
+              "stock": 4,
+              "capacity": 10,
+              "expired": false
+            },
+            {
+              "lane": "48",
+              "level": 5,
+              "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
+              "price": 0.75,
+              "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "49",
+              "level": 5,
+              "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
+              "price": 0.75,
+              "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "51",
+              "level": 6,
+              "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
+              "price": 2.2,
+              "stock": 4,
+              "capacity": 5,
+              "expired": false
+            }
+          ]
         }
       ]
     },
@@ -456,7 +607,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:57:07.333Z",
+          "fetchedAt": "2026-11-09T15:14:05.907Z",
           "items": [
             {
               "lane": "1",
@@ -888,7 +1039,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:57:07.333Z",
+          "fetchedAt": "2026-11-09T15:14:05.907Z",
           "items": [
             {
               "lane": "11",
