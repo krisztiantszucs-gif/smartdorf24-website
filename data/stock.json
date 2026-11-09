@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-09T14:09:50.400Z",
+  "updatedAt": "2026-11-09T14:20:07.860Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:09:50.400Z",
+          "fetchedAt": "2026-11-09T14:20:07.860Z",
           "items": [
             {
               "lane": "1",
@@ -48,7 +48,7 @@
               "level": 1,
               "name": "Pringles",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg",
-              "price": 1.2,
+              "price": 1.6,
               "stock": 2,
               "capacity": 3,
               "expired": false
@@ -78,7 +78,7 @@
               "level": 2,
               "name": "Toffifee",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
-              "price": 2,
+              "price": 2.5,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -88,7 +88,7 @@
               "level": 2,
               "name": "Capico Knusper Röllchen Haselnuss",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png",
-              "price": 1.55,
+              "price": 2.2,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -118,7 +118,7 @@
               "level": 2,
               "name": "Doritos Bits Honey BBQ",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/e4d09ddbc14045a7bf2f34ae6a6310a9.jpeg",
-              "price": 1.6,
+              "price": 2,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -128,7 +128,7 @@
               "level": 3,
               "name": "funny-frisch goldfischli original!",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d91a8269c52b468686ef6de20eabf4d7.png",
-              "price": 1.6,
+              "price": 2,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -178,7 +178,7 @@
               "level": 4,
               "name": "Capri-Sun Mystic Dragon",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/51b41b5d91cb4df480eaacc429084388.png",
-              "price": 0.8,
+              "price": 1,
               "stock": 5,
               "capacity": 10,
               "expired": false
@@ -198,7 +198,7 @@
               "level": 4,
               "name": "KitKat",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg",
-              "price": 1.05,
+              "price": 1.3,
               "stock": 7,
               "capacity": 10,
               "expired": false
@@ -228,7 +228,7 @@
               "level": 4,
               "name": "Huober Minis",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png",
-              "price": 0.8,
+              "price": 1,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -318,7 +318,7 @@
               "level": 5,
               "name": "Gösser Natur Radler",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
-              "price": 1.2,
+              "price": 1.5,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -358,7 +358,7 @@
               "level": 6,
               "name": "Vio Medium 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
-              "price": 1.3,
+              "price": 1.6,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -443,7 +443,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-09T14:09:50.400Z",
+          "fetchedAt": "2026-11-09T14:20:07.860Z",
           "items": []
         }
       ]
@@ -466,7 +466,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:09:50.400Z",
+          "fetchedAt": "2026-11-09T14:20:07.860Z",
           "items": [
             {
               "lane": "1",
@@ -533,7 +533,7 @@
               "level": 2,
               "name": "Toffifee",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
-              "price": 2,
+              "price": 2.5,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -563,7 +563,7 @@
               "level": 2,
               "name": "Sport",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/19ed1a7d28ba4323b2117da96de7bcb0.png",
-              "price": 1.05,
+              "price": 1.5,
               "stock": 6,
               "capacity": 10,
               "expired": false
@@ -633,7 +633,7 @@
               "level": 4,
               "name": "Crackzel Pretzel Pieces",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fe511a8730aa4065bb9f5b7232ba325f.png",
-              "price": 1.3,
+              "price": 1.6,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -643,7 +643,7 @@
               "level": 4,
               "name": "Nut & Fruit Mix",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/304baa5cb88c4acda661fb056a8ab958.png",
-              "price": 1.9,
+              "price": 2.4,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -663,7 +663,7 @@
               "level": 4,
               "name": "Huober Minis",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png",
-              "price": 0.8,
+              "price": 1,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -898,7 +898,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:09:50.400Z",
+          "fetchedAt": "2026-11-09T14:20:07.860Z",
           "items": [
             {
               "lane": "11",
@@ -1025,7 +1025,7 @@
               "level": 4,
               "name": "Capri-Sun Fairy Drink",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0d19a0bd2c174af5a3fdc1f611c5efcf.png",
-              "price": 0.7,
+              "price": 1,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -1145,7 +1145,7 @@
               "level": 6,
               "name": "Vio Medium 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
-              "price": 1.6,
+              "price": 2,
               "stock": 5,
               "capacity": 5,
               "expired": false
