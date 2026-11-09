@@ -1,17 +1,17 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-09T14:04:09.313Z",
+  "lastRunAt": "2026-11-09T14:16:06.901Z",
   "lastRunDay": "2026-11-09",
   "active": {},
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002202",
+        "advertiseId": "100002206",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-09-8b19f4",
+        "adName": "SD24-combined-steinsberg-2026-11-09-44b215",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/45ca1e13c0c64198946bb963bba939d9.mp4",
-        "hash": "8b19f480e9e1df9e",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7e2db8d18a884996b22be8830fe07487.mp4",
+        "hash": "44b2153fe0ff25fe",
         "segments": [
           "karamalz",
           "live",
@@ -31,97 +31,6 @@
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ea50b19a795e4218a290e7cebbf00150.png",
             "lanes": [
               "7680800:38"
-            ]
-          },
-          {
-            "rtuNumber": "7680800",
-            "lane": "15",
-            "name": "Sport",
-            "old": 1.5,
-            "new": 1.05,
-            "pct": 30,
-            "until": "2026-11-16",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/19ed1a7d28ba4323b2117da96de7bcb0.png",
-            "lanes": [
-              "7680800:15"
-            ]
-          },
-          {
-            "rtuNumber": "7680783",
-            "lane": "36",
-            "name": "Capri-Sun Fairy Drink",
-            "old": 1,
-            "new": 0.7,
-            "pct": 30,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0d19a0bd2c174af5a3fdc1f611c5efcf.png",
-            "lanes": [
-              "7680783:36"
-            ]
-          },
-          {
-            "rtuNumber": "7680800",
-            "lane": "33",
-            "name": "Nut & Fruit Mix",
-            "old": 2.4,
-            "new": 1.9,
-            "pct": 21,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/304baa5cb88c4acda661fb056a8ab958.png",
-            "lanes": [
-              "7680800:33"
-            ]
-          },
-          {
-            "rtuNumber": "7680800",
-            "lane": "12",
-            "name": "Toffifee",
-            "old": 2.5,
-            "new": 2,
-            "pct": 20,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
-            "lanes": [
-              "7680800:12"
-            ]
-          },
-          {
-            "rtuNumber": "7680783",
-            "lane": "52",
-            "name": "Vio Medium 0.5l  inkl. Pfand",
-            "old": 2,
-            "new": 1.6,
-            "pct": 20,
-            "until": "2026-11-16",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
-            "lanes": [
-              "7680783:52"
-            ]
-          },
-          {
-            "rtuNumber": "7680800",
-            "lane": "35",
-            "name": "Huober Minis",
-            "old": 1,
-            "new": 0.8,
-            "pct": 20,
-            "until": "2026-11-16",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png",
-            "lanes": [
-              "7680800:35"
-            ]
-          },
-          {
-            "rtuNumber": "7680800",
-            "lane": "32",
-            "name": "Crackzel Pretzel Pieces",
-            "old": 1.6,
-            "new": 1.3,
-            "pct": 19,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fe511a8730aa4065bb9f5b7232ba325f.png",
-            "lanes": [
-              "7680800:32"
             ]
           },
           {
@@ -180,15 +89,15 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-09T14:05:55.143Z"
+        "updatedAt": "2026-11-09T14:17:26.862Z"
       },
       "schiesheim": {
-        "advertiseId": "100002203",
+        "advertiseId": "100002207",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-11-09-aaf928",
+        "adName": "SD24-combined-schiesheim-2026-11-09-b0ed77",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ff8db146dc8443579b752610187730ce.mp4",
-        "hash": "aaf928e8e17178a1",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d0ea0661618048a3aa1cf7d6e092c2d8.mp4",
+        "hash": "b0ed775a67ce1e68",
         "segments": [
           "live",
           "deals",
@@ -211,45 +120,6 @@
           },
           {
             "rtuNumber": "7680787",
-            "lane": "12",
-            "name": "Capico Knusper Röllchen Haselnuss",
-            "old": 2.2,
-            "new": 1.55,
-            "pct": 30,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png",
-            "lanes": [
-              "7680787:12"
-            ]
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "3",
-            "name": "Pringles",
-            "old": 1.6,
-            "new": 1.2,
-            "pct": 25,
-            "until": "2026-11-16",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg",
-            "lanes": [
-              "7680787:3"
-            ]
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "11",
-            "name": "Toffifee",
-            "old": 2.5,
-            "new": 2,
-            "pct": 20,
-            "until": "2026-11-16",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
-            "lanes": [
-              "7680787:11"
-            ]
-          },
-          {
-            "rtuNumber": "7680787",
             "lane": "58",
             "name": "Coca Cola Zero 0.5l  inkl. Pfand",
             "old": 2.2,
@@ -259,84 +129,6 @@
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
             "lanes": [
               "7680787:58"
-            ]
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "15",
-            "name": "Doritos Bits Honey BBQ",
-            "old": 2,
-            "new": 1.6,
-            "pct": 20,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/e4d09ddbc14045a7bf2f34ae6a6310a9.jpeg",
-            "lanes": [
-              "7680787:15"
-            ]
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "21",
-            "name": "funny-frisch goldfischli original!",
-            "old": 2,
-            "new": 1.6,
-            "pct": 20,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d91a8269c52b468686ef6de20eabf4d7.png",
-            "lanes": [
-              "7680787:21"
-            ]
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "47",
-            "name": "Gösser Natur Radler",
-            "old": 1.5,
-            "new": 1.2,
-            "pct": 20,
-            "until": "2026-11-16",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
-            "lanes": [
-              "7680787:47"
-            ]
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "31",
-            "name": "Capri-Sun Mystic Dragon",
-            "old": 1,
-            "new": 0.8,
-            "pct": 20,
-            "until": "2026-11-16",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/51b41b5d91cb4df480eaacc429084388.png",
-            "lanes": [
-              "7680787:31"
-            ]
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "37",
-            "name": "Huober Minis",
-            "old": 1,
-            "new": 0.8,
-            "pct": 20,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4aa0d77b8fd40f397c5efc8a2fb9229.png",
-            "lanes": [
-              "7680787:37"
-            ]
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "52",
-            "name": "Vio Medium 0.5l  inkl. Pfand",
-            "old": 1.6,
-            "new": 1.3,
-            "pct": 19,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
-            "lanes": [
-              "7680787:52"
             ]
           },
           {
@@ -351,19 +143,6 @@
             "lanes": [
               "7680787:51"
             ]
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "34",
-            "name": "KitKat",
-            "old": 1.3,
-            "new": 1.05,
-            "pct": 19,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg",
-            "lanes": [
-              "7680787:34"
-            ]
           }
         ],
         "karamalzPrice": null,
@@ -376,7 +155,7 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-09T14:06:59.432Z"
+        "updatedAt": "2026-11-09T14:18:14.874Z"
       }
     }
   },
@@ -384,230 +163,6 @@
   "lastEveningRunDay": "2026-11-08",
   "lastMorningRunDay": "2026-11-09",
   "clearance": {
-    "7680787:3": {
-      "rtuNumber": "7680787",
-      "lane": "3",
-      "name": "Pringles",
-      "cid": "100022635",
-      "originalPrice": 1.6,
-      "originalCostPrice": 1,
-      "clearancePrice": 1.2,
-      "clearanceCostPrice": 1,
-      "percent": 30,
-      "reason": "dead",
-      "startedAt": "2026-11-02T06:08:23.101Z",
-      "endsAt": "2026-11-16",
-      "stockAtStart": 2,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z",
-      "effectivePercent": 25,
-      "costFloor": 1.2,
-      "costKnown": true
-    },
-    "7680787:11": {
-      "rtuNumber": "7680787",
-      "lane": "11",
-      "name": "Toffifee",
-      "cid": "100031233",
-      "originalPrice": 2.5,
-      "originalCostPrice": 1.49,
-      "clearancePrice": 2,
-      "clearanceCostPrice": 1.49,
-      "percent": 20,
-      "reason": "slow",
-      "startedAt": "2026-11-02T06:08:23.102Z",
-      "endsAt": "2026-11-16",
-      "stockAtStart": 4,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z",
-      "effectivePercent": 20,
-      "costFloor": 1.8,
-      "costKnown": true
-    },
-    "7680787:31": {
-      "rtuNumber": "7680787",
-      "lane": "31",
-      "name": "Capri-Sun Mystic Dragon",
-      "cid": "100035405",
-      "originalPrice": 1,
-      "originalCostPrice": 0.3,
-      "clearancePrice": 0.8,
-      "clearanceCostPrice": 0.3,
-      "percent": 20,
-      "reason": "slow",
-      "startedAt": "2026-11-02T06:08:23.102Z",
-      "endsAt": "2026-11-16",
-      "stockAtStart": 5,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z",
-      "effectivePercent": 20,
-      "costFloor": 0.4,
-      "costKnown": true
-    },
-    "7680787:47": {
-      "rtuNumber": "7680787",
-      "lane": "47",
-      "name": "Gösser Natur Radler",
-      "cid": "100026167",
-      "originalPrice": 1.5,
-      "originalCostPrice": 0.89,
-      "clearancePrice": 1.2,
-      "clearanceCostPrice": 0.89,
-      "percent": 20,
-      "reason": "slow",
-      "startedAt": "2026-11-02T06:08:23.102Z",
-      "endsAt": "2026-11-16",
-      "stockAtStart": 4,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z",
-      "effectivePercent": 20,
-      "costFloor": 1.1,
-      "costKnown": true
-    },
-    "7680800:15": {
-      "rtuNumber": "7680800",
-      "lane": "15",
-      "name": "Sport",
-      "cid": "100039739",
-      "originalPrice": 1.5,
-      "originalCostPrice": 0.55,
-      "clearancePrice": 1.05,
-      "clearanceCostPrice": 0.55,
-      "percent": 30,
-      "reason": "dead",
-      "startedAt": "2026-11-02T06:08:23.102Z",
-      "endsAt": "2026-11-16",
-      "stockAtStart": 6,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z",
-      "effectivePercent": 30,
-      "costFloor": 0.7,
-      "costKnown": true
-    },
-    "7680800:35": {
-      "rtuNumber": "7680800",
-      "lane": "35",
-      "name": "Huober Minis",
-      "cid": "100028983",
-      "originalPrice": 1,
-      "originalCostPrice": 0.49,
-      "clearancePrice": 0.8,
-      "clearanceCostPrice": 0.49,
-      "percent": 20,
-      "reason": "slow",
-      "startedAt": "2026-11-02T06:08:23.102Z",
-      "endsAt": "2026-11-16",
-      "stockAtStart": 4,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z",
-      "effectivePercent": 20,
-      "costFloor": 0.6,
-      "costKnown": true
-    },
-    "7680783:52": {
-      "rtuNumber": "7680783",
-      "lane": "52",
-      "name": "Vio Medium 0.5l  inkl. Pfand",
-      "cid": "100021792",
-      "originalPrice": 2,
-      "originalCostPrice": 0.99,
-      "clearancePrice": 1.6,
-      "clearanceCostPrice": 0.99,
-      "percent": 20,
-      "reason": "slow",
-      "startedAt": "2026-11-02T06:08:23.103Z",
-      "endsAt": "2026-11-16",
-      "stockAtStart": 5,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z",
-      "effectivePercent": 20,
-      "costFloor": 1.2,
-      "costKnown": true
-    },
-    "7680787:12": {
-      "rtuNumber": "7680787",
-      "lane": "12",
-      "name": "Capico Knusper Röllchen Haselnuss",
-      "cid": "100037365",
-      "originalPrice": 2.2,
-      "originalCostPrice": 1.2,
-      "clearancePrice": 1.55,
-      "clearanceCostPrice": 1.2,
-      "percent": 30,
-      "effectivePercent": 30,
-      "costFloor": 1.45,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "dead",
-      "startedAt": "2026-11-09T06:01:06.428Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 2,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
-    },
-    "7680787:15": {
-      "rtuNumber": "7680787",
-      "lane": "15",
-      "name": "Doritos Bits Honey BBQ",
-      "cid": "100022797",
-      "originalPrice": 2,
-      "originalCostPrice": 1.19,
-      "clearancePrice": 1.6,
-      "clearanceCostPrice": 1.19,
-      "percent": 20,
-      "effectivePercent": 20,
-      "costFloor": 1.45,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "slow",
-      "startedAt": "2026-11-09T06:01:06.428Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 2,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
-    },
-    "7680787:21": {
-      "rtuNumber": "7680787",
-      "lane": "21",
-      "name": "funny-frisch goldfischli original!",
-      "cid": "100035407",
-      "originalPrice": 2,
-      "originalCostPrice": 1.19,
-      "clearancePrice": 1.6,
-      "clearanceCostPrice": 1.19,
-      "percent": 20,
-      "effectivePercent": 20,
-      "costFloor": 1.45,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "slow",
-      "startedAt": "2026-11-09T06:01:06.428Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 2,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
-    },
-    "7680787:34": {
-      "rtuNumber": "7680787",
-      "lane": "34",
-      "name": "KitKat",
-      "cid": "100023319",
-      "originalPrice": 1.3,
-      "originalCostPrice": 0.74,
-      "clearancePrice": 1.05,
-      "clearanceCostPrice": 0.74,
-      "percent": 20,
-      "effectivePercent": 19,
-      "costFloor": 0.9,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "slow",
-      "startedAt": "2026-11-09T06:01:06.428Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 7,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
-    },
     "7680787:36": {
       "rtuNumber": "7680787",
       "lane": "36",
@@ -627,28 +182,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
-    },
-    "7680787:37": {
-      "rtuNumber": "7680787",
-      "lane": "37",
-      "name": "Huober Minis",
-      "cid": "100028983",
-      "originalPrice": 1,
-      "originalCostPrice": 0.49,
-      "clearancePrice": 0.8,
-      "clearanceCostPrice": 0.49,
-      "percent": 20,
-      "effectivePercent": 20,
-      "costFloor": 0.6,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "slow",
-      "startedAt": "2026-11-09T06:01:06.428Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 4,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
+      "updatedAt": "2026-11-09T14:16:03.471Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -669,28 +203,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
-    },
-    "7680787:52": {
-      "rtuNumber": "7680787",
-      "lane": "52",
-      "name": "Vio Medium 0.5l  inkl. Pfand",
-      "cid": "100021792",
-      "originalPrice": 1.6,
-      "originalCostPrice": 0.74,
-      "clearancePrice": 1.3,
-      "clearanceCostPrice": 0.74,
-      "percent": 20,
-      "effectivePercent": 19,
-      "costFloor": 0.9,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "slow",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 4,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
+      "updatedAt": "2026-11-09T14:16:03.471Z"
     },
     "7680787:58": {
       "rtuNumber": "7680787",
@@ -711,70 +224,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
-    },
-    "7680800:12": {
-      "rtuNumber": "7680800",
-      "lane": "12",
-      "name": "Toffifee",
-      "cid": "100031233",
-      "originalPrice": 2.5,
-      "originalCostPrice": 1.49,
-      "clearancePrice": 2,
-      "clearanceCostPrice": 1.49,
-      "percent": 20,
-      "effectivePercent": 20,
-      "costFloor": 1.8,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "slow",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 2,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
-    },
-    "7680800:32": {
-      "rtuNumber": "7680800",
-      "lane": "32",
-      "name": "Crackzel Pretzel Pieces",
-      "cid": "100025369",
-      "originalPrice": 1.6,
-      "originalCostPrice": 0.95,
-      "clearancePrice": 1.3,
-      "clearanceCostPrice": 0.95,
-      "percent": 20,
-      "effectivePercent": 19,
-      "costFloor": 1.15,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "slow",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 2,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
-    },
-    "7680800:33": {
-      "rtuNumber": "7680800",
-      "lane": "33",
-      "name": "Nut & Fruit Mix",
-      "cid": "100025368",
-      "originalPrice": 2.4,
-      "originalCostPrice": 1.48,
-      "clearancePrice": 1.9,
-      "clearanceCostPrice": 1.48,
-      "percent": 20,
-      "effectivePercent": 21,
-      "costFloor": 1.8,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "slow",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 2,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
+      "updatedAt": "2026-11-09T14:16:03.471Z"
     },
     "7680800:38": {
       "rtuNumber": "7680800",
@@ -795,7 +245,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
+      "updatedAt": "2026-11-09T14:16:05.257Z"
     },
     "7680783:12": {
       "rtuNumber": "7680783",
@@ -816,7 +266,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
+      "updatedAt": "2026-11-09T14:16:06.901Z"
     },
     "7680783:13": {
       "rtuNumber": "7680783",
@@ -837,7 +287,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
+      "updatedAt": "2026-11-09T14:16:06.901Z"
     },
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -858,7 +308,9 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
+      "updatedAt": "2026-11-09T14:16:06.901Z",
+      "pinned": true,
+      "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
     "7680783:32": {
       "rtuNumber": "7680783",
@@ -879,7 +331,9 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
+      "updatedAt": "2026-11-09T14:16:06.901Z",
+      "pinned": true,
+      "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
     "7680783:33": {
       "rtuNumber": "7680783",
@@ -900,28 +354,9 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
-    },
-    "7680783:36": {
-      "rtuNumber": "7680783",
-      "lane": "36",
-      "name": "Capri-Sun Fairy Drink",
-      "cid": "100035404",
-      "originalPrice": 1,
-      "originalCostPrice": 0.3,
-      "clearancePrice": 0.7,
-      "clearanceCostPrice": 0.3,
-      "percent": 30,
-      "effectivePercent": 30,
-      "costFloor": 0.4,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "dead",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 4,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T14:04:09.313Z"
+      "updatedAt": "2026-11-09T14:16:06.901Z",
+      "pinned": true,
+      "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     }
   },
   "lastClearanceEvalAt": "2026-11-09T13:53:25.650Z",
