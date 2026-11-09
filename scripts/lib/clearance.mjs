@@ -65,6 +65,11 @@ export const PROTECTED_PRODUCTS = [
   { id: "monster", group: "A", re: /\bmonster\b/i },
   { id: "milka", group: "B", re: /\bmilka\b/i },
   { id: "patisserie-apple-cakes", group: "B", re: /patisserie\s*apple\s*cakes?/i },
+  // Krisztian 2026-11-09 15:02: "stop discount for now on mikado, oreo, paulner spezi" (+ Minecraft figure)
+  { id: "minecraft", group: "B", re: /minecraft/i },
+  { id: "mikado", group: "B", re: /mikado/i },
+  { id: "oreo", group: "B", re: /oreo/i },
+  { id: "spezi", group: "B", re: /\bspezi\b/i },
 ];
 export function protectionFor(name) {
   const n = String(name || "");

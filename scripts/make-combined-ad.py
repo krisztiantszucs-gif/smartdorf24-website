@@ -163,7 +163,7 @@ def seg_deals(t, deals):
             name = dl["name"] if len(dl["name"]) < 27 else dl["name"][:25]+"…"
             d.text((x+24,y+12), name, font=font(40), fill=WHITE)
             d.text((x+24,y+64), f"−{dl['pct']}%  ·  nur noch bis {dl['until']}", font=font(28,False), fill=(255,190,190))
-            old = f"{dl['old']:.2f} €".replace(".",","); new = f"{dl['new']:.2f} €".replace(".",",")
+            old = f"{dl['old']:.2f} €".replace(".",","); new = ("ab " if dl.get("from") else "") + f"{dl['new']:.2f} €".replace(".",",")
             ow = d.textlength(old, font=font(38,False)); ox = x+690
             d.text((ox,y+36), old, font=font(38,False), fill=(180,180,190)); d.line([ox,y+60,ox+ow,y+60], fill=RED, width=4)
             ps = 1+0.08*math.sin((t-st)*7)
@@ -206,7 +206,7 @@ def seg_sale(t, items, thumbs):
         name = it["name"].replace(" inkl. pfand","").replace(" inkl pfand.","")
         name = name if len(name) < 24 else name[:22] + "…"
         d.text((x+205, y+18), name, font=font(38), fill=WHITE)
-        old = f"{it['old']:.2f} €".replace(".", ","); new = f"{it['new']:.2f} €".replace(".", ",")
+        old = f"{it['old']:.2f} €".replace(".", ","); new = ("ab " if it.get("from") else "") + f"{it['new']:.2f} €".replace(".", ",")
         f2 = font(36, False); ow = d.textlength(old, font=f2)
         d.text((x+205, y+92), old, font=f2, fill=(170,175,185)); d.line([x+205, y+114, x+205+ow, y+114], fill=RED, width=4)
         d.rounded_rectangle([x+205, y+145, x+330, y+190], 12, fill=RED); d.text((x+218, y+148), f"−{it['pct']}%", font=font(34), fill=WHITE)
@@ -263,7 +263,7 @@ def main():
             try:
                 dd = datetime.date.fromisoformat(str(a["until"])[:10]) if "-" in str(a.get("until","")) else None
                 until = dd.strftime("%d.%m.") if dd else str(a.get("until",""))
-                deals.append({"name":a["name"],"old":float(a["old"]),"new":float(a["new"]),"until":until,"pct":int(a.get("pct") or 50)})
+                deals.append({"name":a["name"],"old":float(a["old"]),"new":float(a["new"]),"until":until,"pct":int(a.get("pct") or 50),"from":bool(a.get("from"))})
             except Exception: pass
     else:
         for a in (disc.get("active") or {}).values():
@@ -280,7 +280,7 @@ def main():
             try:
                 it = {"name": a["name"], "old": float(a["old"]), "new": float(a["new"]),
                       "pct": int(a.get("pct") or 20), "lane": f"{a.get('rtuNumber','')}:{a.get('lane','')}",
-                      "until": str(a.get("until") or "")}
+                      "until": str(a.get("until") or ""), "from": bool(a.get("from"))}
                 sale_items.append(it)
                 if a.get("image"):
                     im = fetch_img(a["image"])

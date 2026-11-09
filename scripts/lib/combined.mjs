@@ -29,6 +29,27 @@ function ok(r, what) {
   return r.json;
 }
 
+/**
+ * One entry per product per screen (Krisztian 2026-11-09: Karamalz in 3 lanes showed 3×).
+ * Groups by normalised product name; keeps the cheapest lane, `from: true` when lane prices differ.
+ * Input must already be sorted by preference; result keeps that order.
+ */
+export function normName(n) {
+  return String(n || "").toLowerCase().replace(/\s+/g, " ").trim();
+}
+export function dedupeProducts(list) {
+  const by = new Map();
+  for (const x of list) {
+    const k = normName(x.name);
+    const g = by.get(k);
+    if (!g) { by.set(k, { ...x, lanes: [`${x.rtuNumber}:${x.lane}`] }); continue; }
+    g.lanes.push(`${x.rtuNumber}:${x.lane}`);
+    if (Number(x.new) !== Number(g.new)) g.from = true;
+    if (Number(x.new) < Number(g.new)) Object.assign(g, { ...x, lanes: g.lanes, from: g.from });
+  }
+  return [...by.values()];
+}
+
 /** Active discounts for rtus whose live machine price still equals discountPrice. */
 export async function verifiedDeals(token, state, rtus, today = berlinToday()) {
   const priceByLane = new Map();
@@ -66,6 +87,8 @@ export async function verifiedDeals(token, state, rtus, today = berlinToday()) {
     });
   }
   deals.sort((x, y) => y.pct - x.pct || x.until.localeCompare(y.until) || x.name.localeCompare(y.name));
+  const dd = dedupeProducts(deals);
+  deals.length = 0; deals.push(...dd);
   if (dropped.length) console.log(`deals dropped (stale/mismatch): ${dropped.map((d) => `${d.name}(${d.reason})`).join("; ")}`);
   console.log(`verified deals (${rtus.join(",")}): ${deals.map((d) => `${d.name} −${d.pct}% @${d.new}`).join("; ") || "(none)"}`);
   return deals;
@@ -120,6 +143,8 @@ export async function verifiedSale(token, state, rtus, today = berlinToday()) {
     });
   }
   sale.sort((x, y) => y.pct - x.pct || (y.old - y.new) - (x.old - x.new) || x.name.localeCompare(y.name));
+  const ds = dedupeProducts(sale);
+  sale.length = 0; sale.push(...ds);
   if (dropped.length) console.log(`sale dropped: ${dropped.map((d) => `${d.name}(${d.reason})`).join("; ")}`);
   console.log(`verified sale (${rtus.join(",")}): ${sale.map((d) => `${d.name} −${d.pct}% @${d.new}`).join("; ") || "(none)"}`);
   return sale;

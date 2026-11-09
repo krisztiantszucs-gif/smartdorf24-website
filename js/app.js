@@ -110,13 +110,22 @@
       const prev = byKey[key];
       if (!prev || Number(x.a.percent || 0) > Number(prev.a.percent || 0)) byKey[key] = x;
     }
-    const items = Object.values(byKey)
-      .filter((x) => !x.it || (Number(x.it.stock) > 0 && !x.it.expired))
+    // One card per product per machine (Karamalz sits in 3 lanes): cheapest lane wins, "ab" if prices differ.
+    const norm = (n) => String(n || "").toLowerCase().replace(/\s+/g, " ").trim();
+    const byProd = {};
+    for (const x of Object.values(byKey).filter((x) => !x.it || (Number(x.it.stock) > 0 && !x.it.expired))) {
+      const k = x.a.rtuNumber + "|" + norm(x.a.name);
+      const g = byProd[k];
+      if (!g) { byProd[k] = { ...x, from: false }; continue; }
+      const from = g.from || Number(x.price) !== Number(g.price);
+      byProd[k] = Number(x.price) < Number(g.price) ? { ...x, from } : { ...g, from };
+    }
+    const items = Object.values(byProd)
       .sort((x, y) => (Number(y.a.percent || 0) - Number(x.a.percent || 0)) || String(x.until || "").localeCompare(String(y.until || "")));
     if (!items.length) { sec.hidden = true; grid.innerHTML = ""; return; }
     sec.hidden = false;
     const L = state.lang;
-    grid.innerHTML = items.map(({ a, loc, m, it, kind, price, until }) => {
+    grid.innerHTML = items.map(({ a, loc, m, it, kind, price, until, from }) => {
       const pct = Number(a.percent || 20);
       const [y, mo, d] = String(until || "").split("-");
       const untilFmt = d ? `${d}.${mo}.` : "";
@@ -129,7 +138,7 @@
         <div class="deal-body">
           <div class="deal-name">${escapeHtml(a.name || "")}</div>
           <div class="deal-where">${escapeHtml(where)}</div>
-          <div class="deal-prices"><span class="price-old">${formatMoney(a.originalPrice)}</span> <span class="deal-new">${formatMoney(price)}</span></div>
+          <div class="deal-prices"><span class="price-old">${formatMoney(a.originalPrice)}</span> <span class="deal-new">${from ? escapeHtml(t("from_price")) + " " : ""}${formatMoney(price)}</span></div>
           <div class="deal-until">${escapeHtml(kind === "clearance" ? t("clearance_until") : t("deals_until"))} ${escapeHtml(untilFmt)}</div>
         </div>
       </article>`;
