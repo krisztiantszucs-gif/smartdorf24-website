@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-09T14:20:07.860Z",
+  "updatedAt": "2026-11-09T14:40:11.644Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:20:07.860Z",
+          "fetchedAt": "2026-11-09T14:40:11.644Z",
           "items": [
             {
               "lane": "1",
@@ -441,9 +441,9 @@
             "de": "Schiesheim Links",
             "en": "Schiesheim Left"
           },
-          "online": false,
-          "apiOffline": true,
-          "fetchedAt": "2026-11-09T14:20:07.860Z",
+          "online": true,
+          "apiOffline": false,
+          "fetchedAt": "2026-11-09T14:40:11.644Z",
           "items": []
         }
       ]
@@ -466,7 +466,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:20:07.860Z",
+          "fetchedAt": "2026-11-09T14:40:11.644Z",
           "items": [
             {
               "lane": "1",
@@ -898,7 +898,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:20:07.860Z",
+          "fetchedAt": "2026-11-09T14:40:11.644Z",
           "items": [
             {
               "lane": "11",
