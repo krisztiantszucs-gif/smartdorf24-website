@@ -1,17 +1,17 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-09T06:01:17.494Z",
+  "lastRunAt": "2026-11-09T11:24:56.638Z",
   "lastRunDay": "2026-11-09",
   "active": {},
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002193",
+        "advertiseId": "100002195",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-09-e76b64",
+        "adName": "SD24-combined-steinsberg-2026-11-09-84fd0a",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/89abea0a2130444c8f6babfed2c1114b.mp4",
-        "hash": "e76b6429d528a4b2",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f30420c4d01e4d54bfebcfa000de426c.mp4",
+        "hash": "84fd0ab175dbd4f5",
         "segments": [
           "karamalz",
           "live",
@@ -29,16 +29,6 @@
             "pct": 31,
             "until": "2026-11-23",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg"
-          },
-          {
-            "rtuNumber": "7680800",
-            "lane": "24",
-            "name": "Patisserie Apple Cakes",
-            "old": 3,
-            "new": 2.1,
-            "pct": 30,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/797d5c3d51e24263921077e070203df4.png"
           },
           {
             "rtuNumber": "7680783",
@@ -82,16 +72,6 @@
           },
           {
             "rtuNumber": "7680800",
-            "lane": "14",
-            "name": "Milka Sensations Cookies Oreo Creme",
-            "old": 2.9,
-            "new": 2.05,
-            "pct": 29,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9d491aa58fb442e98c14e32d4ec5a5d2.png"
-          },
-          {
-            "rtuNumber": "7680800",
             "lane": "33",
             "name": "Nut & Fruit Mix",
             "old": 2.4,
@@ -109,16 +89,6 @@
             "pct": 20,
             "until": "2026-11-23",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png"
-          },
-          {
-            "rtuNumber": "7680783",
-            "lane": "37",
-            "name": "Milka Schokoladen Milch",
-            "old": 2.2,
-            "new": 1.75,
-            "pct": 20,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/82cbed567b1146208d8e538e594ce1e2.jpeg"
           },
           {
             "rtuNumber": "7680783",
@@ -225,15 +195,15 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-09T08:22:37.758Z"
+        "updatedAt": "2026-11-09T11:26:30.941Z"
       },
       "schiesheim": {
-        "advertiseId": "100002194",
+        "advertiseId": "100002196",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-11-09-d9a743",
+        "adName": "SD24-combined-schiesheim-2026-11-09-1fb9a5",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/e7149f99c86e41d28d503850f5fe8721.mp4",
-        "hash": "d9a743288d73d339",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c2c9c27e1dd84b4e852987cc7d53a1e9.mp4",
+        "hash": "1fb9a52ebcafe078",
         "segments": [
           "live",
           "deals",
@@ -270,26 +240,6 @@
             "pct": 30,
             "until": "2026-11-23",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png"
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "44",
-            "name": "Monster Juiced Mango Loco Energy",
-            "old": 2.2,
-            "new": 1.55,
-            "pct": 30,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/65cd22d69f0e4a419dab481a4b959826.png"
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "43",
-            "name": "RedBull Original 250ml  inkl. Pfand",
-            "old": 2.2,
-            "new": 1.55,
-            "pct": 30,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg"
           },
           {
             "rtuNumber": "7680787",
@@ -442,7 +392,7 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-09T08:22:41.715Z"
+        "updatedAt": "2026-11-09T11:27:33.829Z"
       }
     }
   },
@@ -465,7 +415,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z",
+      "updatedAt": "2026-11-09T11:24:53.480Z",
       "effectivePercent": 25,
       "costFloor": 1.2,
       "costKnown": true
@@ -485,7 +435,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z",
+      "updatedAt": "2026-11-09T11:24:53.480Z",
       "effectivePercent": 20,
       "costFloor": 1.8,
       "costKnown": true
@@ -505,7 +455,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z",
+      "updatedAt": "2026-11-09T11:24:53.480Z",
       "effectivePercent": 20,
       "costFloor": 0.4,
       "costKnown": true
@@ -525,7 +475,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z",
+      "updatedAt": "2026-11-09T11:24:53.481Z",
       "effectivePercent": 30,
       "costFloor": 1.8,
       "costKnown": true
@@ -545,7 +495,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z",
+      "updatedAt": "2026-11-09T11:24:53.481Z",
       "effectivePercent": 20,
       "costFloor": 1.1,
       "costKnown": true
@@ -565,7 +515,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z",
+      "updatedAt": "2026-11-09T11:24:53.481Z",
       "effectivePercent": 19,
       "costFloor": 1.15,
       "costKnown": true
@@ -585,7 +535,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 6,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z",
+      "updatedAt": "2026-11-09T11:24:55.182Z",
       "effectivePercent": 30,
       "costFloor": 0.7,
       "costKnown": true
@@ -605,7 +555,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z",
+      "updatedAt": "2026-11-09T11:24:55.182Z",
       "effectivePercent": 20,
       "costFloor": 0.6,
       "costKnown": true
@@ -625,7 +575,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.703Z",
+      "updatedAt": "2026-11-09T11:24:56.638Z",
       "effectivePercent": 20,
       "costFloor": 1.2,
       "costKnown": true
@@ -649,7 +599,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:53.480Z"
     },
     "7680787:12": {
       "rtuNumber": "7680787",
@@ -670,7 +620,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:53.480Z"
     },
     "7680787:15": {
       "rtuNumber": "7680787",
@@ -691,7 +641,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:53.480Z"
     },
     "7680787:21": {
       "rtuNumber": "7680787",
@@ -712,7 +662,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:53.480Z"
     },
     "7680787:34": {
       "rtuNumber": "7680787",
@@ -733,7 +683,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 7,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:53.480Z"
     },
     "7680787:36": {
       "rtuNumber": "7680787",
@@ -754,7 +704,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:53.481Z"
     },
     "7680787:37": {
       "rtuNumber": "7680787",
@@ -775,7 +725,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:53.481Z"
     },
     "7680787:38": {
       "rtuNumber": "7680787",
@@ -796,49 +746,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
-    },
-    "7680787:43": {
-      "rtuNumber": "7680787",
-      "lane": "43",
-      "name": "RedBull Original 250ml  inkl. Pfand",
-      "cid": "100021793",
-      "originalPrice": 2.2,
-      "originalCostPrice": 1.1,
-      "clearancePrice": 1.55,
-      "clearanceCostPrice": 1.1,
-      "percent": 30,
-      "effectivePercent": 30,
-      "costFloor": 1.35,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "dead",
-      "startedAt": "2026-11-09T06:01:06.428Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 5,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
-    },
-    "7680787:44": {
-      "rtuNumber": "7680787",
-      "lane": "44",
-      "name": "Monster Juiced Mango Loco Energy",
-      "cid": "100024813",
-      "originalPrice": 2.2,
-      "originalCostPrice": 1.1,
-      "clearancePrice": 1.55,
-      "clearanceCostPrice": 1.1,
-      "percent": 30,
-      "effectivePercent": 30,
-      "costFloor": 1.35,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "dead",
-      "startedAt": "2026-11-09T06:01:06.428Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 3,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:53.481Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -859,7 +767,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:53.481Z"
     },
     "7680787:52": {
       "rtuNumber": "7680787",
@@ -880,7 +788,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:53.481Z"
     },
     "7680787:58": {
       "rtuNumber": "7680787",
@@ -901,7 +809,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:53.481Z"
     },
     "7680800:12": {
       "rtuNumber": "7680800",
@@ -922,49 +830,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
-    },
-    "7680800:14": {
-      "rtuNumber": "7680800",
-      "lane": "14",
-      "name": "Milka Sensations Cookies Oreo Creme",
-      "cid": "100040359",
-      "originalPrice": 2.9,
-      "originalCostPrice": 1.69,
-      "clearancePrice": 2.05,
-      "clearanceCostPrice": 1.69,
-      "percent": 30,
-      "effectivePercent": 29,
-      "costFloor": 2.05,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "dead",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 2,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
-    },
-    "7680800:24": {
-      "rtuNumber": "7680800",
-      "lane": "24",
-      "name": "Patisserie Apple Cakes",
-      "cid": "100040357",
-      "originalPrice": 3,
-      "originalCostPrice": 1.49,
-      "clearancePrice": 2.1,
-      "clearanceCostPrice": 1.49,
-      "percent": 30,
-      "effectivePercent": 30,
-      "costFloor": 1.8,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "dead",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 2,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:55.182Z"
     },
     "7680800:32": {
       "rtuNumber": "7680800",
@@ -985,7 +851,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:55.182Z"
     },
     "7680800:33": {
       "rtuNumber": "7680800",
@@ -1006,7 +872,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:55.182Z"
     },
     "7680800:38": {
       "rtuNumber": "7680800",
@@ -1027,7 +893,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:55.182Z"
     },
     "7680783:4": {
       "rtuNumber": "7680783",
@@ -1048,7 +914,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:56.637Z"
     },
     "7680783:12": {
       "rtuNumber": "7680783",
@@ -1069,7 +935,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:56.637Z"
     },
     "7680783:13": {
       "rtuNumber": "7680783",
@@ -1090,7 +956,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:56.637Z"
     },
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -1111,7 +977,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:56.637Z"
     },
     "7680783:32": {
       "rtuNumber": "7680783",
@@ -1132,7 +998,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:56.637Z"
     },
     "7680783:33": {
       "rtuNumber": "7680783",
@@ -1153,7 +1019,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.702Z"
+      "updatedAt": "2026-11-09T11:24:56.637Z"
     },
     "7680783:36": {
       "rtuNumber": "7680783",
@@ -1174,28 +1040,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.703Z"
-    },
-    "7680783:37": {
-      "rtuNumber": "7680783",
-      "lane": "37",
-      "name": "Milka Schokoladen Milch",
-      "cid": "100021839",
-      "originalPrice": 2.2,
-      "originalCostPrice": 1.29,
-      "clearancePrice": 1.75,
-      "clearanceCostPrice": 1.29,
-      "percent": 20,
-      "effectivePercent": 20,
-      "costFloor": 1.55,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "slow",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 3,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.703Z"
+      "updatedAt": "2026-11-09T11:24:56.638Z"
     },
     "7680783:38": {
       "rtuNumber": "7680783",
@@ -1216,7 +1061,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.703Z"
+      "updatedAt": "2026-11-09T11:24:56.638Z"
     },
     "7680783:44": {
       "rtuNumber": "7680783",
@@ -1237,10 +1082,11 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T08:22:33.703Z"
+      "updatedAt": "2026-11-09T11:24:56.638Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-09T06:01:06.430Z",
   "lastClearanceEvalDay": "2026-11-09",
-  "lastLowStockGuardAt": "2026-11-09T08:22:33.703Z"
+  "lastLowStockGuardAt": "2026-11-09T08:22:33.703Z",
+  "pendingApprovals": []
 }
