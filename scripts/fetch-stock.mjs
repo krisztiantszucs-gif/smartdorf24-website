@@ -288,10 +288,13 @@ async function main() {
     try {
       results[m.rtuNumber] = await withRetry(`machine ${m.rtuNumber}`, async () => {
         const data = await fetchMachine(auth, m.rtuNumber);
-        const n = (data?.list?.[0]?.cargos || []).filter(cargoName).length;
+        const lanes = data?.list?.[0]?.cargos || [];
+        const n = lanes.filter(cargoName).length;
         const prevN = (prevByRtu[m.rtuNumber]?.items || []).length;
-        // A machine that had products suddenly returning none is treated as a bad response.
-        if (n === 0 && prevN > 0) throw new Error(`empty response (previously ${prevN} items)`);
+        // A machine that had products suddenly returning no lanes at all is treated as a bad response.
+        // Lanes present but all unassigned = machine deliberately emptied (valid, e.g. Schiesheim Left 2026-11-09).
+        if (n === 0 && prevN > 0 && lanes.length === 0) throw new Error(`empty response (previously ${prevN} items)`);
+        if (n === 0 && prevN > 0) console.log(`  ${m.rtuNumber}: all ${lanes.length} lanes unassigned — machine emptied`);
         return data;
       });
       const n = (results[m.rtuNumber]?.list?.[0]?.cargos || []).filter(cargoName).length;
