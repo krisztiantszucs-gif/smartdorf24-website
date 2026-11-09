@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-09T21:13:55.721Z",
+  "updatedAt": "2026-11-09T21:33:28.570Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T21:13:55.721Z",
+          "fetchedAt": "2026-11-09T21:33:28.570Z",
           "items": [
             {
               "lane": "1",
@@ -433,7 +433,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T21:13:55.721Z",
+          "fetchedAt": "2026-11-09T21:33:28.570Z",
           "items": [
             {
               "lane": "11",
@@ -607,7 +607,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T21:13:55.721Z",
+          "fetchedAt": "2026-11-09T21:33:28.570Z",
           "items": [
             {
               "lane": "1",
@@ -1039,7 +1039,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T21:13:55.721Z",
+          "fetchedAt": "2026-11-09T21:33:28.570Z",
           "items": [
             {
               "lane": "11",
@@ -1086,7 +1086,7 @@
               "level": 3,
               "name": "Vollmilch 3.5% 0.5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/431b28fb18b54f7ba96ac98210dc7632.jpeg",
-              "price": 1,
+              "price": 1.1,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -1186,7 +1186,7 @@
               "level": 5,
               "name": "Gösser Natur Radler",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
-              "price": 1.8,
+              "price": 1.5,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -1264,7 +1264,7 @@
             {
               "lane": "49",
               "level": 5,
-              "name": "RedBull Original 250ml  inkl. Pfand",
+              "name": "Red Bull Original 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
               "stock": 5,
@@ -1316,7 +1316,7 @@
               "level": 6,
               "name": "Paulaner Spezi 330ml Cola-Orange",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
-              "price": 1.6,
+              "price": 1.7,
               "stock": 3,
               "capacity": 3,
               "expired": false
@@ -1326,7 +1326,7 @@
               "level": 6,
               "name": "Monster Energy 0.5l inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
-              "price": 2,
+              "price": 2.2,
               "stock": 2,
               "capacity": 10,
               "expired": false
@@ -1336,7 +1336,7 @@
               "level": 6,
               "name": "Monster Energy 0.5l inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
-              "price": 2,
+              "price": 2.2,
               "stock": 3,
               "capacity": 10,
               "expired": false
