@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-09T16:16:16.662Z",
+  "updatedAt": "2026-11-09T16:26:34.277Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T16:16:16.662Z",
+          "fetchedAt": "2026-11-09T16:26:34.277Z",
           "items": [
             {
               "lane": "1",
@@ -433,7 +433,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T16:16:16.662Z",
+          "fetchedAt": "2026-11-09T16:26:34.277Z",
           "items": [
             {
               "lane": "11",
@@ -607,7 +607,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T16:16:16.662Z",
+          "fetchedAt": "2026-11-09T16:26:34.277Z",
           "items": [
             {
               "lane": "1",
@@ -1039,7 +1039,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T16:16:16.662Z",
+          "fetchedAt": "2026-11-09T16:26:34.277Z",
           "items": [
             {
               "lane": "11",
@@ -1247,7 +1247,7 @@
               "name": "Red Bull The Green Edition",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/46b7d01c58eb4ae3950e67a50b4921ed.png",
               "price": 2.2,
-              "stock": 5,
+              "stock": 4,
               "capacity": 10,
               "expired": false
             },
