@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-09T11:02:39.247Z",
+  "updatedAt": "2026-11-09T11:33:25.668Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T11:02:39.247Z",
+          "fetchedAt": "2026-11-09T11:33:25.668Z",
           "items": [
             {
               "lane": "1",
@@ -278,7 +278,7 @@
               "level": 5,
               "name": "RedBull Original 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
-              "price": 1.55,
+              "price": 2.2,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -288,7 +288,7 @@
               "level": 5,
               "name": "Monster Juiced Mango Loco Energy",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/65cd22d69f0e4a419dab481a4b959826.png",
-              "price": 1.55,
+              "price": 2.2,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -443,7 +443,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-09T11:02:39.247Z",
+          "fetchedAt": "2026-11-09T11:33:25.668Z",
           "items": []
         }
       ]
@@ -466,7 +466,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T11:02:39.247Z",
+          "fetchedAt": "2026-11-09T11:33:25.668Z",
           "items": [
             {
               "lane": "1",
@@ -553,7 +553,7 @@
               "level": 2,
               "name": "Milka Sensations Cookies Oreo Creme",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9d491aa58fb442e98c14e32d4ec5a5d2.png",
-              "price": 2.05,
+              "price": 2.9,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -603,7 +603,7 @@
               "level": 3,
               "name": "Patisserie Apple Cakes",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/797d5c3d51e24263921077e070203df4.png",
-              "price": 2.1,
+              "price": 3,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -878,7 +878,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T11:02:39.247Z",
+          "fetchedAt": "2026-11-09T11:33:25.668Z",
           "items": [
             {
               "lane": "4",
@@ -995,7 +995,7 @@
               "level": 4,
               "name": "Milka Schokoladen Milch",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/82cbed567b1146208d8e538e594ce1e2.jpeg",
-              "price": 1.75,
+              "price": 2.2,
               "stock": 3,
               "capacity": 5,
               "expired": false
