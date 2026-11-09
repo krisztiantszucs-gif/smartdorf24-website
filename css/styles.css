@@ -329,6 +329,13 @@ section h2 {
 }
 .fb-field input:focus, .fb-field select:focus, .fb-field textarea:focus { border-color: var(--accent); }
 .fb-field textarea { resize: vertical; min-height: 120px; }
+.fb-notify { margin: 2px 0 14px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+.fb-notify[hidden] { display: none; }
+.fb-check { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; color: var(--text); font-size: 0.95rem; line-height: 1.4; }
+.fb-check input { width: 18px; height: 18px; margin: 1px 0 0; flex: 0 0 auto; accent-color: var(--accent); cursor: pointer; }
+.fb-notify-note { margin: 8px 0 0 28px; color: var(--muted); font-size: 0.84rem; line-height: 1.45; }
+.fb-notify-note[hidden] { display: none; }
+.fb-field input:invalid.fb-touched { border-color: var(--danger); }
 .fb-privacy { color: var(--muted); font-size: 0.88rem; margin: 4px 0 16px; }
 .fb-privacy a { color: var(--accent); }
 .fb-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }

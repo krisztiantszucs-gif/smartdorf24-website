@@ -161,9 +161,17 @@
               <input type="text" name="name" id="fb-name" autocomplete="name" data-i18n-placeholder="fb_name_ph" placeholder="Dein Name">
             </label>
             <label class="fb-field">
-              <span><span data-i18n="fb_email">E-Mail</span> <em data-i18n="fb_optional">(optional)</em></span>
+              <span><span data-i18n="fb_email">E-Mail</span> <em data-i18n="fb_optional" id="fb-email-opt">(optional)</em></span>
               <input type="email" name="email" id="fb-email" autocomplete="email" data-i18n-placeholder="fb_email_ph" placeholder="für Rückfragen">
             </label>
+          </div>
+
+          <div class="fb-notify" id="fb-notify-wrap">
+            <label class="fb-check">
+              <input type="checkbox" name="notify" id="fb-notify" value="yes">
+              <span data-i18n="fb_notify">Benachrichtigt mich per E-Mail, sobald das Produkt im Automaten ist</span>
+            </label>
+            <p class="fb-notify-note" id="fb-notify-note" hidden data-i18n="fb_notify_consent">Mit dem Häkchen willigst du ein, dass wir deine E-Mail-Adresse nur für diese eine Benachrichtigung nutzen. Danach löschen wir sie sofort – spätestens nach 6 Monaten, falls das Produkt nicht kommt. Widerruf jederzeit per Mail an service@smartdorf24.de.</p>
           </div>
 
           <p class="fb-privacy"><span data-i18n="fb_privacy">Deine Angaben nutzen wir nur, um zu antworten (DSGVO). Mehr im </span><a href="#legal" data-i18n="fb_privacy_link">Impressum / Datenschutz</a>.</p>
@@ -198,6 +206,9 @@
         <div class="info-card">
           <h2 data-i18n="legal_title">Impressum</h2>
           <p data-i18n="legal_placeholder">Platzhalter — vollständige Anbieterkennzeichnung folgt. Bis dahin erreichst du uns über die Kontaktdaten oben.</p>
+          <h3 data-i18n="privacy_title">Datenschutz</h3>
+          <p data-i18n="privacy_form">Nachrichten aus dem Formular erreichen uns über den Dienst FormSubmit per E-Mail. Wir nutzen deine Angaben nur, um deine Nachricht zu bearbeiten (Art. 6 Abs. 1 lit. b/f DSGVO).</p>
+          <p data-i18n="privacy_notify">Verfügbarkeits-Benachrichtigung: Wenn du das Häkchen setzt, speichern wir deine E-Mail-Adresse mit deinem Produktwunsch auf Grundlage deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) und schicken dir genau eine E-Mail, sobald das Produkt im Automaten ist. Danach wird die Adresse gelöscht, spätestens nach 6 Monaten, falls das Produkt nicht verfügbar wird. Du kannst die Einwilligung jederzeit per Mail an service@smartdorf24.de widerrufen.</p>
         </div>
       </div>
     </section>

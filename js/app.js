@@ -443,6 +443,24 @@
     sub.value = `${t("fb_subject_prefix")} · ${type}`;
   }
 
+  function syncNotifyUi() {
+    const typeEl = $("#fb-type");
+    const wrap = $("#fb-notify-wrap");
+    const box = $("#fb-notify");
+    const note = $("#fb-notify-note");
+    const email = $("#fb-email");
+    const opt = $("#fb-email-opt");
+    if (!wrap || !box || !email) return;
+    const isRequest = !typeEl || typeEl.value === "Produktwunsch";
+    wrap.hidden = !isRequest;
+    if (!isRequest) box.checked = false;
+    const on = isRequest && box.checked;
+    if (note) note.hidden = !on;
+    email.required = on;
+    if (opt) opt.hidden = on;
+    email.setAttribute("placeholder", t(on ? "fb_email_ph_notify" : "fb_email_ph"));
+  }
+
   function bindFeedbackForm() {
     const form = $("#feedback-form");
     if (!form || form.dataset.bound) return;
@@ -450,8 +468,11 @@
     const status = $("#fb-status");
     const btn = $("#fb-submit");
     const typeEl = $("#fb-type");
-    if (typeEl) typeEl.addEventListener("change", setFbSubject);
+    if (typeEl) typeEl.addEventListener("change", () => { setFbSubject(); syncNotifyUi(); });
+    const notifyBox = $("#fb-notify");
+    if (notifyBox) notifyBox.addEventListener("change", syncNotifyUi);
     setFbSubject();
+    syncNotifyUi();
     form.addEventListener("submit", async (ev) => {
       ev.preventDefault();
       const msg = ($("#fb-message")?.value || "").trim();
@@ -459,6 +480,16 @@
         status.hidden = false;
         status.className = "fb-status err";
         status.textContent = t("fb_need_msg");
+        return;
+      }
+      const wantsNotify = !!($("#fb-notify")?.checked) && $("#fb-type")?.value === "Produktwunsch";
+      const emailVal = ($("#fb-email")?.value || "").trim();
+      if (wantsNotify && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(emailVal)) {
+        status.hidden = false;
+        status.className = "fb-status err";
+        status.textContent = t("fb_need_email");
+        $("#fb-email")?.classList.add("fb-touched");
+        $("#fb-email")?.focus();
         return;
       }
       // honeypot filled => pretend success, do not send
@@ -469,6 +500,7 @@
         status.textContent = t("fb_ok");
         form.reset();
         setFbSubject();
+        syncNotifyUi();
         return;
       }
       setFbSubject();
@@ -477,7 +509,8 @@
         location: $("#fb-location").value,
         message: msg,
         name: ($("#fb-name")?.value || "").trim() || undefined,
-        email: ($("#fb-email")?.value || "").trim() || undefined,
+        email: emailVal || undefined,
+        notify: $("#fb-type").value === "Produktwunsch" ? (wantsNotify ? "yes" : "no") : undefined,
         _subject: $("#fb-subject").value,
         _template: "table",
         _honey: "",
@@ -502,7 +535,7 @@
         if (res.ok && ok) {
           status.className = "fb-status ok";
           status.textContent = activatedWait ? t("fb_activate") : t("fb_ok");
-          if (!activatedWait) { form.reset(); setFbSubject(); }
+          if (!activatedWait) { form.reset(); setFbSubject(); syncNotifyUi(); }
         } else {
           throw new Error(msg || res.statusText || "fail");
         }
@@ -524,6 +557,7 @@
         localStorage.setItem("sd24_lang", state.lang);
         applyI18n();
         setFbSubject();
+        syncNotifyUi();
       });
     });
     const menuBtn = $("#menu-btn");
