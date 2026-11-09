@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-09T15:14:05.907Z",
+  "updatedAt": "2026-11-09T15:45:26.130Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T15:14:05.907Z",
+          "fetchedAt": "2026-11-09T15:45:26.130Z",
           "items": [
             {
               "lane": "1",
@@ -433,7 +433,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T15:14:05.907Z",
+          "fetchedAt": "2026-11-09T15:45:26.130Z",
           "items": [
             {
               "lane": "11",
@@ -607,7 +607,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T15:14:05.907Z",
+          "fetchedAt": "2026-11-09T15:45:26.130Z",
           "items": [
             {
               "lane": "1",
@@ -685,7 +685,7 @@
               "name": "Milka Sensations Cookies",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d29fa3d86e242629a04df86d40a725e.png",
               "price": 3,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -1039,7 +1039,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T15:14:05.907Z",
+          "fetchedAt": "2026-11-09T15:45:26.130Z",
           "items": [
             {
               "lane": "11",
@@ -1147,7 +1147,7 @@
               "name": "Capri Sun MultiVitamin 200ml",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6baacaaf2c06466f9267459c0a57a83f.jpeg",
               "price": 1,
-              "stock": 4,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -1257,7 +1257,7 @@
               "name": "Red Bull The Winter Edition",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/39497939be614b6aab4d64471e61a228.png",
               "price": 2.2,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -1307,7 +1307,7 @@
               "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
               "price": 2.2,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -1327,7 +1327,7 @@
               "name": "Monster Energy 0.5l inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
               "price": 2,
-              "stock": 3,
+              "stock": 2,
               "capacity": 10,
               "expired": false
             },
