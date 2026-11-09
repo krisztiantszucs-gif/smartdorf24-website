@@ -50,6 +50,61 @@ export function isLowStock(cargo) {
   return n > 0 && n <= LOW_STOCK_MAX;
 }
 
+/**
+ * Protected products (Krisztian 2026-11-09): "stop discounting high value items even if they
+ * dont move, eg redbull, and monster. no discounts on those, unless i approve also no discounts
+ * on milka products unless expiry rule apply. also no discounts on Patisserie Apple Cakes,
+ * unless expiry..."
+ *   group A — NO automatic discount at all (no clearance, no expiry tier) unless approved in
+ *             state.approvedDiscounts. A would-be expiry tier prints "APPROVAL NEEDED expiry …".
+ *   group B — never clearance/slow-seller deals; expiry tiers still apply.
+ * Case-insensitive match on the lane's commodityName.
+ */
+export const PROTECTED_PRODUCTS = [
+  { id: "redbull", group: "A", re: /red[\s-]*bull/i },
+  { id: "monster", group: "A", re: /\bmonster\b/i },
+  { id: "milka", group: "B", re: /\bmilka\b/i },
+  { id: "patisserie-apple-cakes", group: "B", re: /patisserie\s*apple\s*cakes?/i },
+];
+export function protectionFor(name) {
+  const n = String(name || "");
+  return PROTECTED_PRODUCTS.find((p) => p.re.test(n)) || null;
+}
+/**
+ * Approvals: state.approvedDiscounts = { "<rtu>:<lane>" | "product:<id>": { kinds?: ["expiry","clearance"],
+ * until?: "YYYY-MM-DD", note?, approvedAt } }. kinds defaults to ["expiry"]. until is inclusive (Berlin day).
+ * A lane-key approval only counts while that lane still holds a product with the same protection id
+ * (stored as `product`). Manage with scripts/approve-discount.mjs.
+ */
+export function approvalFor(state, rtuNumber, lane, name, kind, today = berlinToday()) {
+  const prot = protectionFor(name);
+  const map = state?.approvedDiscounts || {};
+  const cands = [map[laneKey(rtuNumber, lane)], prot ? map[`product:${prot.id}`] : null];
+  for (const a of cands) {
+    if (!a) continue;
+    if (a.until && String(a.until).slice(0, 10) < today) continue;
+    const kinds = Array.isArray(a.kinds) && a.kinds.length ? a.kinds : ["expiry"];
+    if (!kinds.includes(kind)) continue;
+    if (a.product && prot && a.product !== prot.id) continue;
+    return a;
+  }
+  return null;
+}
+/** True when a clearance (slow/dead) deal is not allowed for this product. */
+export function clearanceBlocked(state, rtuNumber, lane, name, today = berlinToday()) {
+  const prot = protectionFor(name);
+  if (!prot) return null;
+  if (prot.group === "A" && approvalFor(state, rtuNumber, lane, name, "clearance", today)) return null;
+  return prot;
+}
+/** True when an expiry tier is not allowed (group A without an expiry approval). */
+export function expiryBlocked(state, rtuNumber, lane, name, today = berlinToday()) {
+  const prot = protectionFor(name);
+  if (!prot || prot.group !== "A") return null;
+  if (approvalFor(state, rtuNumber, lane, name, "expiry", today)) return null;
+  return prot;
+}
+
 /** Approved Phase-2 seed (Berlin 2026-10-20). Karamalz included per Krisztian. */
 export const APPROVED_SEED = [
   // Steinsberg Right — dead −30%
@@ -164,6 +219,12 @@ export function seedClearance(state, cargoByRtu, { today = berlinToday(), forceE
       continue;
     }
     const key = laneKey(s.rtu, s.lane);
+    const prot = clearanceBlocked(state, s.rtu, s.lane, cargo.commodityName, today);
+    if (prot) {
+      console.warn(`seed skip ${s.rtu}:${s.lane} ${cargo.commodityName} — protected (${prot.id}, group ${prot.group})`);
+      delete state.clearance[key];
+      continue;
+    }
     const prev = state.clearance[key];
     const active = state.active?.[key];
     // Prefer stored original (active/clearance) so we never compound.

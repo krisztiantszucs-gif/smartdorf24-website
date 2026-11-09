@@ -16,7 +16,7 @@ import {
 } from "./lib/impressiot.mjs";
 import {
   APPROVED_SEED, CLEARANCE_DAYS, OFFLINE_RTUS, seedClearance, makeClearanceEntry,
-  shouldHideFromAd, locationOfRtu, isLowStock,
+  shouldHideFromAd, locationOfRtu, isLowStock, clearanceBlocked,
 } from "./lib/clearance.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -155,6 +155,13 @@ function reevalClearance(state, rows, { today = berlinToday() } = {}) {
   let added = 0, skipped = 0;
   for (const r of rows) {
     if (r.klass !== "dead" && r.klass !== "slow") continue;
+    // Protected products (Red Bull, Monster, Milka, Patisserie Apple Cakes): never clearance.
+    const prot = clearanceBlocked(state, r.rtu, r.lane, r.name, today);
+    if (prot) {
+      console.log(`  skip ${r.key} ${r.name}: protected (${prot.id}, group ${prot.group})`);
+      skipped++;
+      continue;
+    }
     // Karamalz: always allow (clearance desired)
     const isKaramalz = /karamalz/i.test(r.name);
     const loc = locationOfRtu(r.rtu);

@@ -28,7 +28,7 @@ import {
   laneKey,
   BASE,
 } from "./lib/impressiot.mjs";
-import { clearanceEndReason, OFFLINE_RTUS, isLowStock, clearancePriceFor, effectivePercent } from "./lib/clearance.mjs";
+import { clearanceEndReason, OFFLINE_RTUS, isLowStock, clearancePriceFor, effectivePercent, clearanceBlocked, expiryBlocked } from "./lib/clearance.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -334,6 +334,7 @@ function planForMachine(rtuNumber, row, state, window) {
   const clearanceEnd = [];
   const suspend = []; // clearance lanes going to normal price because qty <= 1
   const resume = []; // suspended clearance lanes refilled (qty >= 2) before endsAt
+  const approvalsNeeded = []; // group-A protected lanes where an expiry tier would apply
   const today = window[0];
   state.clearance ||= {};
   state.active ||= {};
@@ -352,6 +353,14 @@ function planForMachine(rtuNumber, row, state, window) {
       const why = clearanceEndReason(clearance, c, today);
       if (why) {
         clearanceEnd.push({ key, lane, name: c.commodityName, why, entry: clearance });
+        clearance = null;
+      }
+    }
+    // Protected products: a clearance deal on them ends now (normal price restored below).
+    if (clearance) {
+      const prot = clearanceBlocked(state, rtuNumber, lane, c.commodityName, today);
+      if (prot) {
+        clearanceEnd.push({ key, lane, name: c.commodityName, why: `protected(${prot.id})`, entry: clearance });
         clearance = null;
       }
     }
@@ -379,7 +388,20 @@ function planForMachine(rtuNumber, row, state, window) {
       }
     }
 
-    const expiryPct = tierFor(eff, today);
+    let expiryPct = tierFor(eff, today);
+    // Group-A protected products (Red Bull, Monster): no expiry tier without Krisztian's approval.
+    let expiryProtected = false;
+    if (expiryPct) {
+      const prot = expiryBlocked(state, rtuNumber, lane, c.commodityName, today);
+      if (prot) {
+        const d = Math.round((Date.parse(eff + "T00:00:00Z") - Date.parse(today + "T00:00:00Z")) / 86400000);
+        const line = `APPROVAL NEEDED expiry ${meta.name.en} lane ${lane} ${String(c.commodityName).trim()} d=${d} tier=-${expiryPct}% (rtu ${rtuNumber}, eff ${eff}, now ${money(c.price)}€)`;
+        console.log(line);
+        approvalsNeeded.push({ key, rtuNumber: String(rtuNumber), lane, name: String(c.commodityName).trim(), d, tier: expiryPct, effDate: eff, line });
+        expiryPct = 0;
+        expiryProtected = true;
+      }
+    }
     // Drop expiry active when no longer in window
     if (active && !expiryPct) {
       // will restore unless clearance still wants a price
@@ -388,7 +410,7 @@ function planForMachine(rtuNumber, row, state, window) {
           key, lane, name: c.commodityName, currentPrice: Number(c.price),
           restorePrice: Number(clearance?.originalPrice ?? active.originalPrice),
           restoreCostPrice: clearance?.originalCostPrice ?? active.originalCostPrice,
-          effDate: eff, active, reason: clearanceSuspended ? "expiry-end+clearance-lowstock" : "expiry-end",
+          effDate: eff, active, reason: expiryProtected ? "protected-no-approval" : clearanceSuspended ? "expiry-end+clearance-lowstock" : "expiry-end",
         });
         continue;
       }
@@ -474,7 +496,7 @@ function planForMachine(rtuNumber, row, state, window) {
     }
   }
 
-  return { meta, cargos, toDiscount, toRestore, stay, clearanceEnd, suspend, resume, offline };
+  return { meta, cargos, toDiscount, toRestore, stay, clearanceEnd, suspend, resume, offline, approvalsNeeded };
 }
 
 async function applyPriceChanges(token, rtuNumber, cargos, changes) {
@@ -703,7 +725,9 @@ async function main() {
       console.log("  (no expiry actions)");
     }
   }
-  console.log(`\nSummary: discount=${discountCount} restore=${restoreCount}`);
+  const approvalsNeeded = plans.flatMap((p) => p.plan.approvalsNeeded || []);
+  console.log(`\nSummary: discount=${discountCount} restore=${restoreCount} approvalsNeeded=${approvalsNeeded.length}`);
+  for (const a of approvalsNeeded) console.log(a.line);
 
   if (DRY) {
     console.log("Dry-run only — no writes.");
@@ -717,7 +741,7 @@ async function main() {
       + (p.plan.suspend?.length || 0) + (p.plan.resume?.length || 0)
       + (p.plan.clearanceEnd?.length || 0)
       + p.plan.toDiscount.filter((d) => !d.noop && d.source === "clearance").length
-      + p.plan.toRestore.filter((r) => String(r.reason || "").includes("clearance")).length, 0);
+      + p.plan.toRestore.filter((r) => /clearance|protected/.test(String(r.reason || ""))).length, 0);
     if (!n) {
       console.log("low-stock guard: no clearance changes — no writes.");
       return;
@@ -874,6 +898,8 @@ async function main() {
     }
   }
 
+  // Surface group-A expiry approvals for routines/the site (no discount is applied for them).
+  state.pendingApprovals = approvalsNeeded.map(({ line, ...rest }) => ({ ...rest, kind: "expiry", seenAt: new Date().toISOString() }));
   if (GUARD) {
     state.lastLowStockGuardAt = new Date().toISOString();
   } else {
