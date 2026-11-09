@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-09T12:35:02.968Z",
+  "updatedAt": "2026-11-09T13:06:52.210Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T12:35:02.968Z",
+          "fetchedAt": "2026-11-09T13:06:52.210Z",
           "items": [
             {
               "lane": "1",
@@ -443,7 +443,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-09T12:35:02.968Z",
+          "fetchedAt": "2026-11-09T13:06:52.210Z",
           "items": []
         }
       ]
@@ -466,7 +466,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T12:35:02.968Z",
+          "fetchedAt": "2026-11-09T13:06:52.210Z",
           "items": [
             {
               "lane": "1",
@@ -474,7 +474,7 @@
               "name": "Choco Chip Cookies",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/369fe3b29e5f4559baee5414c67f4f14.jpeg",
               "price": 2,
-              "stock": 2,
+              "stock": 3,
               "capacity": 3,
               "expired": false
             },
@@ -494,18 +494,18 @@
               "name": "Milka Choco Brownie",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
               "price": 3,
-              "stock": 1,
+              "stock": 2,
               "capacity": 3,
               "expired": false
             },
             {
               "lane": "4",
               "level": 1,
-              "name": "LEGO Minecraft The Nether Lava Battle",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ad83eeacba7c464798f25516f2700eeb.png",
-              "price": 13,
-              "stock": 1,
-              "capacity": 1,
+              "name": "Chio Popcorn Sweet & Salty",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/838d0a6982cb4d38adf12a68da118dbd.png",
+              "price": 2.5,
+              "stock": 2,
+              "capacity": 3,
               "expired": false
             },
             {
@@ -571,11 +571,11 @@
             {
               "lane": "21",
               "level": 3,
-              "name": "funny-frisch goldfischli sesam",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9b9bd38faafe47e8b79f35eced831897.png",
-              "price": 2,
-              "stock": 1,
-              "capacity": 5,
+              "name": "Runde Braune Lebkuchen Zartbitter",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/149cb2bb930341eba74508aacfd43b32.png",
+              "price": 3,
+              "stock": 3,
+              "capacity": 3,
               "expired": false
             },
             {
@@ -584,18 +584,18 @@
               "name": "MrBeast Beef Jerky Original",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5bcdf3ec37c94f218c917fb7dd6ff76b.png",
               "price": 2.5,
-              "stock": 2,
+              "stock": 3,
               "capacity": 10,
               "expired": false
             },
             {
               "lane": "23",
               "level": 3,
-              "name": "Chocolate Egg Waffles",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bdbfc1cd40b84ec580513f5493327765.jpg",
+              "name": "Patisserie Coconut Rings",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/77724f4c64374a50bb444860bdf7d07c.png",
               "price": 2.6,
-              "stock": 0,
-              "capacity": 10,
+              "stock": 2,
+              "capacity": 5,
               "expired": false
             },
             {
@@ -603,7 +603,7 @@
               "level": 3,
               "name": "Patisserie Apple Cakes",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/797d5c3d51e24263921077e070203df4.png",
-              "price": 3,
+              "price": 2.6,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -611,21 +611,21 @@
             {
               "lane": "25",
               "level": 3,
-              "name": "Minecraft Figure",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/edb4a6fbf94c483b98aa3fd5c7fd70a1.png",
-              "price": 3,
-              "stock": 1,
+              "name": "Marzipan Brot Zartbitter",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/30eb3bf19f48467fb49d767750d0b299.png",
+              "price": 2.6,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "31",
               "level": 4,
-              "name": "Milka Haselnuss",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/24fdb100b98241e6a7f95ce26ee3a4e5.png",
-              "price": 2.2,
-              "stock": 1,
-              "capacity": 10,
+              "name": "Nutella Go",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
+              "price": 1.9,
+              "stock": 2,
+              "capacity": 5,
               "expired": false
             },
             {
@@ -714,28 +714,38 @@
               "name": "Milka Tuc",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9f88c5fa7ec044c8ab92300767c9608b.png",
               "price": 2.2,
-              "stock": 0,
+              "stock": 10,
+              "capacity": 10,
+              "expired": false
+            },
+            {
+              "lane": "42",
+              "level": 5,
+              "name": "Milka Weiße Schokolade",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8730ca21a06e4d30a23705e419b12cca.png",
+              "price": 2.2,
+              "stock": 6,
               "capacity": 10,
               "expired": false
             },
             {
               "lane": "43",
               "level": 5,
-              "name": "Kinder Bueno",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
-              "price": 1.6,
-              "stock": 4,
+              "name": "Milka Lotus Biscoff",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/afc755173217466db71d334cde371200.png",
+              "price": 2.2,
+              "stock": 10,
               "capacity": 10,
               "expired": false
             },
             {
               "lane": "44",
               "level": 5,
-              "name": "Nutella Go",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
-              "price": 1.9,
+              "name": "Kinder Bueno",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
+              "price": 1.6,
               "stock": 3,
-              "capacity": 5,
+              "capacity": 10,
               "expired": false
             },
             {
@@ -749,23 +759,33 @@
               "expired": false
             },
             {
+              "lane": "46",
+              "level": 5,
+              "name": "Kinder Schokolade 100g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3f50b805073545368488b956fa847e33.jpeg",
+              "price": 2.5,
+              "stock": 4,
+              "capacity": 5,
+              "expired": false
+            },
+            {
               "lane": "47",
               "level": 5,
-              "name": "KitKat",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg",
-              "price": 1.2,
-              "stock": 1,
-              "capacity": 5,
+              "name": "Smarties",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/590f59b9add746c6beb00de283b64173.jpg",
+              "price": 1.3,
+              "stock": 3,
+              "capacity": 10,
               "expired": false
             },
             {
               "lane": "48",
               "level": 5,
-              "name": "Twix",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/de24003846ac4af6b982be92a01f78ae.jpg",
-              "price": 0.8,
-              "stock": 1,
-              "capacity": 5,
+              "name": "Sportyfeel Protein Bar",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/be5b75ccb9fd4956a5f5d717733cbc4c.png",
+              "price": 1.5,
+              "stock": 9,
+              "capacity": 10,
               "expired": false
             },
             {
@@ -774,7 +794,7 @@
               "name": "Nestle Lion",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ff6d807696574fe1934323de18cceaaa.jpg",
               "price": 0.8,
-              "stock": 3,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -784,48 +804,48 @@
               "name": "Fanta Exotic 330ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
               "price": 1.6,
-              "stock": 3,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "52",
               "level": 6,
-              "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
-              "price": 1.9,
-              "stock": 2,
+              "name": "Red Bull The Green Edition",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/46b7d01c58eb4ae3950e67a50b4921ed.png",
+              "price": 2.2,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "53",
               "level": 6,
-              "name": "Monster Energy 0.5l inkl. pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
-              "price": 2.2,
-              "stock": 0,
-              "capacity": 3,
+              "name": "Milka Choco Jaffa Raspberry",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/461ecc2f268049649cf5c0ec9299d829.png",
+              "price": 3,
+              "stock": 2,
+              "capacity": 5,
               "expired": false
             },
             {
               "lane": "54",
               "level": 6,
-              "name": "Monster Viking Berry 0.5l inkl pfand.",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/71faada4b8714f6dad6e74fe5acb8e32.png",
-              "price": 2.2,
-              "stock": 0,
-              "capacity": 3,
+              "name": "funny-frisch goldfischli sesam",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9b9bd38faafe47e8b79f35eced831897.png",
+              "price": 2,
+              "stock": 1,
+              "capacity": 5,
               "expired": false
             },
             {
               "lane": "55",
               "level": 6,
-              "name": "RedBull Original 250ml  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
+              "name": "Haribo Fruity Penguins Sauer",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f53393f551a2423cba50176923091057.png",
               "price": 2.2,
-              "stock": 0,
-              "capacity": 10,
+              "stock": 4,
+              "capacity": 5,
               "expired": false
             },
             {
@@ -844,7 +864,7 @@
               "name": "Reese's Pieces",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d72ff0b3e214ba5b2a36d2551c60677.png",
               "price": 2.1,
-              "stock": 2,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -864,7 +884,7 @@
               "name": "Snickers",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ae29a5ec902b457e96ef0922c721afa2.jpeg",
               "price": 1.3,
-              "stock": 3,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             }
@@ -878,14 +898,14 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T12:35:02.968Z",
+          "fetchedAt": "2026-11-09T13:06:52.210Z",
           "items": [
             {
-              "lane": "4",
-              "level": 1,
+              "lane": "11",
+              "level": 2,
               "name": "Grünländer Bärlauch",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/203be2d8ff3c4d74a8b4a6a6840733ee.png",
-              "price": 1.75,
+              "price": 1.5,
               "stock": 2,
               "capacity": 2,
               "expired": false
@@ -916,7 +936,7 @@
               "name": "Milram Moin Kakao Drink 0,3% 0,5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fc9b87fc28549a4bdcb810307a395ee.jpeg",
               "price": 1.1,
-              "stock": 2,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -926,8 +946,28 @@
               "name": "Vollmilch 3.5% 0.5l",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/431b28fb18b54f7ba96ac98210dc7632.jpeg",
               "price": 1,
-              "stock": 0,
+              "stock": 5,
               "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "23",
+              "level": 3,
+              "name": "J.D. Gross Mozart Kugeln",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6c47ad6b70a74ba99f66861175a998bd.png",
+              "price": 5,
+              "stock": 3,
+              "capacity": 3,
+              "expired": false
+            },
+            {
+              "lane": "24",
+              "level": 3,
+              "name": "Starbucks Caramel Macchiato 500ml",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/4d4f27c15651463f9fe8b17efc51bc45.png",
+              "price": 5,
+              "stock": 2,
+              "capacity": 3,
               "expired": false
             },
             {
@@ -976,7 +1016,7 @@
               "name": "Capri-Sun Mystic Dragon",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/51b41b5d91cb4df480eaacc429084388.png",
               "price": 1,
-              "stock": 2,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -991,51 +1031,51 @@
               "expired": false
             },
             {
-              "lane": "37",
+              "lane": "39",
               "level": 4,
               "name": "Milka Schokoladen Milch",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/82cbed567b1146208d8e538e594ce1e2.jpeg",
               "price": 2.2,
               "stock": 3,
-              "capacity": 5,
+              "capacity": 10,
               "expired": false
             },
             {
-              "lane": "38",
-              "level": 4,
-              "name": "Fanta Mango DragonFruit",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg",
-              "price": 1.1,
-              "stock": 3,
-              "capacity": 5,
-              "expired": false
-            },
-            {
-              "lane": "39",
-              "level": 4,
-              "name": "Fanta Exotic 330ml  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
-              "price": 1.6,
+              "lane": "41",
+              "level": 5,
+              "name": "Gösser Natur Radler",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
+              "price": 1.8,
               "stock": 4,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "42",
+              "level": 5,
+              "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
+              "price": 1.9,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "43",
               "level": 5,
-              "name": "Starbucks Frappuccino Caramel Eiskaffee 250ml",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7bc904bb2cfd4f06acba2b827b3eba2a.jpeg",
-              "price": 2.7,
-              "stock": 0,
+              "name": "Fanta Mango DragonFruit",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg",
+              "price": 1.7,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "44",
               "level": 5,
-              "name": "Gösser Natur Radler",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
-              "price": 1.6,
+              "name": "Fanta Exotic 330ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
+              "price": 2,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -1043,40 +1083,40 @@
             {
               "lane": "45",
               "level": 5,
-              "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
-              "price": 1.6,
-              "stock": 3,
+              "name": "Fanta Zero Sugar Lemon",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/41b2e9395e184afdaa8cfefce325145f.png",
+              "price": 1.7,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "46",
               "level": 5,
-              "name": "Paulaner Spezi 330ml Cola-Orange",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
-              "price": 1.6,
-              "stock": 0,
+              "name": "Mezzo Mix",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c9e0708331ec404db13e071112ed5bcd.png",
+              "price": 1.7,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "47",
               "level": 5,
-              "name": "Red Bull White Edition inkl. pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
+              "name": "Red Bull The Green Edition",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/46b7d01c58eb4ae3950e67a50b4921ed.png",
               "price": 2.2,
-              "stock": 0,
-              "capacity": 5,
+              "stock": 5,
+              "capacity": 10,
               "expired": false
             },
             {
               "lane": "48",
               "level": 5,
-              "name": "RedBull Original 250ml  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
+              "name": "Red Bull The Winter Edition",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/39497939be614b6aab4d64471e61a228.png",
               "price": 2.2,
-              "stock": 0,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -1086,7 +1126,7 @@
               "name": "RedBull Original 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
-              "stock": 2,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -1126,28 +1166,28 @@
               "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
               "price": 2.2,
-              "stock": 1,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "55",
               "level": 6,
-              "name": "Fuze Tea Pfirsich 0,4L  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/293cb33fc70a4748aa53d96084ad2405.jpeg",
-              "price": 2.2,
-              "stock": 0,
-              "capacity": 5,
+              "name": "Paulaner Spezi 330ml Cola-Orange",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
+              "price": 1.6,
+              "stock": 3,
+              "capacity": 3,
               "expired": false
             },
             {
               "lane": "56",
               "level": 6,
-              "name": "Monster Juiced Mango Loco Energy",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/65cd22d69f0e4a419dab481a4b959826.png",
-              "price": 2.2,
-              "stock": 0,
-              "capacity": 5,
+              "name": "Monster Energy 0.5l inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
+              "price": 2,
+              "stock": 3,
+              "capacity": 10,
               "expired": false
             },
             {
@@ -1166,7 +1206,7 @@
               "name": "Coca Cola Zero 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
               "price": 2.2,
-              "stock": 1,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -1176,7 +1216,7 @@
               "name": "Coca Cola 0.5l Original inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
               "price": 2.2,
-              "stock": 3,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             }

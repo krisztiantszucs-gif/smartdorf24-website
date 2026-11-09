@@ -6,12 +6,12 @@
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002195",
+        "advertiseId": "100002199",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-09-84fd0a",
+        "adName": "SD24-combined-steinsberg-2026-11-09-0b9ded",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f30420c4d01e4d54bfebcfa000de426c.mp4",
-        "hash": "84fd0ab175dbd4f5",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/cef1328dedd140b1a1a1048b949e6c95.mp4",
+        "hash": "0b9ded4002ae4997",
         "segments": [
           "karamalz",
           "live",
@@ -20,26 +20,6 @@
         ],
         "verifiedDeals": [],
         "verifiedSale": [
-          {
-            "rtuNumber": "7680783",
-            "lane": "38",
-            "name": "Fanta Mango DragonFruit",
-            "old": 1.6,
-            "new": 1.1,
-            "pct": 31,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg"
-          },
-          {
-            "rtuNumber": "7680783",
-            "lane": "4",
-            "name": "Grünländer Bärlauch",
-            "old": 2.5,
-            "new": 1.75,
-            "pct": 30,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/203be2d8ff3c4d74a8b4a6a6840733ee.png"
-          },
           {
             "rtuNumber": "7680800",
             "lane": "38",
@@ -89,16 +69,6 @@
             "pct": 20,
             "until": "2026-11-23",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png"
-          },
-          {
-            "rtuNumber": "7680783",
-            "lane": "44",
-            "name": "Gösser Natur Radler",
-            "old": 2,
-            "new": 1.6,
-            "pct": 20,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png"
           },
           {
             "rtuNumber": "7680783",
@@ -195,7 +165,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-09T11:26:30.941Z"
+        "updatedAt": "2026-11-09T13:06:40.241Z"
       },
       "schiesheim": {
         "advertiseId": "100002196",
@@ -392,7 +362,7 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-09T11:27:33.829Z"
+        "updatedAt": "2026-11-09T13:06:45.139Z"
       }
     }
   },
@@ -415,7 +385,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.480Z",
+      "updatedAt": "2026-11-09T13:05:01.329Z",
       "effectivePercent": 25,
       "costFloor": 1.2,
       "costKnown": true
@@ -435,7 +405,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.480Z",
+      "updatedAt": "2026-11-09T13:05:01.329Z",
       "effectivePercent": 20,
       "costFloor": 1.8,
       "costKnown": true
@@ -455,7 +425,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.480Z",
+      "updatedAt": "2026-11-09T13:05:01.329Z",
       "effectivePercent": 20,
       "costFloor": 0.4,
       "costKnown": true
@@ -475,7 +445,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.481Z",
+      "updatedAt": "2026-11-09T13:05:01.329Z",
       "effectivePercent": 30,
       "costFloor": 1.8,
       "costKnown": true
@@ -495,7 +465,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.481Z",
+      "updatedAt": "2026-11-09T13:05:01.329Z",
       "effectivePercent": 20,
       "costFloor": 1.1,
       "costKnown": true
@@ -515,7 +485,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.481Z",
+      "updatedAt": "2026-11-09T13:05:01.329Z",
       "effectivePercent": 19,
       "costFloor": 1.15,
       "costKnown": true
@@ -535,7 +505,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 6,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:55.182Z",
+      "updatedAt": "2026-11-09T13:05:01.329Z",
       "effectivePercent": 30,
       "costFloor": 0.7,
       "costKnown": true
@@ -555,7 +525,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:55.182Z",
+      "updatedAt": "2026-11-09T13:05:01.329Z",
       "effectivePercent": 20,
       "costFloor": 0.6,
       "costKnown": true
@@ -575,7 +545,7 @@
       "endsAt": "2026-11-16",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:56.638Z",
+      "updatedAt": "2026-11-09T13:05:02.858Z",
       "effectivePercent": 20,
       "costFloor": 1.2,
       "costKnown": true
@@ -599,7 +569,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.480Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680787:12": {
       "rtuNumber": "7680787",
@@ -620,7 +590,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.480Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680787:15": {
       "rtuNumber": "7680787",
@@ -641,7 +611,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.480Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680787:21": {
       "rtuNumber": "7680787",
@@ -662,7 +632,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.480Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680787:34": {
       "rtuNumber": "7680787",
@@ -683,7 +653,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 7,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.480Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680787:36": {
       "rtuNumber": "7680787",
@@ -704,7 +674,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.481Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680787:37": {
       "rtuNumber": "7680787",
@@ -725,7 +695,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.481Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680787:38": {
       "rtuNumber": "7680787",
@@ -746,7 +716,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.481Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -767,7 +737,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.481Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680787:52": {
       "rtuNumber": "7680787",
@@ -788,7 +758,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.481Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680787:58": {
       "rtuNumber": "7680787",
@@ -809,7 +779,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:53.481Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680800:12": {
       "rtuNumber": "7680800",
@@ -830,7 +800,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:55.182Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680800:32": {
       "rtuNumber": "7680800",
@@ -851,7 +821,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:55.182Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680800:33": {
       "rtuNumber": "7680800",
@@ -872,7 +842,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:55.182Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680800:38": {
       "rtuNumber": "7680800",
@@ -893,28 +863,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:55.182Z"
-    },
-    "7680783:4": {
-      "rtuNumber": "7680783",
-      "lane": "4",
-      "name": "Grünländer Bärlauch",
-      "cid": "100038366",
-      "originalPrice": 2.5,
-      "originalCostPrice": 1.29,
-      "clearancePrice": 1.75,
-      "clearanceCostPrice": 1.29,
-      "percent": 30,
-      "effectivePercent": 30,
-      "costFloor": 1.55,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "dead",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 2,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:56.637Z"
+      "updatedAt": "2026-11-09T13:05:01.329Z"
     },
     "7680783:12": {
       "rtuNumber": "7680783",
@@ -935,7 +884,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:56.637Z"
+      "updatedAt": "2026-11-09T13:05:02.858Z"
     },
     "7680783:13": {
       "rtuNumber": "7680783",
@@ -956,7 +905,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:56.637Z"
+      "updatedAt": "2026-11-09T13:05:02.858Z"
     },
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -977,7 +926,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:56.637Z"
+      "updatedAt": "2026-11-09T13:05:02.858Z"
     },
     "7680783:32": {
       "rtuNumber": "7680783",
@@ -998,7 +947,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:56.637Z"
+      "updatedAt": "2026-11-09T13:05:02.858Z"
     },
     "7680783:33": {
       "rtuNumber": "7680783",
@@ -1019,7 +968,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:56.637Z"
+      "updatedAt": "2026-11-09T13:05:02.858Z"
     },
     "7680783:36": {
       "rtuNumber": "7680783",
@@ -1040,53 +989,11 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:56.638Z"
-    },
-    "7680783:38": {
-      "rtuNumber": "7680783",
-      "lane": "38",
-      "name": "Fanta Mango DragonFruit",
-      "cid": "100022656",
-      "originalPrice": 1.6,
-      "originalCostPrice": 0.9,
-      "clearancePrice": 1.1,
-      "clearanceCostPrice": 0.9,
-      "percent": 30,
-      "effectivePercent": 31,
-      "costFloor": 1.1,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "dead",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 3,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:56.638Z"
-    },
-    "7680783:44": {
-      "rtuNumber": "7680783",
-      "lane": "44",
-      "name": "Gösser Natur Radler",
-      "cid": "100026167",
-      "originalPrice": 2,
-      "originalCostPrice": 0.89,
-      "clearancePrice": 1.6,
-      "clearanceCostPrice": 0.89,
-      "percent": 20,
-      "effectivePercent": 20,
-      "costFloor": 1.1,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "slow",
-      "startedAt": "2026-11-09T06:01:06.430Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 4,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-09T11:24:56.638Z"
+      "updatedAt": "2026-11-09T13:05:02.858Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-09T06:01:06.430Z",
   "lastClearanceEvalDay": "2026-11-09",
-  "lastLowStockGuardAt": "2026-11-09T08:22:33.703Z",
+  "lastLowStockGuardAt": "2026-11-09T13:05:02.858Z",
   "pendingApprovals": []
 }
