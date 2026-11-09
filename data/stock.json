@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-09T14:40:11.644Z",
+  "updatedAt": "2026-11-09T14:57:07.333Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:40:11.644Z",
+          "fetchedAt": "2026-11-09T14:57:07.333Z",
           "items": [
             {
               "lane": "1",
@@ -36,9 +36,9 @@
             {
               "lane": "2",
               "level": 1,
-              "name": "Werther's Original Caramel Popcorn",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6d19cf4273e5473fac0019429005b22a.png",
-              "price": 3.5,
+              "name": "Chio Popcorn Sweet & Salty",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/838d0a6982cb4d38adf12a68da118dbd.png",
+              "price": 2.5,
               "stock": 0,
               "capacity": 3,
               "expired": false
@@ -86,9 +86,9 @@
             {
               "lane": "12",
               "level": 2,
-              "name": "Capico Knusper Röllchen Haselnuss",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png",
-              "price": 2.2,
+              "name": "Milka Sensations Cookies",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d29fa3d86e242629a04df86d40a725e.png",
+              "price": 3,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -166,11 +166,11 @@
             {
               "lane": "25",
               "level": 3,
-              "name": "Sport Kapuciner",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9ea3981e806f47a29f6f18c5dfc3958b.png",
-              "price": 1.3,
+              "name": "Milka LU",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3830c0a5e93d4f08bd8f8e543c07615c.png",
+              "price": 2.2,
               "stock": 6,
-              "capacity": 10,
+              "capacity": 8,
               "expired": false
             },
             {
@@ -200,16 +200,6 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg",
               "price": 1.3,
               "stock": 7,
-              "capacity": 10,
-              "expired": false
-            },
-            {
-              "lane": "35",
-              "level": 4,
-              "name": "Smarties",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/590f59b9add746c6beb00de283b64173.jpg",
-              "price": 1.3,
-              "stock": 2,
               "capacity": 10,
               "expired": false
             },
@@ -443,7 +433,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:40:11.644Z",
+          "fetchedAt": "2026-11-09T14:57:07.333Z",
           "items": []
         }
       ]
@@ -466,7 +456,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:40:11.644Z",
+          "fetchedAt": "2026-11-09T14:57:07.333Z",
           "items": [
             {
               "lane": "1",
@@ -898,7 +888,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-09T14:40:11.644Z",
+          "fetchedAt": "2026-11-09T14:57:07.333Z",
           "items": [
             {
               "lane": "11",
