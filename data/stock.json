@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-10T15:51:15.460Z",
+  "updatedAt": "2026-11-10T16:20:04.248Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T15:51:15.460Z",
+          "fetchedAt": "2026-11-10T16:20:04.248Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T15:51:15.460Z",
+          "fetchedAt": "2026-11-10T16:20:04.248Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T15:51:15.460Z",
+          "fetchedAt": "2026-11-10T16:20:04.248Z",
           "items": [
             {
               "lane": "1",
@@ -1155,7 +1155,7 @@
               "name": "Nestle Lion",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ff6d807696574fe1934323de18cceaaa.jpg",
               "price": 0.8,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T15:51:15.460Z",
+          "fetchedAt": "2026-11-10T16:20:04.248Z",
           "items": [
             {
               "lane": "11",
@@ -1537,7 +1537,7 @@
               "name": "Paulaner Spezi 330ml Cola-Orange",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
               "price": 1.7,
-              "stock": 3,
+              "stock": 2,
               "capacity": 3,
               "expired": false
             },
