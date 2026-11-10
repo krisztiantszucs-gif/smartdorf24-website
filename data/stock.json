@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-10T17:33:36.094Z",
+  "updatedAt": "2026-11-10T17:54:06.518Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T17:33:36.094Z",
+          "fetchedAt": "2026-11-10T17:54:06.518Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T17:33:36.094Z",
+          "fetchedAt": "2026-11-10T17:54:06.518Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T17:33:36.094Z",
+          "fetchedAt": "2026-11-10T17:54:06.518Z",
           "items": [
             {
               "lane": "1",
@@ -895,7 +895,7 @@
               "name": "Toffifee",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
               "price": 2.5,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T17:33:36.094Z",
+          "fetchedAt": "2026-11-10T17:54:06.518Z",
           "items": [
             {
               "lane": "11",
@@ -1417,7 +1417,7 @@
               "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
               "price": 1.9,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
