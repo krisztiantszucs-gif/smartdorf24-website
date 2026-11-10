@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-10T18:44:12.304Z",
+  "updatedAt": "2026-11-10T18:54:29.569Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T18:44:12.304Z",
+          "fetchedAt": "2026-11-10T18:54:29.569Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T18:44:12.304Z",
+          "fetchedAt": "2026-11-10T18:54:29.569Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T18:44:12.304Z",
+          "fetchedAt": "2026-11-10T18:54:29.569Z",
           "items": [
             {
               "lane": "1",
@@ -975,7 +975,7 @@
               "name": "Marzipan Brot Zartbitter",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/30eb3bf19f48467fb49d767750d0b299.png",
               "price": 2.6,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T18:44:12.304Z",
+          "fetchedAt": "2026-11-10T18:54:29.569Z",
           "items": [
             {
               "lane": "11",
