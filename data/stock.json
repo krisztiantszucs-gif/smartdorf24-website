@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-10T09:16:59.480Z",
+  "updatedAt": "2026-11-10T10:21:04.814Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T09:16:59.480Z",
+          "fetchedAt": "2026-11-10T10:21:04.814Z",
           "items": [
             {
               "lane": "1",
@@ -36,10 +36,10 @@
             {
               "lane": "2",
               "level": 1,
-              "name": "Chio Popcorn Sweet & Salty",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/838d0a6982cb4d38adf12a68da118dbd.png",
-              "price": 2.5,
-              "stock": 2,
+              "name": "Mini Herzen Sterne Brezeln Zartbitter",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b7056130fe243f191c00c33f3ad0106.png",
+              "price": 3.7,
+              "stock": 1,
               "capacity": 3,
               "expired": false
             },
@@ -56,11 +56,11 @@
             {
               "lane": "4",
               "level": 1,
-              "name": "Oreo Wafer Roll Vanilla 54g",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/45bdb2b506aa4e4f817a1fa69632e23b.jpeg",
-              "price": 2,
-              "stock": 2,
-              "capacity": 5,
+              "name": "Chocolate Santa Claus",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fede636636b94c11aa0ba6e442c6d9fd.png",
+              "price": 3,
+              "stock": 3,
+              "capacity": 3,
               "expired": false
             },
             {
@@ -76,40 +76,40 @@
             {
               "lane": "11",
               "level": 2,
-              "name": "Toffifee",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
-              "price": 2.5,
-              "stock": 3,
+              "name": "Milka Choc & Choc",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f4a5470ee38d4bfa9b29ed262140d7b0.png",
+              "price": 3.2,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "12",
               "level": 2,
-              "name": "Milka Sensations Cookies",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d29fa3d86e242629a04df86d40a725e.png",
-              "price": 3,
-              "stock": 2,
+              "name": "Banana Chips",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d7d4b4d5253f4fd9b477b756d724b5af.png",
+              "price": 2.7,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "13",
               "level": 2,
-              "name": "Milka Choco Jaffa Raspberry",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/461ecc2f268049649cf5c0ec9299d829.png",
+              "name": "ültje Erdnüsse geröstet & gesalzen",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/4f4e5edc0cce4810834688238335093c.png",
               "price": 3,
-              "stock": 1,
-              "capacity": 5,
+              "stock": 3,
+              "capacity": 3,
               "expired": false
             },
             {
               "lane": "14",
               "level": 2,
-              "name": "Milka Choco Brownie",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
-              "price": 3,
-              "stock": 1,
+              "name": "Chio Popcorn Sweet & Salty",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/838d0a6982cb4d38adf12a68da118dbd.png",
+              "price": 2.5,
+              "stock": 2,
               "capacity": 3,
               "expired": false
             },
@@ -184,6 +184,16 @@
               "expired": false
             },
             {
+              "lane": "32",
+              "level": 4,
+              "name": "Kinder Bueno",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
+              "price": 1.6,
+              "stock": 2,
+              "capacity": 10,
+              "expired": false
+            },
+            {
               "lane": "33",
               "level": 4,
               "name": "Nutella Go",
@@ -200,6 +210,16 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47e0b23c1d774b9e920241ee3bfafe51.jpg",
               "price": 1.3,
               "stock": 7,
+              "capacity": 10,
+              "expired": false
+            },
+            {
+              "lane": "35",
+              "level": 4,
+              "name": "Sport Kapuciner",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9ea3981e806f47a29f6f18c5dfc3958b.png",
+              "price": 1.5,
+              "stock": 6,
               "capacity": 10,
               "expired": false
             },
@@ -256,7 +276,7 @@
             {
               "lane": "42",
               "level": 5,
-              "name": "RedBull Peach 250ml  inkl. Pfand",
+              "name": "Red Bull Peach 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/dbc4ec1647874649a3fa390bcce36def.jpeg",
               "price": 2.2,
               "stock": 2,
@@ -266,7 +286,7 @@
             {
               "lane": "43",
               "level": 5,
-              "name": "RedBull Original 250ml  inkl. Pfand",
+              "name": "Red Bull Original 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
               "stock": 5,
@@ -308,7 +328,7 @@
               "level": 5,
               "name": "Gösser Natur Radler",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/db9f95f083b44270aed3a21e1c2cd532.png",
-              "price": 1.5,
+              "price": 1,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -433,15 +453,85 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T09:16:59.480Z",
+          "fetchedAt": "2026-11-10T10:21:04.814Z",
           "items": [
+            {
+              "lane": "2",
+              "level": 1,
+              "name": "Oreo Wafer Roll Vanilla 54g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/45bdb2b506aa4e4f817a1fa69632e23b.jpeg",
+              "price": 2,
+              "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "3",
+              "level": 1,
+              "name": "Capico Knusper Röllchen Haselnuss",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png",
+              "price": 2.2,
+              "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "4",
+              "level": 1,
+              "name": "Twist'n'Taste Cocoa Roll Wafers",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/4526ecb8de7c4894bc789a7bf66d47ac.png",
+              "price": 2.5,
+              "stock": 2,
+              "capacity": 3,
+              "expired": false
+            },
             {
               "lane": "11",
               "level": 2,
-              "name": "Capico Knusper Röllchen Haselnuss",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d40b294171a48e59188100b8a4e19fb.png",
-              "price": 2,
+              "name": "Milka Sensations Cookies",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d29fa3d86e242629a04df86d40a725e.png",
+              "price": 3,
               "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "12",
+              "level": 2,
+              "name": "Milka Choco Brownie",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
+              "price": 3,
+              "stock": 1,
+              "capacity": 3,
+              "expired": false
+            },
+            {
+              "lane": "13",
+              "level": 2,
+              "name": "Milka Choco Brookie",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/074141c91c3041c0bcf1e724b798461a.png",
+              "price": 3.2,
+              "stock": 2,
+              "capacity": 3,
+              "expired": false
+            },
+            {
+              "lane": "14",
+              "level": 2,
+              "name": "Milka White Choco Mini Stars",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6f26d615d0be40e0887483ba290c31ba.png",
+              "price": 3,
+              "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "15",
+              "level": 2,
+              "name": "Milka Choco Jaffa Raspberry",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/461ecc2f268049649cf5c0ec9299d829.png",
+              "price": 3,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -461,38 +551,88 @@
               "name": "Patisserie Apple Cakes",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/797d5c3d51e24263921077e070203df4.png",
               "price": 3,
-              "stock": 2,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "23",
               "level": 3,
-              "name": "Patisserie Apple Cakes",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/797d5c3d51e24263921077e070203df4.png",
+              "name": "Runde Braune Lebkuchen Zartbitter",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/149cb2bb930341eba74508aacfd43b32.png",
               "price": 3,
-              "stock": 2,
-              "capacity": 5,
+              "stock": 3,
+              "capacity": 3,
               "expired": false
             },
             {
               "lane": "24",
               "level": 3,
-              "name": "Oreo Wafer Roll Vanilla 54g",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/45bdb2b506aa4e4f817a1fa69632e23b.jpeg",
-              "price": 2,
-              "stock": 2,
+              "name": "Toffifee",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/47d94ef1a6c24bbd88836109ef994731.png",
+              "price": 2.5,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "25",
               "level": 3,
-              "name": "Mikado Keks-Sticks Milchschokolade 75g",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ed7b5378c2cf49fd89f1a9e547c0fbff.jpeg",
-              "price": 2.4,
+              "name": "Mentos Bubble Fresh",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f75a9f89bebd49d1879263b4ea67b6ff.png",
+              "price": 3.2,
               "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "35",
+              "level": 4,
+              "name": "Reese's Pieces",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8d72ff0b3e214ba5b2a36d2551c60677.png",
+              "price": 2.1,
+              "stock": 1,
               "capacity": 10,
+              "expired": false
+            },
+            {
+              "lane": "36",
+              "level": 4,
+              "name": "Skittles",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9440e493398c42ac8c7e82aef9ac1a0d.jpeg",
+              "price": 2.5,
+              "stock": 4,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "37",
+              "level": 4,
+              "name": "Natural Happiness Nut Mix",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/25841b5aeae34ccc8271a4c48e3b5676.png",
+              "price": 3.2,
+              "stock": 3,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "38",
+              "level": 4,
+              "name": "Happiness Almonds",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2ccdc6b691da43ff89aec363cbac539b.png",
+              "price": 3,
+              "stock": 3,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "39",
+              "level": 4,
+              "name": "Marzipan Brot Zartbitter",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/30eb3bf19f48467fb49d767750d0b299.png",
+              "price": 2.6,
+              "stock": 3,
+              "capacity": 5,
               "expired": false
             },
             {
@@ -501,7 +641,7 @@
               "name": "Red Bull The Green Edition",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/46b7d01c58eb4ae3950e67a50b4921ed.png",
               "price": 2.2,
-              "stock": 2,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -511,16 +651,26 @@
               "name": "Red Bull The Winter Edition",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/39497939be614b6aab4d64471e61a228.png",
               "price": 2.2,
-              "stock": 2,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "43",
+              "level": 5,
+              "name": "Red Bull The Glacier Edition",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6d1da4a715be4fad885bdbfd39ff4936.png",
+              "price": 2.2,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "44",
               "level": 5,
-              "name": "RedBull Original 250ml  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
-              "price": 2.25,
+              "name": "Red Bull The Sea Blue Edition",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/00a159fc5bfb46d6a6a88bd635404995.png",
+              "price": 2.2,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -528,9 +678,9 @@
             {
               "lane": "45",
               "level": 5,
-              "name": "Fanta Zero Sugar Lemon",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/41b2e9395e184afdaa8cfefce325145f.png",
-              "price": 1.7,
+              "name": "Red Bull White Edition inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/79c994b1157f4ed49c262a18545d2314.png",
+              "price": 2.2,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -538,9 +688,9 @@
             {
               "lane": "46",
               "level": 5,
-              "name": "Mezzo Mix",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c9e0708331ec404db13e071112ed5bcd.png",
-              "price": 1.7,
+              "name": "Red Bull The Summer Edition",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/4d2c8396b6ae4b38be8a8b4081496e38.png",
+              "price": 2.2,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -548,31 +698,31 @@
             {
               "lane": "47",
               "level": 5,
-              "name": "Fanta Exotic 330ml  inkl. Pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
-              "price": 1.6,
-              "stock": 4,
-              "capacity": 10,
+              "name": "Red Bull Peach 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/dbc4ec1647874649a3fa390bcce36def.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5,
               "expired": false
             },
             {
               "lane": "48",
               "level": 5,
-              "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
-              "price": 0.75,
-              "stock": 2,
+              "name": "Red Bull The Winter Edition Sugarfree",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d17100d1de5c4183a31e686a2e0d6af6.png",
+              "price": 2.2,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "49",
               "level": 5,
-              "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
-              "price": 0.75,
-              "stock": 2,
-              "capacity": 5,
+              "name": "Red Bull Original 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 10,
               "expired": false
             },
             {
@@ -582,6 +732,76 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
               "price": 2.2,
               "stock": 4,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "52",
+              "level": 6,
+              "name": "Coca Cola 0.5l Original inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
+              "price": 2.2,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "54",
+              "level": 6,
+              "name": "Sprite 330ml ink. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625e64c29f9343499912dc828dcac298.png",
+              "price": 1.7,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "55",
+              "level": 6,
+              "name": "Fanta Zero Sugar Lemon",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/41b2e9395e184afdaa8cfefce325145f.png",
+              "price": 1.7,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "56",
+              "level": 6,
+              "name": "Fanta Orange",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ca31663793cd455d89610037de3b0ed9.png",
+              "price": 1.7,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "57",
+              "level": 6,
+              "name": "Fanta Exotic 330ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5d38c2c02a72481abd73a42486ab6326.jpeg",
+              "price": 1.6,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "58",
+              "level": 6,
+              "name": "Mezzo Mix",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c9e0708331ec404db13e071112ed5bcd.png",
+              "price": 1.7,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "59",
+              "level": 6,
+              "name": "Karamalz Malzdrink Classic 0% inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
+              "price": 0.8,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             }
@@ -607,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T09:16:59.480Z",
+          "fetchedAt": "2026-11-10T10:21:04.814Z",
           "items": [
             {
               "lane": "1",
@@ -1039,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T09:16:59.480Z",
+          "fetchedAt": "2026-11-10T10:21:04.814Z",
           "items": [
             {
               "lane": "11",
