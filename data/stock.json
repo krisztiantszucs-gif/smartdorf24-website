@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-10T23:15:02.204Z",
+  "updatedAt": "2026-11-11T02:51:08.643Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T23:15:02.204Z",
+          "fetchedAt": "2026-11-11T02:51:08.643Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T23:15:02.204Z",
+          "fetchedAt": "2026-11-11T02:51:08.643Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T23:15:02.204Z",
+          "fetchedAt": "2026-11-11T02:51:08.643Z",
           "items": [
             {
               "lane": "1",
@@ -905,7 +905,7 @@
               "name": "Milka Sensations Cookies",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d29fa3d86e242629a04df86d40a725e.png",
               "price": 3,
-              "stock": 1,
+              "stock": 0,
               "capacity": 5,
               "expired": false
             },
@@ -1075,7 +1075,7 @@
               "name": "Milka Tuc",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9f88c5fa7ec044c8ab92300767c9608b.png",
               "price": 2.2,
-              "stock": 10,
+              "stock": 9,
               "capacity": 10,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-10T23:15:02.204Z",
+          "fetchedAt": "2026-11-11T02:51:08.643Z",
           "items": [
             {
               "lane": "11",
