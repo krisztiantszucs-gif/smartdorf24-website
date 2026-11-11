@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-11T11:54:59.680Z",
+  "updatedAt": "2026-11-11T12:19:24.250Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T11:54:59.680Z",
+          "fetchedAt": "2026-11-11T12:19:24.250Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T11:54:59.680Z",
+          "fetchedAt": "2026-11-11T12:19:24.250Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T11:54:59.680Z",
+          "fetchedAt": "2026-11-11T12:19:24.250Z",
           "items": [
             {
               "lane": "1",
@@ -975,7 +975,7 @@
               "name": "Marzipan Brot Zartbitter",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/30eb3bf19f48467fb49d767750d0b299.png",
               "price": 2.6,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -1015,7 +1015,7 @@
               "name": "BiFi Roll 40g",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b22597f3c98b49c895f27b149d2130ce.jpeg",
               "price": 1.6,
-              "stock": 5,
+              "stock": 4,
               "capacity": 10,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T11:54:59.680Z",
+          "fetchedAt": "2026-11-11T12:19:24.250Z",
           "items": [
             {
               "lane": "11",
