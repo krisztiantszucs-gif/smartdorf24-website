@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-11T22:29:01.370Z",
+  "updatedAt": "2026-11-11T23:19:30.834Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T22:29:01.370Z",
+          "fetchedAt": "2026-11-11T23:19:30.834Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T22:29:01.370Z",
+          "fetchedAt": "2026-11-11T23:19:30.834Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T22:29:01.370Z",
+          "fetchedAt": "2026-11-11T23:19:30.834Z",
           "items": [
             {
               "lane": "1",
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T22:29:01.370Z",
+          "fetchedAt": "2026-11-11T23:19:30.834Z",
           "items": [
             {
               "lane": "11",
@@ -1286,7 +1286,7 @@
               "level": 2,
               "name": "Pick Puszta-Kolbasz",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/707c24edb06d4270bc6b55b8d5813bff.png",
-              "price": 2.4,
+              "price": 2.25,
               "stock": 2,
               "capacity": 5,
               "expired": false
