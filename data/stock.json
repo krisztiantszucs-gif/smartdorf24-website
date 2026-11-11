@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-11T15:24:22.595Z",
+  "updatedAt": "2026-11-11T15:34:40.846Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T15:24:22.595Z",
+          "fetchedAt": "2026-11-11T15:34:40.846Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T15:24:22.595Z",
+          "fetchedAt": "2026-11-11T15:34:40.846Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T15:24:22.595Z",
+          "fetchedAt": "2026-11-11T15:34:40.846Z",
           "items": [
             {
               "lane": "1",
@@ -955,7 +955,7 @@
               "name": "Patisserie Coconut Rings",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/77724f4c64374a50bb444860bdf7d07c.png",
               "price": 2.6,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T15:24:22.595Z",
+          "fetchedAt": "2026-11-11T15:34:40.846Z",
           "items": [
             {
               "lane": "11",
