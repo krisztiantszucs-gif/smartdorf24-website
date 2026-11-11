@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-11T17:21:31.858Z",
+  "updatedAt": "2026-11-11T18:17:39.616Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T17:21:31.858Z",
+          "fetchedAt": "2026-11-11T18:17:39.616Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T17:21:31.858Z",
+          "fetchedAt": "2026-11-11T18:17:39.616Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T17:21:31.858Z",
+          "fetchedAt": "2026-11-11T18:17:39.616Z",
           "items": [
             {
               "lane": "1",
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-11T17:21:31.858Z",
+          "fetchedAt": "2026-11-11T18:17:39.616Z",
           "items": [
             {
               "lane": "11",
@@ -1417,7 +1417,7 @@
               "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
               "price": 1.9,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
