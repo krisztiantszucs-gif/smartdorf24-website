@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-12T04:23:23.213Z",
+  "updatedAt": "2026-11-12T13:06:53.395Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-12T04:23:23.213Z",
+          "fetchedAt": "2026-11-12T13:06:53.395Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-12T04:23:23.213Z",
+          "fetchedAt": "2026-11-12T13:06:53.395Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-12T04:23:23.213Z",
+          "fetchedAt": "2026-11-12T13:06:53.395Z",
           "items": [
             {
               "lane": "1",
@@ -935,7 +935,7 @@
               "name": "Runde Braune Lebkuchen Zartbitter",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/149cb2bb930341eba74508aacfd43b32.png",
               "price": 3,
-              "stock": 3,
+              "stock": 2,
               "capacity": 3,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-12T04:23:23.213Z",
+          "fetchedAt": "2026-11-12T13:06:53.395Z",
           "items": [
             {
               "lane": "11",
@@ -1387,7 +1387,7 @@
               "name": "Capri-Sun Fairy Drink",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0d19a0bd2c174af5a3fdc1f611c5efcf.png",
               "price": 1,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
