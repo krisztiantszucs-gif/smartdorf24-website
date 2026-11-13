@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-13T16:04:03.709Z",
+  "updatedAt": "2026-11-13T16:39:05.941Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-13T16:04:03.709Z",
+          "fetchedAt": "2026-11-13T16:39:05.941Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-13T16:04:03.709Z",
+          "fetchedAt": "2026-11-13T16:39:05.941Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-13T16:04:03.709Z",
+          "fetchedAt": "2026-11-13T16:39:05.941Z",
           "items": [
             {
               "lane": "1",
@@ -1105,7 +1105,7 @@
               "name": "Kinder Bueno",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
               "price": 1.6,
-              "stock": 3,
+              "stock": 2,
               "capacity": 10,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-13T16:04:03.709Z",
+          "fetchedAt": "2026-11-13T16:39:05.941Z",
           "items": [
             {
               "lane": "11",
