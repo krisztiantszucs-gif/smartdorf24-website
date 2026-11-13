@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-13T12:20:45.229Z",
+  "updatedAt": "2026-11-13T12:44:04.548Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-13T12:20:45.229Z",
+          "fetchedAt": "2026-11-13T12:44:04.548Z",
           "items": [
             {
               "lane": "1",
@@ -159,7 +159,7 @@
               "name": "MrBeast Beef Jerky Original",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5bcdf3ec37c94f218c917fb7dd6ff76b.png",
               "price": 2.5,
-              "stock": 2,
+              "stock": 1,
               "capacity": 10,
               "expired": false
             },
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-13T12:20:45.229Z",
+          "fetchedAt": "2026-11-13T12:44:04.548Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-13T12:20:45.229Z",
+          "fetchedAt": "2026-11-13T12:44:04.548Z",
           "items": [
             {
               "lane": "1",
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-13T12:20:45.229Z",
+          "fetchedAt": "2026-11-13T12:44:04.548Z",
           "items": [
             {
               "lane": "11",
