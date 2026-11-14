@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-13T22:15:04.562Z",
+  "updatedAt": "2026-11-14T02:30:02.105Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-13T22:15:04.562Z",
+          "fetchedAt": "2026-11-14T02:30:02.105Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-13T22:15:04.562Z",
+          "fetchedAt": "2026-11-14T02:30:02.105Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-13T22:15:04.562Z",
+          "fetchedAt": "2026-11-14T02:30:02.105Z",
           "items": [
             {
               "lane": "1",
@@ -1075,7 +1075,7 @@
               "name": "Milka Tuc",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9f88c5fa7ec044c8ab92300767c9608b.png",
               "price": 2.2,
-              "stock": 9,
+              "stock": 8,
               "capacity": 10,
               "expired": false
             },
@@ -1105,7 +1105,7 @@
               "name": "Kinder Bueno",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fac86d0e04b64d659dbc777de92b21d9.jpeg",
               "price": 1.6,
-              "stock": 2,
+              "stock": 0,
               "capacity": 10,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-13T22:15:04.562Z",
+          "fetchedAt": "2026-11-14T02:30:02.105Z",
           "items": [
             {
               "lane": "11",
@@ -1397,7 +1397,7 @@
               "name": "Milka Schokoladen Milch",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/82cbed567b1146208d8e538e594ce1e2.jpeg",
               "price": 2.2,
-              "stock": 3,
+              "stock": 2,
               "capacity": 10,
               "expired": false
             },
