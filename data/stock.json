@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-14T14:22:30.999Z",
+  "updatedAt": "2026-11-14T14:47:00.749Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-14T14:22:30.999Z",
+          "fetchedAt": "2026-11-14T14:47:00.749Z",
           "items": [
             {
               "lane": "1",
@@ -169,7 +169,7 @@
               "name": "Milka LU",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3830c0a5e93d4f08bd8f8e543c07615c.png",
               "price": 2.2,
-              "stock": 6,
+              "stock": 4,
               "capacity": 8,
               "expired": false
             },
@@ -269,7 +269,7 @@
               "name": "Capri-Sun Fairy Drink",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0d19a0bd2c174af5a3fdc1f611c5efcf.png",
               "price": 1,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-14T14:22:30.999Z",
+          "fetchedAt": "2026-11-14T14:47:00.749Z",
           "items": [
             {
               "lane": "2",
@@ -561,7 +561,7 @@
               "name": "Runde Braune Lebkuchen Zartbitter",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/149cb2bb930341eba74508aacfd43b32.png",
               "price": 3,
-              "stock": 3,
+              "stock": 2,
               "capacity": 3,
               "expired": false
             },
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-14T14:22:30.999Z",
+          "fetchedAt": "2026-11-14T14:47:00.749Z",
           "items": [
             {
               "lane": "1",
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-14T14:22:30.999Z",
+          "fetchedAt": "2026-11-14T14:47:00.749Z",
           "items": [
             {
               "lane": "11",
