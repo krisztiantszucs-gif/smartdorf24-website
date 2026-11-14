@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-14T18:15:35.877Z",
+  "updatedAt": "2026-11-14T18:42:57.004Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-14T18:15:35.877Z",
+          "fetchedAt": "2026-11-14T18:42:57.004Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-14T18:15:35.877Z",
+          "fetchedAt": "2026-11-14T18:42:57.004Z",
           "items": [
             {
               "lane": "2",
@@ -711,7 +711,7 @@
               "name": "Red Bull The Winter Edition Sugarfree",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d17100d1de5c4183a31e686a2e0d6af6.png",
               "price": 2.2,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-14T18:15:35.877Z",
+          "fetchedAt": "2026-11-14T18:42:57.004Z",
           "items": [
             {
               "lane": "1",
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-14T18:15:35.877Z",
+          "fetchedAt": "2026-11-14T18:42:57.004Z",
           "items": [
             {
               "lane": "11",
