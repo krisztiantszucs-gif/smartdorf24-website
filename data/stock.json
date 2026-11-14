@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-14T12:20:05.921Z",
+  "updatedAt": "2026-11-14T13:46:57.247Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-14T12:20:05.921Z",
+          "fetchedAt": "2026-11-14T13:46:57.247Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-14T12:20:05.921Z",
+          "fetchedAt": "2026-11-14T13:46:57.247Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-14T12:20:05.921Z",
+          "fetchedAt": "2026-11-14T13:46:57.247Z",
           "items": [
             {
               "lane": "1",
@@ -1115,7 +1115,7 @@
               "name": "Nutella Go",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
               "price": 1.9,
-              "stock": 4,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -1175,7 +1175,7 @@
               "name": "Red Bull The Green Edition",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/46b7d01c58eb4ae3950e67a50b4921ed.png",
               "price": 2.2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-14T12:20:05.921Z",
+          "fetchedAt": "2026-11-14T13:46:57.247Z",
           "items": [
             {
               "lane": "11",
@@ -1487,7 +1487,7 @@
               "name": "Red Bull Original 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -1537,7 +1537,7 @@
               "name": "Paulaner Spezi 330ml Cola-Orange",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7b823180fadb4333884bedab256af65a.png",
               "price": 1.7,
-              "stock": 2,
+              "stock": 1,
               "capacity": 3,
               "expired": false
             },
