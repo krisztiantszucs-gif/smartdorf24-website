@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-16T02:57:35.218Z",
+  "updatedAt": "2026-11-16T06:10:53.998Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-16T02:57:35.218Z",
+          "fetchedAt": "2026-11-16T06:10:53.998Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-16T02:57:35.218Z",
+          "fetchedAt": "2026-11-16T06:10:53.998Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-16T02:57:35.218Z",
+          "fetchedAt": "2026-11-16T06:10:53.998Z",
           "items": [
             {
               "lane": "1",
@@ -885,7 +885,7 @@
               "name": "Pringles",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f2c516dff2bd4467bb8a1975fb2cf02a.jpeg",
               "price": 1.6,
-              "stock": 1,
+              "stock": 0,
               "capacity": 3,
               "expired": false
             },
@@ -1259,14 +1259,14 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-16T02:57:35.218Z",
+          "fetchedAt": "2026-11-16T06:10:53.998Z",
           "items": [
             {
               "lane": "11",
               "level": 2,
               "name": "Grünländer Bärlauch",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/203be2d8ff3c4d74a8b4a6a6840733ee.png",
-              "price": 1.5,
+              "price": 1.2,
               "stock": 2,
               "capacity": 2,
               "expired": false
@@ -1576,7 +1576,7 @@
               "level": 6,
               "name": "Coca Cola 0.5l Original inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
-              "price": 2.2,
+              "price": 1.75,
               "stock": 5,
               "capacity": 5,
               "expired": false

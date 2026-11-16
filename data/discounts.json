@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-15T21:28:56.474Z",
-  "lastRunDay": "2026-11-15",
+  "lastRunAt": "2026-11-16T06:09:21.941Z",
+  "lastRunDay": "2026-11-16",
   "active": {
     "7680783:13": {
       "rtuNumber": "7680783",
@@ -14,18 +14,31 @@
       "percent": 70,
       "effDate": "2026-11-16",
       "startedAt": "2026-11-11T23:18:24.087Z",
-      "updatedAt": "2026-11-15T21:28:56.474Z"
+      "updatedAt": "2026-11-16T06:09:21.941Z"
+    },
+    "7680783:11": {
+      "rtuNumber": "7680783",
+      "lane": "11",
+      "name": "Grünländer Bärlauch",
+      "originalPrice": 1.5,
+      "originalCostPrice": 1.29,
+      "discountPrice": 1.2,
+      "discountCostPrice": 1.2,
+      "percent": 20,
+      "effDate": "2026-11-20",
+      "startedAt": "2026-11-16T06:09:21.940Z",
+      "updatedAt": "2026-11-16T06:09:21.940Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002249",
+        "advertiseId": "100002252",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-15-5c64bb",
+        "adName": "SD24-combined-steinsberg-2026-11-16-bd5736",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8446040c971f49f4857f9a94c3cd7409.mp4",
-        "hash": "5c64bbfdbaec855c",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/a0776a557b9a4df9af9e6acb860a70f1.mp4",
+        "hash": "bd57366e0b7b5825",
         "segments": [
           "karamalz",
           "live",
@@ -44,6 +57,18 @@
             "lanes": [
               "7680783:13"
             ]
+          },
+          {
+            "rtuNumber": "7680783",
+            "lane": "11",
+            "name": "Grünländer Bärlauch",
+            "old": 1.5,
+            "new": 1.2,
+            "pct": 20,
+            "until": "2026-11-20",
+            "lanes": [
+              "7680783:11"
+            ]
           }
         ],
         "verifiedSale": [
@@ -58,6 +83,19 @@
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ea50b19a795e4218a290e7cebbf00150.png",
             "lanes": [
               "7680800:38"
+            ]
+          },
+          {
+            "rtuNumber": "7680783",
+            "lane": "59",
+            "name": "Coca Cola 0.5l Original inkl. Pfand",
+            "old": 2.2,
+            "new": 1.75,
+            "pct": 20,
+            "until": "2026-11-30",
+            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
+            "lanes": [
+              "7680783:59"
             ]
           },
           {
@@ -80,7 +118,7 @@
             "old": 1,
             "new": 0.9,
             "pct": 10,
-            "until": "2026-11-23",
+            "until": "2026-11-30",
             "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b505db28b33b4d818782ee4bce3a3d96.png",
             "lanes": [
               "7680783:31",
@@ -103,7 +141,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-15T21:28:57.166Z"
+        "updatedAt": "2026-11-16T06:10:42.622Z"
       },
       "schiesheim": {
         "advertiseId": "100002207",
@@ -169,13 +207,13 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-15T21:28:57.843Z"
+        "updatedAt": "2026-11-16T06:10:47.487Z"
       }
     }
   },
   "machineAds": {},
   "lastEveningRunDay": "2026-11-15",
-  "lastMorningRunDay": "2026-11-15",
+  "lastMorningRunDay": "2026-11-16",
   "clearance": {
     "7680787:36": {
       "rtuNumber": "7680787",
@@ -196,7 +234,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-15T21:28:56.474Z"
+      "updatedAt": "2026-11-16T06:09:20.260Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -217,7 +255,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-15T21:28:56.474Z"
+      "updatedAt": "2026-11-16T06:09:20.260Z"
     },
     "7680787:58": {
       "rtuNumber": "7680787",
@@ -238,7 +276,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-15T21:28:56.474Z"
+      "updatedAt": "2026-11-16T06:09:20.260Z"
     },
     "7680800:38": {
       "rtuNumber": "7680800",
@@ -259,7 +297,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-15T21:28:56.474Z"
+      "updatedAt": "2026-11-16T06:09:20.260Z"
     },
     "7680783:12": {
       "rtuNumber": "7680783",
@@ -280,28 +318,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-15T21:28:56.474Z"
-    },
-    "7680783:13": {
-      "rtuNumber": "7680783",
-      "lane": "13",
-      "name": "Pick Puszta-Kolbasz",
-      "cid": "100029428",
-      "originalPrice": 2.8,
-      "originalCostPrice": 1.99,
-      "clearancePrice": 2.4,
-      "clearanceCostPrice": 1.99,
-      "percent": 30,
-      "effectivePercent": 14,
-      "costFloor": 2.4,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "dead",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 2,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-15T21:28:56.474Z"
+      "updatedAt": "2026-11-16T06:09:21.941Z"
     },
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -319,10 +336,10 @@
       "floorBlocked": false,
       "reason": "slow",
       "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
+      "endsAt": "2026-11-30",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-15T21:28:56.474Z",
+      "updatedAt": "2026-11-16T06:09:21.941Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -342,10 +359,10 @@
       "floorBlocked": false,
       "reason": "slow",
       "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
+      "endsAt": "2026-11-30",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-15T21:28:56.474Z",
+      "updatedAt": "2026-11-16T06:09:21.941Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -365,16 +382,37 @@
       "floorBlocked": false,
       "reason": "dead",
       "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
+      "endsAt": "2026-11-30",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-15T21:28:56.474Z",
+      "updatedAt": "2026-11-16T06:09:21.941Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
+    },
+    "7680783:59": {
+      "rtuNumber": "7680783",
+      "lane": "59",
+      "name": "Coca Cola 0.5l Original inkl. Pfand",
+      "cid": "100021704",
+      "originalPrice": 2.2,
+      "originalCostPrice": 1.07,
+      "clearancePrice": 1.75,
+      "clearanceCostPrice": 1.07,
+      "percent": 20,
+      "effectivePercent": 20,
+      "costFloor": 1.3,
+      "costKnown": true,
+      "floorBlocked": false,
+      "reason": "waste",
+      "startedAt": "2026-11-16T06:09:14.105Z",
+      "endsAt": "2026-11-30",
+      "stockAtStart": 5,
+      "hideFromAd": false,
+      "updatedAt": "2026-11-16T06:09:21.941Z"
     }
   },
-  "lastClearanceEvalAt": "2026-11-09T16:22:27.486Z",
-  "lastClearanceEvalDay": "2026-11-09",
+  "lastClearanceEvalAt": "2026-11-16T06:09:14.105Z",
+  "lastClearanceEvalDay": "2026-11-16",
   "lastLowStockGuardAt": "2026-11-09T13:05:02.858Z",
   "pendingApprovals": []
 }
