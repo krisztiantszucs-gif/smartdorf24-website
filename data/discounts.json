@@ -1,21 +1,8 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-16T17:04:39.405Z",
-  "lastRunDay": "2026-11-16",
+  "lastRunAt": "2026-11-16T23:58:48.630Z",
+  "lastRunDay": "2026-11-17",
   "active": {
-    "7680783:13": {
-      "rtuNumber": "7680783",
-      "lane": "13",
-      "name": "Pick Puszta-Kolbasz",
-      "originalPrice": 2.8,
-      "originalCostPrice": 1.99,
-      "discountPrice": 0.85,
-      "discountCostPrice": 0.85,
-      "percent": 70,
-      "effDate": "2026-11-16",
-      "startedAt": "2026-11-11T23:18:24.087Z",
-      "updatedAt": "2026-11-16T17:04:39.405Z"
-    },
     "7680783:11": {
       "rtuNumber": "7680783",
       "lane": "11",
@@ -27,18 +14,18 @@
       "percent": 20,
       "effDate": "2026-11-20",
       "startedAt": "2026-11-16T06:09:21.940Z",
-      "updatedAt": "2026-11-16T17:04:39.405Z"
+      "updatedAt": "2026-11-16T23:58:48.630Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002252",
+        "advertiseId": "100002282",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-16-bd5736",
+        "adName": "SD24-combined-steinsberg-2026-11-17-aaace3",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/a0776a557b9a4df9af9e6acb860a70f1.mp4",
-        "hash": "bd57366e0b7b5825",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/444815d7ab454a449b6e8ecd6fbc7392.mp4",
+        "hash": "aaace3335d754019",
         "segments": [
           "karamalz",
           "live",
@@ -46,18 +33,6 @@
           "sale"
         ],
         "verifiedDeals": [
-          {
-            "rtuNumber": "7680783",
-            "lane": "13",
-            "name": "Pick Puszta-Kolbasz",
-            "old": 2.8,
-            "new": 0.85,
-            "pct": 70,
-            "until": "2026-11-16",
-            "lanes": [
-              "7680783:13"
-            ]
-          },
           {
             "rtuNumber": "7680783",
             "lane": "11",
@@ -141,7 +116,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-16T15:49:29.910Z"
+        "updatedAt": "2026-11-16T23:59:46.640Z"
       },
       "schiesheim": {
         "advertiseId": "100002207",
@@ -207,13 +182,13 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-16T15:49:30.747Z"
+        "updatedAt": "2026-11-16T23:59:47.356Z"
       }
     }
   },
   "machineAds": {},
   "lastEveningRunDay": "2026-11-16",
-  "lastMorningRunDay": "2026-11-16",
+  "lastMorningRunDay": "2026-11-17",
   "clearance": {
     "7680787:36": {
       "rtuNumber": "7680787",
@@ -234,7 +209,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-16T17:04:39.405Z"
+      "updatedAt": "2026-11-16T23:58:48.268Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -255,7 +230,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-16T17:04:39.405Z"
+      "updatedAt": "2026-11-16T23:58:48.268Z"
     },
     "7680787:58": {
       "rtuNumber": "7680787",
@@ -276,7 +251,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-16T17:04:39.405Z"
+      "updatedAt": "2026-11-16T23:58:48.268Z"
     },
     "7680800:38": {
       "rtuNumber": "7680800",
@@ -297,7 +272,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-16T17:04:39.405Z"
+      "updatedAt": "2026-11-16T23:58:48.268Z"
     },
     "7680783:12": {
       "rtuNumber": "7680783",
@@ -318,7 +293,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-16T17:04:39.405Z"
+      "updatedAt": "2026-11-16T23:58:48.630Z"
     },
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -339,7 +314,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-16T17:04:39.405Z",
+      "updatedAt": "2026-11-16T23:58:48.630Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -362,7 +337,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-16T17:04:39.405Z",
+      "updatedAt": "2026-11-16T23:58:48.630Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -385,7 +360,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-16T17:04:39.405Z",
+      "updatedAt": "2026-11-16T23:58:48.630Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -408,7 +383,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-16T17:04:39.405Z"
+      "updatedAt": "2026-11-16T23:58:48.630Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-16T15:49:27.315Z",
