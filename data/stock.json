@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-17T21:38:56.426Z",
+  "updatedAt": "2026-11-17T23:22:11.936Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-17T21:38:56.426Z",
+          "fetchedAt": "2026-11-17T23:22:11.936Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-17T21:38:56.426Z",
+          "fetchedAt": "2026-11-17T23:22:11.936Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-17T21:38:56.426Z",
+          "fetchedAt": "2026-11-17T23:22:11.936Z",
           "items": [
             {
               "lane": "1",
@@ -1259,14 +1259,14 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-17T21:38:56.426Z",
+          "fetchedAt": "2026-11-17T23:22:11.936Z",
           "items": [
             {
               "lane": "11",
               "level": 2,
               "name": "Grünländer Bärlauch",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/203be2d8ff3c4d74a8b4a6a6840733ee.png",
-              "price": 1.2,
+              "price": 0.75,
               "stock": 2,
               "capacity": 2,
               "expired": false
