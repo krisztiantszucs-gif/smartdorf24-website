@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-17T15:58:55.534Z",
+  "updatedAt": "2026-11-17T16:25:36.077Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-17T15:58:55.534Z",
+          "fetchedAt": "2026-11-17T16:25:36.077Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-17T15:58:55.534Z",
+          "fetchedAt": "2026-11-17T16:25:36.077Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-17T15:58:55.534Z",
+          "fetchedAt": "2026-11-17T16:25:36.077Z",
           "items": [
             {
               "lane": "1",
@@ -855,7 +855,7 @@
               "name": "Milka Choco Brownie",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0adb6850db1743a882b51ba63a028d16.png",
               "price": 3,
-              "stock": 2,
+              "stock": 1,
               "capacity": 3,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-17T15:58:55.534Z",
+          "fetchedAt": "2026-11-17T16:25:36.077Z",
           "items": [
             {
               "lane": "11",
@@ -1547,7 +1547,7 @@
               "name": "Monster Energy 0.5l inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0403c0edf3dd4878bdafd78e709b474b.png",
               "price": 2.2,
-              "stock": 1,
+              "stock": 0,
               "capacity": 10,
               "expired": false
             },
