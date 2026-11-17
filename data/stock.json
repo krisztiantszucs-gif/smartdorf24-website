@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-17T17:03:04.379Z",
+  "updatedAt": "2026-11-17T17:15:20.523Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-17T17:03:04.379Z",
+          "fetchedAt": "2026-11-17T17:15:20.523Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-17T17:03:04.379Z",
+          "fetchedAt": "2026-11-17T17:15:20.523Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-17T17:03:04.379Z",
+          "fetchedAt": "2026-11-17T17:15:20.523Z",
           "items": [
             {
               "lane": "1",
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-17T17:03:04.379Z",
+          "fetchedAt": "2026-11-17T17:15:20.523Z",
           "items": [
             {
               "lane": "11",
@@ -1467,7 +1467,7 @@
               "name": "Red Bull The Green Edition",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/46b7d01c58eb4ae3950e67a50b4921ed.png",
               "price": 2.2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 10,
               "expired": false
             },
@@ -1477,7 +1477,7 @@
               "name": "Red Bull The Winter Edition",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/39497939be614b6aab4d64471e61a228.png",
               "price": 2.2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
