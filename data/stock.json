@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-18T22:50:41.390Z",
+  "updatedAt": "2026-11-18T23:33:18.872Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-18T22:50:41.390Z",
+          "fetchedAt": "2026-11-18T23:33:18.872Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-18T22:50:41.390Z",
+          "fetchedAt": "2026-11-18T23:33:18.872Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-18T22:50:41.390Z",
+          "fetchedAt": "2026-11-18T23:33:18.872Z",
           "items": [
             {
               "lane": "1",
@@ -914,7 +914,7 @@
               "level": 2,
               "name": "Milka Sensations Cookies Oreo Creme",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9d491aa58fb442e98c14e32d4ec5a5d2.png",
-              "price": 2.9,
+              "price": 2.3,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-18T22:50:41.390Z",
+          "fetchedAt": "2026-11-18T23:33:18.872Z",
           "items": [
             {
               "lane": "11",

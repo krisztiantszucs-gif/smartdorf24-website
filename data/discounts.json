@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-18T22:50:43.265Z",
-  "lastRunDay": "2026-11-18",
+  "lastRunAt": "2026-11-18T23:32:23.055Z",
+  "lastRunDay": "2026-11-19",
   "active": {
     "7680783:11": {
       "rtuNumber": "7680783",
@@ -14,18 +14,31 @@
       "percent": 50,
       "effDate": "2026-11-20",
       "startedAt": "2026-11-16T06:09:21.940Z",
-      "updatedAt": "2026-11-18T22:50:43.265Z"
+      "updatedAt": "2026-11-18T23:32:23.055Z"
+    },
+    "7680800:14": {
+      "rtuNumber": "7680800",
+      "lane": "14",
+      "name": "Milka Sensations Cookies Oreo Creme",
+      "originalPrice": 2.9,
+      "originalCostPrice": 1.69,
+      "discountPrice": 2.3,
+      "discountCostPrice": 1.69,
+      "percent": 20,
+      "effDate": "2026-11-23",
+      "startedAt": "2026-11-18T23:32:23.055Z",
+      "updatedAt": "2026-11-18T23:32:23.055Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002291",
+        "advertiseId": "100002300",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-18-c4497a",
+        "adName": "SD24-combined-steinsberg-2026-11-19-e9cf1b",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2bf4f2a809d742d392d75b3f5a319700.mp4",
-        "hash": "c4497a6f9edca0ba",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/77785dd456a74638b8525910e89ebf7b.mp4",
+        "hash": "e9cf1bf4c7f6b85e",
         "segments": [
           "karamalz",
           "live",
@@ -43,6 +56,18 @@
             "until": "2026-11-20",
             "lanes": [
               "7680783:11"
+            ]
+          },
+          {
+            "rtuNumber": "7680800",
+            "lane": "14",
+            "name": "Milka Sensations Cookies Oreo Creme",
+            "old": 2.9,
+            "new": 2.3,
+            "pct": 20,
+            "until": "2026-11-23",
+            "lanes": [
+              "7680800:14"
             ]
           }
         ],
@@ -116,7 +141,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-18T22:50:44.115Z"
+        "updatedAt": "2026-11-18T23:33:17.713Z"
       },
       "schiesheim": {
         "advertiseId": "100002207",
@@ -182,13 +207,13 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-18T22:50:44.955Z"
+        "updatedAt": "2026-11-18T23:33:18.113Z"
       }
     }
   },
   "machineAds": {},
   "lastEveningRunDay": "2026-11-18",
-  "lastMorningRunDay": "2026-11-18",
+  "lastMorningRunDay": "2026-11-19",
   "clearance": {
     "7680787:36": {
       "rtuNumber": "7680787",
@@ -209,7 +234,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-18T22:50:43.265Z"
+      "updatedAt": "2026-11-18T23:32:22.736Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -230,7 +255,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-18T22:50:43.265Z"
+      "updatedAt": "2026-11-18T23:32:22.736Z"
     },
     "7680787:58": {
       "rtuNumber": "7680787",
@@ -251,7 +276,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-18T22:50:43.265Z"
+      "updatedAt": "2026-11-18T23:32:22.737Z"
     },
     "7680800:38": {
       "rtuNumber": "7680800",
@@ -272,7 +297,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-18T22:50:43.265Z"
+      "updatedAt": "2026-11-18T23:32:23.055Z"
     },
     "7680783:12": {
       "rtuNumber": "7680783",
@@ -293,7 +318,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-18T22:50:43.265Z"
+      "updatedAt": "2026-11-18T23:32:23.055Z"
     },
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -314,7 +339,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-18T22:50:43.265Z",
+      "updatedAt": "2026-11-18T23:32:23.055Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -337,7 +362,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-18T22:50:43.265Z",
+      "updatedAt": "2026-11-18T23:32:23.055Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -360,7 +385,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-18T22:50:43.265Z",
+      "updatedAt": "2026-11-18T23:32:23.055Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -383,7 +408,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-18T22:50:43.265Z"
+      "updatedAt": "2026-11-18T23:32:23.055Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-16T15:49:27.315Z",
