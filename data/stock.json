@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-19T15:37:20.198Z",
+  "updatedAt": "2026-11-19T15:58:35.733Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-19T15:37:20.198Z",
+          "fetchedAt": "2026-11-19T15:58:35.733Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-19T15:37:20.198Z",
+          "fetchedAt": "2026-11-19T15:58:35.733Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-19T15:37:20.198Z",
+          "fetchedAt": "2026-11-19T15:58:35.733Z",
           "items": [
             {
               "lane": "1",
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-19T15:37:20.198Z",
+          "fetchedAt": "2026-11-19T15:58:35.733Z",
           "items": [
             {
               "lane": "11",
@@ -1327,7 +1327,7 @@
               "name": "Starbucks Caramel Macchiato 500ml",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/4d4f27c15651463f9fe8b17efc51bc45.png",
               "price": 5,
-              "stock": 2,
+              "stock": 1,
               "capacity": 3,
               "expired": false
             },
