@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-19T14:59:02.702Z",
+  "updatedAt": "2026-11-19T15:37:20.198Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-19T14:59:02.702Z",
+          "fetchedAt": "2026-11-19T15:37:20.198Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-19T14:59:02.702Z",
+          "fetchedAt": "2026-11-19T15:37:20.198Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-19T14:59:02.702Z",
+          "fetchedAt": "2026-11-19T15:37:20.198Z",
           "items": [
             {
               "lane": "1",
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-19T14:59:02.702Z",
+          "fetchedAt": "2026-11-19T15:37:20.198Z",
           "items": [
             {
               "lane": "11",
@@ -1487,7 +1487,7 @@
               "name": "Red Bull Original 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
