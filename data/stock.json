@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-20T06:14:26.500Z",
+  "updatedAt": "2026-11-20T06:35:41.546Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-20T06:14:26.500Z",
+          "fetchedAt": "2026-11-20T06:35:41.546Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-20T06:14:26.500Z",
+          "fetchedAt": "2026-11-20T06:35:41.546Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-20T06:14:26.500Z",
+          "fetchedAt": "2026-11-20T06:35:41.546Z",
           "items": [
             {
               "lane": "1",
@@ -1145,7 +1145,7 @@
               "name": "Sportyfeel Protein Bar",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/be5b75ccb9fd4956a5f5d717733cbc4c.png",
               "price": 1.5,
-              "stock": 9,
+              "stock": 8,
               "capacity": 10,
               "expired": false
             },
@@ -1175,7 +1175,7 @@
               "name": "Red Bull The Green Edition",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/46b7d01c58eb4ae3950e67a50b4921ed.png",
               "price": 2.2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -1185,7 +1185,7 @@
               "name": "Milka Choco Jaffa Raspberry",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/461ecc2f268049649cf5c0ec9299d829.png",
               "price": 3,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-20T06:14:26.500Z",
+          "fetchedAt": "2026-11-20T06:35:41.546Z",
           "items": [
             {
               "lane": "11",
