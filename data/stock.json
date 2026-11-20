@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-20T15:38:28.418Z",
+  "updatedAt": "2026-11-20T15:59:57.462Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-20T15:38:28.418Z",
+          "fetchedAt": "2026-11-20T15:59:57.462Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-20T15:38:28.418Z",
+          "fetchedAt": "2026-11-20T15:59:57.462Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-20T15:38:28.418Z",
+          "fetchedAt": "2026-11-20T15:59:57.462Z",
           "items": [
             {
               "lane": "1",
@@ -945,7 +945,7 @@
               "name": "MrBeast Beef Jerky Original",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5bcdf3ec37c94f218c917fb7dd6ff76b.png",
               "price": 2.5,
-              "stock": 3,
+              "stock": 2,
               "capacity": 10,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-20T15:38:28.418Z",
+          "fetchedAt": "2026-11-20T15:59:57.462Z",
           "items": [
             {
               "lane": "2",
@@ -1577,7 +1577,7 @@
               "name": "Monster Juiced Mango Loco Energy",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/65cd22d69f0e4a419dab481a4b959826.png",
               "price": 2.2,
-              "stock": 3,
+              "stock": 2,
               "capacity": 3,
               "expired": false
             },
