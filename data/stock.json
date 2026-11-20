@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-20T22:21:52.809Z",
+  "updatedAt": "2026-11-20T22:57:53.282Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-20T22:21:52.809Z",
+          "fetchedAt": "2026-11-20T22:57:53.282Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-20T22:21:52.809Z",
+          "fetchedAt": "2026-11-20T22:57:53.282Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-20T22:21:52.809Z",
+          "fetchedAt": "2026-11-20T22:57:53.282Z",
           "items": [
             {
               "lane": "1",
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-20T22:21:52.809Z",
+          "fetchedAt": "2026-11-20T22:57:53.282Z",
           "items": [
             {
               "lane": "2",
@@ -1527,7 +1527,7 @@
               "name": "Coca-Cola Zero Sugar Holiday Creamy Vanilla",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f31375b43ee94a26ab31bc9185b0f250.png",
               "price": 1.7,
-              "stock": 5,
+              "stock": 4,
               "capacity": 10,
               "expired": false
             },
@@ -1567,7 +1567,7 @@
               "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
               "price": 2.2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
