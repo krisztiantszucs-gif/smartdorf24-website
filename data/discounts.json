@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-21T17:11:02.045Z",
+  "lastRunAt": "2026-11-21T21:27:17.549Z",
   "lastRunDay": "2026-11-21",
   "active": {
     "7680800:14": {
@@ -14,7 +14,7 @@
       "percent": 50,
       "effDate": "2026-11-23",
       "startedAt": "2026-11-18T23:32:23.055Z",
-      "updatedAt": "2026-11-21T17:11:02.045Z"
+      "updatedAt": "2026-11-21T21:27:17.549Z"
     }
   },
   "permanentAds": {
@@ -101,7 +101,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-21T17:11:05.987Z"
+        "updatedAt": "2026-11-21T21:27:18.143Z"
       },
       "schiesheim": {
         "advertiseId": "100002207",
@@ -167,7 +167,7 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-21T17:11:10.070Z"
+        "updatedAt": "2026-11-21T21:27:18.692Z"
       }
     }
   },
@@ -194,7 +194,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-21T17:11:02.044Z"
+      "updatedAt": "2026-11-21T21:27:17.549Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -215,7 +215,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-21T17:11:02.044Z"
+      "updatedAt": "2026-11-21T21:27:17.549Z"
     },
     "7680787:58": {
       "rtuNumber": "7680787",
@@ -236,7 +236,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-21T17:11:02.044Z"
+      "updatedAt": "2026-11-21T21:27:17.549Z"
     },
     "7680800:38": {
       "rtuNumber": "7680800",
@@ -257,7 +257,7 @@
       "endsAt": "2026-11-23",
       "stockAtStart": 3,
       "hideFromAd": false,
-      "updatedAt": "2026-11-21T17:11:02.045Z"
+      "updatedAt": "2026-11-21T21:27:17.549Z"
     },
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -278,7 +278,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-21T17:11:02.045Z",
+      "updatedAt": "2026-11-21T21:27:17.549Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -301,7 +301,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-21T17:11:02.045Z"
+      "updatedAt": "2026-11-21T21:27:17.549Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-16T15:49:27.315Z",
