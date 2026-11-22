@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-21T23:11:08.951Z",
+  "updatedAt": "2026-11-22T03:09:51.873Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-21T23:11:08.951Z",
+          "fetchedAt": "2026-11-22T03:09:51.873Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-21T23:11:08.951Z",
+          "fetchedAt": "2026-11-22T03:09:51.873Z",
           "items": [
             {
               "lane": "2",
@@ -825,9 +825,9 @@
             "de": "Steinsberg Rechts",
             "en": "Steinsberg Right"
           },
-          "online": true,
-          "apiOffline": false,
-          "fetchedAt": "2026-11-21T23:11:08.951Z",
+          "online": false,
+          "apiOffline": true,
+          "fetchedAt": "2026-11-22T03:09:51.873Z",
           "items": [
             {
               "lane": "1",
@@ -1257,9 +1257,9 @@
             "de": "Steinsberg Links",
             "en": "Steinsberg Left"
           },
-          "online": true,
-          "apiOffline": false,
-          "fetchedAt": "2026-11-21T23:11:08.951Z",
+          "online": false,
+          "apiOffline": true,
+          "fetchedAt": "2026-11-22T03:09:51.873Z",
           "items": [
             {
               "lane": "2",
