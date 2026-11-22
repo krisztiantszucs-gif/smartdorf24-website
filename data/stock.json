@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-22T17:07:23.142Z",
+  "updatedAt": "2026-11-22T17:37:53.464Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-22T17:07:23.142Z",
+          "fetchedAt": "2026-11-22T17:37:53.464Z",
           "items": [
             {
               "lane": "1",
@@ -109,7 +109,7 @@
               "name": "Chio Popcorn Sweet & Salty",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/838d0a6982cb4d38adf12a68da118dbd.png",
               "price": 2.5,
-              "stock": 2,
+              "stock": 1,
               "capacity": 3,
               "expired": false
             },
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-22T17:07:23.142Z",
+          "fetchedAt": "2026-11-22T17:37:53.464Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-22T17:07:23.142Z",
+          "fetchedAt": "2026-11-22T17:37:53.464Z",
           "items": [
             {
               "lane": "1",
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-22T17:07:23.142Z",
+          "fetchedAt": "2026-11-22T17:37:53.464Z",
           "items": [
             {
               "lane": "2",
