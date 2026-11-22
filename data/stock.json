@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-22T15:53:04.954Z",
+  "updatedAt": "2026-11-22T16:40:51.674Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-22T15:53:04.954Z",
+          "fetchedAt": "2026-11-22T16:40:51.674Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-22T15:53:04.954Z",
+          "fetchedAt": "2026-11-22T16:40:51.674Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-22T15:53:04.954Z",
+          "fetchedAt": "2026-11-22T16:40:51.674Z",
           "items": [
             {
               "lane": "1",
@@ -1175,7 +1175,7 @@
               "name": "Coca-Cola Zero Koffein",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f82151be270643b8bad735ff80fc8ada.png",
               "price": 1.7,
-              "stock": 5,
+              "stock": 4,
               "capacity": 10,
               "expired": false
             },
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-22T15:53:04.954Z",
+          "fetchedAt": "2026-11-22T16:40:51.674Z",
           "items": [
             {
               "lane": "2",
