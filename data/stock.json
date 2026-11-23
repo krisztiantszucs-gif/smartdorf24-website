@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-23T13:14:04.564Z",
+  "updatedAt": "2026-11-23T13:41:38.803Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-23T13:14:04.564Z",
+          "fetchedAt": "2026-11-23T13:41:38.803Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-23T13:14:04.564Z",
+          "fetchedAt": "2026-11-23T13:41:38.803Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-23T13:14:04.564Z",
+          "fetchedAt": "2026-11-23T13:41:38.803Z",
           "items": [
             {
               "lane": "1",
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-23T13:14:04.564Z",
+          "fetchedAt": "2026-11-23T13:41:38.803Z",
           "items": [
             {
               "lane": "2",
@@ -1587,7 +1587,7 @@
               "name": "Monster Energy Ultra Zero Zucker",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6cf33328ba4645e8a23d723e7cb05ccd.png",
               "price": 2.2,
-              "stock": 3,
+              "stock": 2,
               "capacity": 3,
               "expired": false
             },
