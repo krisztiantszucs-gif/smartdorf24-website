@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-23T14:11:40.567Z",
+  "updatedAt": "2026-11-23T14:57:03.776Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-23T14:11:40.567Z",
+          "fetchedAt": "2026-11-23T14:57:03.776Z",
           "items": [
             {
               "lane": "1",
@@ -169,7 +169,7 @@
               "name": "Milka LU",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3830c0a5e93d4f08bd8f8e543c07615c.png",
               "price": 2.2,
-              "stock": 4,
+              "stock": 2,
               "capacity": 8,
               "expired": false
             },
@@ -379,7 +379,7 @@
               "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
               "price": 2.2,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-23T14:11:40.567Z",
+          "fetchedAt": "2026-11-23T14:57:03.776Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-23T14:11:40.567Z",
+          "fetchedAt": "2026-11-23T14:57:03.776Z",
           "items": [
             {
               "lane": "1",
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-23T14:11:40.567Z",
+          "fetchedAt": "2026-11-23T14:57:03.776Z",
           "items": [
             {
               "lane": "2",
