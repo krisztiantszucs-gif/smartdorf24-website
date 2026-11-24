@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-24T16:43:34.333Z",
+  "lastRunAt": "2026-11-24T17:08:40.717Z",
   "lastRunDay": "2026-11-24",
   "active": {
     "7680787:36": {
@@ -14,7 +14,7 @@
       "percent": 20,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:11.653Z",
-      "updatedAt": "2026-11-24T16:43:34.333Z"
+      "updatedAt": "2026-11-24T17:08:40.717Z"
     },
     "7680800:34": {
       "rtuNumber": "7680800",
@@ -27,7 +27,7 @@
       "percent": 20,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:13.331Z",
-      "updatedAt": "2026-11-24T16:43:34.333Z"
+      "updatedAt": "2026-11-24T17:08:40.717Z"
     }
   },
   "permanentAds": {
@@ -114,7 +114,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-24T16:43:34.876Z"
+        "updatedAt": "2026-11-24T17:08:44.853Z"
       },
       "schiesheim": {
         "advertiseId": "100002341",
@@ -167,12 +167,12 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-24T16:43:35.423Z"
+        "updatedAt": "2026-11-24T17:08:49.069Z"
       }
     }
   },
   "machineAds": {},
-  "lastEveningRunDay": "2026-11-23",
+  "lastEveningRunDay": "2026-11-24",
   "lastMorningRunDay": "2026-11-24",
   "clearance": {
     "7680783:31": {
@@ -194,7 +194,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-24T16:43:34.333Z",
+      "updatedAt": "2026-11-24T17:08:40.717Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -217,7 +217,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-24T16:43:34.333Z"
+      "updatedAt": "2026-11-24T17:08:40.717Z"
     },
     "7680787:48": {
       "rtuNumber": "7680787",
@@ -238,7 +238,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-24T16:43:34.333Z"
+      "updatedAt": "2026-11-24T17:08:40.717Z"
     },
     "7680783:53": {
       "rtuNumber": "7680783",
@@ -259,7 +259,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-24T16:43:34.333Z"
+      "updatedAt": "2026-11-24T17:08:40.717Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-23T18:11:34.118Z",
