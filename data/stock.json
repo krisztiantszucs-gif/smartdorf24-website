@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-24T01:51:21.315Z",
+  "updatedAt": "2026-11-24T03:01:43.468Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-24T01:51:21.315Z",
+          "fetchedAt": "2026-11-24T03:01:43.468Z",
           "items": [
             {
               "lane": "1",
@@ -358,7 +358,7 @@
               "level": 6,
               "name": "Vio Still 0.5l Wasser  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
-              "price": 1.3,
+              "price": 1.6,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -428,7 +428,7 @@
               "level": 6,
               "name": "Coca Cola Zero 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
-              "price": 1.75,
+              "price": 2.2,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-24T01:51:21.315Z",
+          "fetchedAt": "2026-11-24T03:01:43.468Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-24T01:51:21.315Z",
+          "fetchedAt": "2026-11-24T03:01:43.468Z",
           "items": [
             {
               "lane": "1",
@@ -914,7 +914,7 @@
               "level": 2,
               "name": "Milka Sensations Cookies Oreo Creme",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9d491aa58fb442e98c14e32d4ec5a5d2.png",
-              "price": 0.85,
+              "price": 2.9,
               "stock": 0,
               "capacity": 5,
               "expired": false
@@ -1054,7 +1054,7 @@
               "level": 4,
               "name": "Haribo Pico Balla Sauer",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ea50b19a795e4218a290e7cebbf00150.png",
-              "price": 1.55,
+              "price": 2.2,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-24T01:51:21.315Z",
+          "fetchedAt": "2026-11-24T03:01:43.468Z",
           "items": [
             {
               "lane": "2",

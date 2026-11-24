@@ -1,21 +1,8 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-23T18:11:35.722Z",
-  "lastRunDay": "2026-11-23",
+  "lastRunAt": "2026-11-24T03:00:25.269Z",
+  "lastRunDay": "2026-11-24",
   "active": {
-    "7680800:14": {
-      "rtuNumber": "7680800",
-      "lane": "14",
-      "name": "Milka Sensations Cookies Oreo Creme",
-      "originalPrice": 2.9,
-      "originalCostPrice": 1.69,
-      "discountPrice": 0.85,
-      "discountCostPrice": 0.85,
-      "percent": 70,
-      "effDate": "2026-11-23",
-      "startedAt": "2026-11-18T23:32:23.055Z",
-      "updatedAt": "2026-11-23T18:11:35.721Z"
-    },
     "7680787:36": {
       "rtuNumber": "7680787",
       "lane": "36",
@@ -27,7 +14,7 @@
       "percent": 20,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:11.653Z",
-      "updatedAt": "2026-11-23T18:11:35.721Z"
+      "updatedAt": "2026-11-24T03:00:24.684Z"
     },
     "7680800:34": {
       "rtuNumber": "7680800",
@@ -40,18 +27,18 @@
       "percent": 20,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:13.331Z",
-      "updatedAt": "2026-11-23T18:11:35.721Z"
+      "updatedAt": "2026-11-24T03:00:25.269Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002326",
+        "advertiseId": "100002340",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-23-b71493",
+        "adName": "SD24-combined-steinsberg-2026-11-24-c0e6d1",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/5aa12a5357264d51b57e4208003621d2.mp4",
-        "hash": "b71493a38b8ea6cc",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/34b1084473514e228e0f906c2ab4643d.mp4",
+        "hash": "c0e6d17e8116bcff",
         "segments": [
           "karamalz",
           "live",
@@ -59,18 +46,6 @@
           "sale"
         ],
         "verifiedDeals": [
-          {
-            "rtuNumber": "7680800",
-            "lane": "14",
-            "name": "Milka Sensations Cookies Oreo Creme",
-            "old": 2.9,
-            "new": 0.85,
-            "pct": 70,
-            "until": "2026-11-23",
-            "lanes": [
-              "7680800:14"
-            ]
-          },
           {
             "rtuNumber": "7680800",
             "lane": "34",
@@ -85,19 +60,6 @@
           }
         ],
         "verifiedSale": [
-          {
-            "rtuNumber": "7680800",
-            "lane": "38",
-            "name": "Haribo Pico Balla Sauer",
-            "old": 2.2,
-            "new": 1.55,
-            "pct": 30,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ea50b19a795e4218a290e7cebbf00150.png",
-            "lanes": [
-              "7680800:38"
-            ]
-          },
           {
             "rtuNumber": "7680783",
             "lane": "59",
@@ -152,15 +114,15 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-23T18:11:36.409Z"
+        "updatedAt": "2026-11-24T03:01:17.977Z"
       },
       "schiesheim": {
-        "advertiseId": "100002327",
+        "advertiseId": "100002341",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-11-23-0cbf2e",
+        "adName": "SD24-combined-schiesheim-2026-11-24-bb9736",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3a0dceda4dd64de5b4eef5a8560edeb6.mp4",
-        "hash": "0cbf2e31c5884479",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ca6829d6fc4442fa8f41e24bf6b2d9df.mp4",
+        "hash": "bb973635feadf32c",
         "segments": [
           "live",
           "deals",
@@ -181,32 +143,6 @@
           }
         ],
         "verifiedSale": [
-          {
-            "rtuNumber": "7680787",
-            "lane": "58",
-            "name": "Coca Cola Zero 0.5l  inkl. Pfand",
-            "old": 2.2,
-            "new": 1.75,
-            "pct": 20,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
-            "lanes": [
-              "7680787:58"
-            ]
-          },
-          {
-            "rtuNumber": "7680787",
-            "lane": "51",
-            "name": "Vio Still 0.5l Wasser  inkl. Pfand",
-            "old": 1.6,
-            "new": 1.3,
-            "pct": 19,
-            "until": "2026-11-23",
-            "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
-            "lanes": [
-              "7680787:51"
-            ]
-          },
           {
             "rtuNumber": "7680787",
             "lane": "48",
@@ -231,77 +167,14 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-23T18:11:37.090Z"
+        "updatedAt": "2026-11-24T03:01:41.563Z"
       }
     }
   },
   "machineAds": {},
   "lastEveningRunDay": "2026-11-23",
-  "lastMorningRunDay": "2026-11-23",
+  "lastMorningRunDay": "2026-11-24",
   "clearance": {
-    "7680787:51": {
-      "rtuNumber": "7680787",
-      "lane": "51",
-      "name": "Vio Still 0.5l Wasser  inkl. Pfand",
-      "cid": "100021791",
-      "originalPrice": 1.6,
-      "originalCostPrice": 0.74,
-      "clearancePrice": 1.3,
-      "clearanceCostPrice": 0.74,
-      "percent": 20,
-      "effectivePercent": 19,
-      "costFloor": 0.9,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "slow",
-      "startedAt": "2026-11-09T06:01:06.428Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 5,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-23T18:11:35.721Z"
-    },
-    "7680787:58": {
-      "rtuNumber": "7680787",
-      "lane": "58",
-      "name": "Coca Cola Zero 0.5l  inkl. Pfand",
-      "cid": "100021706",
-      "originalPrice": 2.2,
-      "originalCostPrice": 1.05,
-      "clearancePrice": 1.75,
-      "clearanceCostPrice": 1.05,
-      "percent": 20,
-      "effectivePercent": 20,
-      "costFloor": 1.3,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "slow",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 5,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-23T18:11:35.721Z"
-    },
-    "7680800:38": {
-      "rtuNumber": "7680800",
-      "lane": "38",
-      "name": "Haribo Pico Balla Sauer",
-      "cid": "100025288",
-      "originalPrice": 2.2,
-      "originalCostPrice": 1,
-      "clearancePrice": 1.55,
-      "clearanceCostPrice": 1,
-      "percent": 30,
-      "effectivePercent": 30,
-      "costFloor": 1.2,
-      "costKnown": true,
-      "floorBlocked": false,
-      "reason": "dead",
-      "startedAt": "2026-11-09T06:01:06.429Z",
-      "endsAt": "2026-11-23",
-      "stockAtStart": 3,
-      "hideFromAd": false,
-      "updatedAt": "2026-11-23T18:11:35.721Z"
-    },
     "7680783:31": {
       "rtuNumber": "7680783",
       "lane": "31",
@@ -321,7 +194,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-23T18:11:35.721Z",
+      "updatedAt": "2026-11-24T03:00:25.269Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -344,7 +217,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-23T18:11:35.722Z"
+      "updatedAt": "2026-11-24T03:00:25.269Z"
     },
     "7680787:48": {
       "rtuNumber": "7680787",
@@ -365,7 +238,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-23T18:11:35.721Z"
+      "updatedAt": "2026-11-24T03:00:24.684Z"
     },
     "7680783:53": {
       "rtuNumber": "7680783",
@@ -386,7 +259,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-23T18:11:35.721Z"
+      "updatedAt": "2026-11-24T03:00:25.269Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-23T18:11:34.118Z",
