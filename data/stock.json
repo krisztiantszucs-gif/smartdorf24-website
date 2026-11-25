@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-24T22:48:17.762Z",
+  "updatedAt": "2026-11-25T00:23:33.875Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-24T22:48:17.762Z",
+          "fetchedAt": "2026-11-25T00:23:33.875Z",
           "items": [
             {
               "lane": "1",
@@ -228,7 +228,7 @@
               "level": 4,
               "name": "BiFi Roll 40g",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b22597f3c98b49c895f27b149d2130ce.jpeg",
-              "price": 0.9,
+              "price": 0.55,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-24T22:48:17.762Z",
+          "fetchedAt": "2026-11-25T00:23:33.875Z",
           "items": [
             {
               "lane": "2",
@@ -827,7 +827,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-24T22:48:17.762Z",
+          "fetchedAt": "2026-11-25T00:23:33.875Z",
           "items": [
             {
               "lane": "1",
@@ -1014,7 +1014,7 @@
               "level": 4,
               "name": "BiFi Roll 40g",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b22597f3c98b49c895f27b149d2130ce.jpeg",
-              "price": 1.3,
+              "price": 0.8,
               "stock": 3,
               "capacity": 10,
               "expired": false
@@ -1259,7 +1259,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-24T22:48:17.762Z",
+          "fetchedAt": "2026-11-25T00:23:33.875Z",
           "items": [
             {
               "lane": "2",

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-24T17:08:40.717Z",
-  "lastRunDay": "2026-11-24",
+  "lastRunAt": "2026-11-25T00:21:51.831Z",
+  "lastRunDay": "2026-11-25",
   "active": {
     "7680787:36": {
       "rtuNumber": "7680787",
@@ -9,12 +9,12 @@
       "name": "BiFi Roll 40g",
       "originalPrice": 1.1,
       "originalCostPrice": 0.84,
-      "discountPrice": 0.9,
-      "discountCostPrice": 0.84,
-      "percent": 20,
+      "discountPrice": 0.55,
+      "discountCostPrice": 0.55,
+      "percent": 50,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:11.653Z",
-      "updatedAt": "2026-11-24T17:08:40.717Z"
+      "updatedAt": "2026-11-25T00:21:51.475Z"
     },
     "7680800:34": {
       "rtuNumber": "7680800",
@@ -22,23 +22,23 @@
       "name": "BiFi Roll 40g",
       "originalPrice": 1.6,
       "originalCostPrice": 0.84,
-      "discountPrice": 1.3,
-      "discountCostPrice": 0.84,
-      "percent": 20,
+      "discountPrice": 0.8,
+      "discountCostPrice": 0.8,
+      "percent": 50,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:13.331Z",
-      "updatedAt": "2026-11-24T17:08:40.717Z"
+      "updatedAt": "2026-11-25T00:21:51.831Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002340",
+        "advertiseId": "100002353",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-24-c0e6d1",
+        "adName": "SD24-combined-steinsberg-2026-11-25-c0cf38",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/34b1084473514e228e0f906c2ab4643d.mp4",
-        "hash": "c0e6d17e8116bcff",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9af6cd129341479ea3552b9179ca3f18.mp4",
+        "hash": "c0cf38fac9fb7a30",
         "segments": [
           "karamalz",
           "live",
@@ -51,8 +51,8 @@
             "lane": "34",
             "name": "BiFi Roll 40g",
             "old": 1.6,
-            "new": 1.3,
-            "pct": 20,
+            "new": 0.8,
+            "pct": 50,
             "until": "2026-11-27",
             "lanes": [
               "7680800:34"
@@ -114,15 +114,15 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-24T17:08:44.853Z"
+        "updatedAt": "2026-11-25T00:23:01.956Z"
       },
       "schiesheim": {
-        "advertiseId": "100002341",
+        "advertiseId": "100002354",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-11-24-bb9736",
+        "adName": "SD24-combined-schiesheim-2026-11-25-0a2d2b",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ca6829d6fc4442fa8f41e24bf6b2d9df.mp4",
-        "hash": "bb973635feadf32c",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/243eba0b1d20473590f98e975b581660.mp4",
+        "hash": "0a2d2b5c50342be3",
         "segments": [
           "live",
           "deals",
@@ -134,8 +134,8 @@
             "lane": "36",
             "name": "BiFi Roll 40g",
             "old": 1.1,
-            "new": 0.9,
-            "pct": 20,
+            "new": 0.55,
+            "pct": 50,
             "until": "2026-11-27",
             "lanes": [
               "7680787:36"
@@ -167,13 +167,13 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-24T17:08:49.069Z"
+        "updatedAt": "2026-11-25T00:23:32.346Z"
       }
     }
   },
   "machineAds": {},
   "lastEveningRunDay": "2026-11-24",
-  "lastMorningRunDay": "2026-11-24",
+  "lastMorningRunDay": "2026-11-25",
   "clearance": {
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -194,7 +194,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-24T17:08:40.717Z",
+      "updatedAt": "2026-11-25T00:21:51.831Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -217,7 +217,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-24T17:08:40.717Z"
+      "updatedAt": "2026-11-25T00:21:51.831Z"
     },
     "7680787:48": {
       "rtuNumber": "7680787",
@@ -238,7 +238,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-24T17:08:40.717Z"
+      "updatedAt": "2026-11-25T00:21:51.475Z"
     },
     "7680783:53": {
       "rtuNumber": "7680783",
@@ -259,7 +259,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-24T17:08:40.717Z"
+      "updatedAt": "2026-11-25T00:21:51.831Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-23T18:11:34.118Z",
