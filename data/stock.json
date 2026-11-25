@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-25T16:28:39.287Z",
+  "updatedAt": "2026-11-25T23:23:19.065Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-25T16:28:39.287Z",
+          "fetchedAt": "2026-11-25T23:23:19.065Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-25T16:28:39.287Z",
+          "fetchedAt": "2026-11-25T23:23:19.065Z",
           "items": [
             {
               "lane": "2",
@@ -486,12 +486,22 @@
               "expired": false
             },
             {
+              "lane": "5",
+              "level": 1,
+              "name": "Mikado Keks-Sticks Milchschokolade 75g",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/ed7b5378c2cf49fd89f1a9e547c0fbff.jpeg",
+              "price": 2.4,
+              "stock": 2,
+              "capacity": 10,
+              "expired": false
+            },
+            {
               "lane": "11",
               "level": 2,
               "name": "Milka Sensations Cookies",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/7d29fa3d86e242629a04df86d40a725e.png",
               "price": 3,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -511,7 +521,7 @@
               "name": "Milka Choco Brookie",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/074141c91c3041c0bcf1e724b798461a.png",
               "price": 3.2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 3,
               "expired": false
             },
@@ -582,6 +592,46 @@
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f75a9f89bebd49d1879263b4ea67b6ff.png",
               "price": 3.2,
               "stock": 2,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "31",
+              "level": 4,
+              "name": "Coca-Cola Vanilla",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1b8fbd8cd5054008adbe3c1d42f085e9.png",
+              "price": 1.7,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "32",
+              "level": 4,
+              "name": "Coca-Cola Zero Sugar Holiday Creamy Vanilla",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f31375b43ee94a26ab31bc9185b0f250.png",
+              "price": 1.7,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "33",
+              "level": 4,
+              "name": "Coca-Cola Zero Koffein",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f82151be270643b8bad735ff80fc8ada.png",
+              "price": 1.7,
+              "stock": 5,
+              "capacity": 5,
+              "expired": false
+            },
+            {
+              "lane": "34",
+              "level": 4,
+              "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
+              "price": 1.9,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -827,7 +877,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-25T16:28:39.287Z",
+          "fetchedAt": "2026-11-25T23:23:19.065Z",
           "items": [
             {
               "lane": "1",
@@ -1145,7 +1195,7 @@
               "name": "Sportyfeel Protein Bar",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/be5b75ccb9fd4956a5f5d717733cbc4c.png",
               "price": 1.5,
-              "stock": 8,
+              "stock": 7,
               "capacity": 10,
               "expired": false
             },
@@ -1259,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-25T16:28:39.287Z",
+          "fetchedAt": "2026-11-25T23:23:19.065Z",
           "items": [
             {
               "lane": "2",
@@ -1337,7 +1387,7 @@
               "name": "Starbucks Caramel Macchiato 500ml",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/4d4f27c15651463f9fe8b17efc51bc45.png",
               "price": 5,
-              "stock": 1,
+              "stock": 0,
               "capacity": 3,
               "expired": false
             },
@@ -1507,7 +1557,7 @@
               "name": "Red Bull The Sea Blue Edition",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/00a159fc5bfb46d6a6a88bd635404995.png",
               "price": 2.2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -1527,7 +1577,7 @@
               "name": "Coca-Cola Zero Sugar Holiday Creamy Vanilla",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f31375b43ee94a26ab31bc9185b0f250.png",
               "price": 1.7,
-              "stock": 3,
+              "stock": 2,
               "capacity": 10,
               "expired": false
             },
