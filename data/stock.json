@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-25T23:23:19.065Z",
+  "updatedAt": "2026-11-26T00:01:22.393Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,14 +21,14 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-25T23:23:19.065Z",
+          "fetchedAt": "2026-11-26T00:01:22.393Z",
           "items": [
             {
               "lane": "1",
               "level": 1,
               "name": "Choco Chip Cookies",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/369fe3b29e5f4559baee5414c67f4f14.jpeg",
-              "price": 2,
+              "price": 1.6,
               "stock": 1,
               "capacity": 3,
               "expired": false
@@ -358,7 +358,7 @@
               "level": 6,
               "name": "Vio Still 0.5l Wasser  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/0be3697fa5424cee97334b390dfe6f19.jpeg",
-              "price": 1.6,
+              "price": 1.3,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -368,7 +368,7 @@
               "level": 6,
               "name": "Vio Medium 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3b1a495a6d2d494ea3f0297bad302516.jpeg",
-              "price": 1.6,
+              "price": 1.3,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -378,7 +378,7 @@
               "level": 6,
               "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/c58850aa0ecf40d9a3c1fbd61c2c2ed7.jpeg",
-              "price": 2.2,
+              "price": 1.75,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -428,7 +428,7 @@
               "level": 6,
               "name": "Coca Cola Zero 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
-              "price": 2.2,
+              "price": 1.75,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -438,7 +438,7 @@
               "level": 6,
               "name": "Coca Cola 0.5l Original inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1fa6cb77ef544f9aa795103fd5b671a7.jpeg",
-              "price": 2.2,
+              "price": 1.75,
               "stock": 4,
               "capacity": 5,
               "expired": false
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-25T23:23:19.065Z",
+          "fetchedAt": "2026-11-26T00:01:22.393Z",
           "items": [
             {
               "lane": "2",
@@ -877,7 +877,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-25T23:23:19.065Z",
+          "fetchedAt": "2026-11-26T00:01:22.393Z",
           "items": [
             {
               "lane": "1",
@@ -1184,7 +1184,7 @@
               "level": 5,
               "name": "Smarties",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/590f59b9add746c6beb00de283b64173.jpg",
-              "price": 1.3,
+              "price": 1.05,
               "stock": 3,
               "capacity": 10,
               "expired": false
@@ -1309,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-25T23:23:19.065Z",
+          "fetchedAt": "2026-11-26T00:01:22.393Z",
           "items": [
             {
               "lane": "2",
@@ -1656,7 +1656,7 @@
               "level": 6,
               "name": "Coca Cola Zero 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
-              "price": 2.2,
+              "price": 1.75,
               "stock": 5,
               "capacity": 5,
               "expired": false

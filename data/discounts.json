@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-25T16:28:41.260Z",
-  "lastRunDay": "2026-11-25",
+  "lastRunAt": "2026-11-25T23:59:22.782Z",
+  "lastRunDay": "2026-11-26",
   "active": {
     "7680787:36": {
       "rtuNumber": "7680787",
@@ -14,7 +14,7 @@
       "percent": 50,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:11.653Z",
-      "updatedAt": "2026-11-25T16:28:41.260Z"
+      "updatedAt": "2026-11-25T23:59:21.995Z"
     },
     "7680800:34": {
       "rtuNumber": "7680800",
@@ -27,18 +27,135 @@
       "percent": 50,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:13.331Z",
-      "updatedAt": "2026-11-25T16:28:41.260Z"
+      "updatedAt": "2026-11-25T23:59:22.442Z"
+    },
+    "7680787:1": {
+      "rtuNumber": "7680787",
+      "lane": "1",
+      "name": "Choco Chip Cookies",
+      "originalPrice": 2,
+      "originalCostPrice": 1,
+      "discountPrice": 1.6,
+      "discountCostPrice": 1,
+      "percent": 20,
+      "effDate": "2026-11-30",
+      "startedAt": "2026-11-25T23:59:21.995Z",
+      "updatedAt": "2026-11-25T23:59:21.995Z"
+    },
+    "7680787:51": {
+      "rtuNumber": "7680787",
+      "lane": "51",
+      "name": "Vio Still 0.5l Wasser  inkl. Pfand",
+      "originalPrice": 1.6,
+      "originalCostPrice": 0.74,
+      "discountPrice": 1.3,
+      "discountCostPrice": 0.74,
+      "percent": 20,
+      "effDate": "2026-11-30",
+      "startedAt": "2026-11-25T23:59:21.995Z",
+      "updatedAt": "2026-11-25T23:59:21.995Z"
+    },
+    "7680787:52": {
+      "rtuNumber": "7680787",
+      "lane": "52",
+      "name": "Vio Medium 0.5l  inkl. Pfand",
+      "originalPrice": 1.6,
+      "originalCostPrice": 0.74,
+      "discountPrice": 1.3,
+      "discountCostPrice": 0.74,
+      "percent": 20,
+      "effDate": "2026-11-30",
+      "startedAt": "2026-11-25T23:59:21.995Z",
+      "updatedAt": "2026-11-25T23:59:21.995Z"
+    },
+    "7680787:53": {
+      "rtuNumber": "7680787",
+      "lane": "53",
+      "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
+      "originalPrice": 2.2,
+      "originalCostPrice": 1.19,
+      "discountPrice": 1.75,
+      "discountCostPrice": 1.19,
+      "percent": 20,
+      "effDate": "2026-11-30",
+      "startedAt": "2026-11-25T23:59:21.995Z",
+      "updatedAt": "2026-11-25T23:59:21.995Z"
+    },
+    "7680787:58": {
+      "rtuNumber": "7680787",
+      "lane": "58",
+      "name": "Coca Cola Zero 0.5l  inkl. Pfand",
+      "originalPrice": 2.2,
+      "originalCostPrice": 1.05,
+      "discountPrice": 1.75,
+      "discountCostPrice": 1.05,
+      "percent": 20,
+      "effDate": "2026-11-30",
+      "startedAt": "2026-11-25T23:59:21.995Z",
+      "updatedAt": "2026-11-25T23:59:21.995Z"
+    },
+    "7680787:59": {
+      "rtuNumber": "7680787",
+      "lane": "59",
+      "name": "Coca Cola 0.5l Original inkl. Pfand",
+      "originalPrice": 2.2,
+      "originalCostPrice": 1.05,
+      "discountPrice": 1.75,
+      "discountCostPrice": 1.05,
+      "percent": 20,
+      "effDate": "2026-11-30",
+      "startedAt": "2026-11-25T23:59:21.995Z",
+      "updatedAt": "2026-11-25T23:59:21.995Z"
+    },
+    "7680800:47": {
+      "rtuNumber": "7680800",
+      "lane": "47",
+      "name": "Smarties",
+      "originalPrice": 1.3,
+      "originalCostPrice": 0.78,
+      "discountPrice": 1.05,
+      "discountCostPrice": 0.78,
+      "percent": 20,
+      "effDate": "2026-11-30",
+      "startedAt": "2026-11-25T23:59:22.442Z",
+      "updatedAt": "2026-11-25T23:59:22.442Z"
+    },
+    "7680783:58": {
+      "rtuNumber": "7680783",
+      "lane": "58",
+      "name": "Coca Cola Zero 0.5l  inkl. Pfand",
+      "originalPrice": 2.2,
+      "originalCostPrice": 1.07,
+      "discountPrice": 1.75,
+      "discountCostPrice": 1.07,
+      "percent": 20,
+      "effDate": "2026-11-30",
+      "startedAt": "2026-11-25T23:59:22.782Z",
+      "updatedAt": "2026-11-25T23:59:22.782Z"
+    },
+    "7680783:59": {
+      "rtuNumber": "7680783",
+      "lane": "59",
+      "name": "Coca Cola 0.5l Original inkl. Pfand",
+      "originalPrice": 2.2,
+      "originalCostPrice": 1.07,
+      "discountPrice": 1.75,
+      "discountCostPrice": 1.07,
+      "percent": 20,
+      "effDate": "2026-11-30",
+      "startedAt": "2026-11-25T23:59:22.782Z",
+      "updatedAt": "2026-11-25T23:59:22.782Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002353",
+        "advertiseId": "100002358",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-25-c0cf38",
+        "adName": "SD24-combined-steinsberg-2026-11-26-4c1b3d",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9af6cd129341479ea3552b9179ca3f18.mp4",
-        "hash": "c0cf38fac9fb7a30",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fc33af6d04a542e99a835ce4b8a14fc8.mp4",
+        "hash": "4c1b3d4d3925f3c2",
         "segments": [
           "karamalz",
           "live",
@@ -56,6 +173,42 @@
             "until": "2026-11-27",
             "lanes": [
               "7680800:34"
+            ]
+          },
+          {
+            "rtuNumber": "7680783",
+            "lane": "59",
+            "name": "Coca Cola 0.5l Original inkl. Pfand",
+            "old": 2.2,
+            "new": 1.75,
+            "pct": 20,
+            "until": "2026-11-30",
+            "lanes": [
+              "7680783:59"
+            ]
+          },
+          {
+            "rtuNumber": "7680783",
+            "lane": "58",
+            "name": "Coca Cola Zero 0.5l  inkl. Pfand",
+            "old": 2.2,
+            "new": 1.75,
+            "pct": 20,
+            "until": "2026-11-30",
+            "lanes": [
+              "7680783:58"
+            ]
+          },
+          {
+            "rtuNumber": "7680800",
+            "lane": "47",
+            "name": "Smarties",
+            "old": 1.3,
+            "new": 1.05,
+            "pct": 20,
+            "until": "2026-11-30",
+            "lanes": [
+              "7680800:47"
             ]
           }
         ],
@@ -114,15 +267,15 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-25T16:28:42.103Z"
+        "updatedAt": "2026-11-26T00:00:45.602Z"
       },
       "schiesheim": {
-        "advertiseId": "100002354",
+        "advertiseId": "100002359",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-11-25-0a2d2b",
+        "adName": "SD24-combined-schiesheim-2026-11-26-73d17c",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/243eba0b1d20473590f98e975b581660.mp4",
-        "hash": "0a2d2b5c50342be3",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/e8a47b6d38a94f46baf59f9fe567173c.mp4",
+        "hash": "73d17c3900b939b4",
         "segments": [
           "live",
           "deals",
@@ -139,6 +292,78 @@
             "until": "2026-11-27",
             "lanes": [
               "7680787:36"
+            ]
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "1",
+            "name": "Choco Chip Cookies",
+            "old": 2,
+            "new": 1.6,
+            "pct": 20,
+            "until": "2026-11-30",
+            "lanes": [
+              "7680787:1"
+            ]
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "59",
+            "name": "Coca Cola 0.5l Original inkl. Pfand",
+            "old": 2.2,
+            "new": 1.75,
+            "pct": 20,
+            "until": "2026-11-30",
+            "lanes": [
+              "7680787:59"
+            ]
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "58",
+            "name": "Coca Cola Zero 0.5l  inkl. Pfand",
+            "old": 2.2,
+            "new": 1.75,
+            "pct": 20,
+            "until": "2026-11-30",
+            "lanes": [
+              "7680787:58"
+            ]
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "53",
+            "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
+            "old": 2.2,
+            "new": 1.75,
+            "pct": 20,
+            "until": "2026-11-30",
+            "lanes": [
+              "7680787:53"
+            ]
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "52",
+            "name": "Vio Medium 0.5l  inkl. Pfand",
+            "old": 1.6,
+            "new": 1.3,
+            "pct": 20,
+            "until": "2026-11-30",
+            "lanes": [
+              "7680787:52"
+            ]
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "51",
+            "name": "Vio Still 0.5l Wasser  inkl. Pfand",
+            "old": 1.6,
+            "new": 1.3,
+            "pct": 20,
+            "until": "2026-11-30",
+            "lanes": [
+              "7680787:51"
             ]
           }
         ],
@@ -167,13 +392,13 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-25T16:28:42.940Z"
+        "updatedAt": "2026-11-26T00:01:20.971Z"
       }
     }
   },
   "machineAds": {},
   "lastEveningRunDay": "2026-11-24",
-  "lastMorningRunDay": "2026-11-25",
+  "lastMorningRunDay": "2026-11-26",
   "clearance": {
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -194,7 +419,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-25T16:28:41.260Z",
+      "updatedAt": "2026-11-25T23:59:22.782Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -217,7 +442,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-25T16:28:41.260Z"
+      "updatedAt": "2026-11-25T23:59:22.782Z"
     },
     "7680787:48": {
       "rtuNumber": "7680787",
@@ -238,7 +463,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-25T16:28:41.260Z"
+      "updatedAt": "2026-11-25T23:59:21.995Z"
     },
     "7680783:53": {
       "rtuNumber": "7680783",
@@ -259,7 +484,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-25T16:28:41.260Z"
+      "updatedAt": "2026-11-25T23:59:22.782Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-23T18:11:34.118Z",
