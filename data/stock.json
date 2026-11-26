@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-26T00:50:34.428Z",
+  "updatedAt": "2026-11-26T05:19:53.621Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T00:50:34.428Z",
+          "fetchedAt": "2026-11-26T05:19:53.621Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T00:50:34.428Z",
+          "fetchedAt": "2026-11-26T05:19:53.621Z",
           "items": [
             {
               "lane": "2",
@@ -877,7 +877,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T00:50:34.428Z",
+          "fetchedAt": "2026-11-26T05:19:53.621Z",
           "items": [
             {
               "lane": "1",
@@ -1125,7 +1125,7 @@
               "name": "Milka Tuc",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/9f88c5fa7ec044c8ab92300767c9608b.png",
               "price": 2.2,
-              "stock": 7,
+              "stock": 6,
               "capacity": 10,
               "expired": false
             },
@@ -1309,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T00:50:34.428Z",
+          "fetchedAt": "2026-11-26T05:19:53.621Z",
           "items": [
             {
               "lane": "2",
@@ -1427,7 +1427,7 @@
               "name": "Fanta Mango DragonFruit",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg",
               "price": 1,
-              "stock": 1,
+              "stock": 0,
               "capacity": 5,
               "expired": false
             },
@@ -1497,7 +1497,7 @@
               "name": "Red Bull Original 250ml  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/625b686852c6421fbc3cbe85a071c86c.jpeg",
               "price": 2.2,
-              "stock": 3,
+              "stock": 1,
               "capacity": 10,
               "expired": false
             },
