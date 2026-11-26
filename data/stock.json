@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-26T05:19:53.621Z",
+  "updatedAt": "2026-11-26T14:37:37.439Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T05:19:53.621Z",
+          "fetchedAt": "2026-11-26T14:37:37.439Z",
           "items": [
             {
               "lane": "1",
@@ -169,7 +169,7 @@
               "name": "Milka LU",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/3830c0a5e93d4f08bd8f8e543c07615c.png",
               "price": 2.2,
-              "stock": 0,
+              "stock": 2,
               "capacity": 8,
               "expired": false
             },
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T05:19:53.621Z",
+          "fetchedAt": "2026-11-26T14:37:37.439Z",
           "items": [
             {
               "lane": "2",
@@ -877,7 +877,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T05:19:53.621Z",
+          "fetchedAt": "2026-11-26T14:37:37.439Z",
           "items": [
             {
               "lane": "1",
@@ -1309,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T05:19:53.621Z",
+          "fetchedAt": "2026-11-26T14:37:37.439Z",
           "items": [
             {
               "lane": "2",
