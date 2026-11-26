@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-25T23:59:22.782Z",
+  "lastRunAt": "2026-11-26T00:50:35.581Z",
   "lastRunDay": "2026-11-26",
   "active": {
     "7680787:36": {
@@ -14,7 +14,7 @@
       "percent": 50,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:11.653Z",
-      "updatedAt": "2026-11-25T23:59:21.995Z"
+      "updatedAt": "2026-11-26T00:50:35.580Z"
     },
     "7680800:34": {
       "rtuNumber": "7680800",
@@ -27,7 +27,7 @@
       "percent": 50,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:13.331Z",
-      "updatedAt": "2026-11-25T23:59:22.442Z"
+      "updatedAt": "2026-11-26T00:50:35.581Z"
     },
     "7680787:1": {
       "rtuNumber": "7680787",
@@ -40,7 +40,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-25T23:59:21.995Z"
+      "updatedAt": "2026-11-26T00:50:35.580Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -53,7 +53,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-25T23:59:21.995Z"
+      "updatedAt": "2026-11-26T00:50:35.581Z"
     },
     "7680787:52": {
       "rtuNumber": "7680787",
@@ -66,7 +66,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-25T23:59:21.995Z"
+      "updatedAt": "2026-11-26T00:50:35.581Z"
     },
     "7680787:53": {
       "rtuNumber": "7680787",
@@ -79,7 +79,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-25T23:59:21.995Z"
+      "updatedAt": "2026-11-26T00:50:35.581Z"
     },
     "7680787:58": {
       "rtuNumber": "7680787",
@@ -92,7 +92,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-25T23:59:21.995Z"
+      "updatedAt": "2026-11-26T00:50:35.581Z"
     },
     "7680787:59": {
       "rtuNumber": "7680787",
@@ -105,7 +105,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-25T23:59:21.995Z"
+      "updatedAt": "2026-11-26T00:50:35.581Z"
     },
     "7680800:47": {
       "rtuNumber": "7680800",
@@ -118,7 +118,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:22.442Z",
-      "updatedAt": "2026-11-25T23:59:22.442Z"
+      "updatedAt": "2026-11-26T00:50:35.581Z"
     },
     "7680783:58": {
       "rtuNumber": "7680783",
@@ -131,7 +131,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:22.782Z",
-      "updatedAt": "2026-11-25T23:59:22.782Z"
+      "updatedAt": "2026-11-26T00:50:35.581Z"
     },
     "7680783:59": {
       "rtuNumber": "7680783",
@@ -144,7 +144,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:22.782Z",
-      "updatedAt": "2026-11-25T23:59:22.782Z"
+      "updatedAt": "2026-11-26T00:50:35.581Z"
     }
   },
   "permanentAds": {
@@ -267,7 +267,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-26T00:00:45.602Z"
+        "updatedAt": "2026-11-26T00:50:37.754Z"
       },
       "schiesheim": {
         "advertiseId": "100002359",
@@ -392,7 +392,7 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-26T00:01:20.971Z"
+        "updatedAt": "2026-11-26T00:50:38.070Z"
       }
     }
   },
@@ -419,7 +419,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-25T23:59:22.782Z",
+      "updatedAt": "2026-11-26T00:50:35.581Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -442,7 +442,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-25T23:59:22.782Z"
+      "updatedAt": "2026-11-26T00:50:35.581Z"
     },
     "7680787:48": {
       "rtuNumber": "7680787",
@@ -463,7 +463,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-25T23:59:21.995Z"
+      "updatedAt": "2026-11-26T00:50:35.581Z"
     },
     "7680783:53": {
       "rtuNumber": "7680783",
@@ -484,7 +484,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-25T23:59:22.782Z"
+      "updatedAt": "2026-11-26T00:50:35.581Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-23T18:11:34.118Z",
