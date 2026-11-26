@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-26T16:01:57.992Z",
+  "lastRunAt": "2026-11-26T17:43:54.607Z",
   "lastRunDay": "2026-11-26",
   "active": {
     "7680787:36": {
@@ -9,12 +9,12 @@
       "name": "BiFi Roll 40g",
       "originalPrice": 1.1,
       "originalCostPrice": 0.84,
-      "discountPrice": 0.55,
-      "discountCostPrice": 0.55,
-      "percent": 50,
+      "discountPrice": 0.35,
+      "discountCostPrice": 0.35,
+      "percent": 70,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:11.653Z",
-      "updatedAt": "2026-11-26T16:01:57.991Z"
+      "updatedAt": "2026-11-26T17:43:52.974Z"
     },
     "7680800:34": {
       "rtuNumber": "7680800",
@@ -22,12 +22,12 @@
       "name": "BiFi Roll 40g",
       "originalPrice": 1.6,
       "originalCostPrice": 0.84,
-      "discountPrice": 0.8,
-      "discountCostPrice": 0.8,
-      "percent": 50,
+      "discountPrice": 0.5,
+      "discountCostPrice": 0.5,
+      "percent": 70,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:13.331Z",
-      "updatedAt": "2026-11-26T16:01:57.991Z"
+      "updatedAt": "2026-11-26T17:43:54.607Z"
     },
     "7680787:1": {
       "rtuNumber": "7680787",
@@ -40,7 +40,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-26T16:01:57.991Z"
+      "updatedAt": "2026-11-26T17:43:52.974Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -53,7 +53,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-26T16:01:57.991Z"
+      "updatedAt": "2026-11-26T17:43:52.974Z"
     },
     "7680787:52": {
       "rtuNumber": "7680787",
@@ -66,7 +66,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-26T16:01:57.991Z"
+      "updatedAt": "2026-11-26T17:43:52.974Z"
     },
     "7680787:53": {
       "rtuNumber": "7680787",
@@ -79,7 +79,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-26T16:01:57.991Z"
+      "updatedAt": "2026-11-26T17:43:52.974Z"
     },
     "7680787:58": {
       "rtuNumber": "7680787",
@@ -92,7 +92,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-26T16:01:57.991Z"
+      "updatedAt": "2026-11-26T17:43:52.974Z"
     },
     "7680787:59": {
       "rtuNumber": "7680787",
@@ -105,7 +105,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-26T16:01:57.991Z"
+      "updatedAt": "2026-11-26T17:43:52.974Z"
     },
     "7680800:47": {
       "rtuNumber": "7680800",
@@ -118,7 +118,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:22.442Z",
-      "updatedAt": "2026-11-26T16:01:57.991Z"
+      "updatedAt": "2026-11-26T17:43:54.607Z"
     },
     "7680783:58": {
       "rtuNumber": "7680783",
@@ -131,7 +131,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:22.782Z",
-      "updatedAt": "2026-11-26T16:01:57.992Z"
+      "updatedAt": "2026-11-26T17:43:54.607Z"
     },
     "7680783:59": {
       "rtuNumber": "7680783",
@@ -144,18 +144,18 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:22.782Z",
-      "updatedAt": "2026-11-26T16:01:57.992Z"
+      "updatedAt": "2026-11-26T17:43:54.607Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002358",
+        "advertiseId": "100002365",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-26-4c1b3d",
+        "adName": "SD24-combined-steinsberg-2026-11-26-4f6483",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fc33af6d04a542e99a835ce4b8a14fc8.mp4",
-        "hash": "4c1b3d4d3925f3c2",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/746faf51cf2547b6b9539c5646d97111.mp4",
+        "hash": "4f648391024ae237",
         "segments": [
           "karamalz",
           "live",
@@ -168,8 +168,8 @@
             "lane": "34",
             "name": "BiFi Roll 40g",
             "old": 1.6,
-            "new": 0.8,
-            "pct": 50,
+            "new": 0.5,
+            "pct": 70,
             "until": "2026-11-27",
             "lanes": [
               "7680800:34"
@@ -267,15 +267,15 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-26T16:01:58.828Z"
+        "updatedAt": "2026-11-26T17:45:17.791Z"
       },
       "schiesheim": {
-        "advertiseId": "100002359",
+        "advertiseId": "100002366",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-11-26-73d17c",
+        "adName": "SD24-combined-schiesheim-2026-11-26-e9c6ce",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/e8a47b6d38a94f46baf59f9fe567173c.mp4",
-        "hash": "73d17c3900b939b4",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/34f2986e67754c52b31800d92c48b97c.mp4",
+        "hash": "e9c6cebb0c71ff72",
         "segments": [
           "live",
           "deals",
@@ -287,8 +287,8 @@
             "lane": "36",
             "name": "BiFi Roll 40g",
             "old": 1.1,
-            "new": 0.55,
-            "pct": 50,
+            "new": 0.35,
+            "pct": 70,
             "until": "2026-11-27",
             "lanes": [
               "7680787:36"
@@ -392,12 +392,12 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-26T16:01:59.731Z"
+        "updatedAt": "2026-11-26T17:45:59.063Z"
       }
     }
   },
   "machineAds": {},
-  "lastEveningRunDay": "2026-11-24",
+  "lastEveningRunDay": "2026-11-26",
   "lastMorningRunDay": "2026-11-26",
   "clearance": {
     "7680783:31": {
@@ -419,7 +419,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-26T16:01:57.992Z",
+      "updatedAt": "2026-11-26T17:43:54.607Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -442,7 +442,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-26T16:01:57.992Z"
+      "updatedAt": "2026-11-26T17:43:54.607Z"
     },
     "7680787:48": {
       "rtuNumber": "7680787",
@@ -463,7 +463,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-26T16:01:57.991Z"
+      "updatedAt": "2026-11-26T17:43:52.974Z"
     },
     "7680783:53": {
       "rtuNumber": "7680783",
@@ -484,7 +484,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-26T16:01:57.992Z"
+      "updatedAt": "2026-11-26T17:43:54.607Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-23T18:11:34.118Z",

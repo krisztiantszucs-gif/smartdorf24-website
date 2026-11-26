@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-26T16:01:55.875Z",
+  "updatedAt": "2026-11-26T17:46:07.048Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T16:01:55.875Z",
+          "fetchedAt": "2026-11-26T17:46:07.048Z",
           "items": [
             {
               "lane": "1",
@@ -228,7 +228,7 @@
               "level": 4,
               "name": "BiFi Roll 40g",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b22597f3c98b49c895f27b149d2130ce.jpeg",
-              "price": 0.55,
+              "price": 0.35,
               "stock": 5,
               "capacity": 5,
               "expired": false
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T16:01:55.875Z",
+          "fetchedAt": "2026-11-26T17:46:07.048Z",
           "items": [
             {
               "lane": "2",
@@ -877,7 +877,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T16:01:55.875Z",
+          "fetchedAt": "2026-11-26T17:46:07.048Z",
           "items": [
             {
               "lane": "1",
@@ -1064,7 +1064,7 @@
               "level": 4,
               "name": "BiFi Roll 40g",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b22597f3c98b49c895f27b149d2130ce.jpeg",
-              "price": 0.8,
+              "price": 0.5,
               "stock": 3,
               "capacity": 10,
               "expired": false
@@ -1309,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T16:01:55.875Z",
+          "fetchedAt": "2026-11-26T17:46:07.048Z",
           "items": [
             {
               "lane": "2",
@@ -1637,7 +1637,7 @@
               "name": "Monster Energy Ultra Zero Zucker",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6cf33328ba4645e8a23d723e7cb05ccd.png",
               "price": 2.2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 3,
               "expired": false
             },
