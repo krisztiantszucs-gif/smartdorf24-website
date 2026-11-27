@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-26T23:57:38.256Z",
+  "updatedAt": "2026-11-27T00:21:09.169Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T23:57:38.256Z",
+          "fetchedAt": "2026-11-27T00:21:09.169Z",
           "items": [
             {
               "lane": "1",
@@ -198,7 +198,7 @@
               "level": 4,
               "name": "Nutella Go",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
-              "price": 1.9,
+              "price": 1.5,
               "stock": 3,
               "capacity": 5,
               "expired": false
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T23:57:38.256Z",
+          "fetchedAt": "2026-11-27T00:21:09.169Z",
           "items": [
             {
               "lane": "2",
@@ -877,7 +877,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T23:57:38.256Z",
+          "fetchedAt": "2026-11-27T00:21:09.169Z",
           "items": [
             {
               "lane": "1",
@@ -1114,7 +1114,7 @@
               "level": 4,
               "name": "Haribo Pasta Penne",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/fc3826465a294e76b32bce15829942ae.jpeg",
-              "price": 2.1,
+              "price": 1.7,
               "stock": 2,
               "capacity": 5,
               "expired": false
@@ -1309,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-26T23:57:38.256Z",
+          "fetchedAt": "2026-11-27T00:21:09.169Z",
           "items": [
             {
               "lane": "2",
@@ -1656,7 +1656,7 @@
               "level": 6,
               "name": "Coca Cola Zero 0.5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/2dc8c497fed34b18a855ac24d0fd9164.jpeg",
-              "price": 1.75,
+              "price": 2.2,
               "stock": 5,
               "capacity": 5,
               "expired": false

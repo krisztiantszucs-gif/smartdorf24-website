@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-26T17:43:54.607Z",
-  "lastRunDay": "2026-11-26",
+  "lastRunAt": "2026-11-27T00:19:16.913Z",
+  "lastRunDay": "2026-11-27",
   "active": {
     "7680787:36": {
       "rtuNumber": "7680787",
@@ -14,7 +14,7 @@
       "percent": 70,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:11.653Z",
-      "updatedAt": "2026-11-26T17:43:52.974Z"
+      "updatedAt": "2026-11-27T00:19:16.135Z"
     },
     "7680800:34": {
       "rtuNumber": "7680800",
@@ -27,7 +27,7 @@
       "percent": 70,
       "effDate": "2026-11-27",
       "startedAt": "2026-11-23T06:10:13.331Z",
-      "updatedAt": "2026-11-26T17:43:54.607Z"
+      "updatedAt": "2026-11-27T00:19:16.567Z"
     },
     "7680787:1": {
       "rtuNumber": "7680787",
@@ -40,7 +40,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-26T17:43:52.974Z"
+      "updatedAt": "2026-11-27T00:19:16.135Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -53,7 +53,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-26T17:43:52.974Z"
+      "updatedAt": "2026-11-27T00:19:16.135Z"
     },
     "7680787:52": {
       "rtuNumber": "7680787",
@@ -66,7 +66,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-26T17:43:52.974Z"
+      "updatedAt": "2026-11-27T00:19:16.135Z"
     },
     "7680787:53": {
       "rtuNumber": "7680787",
@@ -79,7 +79,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-26T17:43:52.974Z"
+      "updatedAt": "2026-11-27T00:19:16.135Z"
     },
     "7680787:58": {
       "rtuNumber": "7680787",
@@ -92,7 +92,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-26T17:43:52.974Z"
+      "updatedAt": "2026-11-27T00:19:16.135Z"
     },
     "7680787:59": {
       "rtuNumber": "7680787",
@@ -105,7 +105,7 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-26T17:43:52.974Z"
+      "updatedAt": "2026-11-27T00:19:16.135Z"
     },
     "7680800:47": {
       "rtuNumber": "7680800",
@@ -118,44 +118,44 @@
       "percent": 20,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:22.442Z",
-      "updatedAt": "2026-11-26T17:43:54.607Z"
+      "updatedAt": "2026-11-27T00:19:16.567Z"
     },
-    "7680783:58": {
-      "rtuNumber": "7680783",
-      "lane": "58",
-      "name": "Coca Cola Zero 0.5l  inkl. Pfand",
-      "originalPrice": 2.2,
-      "originalCostPrice": 1.07,
-      "discountPrice": 1.75,
-      "discountCostPrice": 1.07,
+    "7680787:33": {
+      "rtuNumber": "7680787",
+      "lane": "33",
+      "name": "Nutella Go",
+      "originalPrice": 1.9,
+      "originalCostPrice": 1.29,
+      "discountPrice": 1.5,
+      "discountCostPrice": 1.29,
       "percent": 20,
-      "effDate": "2026-11-30",
-      "startedAt": "2026-11-25T23:59:22.782Z",
-      "updatedAt": "2026-11-26T17:43:54.607Z"
+      "effDate": "2026-12-01",
+      "startedAt": "2026-11-27T00:19:16.135Z",
+      "updatedAt": "2026-11-27T00:19:16.135Z"
     },
-    "7680783:59": {
-      "rtuNumber": "7680783",
-      "lane": "59",
-      "name": "Coca Cola 0.5l Original inkl. Pfand",
-      "originalPrice": 2.2,
-      "originalCostPrice": 1.07,
-      "discountPrice": 1.75,
-      "discountCostPrice": 1.07,
+    "7680800:39": {
+      "rtuNumber": "7680800",
+      "lane": "39",
+      "name": "Haribo Pasta Penne",
+      "originalPrice": 2.1,
+      "originalCostPrice": 1.3,
+      "discountPrice": 1.7,
+      "discountCostPrice": 1.3,
       "percent": 20,
-      "effDate": "2026-11-30",
-      "startedAt": "2026-11-25T23:59:22.782Z",
-      "updatedAt": "2026-11-26T17:43:54.607Z"
+      "effDate": "2026-12-01",
+      "startedAt": "2026-11-27T00:19:16.567Z",
+      "updatedAt": "2026-11-27T00:19:16.567Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002365",
+        "advertiseId": "100002371",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-26-4f6483",
+        "adName": "SD24-combined-steinsberg-2026-11-27-da27b4",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/746faf51cf2547b6b9539c5646d97111.mp4",
-        "hash": "4f648391024ae237",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fe23498734f42928722f8eeb8538d50.mp4",
+        "hash": "da27b4d559150ae0",
         "segments": [
           "karamalz",
           "live",
@@ -176,30 +176,6 @@
             ]
           },
           {
-            "rtuNumber": "7680783",
-            "lane": "59",
-            "name": "Coca Cola 0.5l Original inkl. Pfand",
-            "old": 2.2,
-            "new": 1.75,
-            "pct": 20,
-            "until": "2026-11-30",
-            "lanes": [
-              "7680783:59"
-            ]
-          },
-          {
-            "rtuNumber": "7680783",
-            "lane": "58",
-            "name": "Coca Cola Zero 0.5l  inkl. Pfand",
-            "old": 2.2,
-            "new": 1.75,
-            "pct": 20,
-            "until": "2026-11-30",
-            "lanes": [
-              "7680783:58"
-            ]
-          },
-          {
             "rtuNumber": "7680800",
             "lane": "47",
             "name": "Smarties",
@@ -209,6 +185,18 @@
             "until": "2026-11-30",
             "lanes": [
               "7680800:47"
+            ]
+          },
+          {
+            "rtuNumber": "7680800",
+            "lane": "39",
+            "name": "Haribo Pasta Penne",
+            "old": 2.1,
+            "new": 1.7,
+            "pct": 20,
+            "until": "2026-12-01",
+            "lanes": [
+              "7680800:39"
             ]
           }
         ],
@@ -267,15 +255,15 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-26T17:45:17.791Z"
+        "updatedAt": "2026-11-27T00:20:32.752Z"
       },
       "schiesheim": {
-        "advertiseId": "100002366",
+        "advertiseId": "100002372",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-11-26-e9c6ce",
+        "adName": "SD24-combined-schiesheim-2026-11-27-0a5b93",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/34f2986e67754c52b31800d92c48b97c.mp4",
-        "hash": "e9c6cebb0c71ff72",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d1b2377b36654d65b2b8f498ea2d8fa9.mp4",
+        "hash": "0a5b93cd46aff7a0",
         "segments": [
           "live",
           "deals",
@@ -365,6 +353,18 @@
             "lanes": [
               "7680787:51"
             ]
+          },
+          {
+            "rtuNumber": "7680787",
+            "lane": "33",
+            "name": "Nutella Go",
+            "old": 1.9,
+            "new": 1.5,
+            "pct": 20,
+            "until": "2026-12-01",
+            "lanes": [
+              "7680787:33"
+            ]
           }
         ],
         "verifiedSale": [
@@ -392,13 +392,13 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-26T17:45:59.063Z"
+        "updatedAt": "2026-11-27T00:21:07.056Z"
       }
     }
   },
   "machineAds": {},
   "lastEveningRunDay": "2026-11-26",
-  "lastMorningRunDay": "2026-11-26",
+  "lastMorningRunDay": "2026-11-27",
   "clearance": {
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -419,7 +419,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-26T17:43:54.607Z",
+      "updatedAt": "2026-11-27T00:19:16.913Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -442,7 +442,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-26T17:43:54.607Z"
+      "updatedAt": "2026-11-27T00:19:16.913Z"
     },
     "7680787:48": {
       "rtuNumber": "7680787",
@@ -463,7 +463,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-26T17:43:52.974Z"
+      "updatedAt": "2026-11-27T00:19:16.135Z"
     },
     "7680783:53": {
       "rtuNumber": "7680783",
@@ -484,7 +484,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-26T17:43:54.607Z"
+      "updatedAt": "2026-11-27T00:19:16.913Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-23T18:11:34.118Z",
