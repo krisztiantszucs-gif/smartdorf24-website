@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-27T21:37:24.674Z",
+  "updatedAt": "2026-11-27T21:57:24.047Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-27T21:37:24.674Z",
+          "fetchedAt": "2026-11-27T21:57:24.047Z",
           "items": [
             {
               "lane": "1",
@@ -129,7 +129,7 @@
               "name": "funny-frisch goldfischli original!",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d91a8269c52b468686ef6de20eabf4d7.png",
               "price": 2,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -229,7 +229,7 @@
               "name": "BiFi Roll 40g",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/b22597f3c98b49c895f27b149d2130ce.jpeg",
               "price": 0.35,
-              "stock": 5,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -389,7 +389,7 @@
               "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
               "price": 2.2,
-              "stock": 4,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-27T21:37:24.674Z",
+          "fetchedAt": "2026-11-27T21:57:24.047Z",
           "items": [
             {
               "lane": "2",
@@ -877,7 +877,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-27T21:37:24.674Z",
+          "fetchedAt": "2026-11-27T21:57:24.047Z",
           "items": [
             {
               "lane": "1",
@@ -1309,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-27T21:37:24.674Z",
+          "fetchedAt": "2026-11-27T21:57:24.047Z",
           "items": [
             {
               "lane": "2",
