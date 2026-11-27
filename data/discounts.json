@@ -1,46 +1,20 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-27T17:11:31.290Z",
-  "lastRunDay": "2026-11-27",
+  "lastRunAt": "2026-11-27T23:54:29.504Z",
+  "lastRunDay": "2026-11-28",
   "active": {
-    "7680787:36": {
-      "rtuNumber": "7680787",
-      "lane": "36",
-      "name": "BiFi Roll 40g",
-      "originalPrice": 1.1,
-      "originalCostPrice": 0.84,
-      "discountPrice": 0.35,
-      "discountCostPrice": 0.35,
-      "percent": 70,
-      "effDate": "2026-11-27",
-      "startedAt": "2026-11-23T06:10:11.653Z",
-      "updatedAt": "2026-11-27T17:11:31.290Z"
-    },
-    "7680800:34": {
-      "rtuNumber": "7680800",
-      "lane": "34",
-      "name": "BiFi Roll 40g",
-      "originalPrice": 1.6,
-      "originalCostPrice": 0.84,
-      "discountPrice": 0.5,
-      "discountCostPrice": 0.5,
-      "percent": 70,
-      "effDate": "2026-11-27",
-      "startedAt": "2026-11-23T06:10:13.331Z",
-      "updatedAt": "2026-11-27T17:11:31.290Z"
-    },
     "7680787:1": {
       "rtuNumber": "7680787",
       "lane": "1",
       "name": "Choco Chip Cookies",
       "originalPrice": 2,
       "originalCostPrice": 1,
-      "discountPrice": 1.6,
+      "discountPrice": 1,
       "discountCostPrice": 1,
-      "percent": 20,
+      "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-27T17:11:31.290Z"
+      "updatedAt": "2026-11-27T23:54:28.938Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -48,12 +22,12 @@
       "name": "Vio Still 0.5l Wasser  inkl. Pfand",
       "originalPrice": 1.6,
       "originalCostPrice": 0.74,
-      "discountPrice": 1.3,
+      "discountPrice": 0.8,
       "discountCostPrice": 0.74,
-      "percent": 20,
+      "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-27T17:11:31.290Z"
+      "updatedAt": "2026-11-27T23:54:28.939Z"
     },
     "7680787:52": {
       "rtuNumber": "7680787",
@@ -61,12 +35,12 @@
       "name": "Vio Medium 0.5l  inkl. Pfand",
       "originalPrice": 1.6,
       "originalCostPrice": 0.74,
-      "discountPrice": 1.3,
+      "discountPrice": 0.8,
       "discountCostPrice": 0.74,
-      "percent": 20,
+      "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-27T17:11:31.290Z"
+      "updatedAt": "2026-11-27T23:54:28.939Z"
     },
     "7680787:53": {
       "rtuNumber": "7680787",
@@ -74,12 +48,12 @@
       "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
       "originalPrice": 2.2,
       "originalCostPrice": 1.19,
-      "discountPrice": 1.75,
-      "discountCostPrice": 1.19,
-      "percent": 20,
+      "discountPrice": 1.1,
+      "discountCostPrice": 1.1,
+      "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-27T17:11:31.290Z"
+      "updatedAt": "2026-11-27T23:54:28.939Z"
     },
     "7680787:58": {
       "rtuNumber": "7680787",
@@ -87,12 +61,12 @@
       "name": "Coca Cola Zero 0.5l  inkl. Pfand",
       "originalPrice": 2.2,
       "originalCostPrice": 1.05,
-      "discountPrice": 1.75,
+      "discountPrice": 1.1,
       "discountCostPrice": 1.05,
-      "percent": 20,
+      "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-27T17:11:31.290Z"
+      "updatedAt": "2026-11-27T23:54:28.939Z"
     },
     "7680787:59": {
       "rtuNumber": "7680787",
@@ -100,12 +74,12 @@
       "name": "Coca Cola 0.5l Original inkl. Pfand",
       "originalPrice": 2.2,
       "originalCostPrice": 1.05,
-      "discountPrice": 1.75,
+      "discountPrice": 1.1,
       "discountCostPrice": 1.05,
-      "percent": 20,
+      "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-27T17:11:31.290Z"
+      "updatedAt": "2026-11-27T23:54:28.939Z"
     },
     "7680800:47": {
       "rtuNumber": "7680800",
@@ -113,12 +87,12 @@
       "name": "Smarties",
       "originalPrice": 1.3,
       "originalCostPrice": 0.78,
-      "discountPrice": 1.05,
-      "discountCostPrice": 0.78,
-      "percent": 20,
+      "discountPrice": 0.65,
+      "discountCostPrice": 0.65,
+      "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:22.442Z",
-      "updatedAt": "2026-11-27T17:11:31.290Z"
+      "updatedAt": "2026-11-27T23:54:29.504Z"
     },
     "7680787:33": {
       "rtuNumber": "7680787",
@@ -131,7 +105,7 @@
       "percent": 20,
       "effDate": "2026-12-01",
       "startedAt": "2026-11-27T00:19:16.135Z",
-      "updatedAt": "2026-11-27T17:11:31.290Z"
+      "updatedAt": "2026-11-27T23:54:28.938Z"
     },
     "7680800:39": {
       "rtuNumber": "7680800",
@@ -144,18 +118,18 @@
       "percent": 20,
       "effDate": "2026-12-01",
       "startedAt": "2026-11-27T00:19:16.567Z",
-      "updatedAt": "2026-11-27T17:11:31.290Z"
+      "updatedAt": "2026-11-27T23:54:29.504Z"
     }
   },
   "permanentAds": {
     "combinedByLocation": {
       "steinsberg": {
-        "advertiseId": "100002371",
+        "advertiseId": "100002374",
         "advertiseGroupItemId": "100001203",
-        "adName": "SD24-combined-steinsberg-2026-11-27-da27b4",
+        "adName": "SD24-combined-steinsberg-2026-11-28-113e43",
         "groupName": "SD24-combined-steinsberg",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8fe23498734f42928722f8eeb8538d50.mp4",
-        "hash": "da27b4d559150ae0",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d5449f14821d43b89380103004880f9b.mp4",
+        "hash": "113e433a5c1cc7c4",
         "segments": [
           "karamalz",
           "live",
@@ -165,23 +139,11 @@
         "verifiedDeals": [
           {
             "rtuNumber": "7680800",
-            "lane": "34",
-            "name": "BiFi Roll 40g",
-            "old": 1.6,
-            "new": 0.5,
-            "pct": 70,
-            "until": "2026-11-27",
-            "lanes": [
-              "7680800:34"
-            ]
-          },
-          {
-            "rtuNumber": "7680800",
             "lane": "47",
             "name": "Smarties",
             "old": 1.3,
-            "new": 1.05,
-            "pct": 20,
+            "new": 0.65,
+            "pct": 50,
             "until": "2026-11-30",
             "lanes": [
               "7680800:47"
@@ -255,15 +217,15 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-27T17:11:35.551Z"
+        "updatedAt": "2026-11-27T23:55:46.444Z"
       },
       "schiesheim": {
-        "advertiseId": "100002372",
+        "advertiseId": "100002375",
         "advertiseGroupItemId": "100001204",
-        "adName": "SD24-combined-schiesheim-2026-11-27-0a5b93",
+        "adName": "SD24-combined-schiesheim-2026-11-28-f7961e",
         "groupName": "SD24-combined-schiesheim",
-        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d1b2377b36654d65b2b8f498ea2d8fa9.mp4",
-        "hash": "0a5b93cd46aff7a0",
+        "url": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/243723f179224798a90c4e0a2efc230c.mp4",
+        "hash": "f7961e6e11782143",
         "segments": [
           "live",
           "deals",
@@ -272,23 +234,11 @@
         "verifiedDeals": [
           {
             "rtuNumber": "7680787",
-            "lane": "36",
-            "name": "BiFi Roll 40g",
-            "old": 1.1,
-            "new": 0.35,
-            "pct": 70,
-            "until": "2026-11-27",
-            "lanes": [
-              "7680787:36"
-            ]
-          },
-          {
-            "rtuNumber": "7680787",
             "lane": "1",
             "name": "Choco Chip Cookies",
             "old": 2,
-            "new": 1.6,
-            "pct": 20,
+            "new": 1,
+            "pct": 50,
             "until": "2026-11-30",
             "lanes": [
               "7680787:1"
@@ -299,8 +249,8 @@
             "lane": "59",
             "name": "Coca Cola 0.5l Original inkl. Pfand",
             "old": 2.2,
-            "new": 1.75,
-            "pct": 20,
+            "new": 1.1,
+            "pct": 50,
             "until": "2026-11-30",
             "lanes": [
               "7680787:59"
@@ -311,8 +261,8 @@
             "lane": "58",
             "name": "Coca Cola Zero 0.5l  inkl. Pfand",
             "old": 2.2,
-            "new": 1.75,
-            "pct": 20,
+            "new": 1.1,
+            "pct": 50,
             "until": "2026-11-30",
             "lanes": [
               "7680787:58"
@@ -323,8 +273,8 @@
             "lane": "53",
             "name": "Powerade Wild Cherry 0,5l  inkl. Pfand",
             "old": 2.2,
-            "new": 1.75,
-            "pct": 20,
+            "new": 1.1,
+            "pct": 50,
             "until": "2026-11-30",
             "lanes": [
               "7680787:53"
@@ -335,8 +285,8 @@
             "lane": "52",
             "name": "Vio Medium 0.5l  inkl. Pfand",
             "old": 1.6,
-            "new": 1.3,
-            "pct": 20,
+            "new": 0.8,
+            "pct": 50,
             "until": "2026-11-30",
             "lanes": [
               "7680787:52"
@@ -347,8 +297,8 @@
             "lane": "51",
             "name": "Vio Still 0.5l Wasser  inkl. Pfand",
             "old": 1.6,
-            "new": 1.3,
-            "pct": 20,
+            "new": 0.8,
+            "pct": 50,
             "until": "2026-11-30",
             "lanes": [
               "7680787:51"
@@ -392,13 +342,13 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-27T17:11:39.838Z"
+        "updatedAt": "2026-11-27T23:56:21.486Z"
       }
     }
   },
   "machineAds": {},
   "lastEveningRunDay": "2026-11-27",
-  "lastMorningRunDay": "2026-11-27",
+  "lastMorningRunDay": "2026-11-28",
   "clearance": {
     "7680783:31": {
       "rtuNumber": "7680783",
@@ -419,7 +369,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-27T17:11:31.290Z",
+      "updatedAt": "2026-11-27T23:54:29.504Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -442,7 +392,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-27T17:11:31.290Z"
+      "updatedAt": "2026-11-27T23:54:29.504Z"
     },
     "7680787:48": {
       "rtuNumber": "7680787",
@@ -463,7 +413,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-27T17:11:31.290Z"
+      "updatedAt": "2026-11-27T23:54:28.939Z"
     },
     "7680783:53": {
       "rtuNumber": "7680783",
@@ -484,7 +434,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-27T17:11:31.290Z"
+      "updatedAt": "2026-11-27T23:54:29.504Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-23T18:11:34.118Z",
