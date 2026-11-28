@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-28T10:12:16.330Z",
+  "updatedAt": "2026-11-28T10:41:54.214Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T10:12:16.330Z",
+          "fetchedAt": "2026-11-28T10:41:54.214Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T10:12:16.330Z",
+          "fetchedAt": "2026-11-28T10:41:54.214Z",
           "items": [
             {
               "lane": "2",
@@ -875,9 +875,9 @@
             "de": "Steinsberg Rechts",
             "en": "Steinsberg Right"
           },
-          "online": false,
-          "apiOffline": true,
-          "fetchedAt": "2026-11-28T10:12:16.330Z",
+          "online": true,
+          "apiOffline": false,
+          "fetchedAt": "2026-11-28T10:41:54.214Z",
           "items": [
             {
               "lane": "1",
@@ -1165,7 +1165,7 @@
               "name": "Nutella Go",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
               "price": 1.9,
-              "stock": 2,
+              "stock": 1,
               "capacity": 5,
               "expired": false
             },
@@ -1309,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T10:12:16.330Z",
+          "fetchedAt": "2026-11-28T10:41:54.214Z",
           "items": [
             {
               "lane": "2",
@@ -1527,7 +1527,7 @@
               "name": "Red Bull The Glacier Edition",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6d1da4a715be4fad885bdbfd39ff4936.png",
               "price": 2.2,
-              "stock": 4,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
