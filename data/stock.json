@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-28T13:10:03.817Z",
+  "updatedAt": "2026-11-28T13:37:33.129Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T13:10:03.817Z",
+          "fetchedAt": "2026-11-28T13:37:33.129Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T13:10:03.817Z",
+          "fetchedAt": "2026-11-28T13:37:33.129Z",
           "items": [
             {
               "lane": "2",
@@ -877,7 +877,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T13:10:03.817Z",
+          "fetchedAt": "2026-11-28T13:37:33.129Z",
           "items": [
             {
               "lane": "1",
@@ -1309,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T13:10:03.817Z",
+          "fetchedAt": "2026-11-28T13:37:33.129Z",
           "items": [
             {
               "lane": "2",
@@ -1617,7 +1617,7 @@
               "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
               "price": 2.2,
-              "stock": 3,
+              "stock": 2,
               "capacity": 5,
               "expired": false
             },
