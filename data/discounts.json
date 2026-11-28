@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRunAt": "2026-11-27T23:54:29.504Z",
+  "lastRunAt": "2026-11-28T00:21:54.465Z",
   "lastRunDay": "2026-11-28",
   "active": {
     "7680787:1": {
@@ -14,7 +14,7 @@
       "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-27T23:54:28.938Z"
+      "updatedAt": "2026-11-28T00:21:54.465Z"
     },
     "7680787:51": {
       "rtuNumber": "7680787",
@@ -27,7 +27,7 @@
       "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-27T23:54:28.939Z"
+      "updatedAt": "2026-11-28T00:21:54.465Z"
     },
     "7680787:52": {
       "rtuNumber": "7680787",
@@ -40,7 +40,7 @@
       "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-27T23:54:28.939Z"
+      "updatedAt": "2026-11-28T00:21:54.465Z"
     },
     "7680787:53": {
       "rtuNumber": "7680787",
@@ -53,7 +53,7 @@
       "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-27T23:54:28.939Z"
+      "updatedAt": "2026-11-28T00:21:54.465Z"
     },
     "7680787:58": {
       "rtuNumber": "7680787",
@@ -66,7 +66,7 @@
       "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-27T23:54:28.939Z"
+      "updatedAt": "2026-11-28T00:21:54.465Z"
     },
     "7680787:59": {
       "rtuNumber": "7680787",
@@ -79,7 +79,7 @@
       "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:21.995Z",
-      "updatedAt": "2026-11-27T23:54:28.939Z"
+      "updatedAt": "2026-11-28T00:21:54.465Z"
     },
     "7680800:47": {
       "rtuNumber": "7680800",
@@ -92,7 +92,7 @@
       "percent": 50,
       "effDate": "2026-11-30",
       "startedAt": "2026-11-25T23:59:22.442Z",
-      "updatedAt": "2026-11-27T23:54:29.504Z"
+      "updatedAt": "2026-11-28T00:21:54.465Z"
     },
     "7680787:33": {
       "rtuNumber": "7680787",
@@ -105,7 +105,7 @@
       "percent": 20,
       "effDate": "2026-12-01",
       "startedAt": "2026-11-27T00:19:16.135Z",
-      "updatedAt": "2026-11-27T23:54:28.938Z"
+      "updatedAt": "2026-11-28T00:21:54.465Z"
     },
     "7680800:39": {
       "rtuNumber": "7680800",
@@ -118,7 +118,7 @@
       "percent": 20,
       "effDate": "2026-12-01",
       "startedAt": "2026-11-27T00:19:16.567Z",
-      "updatedAt": "2026-11-27T23:54:29.504Z"
+      "updatedAt": "2026-11-28T00:21:54.465Z"
     }
   },
   "permanentAds": {
@@ -217,7 +217,7 @@
           "7680783"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-27T23:55:46.444Z"
+        "updatedAt": "2026-11-28T00:21:55.017Z"
       },
       "schiesheim": {
         "advertiseId": "100002375",
@@ -342,7 +342,7 @@
           "7680782"
         ],
         "previousAdvertiseId": null,
-        "updatedAt": "2026-11-27T23:56:21.486Z"
+        "updatedAt": "2026-11-28T00:21:55.598Z"
       }
     }
   },
@@ -369,7 +369,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 2,
       "hideFromAd": false,
-      "updatedAt": "2026-11-27T23:54:29.504Z",
+      "updatedAt": "2026-11-28T00:21:54.465Z",
       "pinned": true,
       "pinnedReason": "Karamalz manual exception (Krisztian 2026-11-09)"
     },
@@ -392,7 +392,7 @@
       "endsAt": "2026-11-30",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-27T23:54:29.504Z"
+      "updatedAt": "2026-11-28T00:21:54.465Z"
     },
     "7680787:48": {
       "rtuNumber": "7680787",
@@ -413,7 +413,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 4,
       "hideFromAd": false,
-      "updatedAt": "2026-11-27T23:54:28.939Z"
+      "updatedAt": "2026-11-28T00:21:54.465Z"
     },
     "7680783:53": {
       "rtuNumber": "7680783",
@@ -434,7 +434,7 @@
       "endsAt": "2026-12-07",
       "stockAtStart": 5,
       "hideFromAd": false,
-      "updatedAt": "2026-11-27T23:54:29.504Z"
+      "updatedAt": "2026-11-28T00:21:54.465Z"
     }
   },
   "lastClearanceEvalAt": "2026-11-23T18:11:34.118Z",
