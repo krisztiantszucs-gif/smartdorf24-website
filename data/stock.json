@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-28T14:45:37.550Z",
+  "updatedAt": "2026-11-28T15:36:07.173Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T14:45:37.550Z",
+          "fetchedAt": "2026-11-28T15:36:07.173Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T14:45:37.550Z",
+          "fetchedAt": "2026-11-28T15:36:07.173Z",
           "items": [
             {
               "lane": "2",
@@ -877,7 +877,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T14:45:37.550Z",
+          "fetchedAt": "2026-11-28T15:36:07.173Z",
           "items": [
             {
               "lane": "1",
@@ -885,7 +885,7 @@
               "name": "Choco Chip Cookies",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/369fe3b29e5f4559baee5414c67f4f14.jpeg",
               "price": 2,
-              "stock": 3,
+              "stock": 2,
               "capacity": 3,
               "expired": false
             },
@@ -1309,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T14:45:37.550Z",
+          "fetchedAt": "2026-11-28T15:36:07.173Z",
           "items": [
             {
               "lane": "2",
