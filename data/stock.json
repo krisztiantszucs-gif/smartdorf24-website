@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-28T17:41:32.784Z",
+  "updatedAt": "2026-11-28T18:04:31.886Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T17:41:32.784Z",
+          "fetchedAt": "2026-11-28T18:04:31.886Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T17:41:32.784Z",
+          "fetchedAt": "2026-11-28T18:04:31.886Z",
           "items": [
             {
               "lane": "2",
@@ -877,7 +877,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T17:41:32.784Z",
+          "fetchedAt": "2026-11-28T18:04:31.886Z",
           "items": [
             {
               "lane": "1",
@@ -1165,7 +1165,7 @@
               "name": "Nutella Go",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/8a2713cdee2247cabb40c19263fec7f2.png",
               "price": 1.9,
-              "stock": 1,
+              "stock": 4,
               "capacity": 5,
               "expired": false
             },
@@ -1309,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T17:41:32.784Z",
+          "fetchedAt": "2026-11-28T18:04:31.886Z",
           "items": [
             {
               "lane": "2",
@@ -1417,17 +1417,17 @@
               "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
               "price": 1,
-              "stock": 3,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
             {
               "lane": "33",
               "level": 4,
-              "name": "Fanta Mango DragonFruit",
-              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/468ad6c565444e328ee58dc2dd7ab03a.jpeg",
-              "price": 1,
-              "stock": 0,
+              "name": "Red Bull Peach 250ml  inkl. Pfand",
+              "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/dbc4ec1647874649a3fa390bcce36def.jpeg",
+              "price": 2.2,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -1527,7 +1527,7 @@
               "name": "Red Bull The Glacier Edition",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6d1da4a715be4fad885bdbfd39ff4936.png",
               "price": 2.2,
-              "stock": 2,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -1557,7 +1557,7 @@
               "name": "Red Bull The Sea Blue Edition",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/00a159fc5bfb46d6a6a88bd635404995.png",
               "price": 2.2,
-              "stock": 3,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -1567,7 +1567,7 @@
               "name": "Coca-Cola Vanilla",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/1b8fbd8cd5054008adbe3c1d42f085e9.png",
               "price": 1.7,
-              "stock": 4,
+              "stock": 5,
               "capacity": 10,
               "expired": false
             },
@@ -1577,7 +1577,7 @@
               "name": "Coca-Cola Zero Sugar Holiday Creamy Vanilla",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/f31375b43ee94a26ab31bc9185b0f250.png",
               "price": 1.7,
-              "stock": 1,
+              "stock": 5,
               "capacity": 10,
               "expired": false
             },
@@ -1617,7 +1617,7 @@
               "name": "Lift Apfelschorle 0,5l  inkl. Pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/bf96aa67e92b446d8e476f07af34c392.jpeg",
               "price": 2.2,
-              "stock": 2,
+              "stock": 5,
               "capacity": 5,
               "expired": false
             },
@@ -1627,7 +1627,7 @@
               "name": "Monster Juiced Mango Loco Energy",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/65cd22d69f0e4a419dab481a4b959826.png",
               "price": 2.2,
-              "stock": 2,
+              "stock": 3,
               "capacity": 3,
               "expired": false
             },
@@ -1637,7 +1637,7 @@
               "name": "Monster Energy Ultra Zero Zucker",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6cf33328ba4645e8a23d723e7cb05ccd.png",
               "price": 2.2,
-              "stock": 1,
+              "stock": 3,
               "capacity": 3,
               "expired": false
             },
