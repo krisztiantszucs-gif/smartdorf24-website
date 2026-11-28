@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-28T09:14:17.134Z",
+  "updatedAt": "2026-11-28T10:12:16.330Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T09:14:17.134Z",
+          "fetchedAt": "2026-11-28T10:12:16.330Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T09:14:17.134Z",
+          "fetchedAt": "2026-11-28T10:12:16.330Z",
           "items": [
             {
               "lane": "2",
@@ -631,7 +631,7 @@
               "name": "Crodo Mojito Lemon Soda o% inkl. pfand",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/d69e52c85f12477390877865812b5dfa.png",
               "price": 1.9,
-              "stock": 5,
+              "stock": 3,
               "capacity": 5,
               "expired": false
             },
@@ -877,7 +877,7 @@
           },
           "online": false,
           "apiOffline": true,
-          "fetchedAt": "2026-11-28T09:14:17.134Z",
+          "fetchedAt": "2026-11-28T10:12:16.330Z",
           "items": [
             {
               "lane": "1",
@@ -1307,9 +1307,9 @@
             "de": "Steinsberg Links",
             "en": "Steinsberg Left"
           },
-          "online": false,
-          "apiOffline": true,
-          "fetchedAt": "2026-11-28T09:14:17.134Z",
+          "online": true,
+          "apiOffline": false,
+          "fetchedAt": "2026-11-28T10:12:16.330Z",
           "items": [
             {
               "lane": "2",
