@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-28T08:42:02.973Z",
+  "updatedAt": "2026-11-28T09:14:17.134Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T08:42:02.973Z",
+          "fetchedAt": "2026-11-28T09:14:17.134Z",
           "items": [
             {
               "lane": "1",
@@ -179,7 +179,7 @@
               "name": "Capri-Sun Mystic Dragon",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/51b41b5d91cb4df480eaacc429084388.png",
               "price": 1,
-              "stock": 5,
+              "stock": 4,
               "capacity": 10,
               "expired": false
             },
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T08:42:02.973Z",
+          "fetchedAt": "2026-11-28T09:14:17.134Z",
           "items": [
             {
               "lane": "2",
@@ -875,9 +875,9 @@
             "de": "Steinsberg Rechts",
             "en": "Steinsberg Right"
           },
-          "online": true,
-          "apiOffline": false,
-          "fetchedAt": "2026-11-28T08:42:02.973Z",
+          "online": false,
+          "apiOffline": true,
+          "fetchedAt": "2026-11-28T09:14:17.134Z",
           "items": [
             {
               "lane": "1",
@@ -1307,9 +1307,9 @@
             "de": "Steinsberg Links",
             "en": "Steinsberg Left"
           },
-          "online": true,
-          "apiOffline": false,
-          "fetchedAt": "2026-11-28T08:42:02.973Z",
+          "online": false,
+          "apiOffline": true,
+          "fetchedAt": "2026-11-28T09:14:17.134Z",
           "items": [
             {
               "lane": "2",
