@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-28T14:08:06.551Z",
+  "updatedAt": "2026-11-28T14:45:37.550Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T14:08:06.551Z",
+          "fetchedAt": "2026-11-28T14:45:37.550Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T14:08:06.551Z",
+          "fetchedAt": "2026-11-28T14:45:37.550Z",
           "items": [
             {
               "lane": "2",
@@ -877,7 +877,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T14:08:06.551Z",
+          "fetchedAt": "2026-11-28T14:45:37.550Z",
           "items": [
             {
               "lane": "1",
@@ -1309,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T14:08:06.551Z",
+          "fetchedAt": "2026-11-28T14:45:37.550Z",
           "items": [
             {
               "lane": "2",
@@ -1376,7 +1376,7 @@
               "level": 3,
               "name": "J.D. Gross Mozart Kugeln",
               "image": "https://impress-usa.oss-us-west-1.aliyuncs.com/yximage/6c47ad6b70a74ba99f66861175a998bd.png",
-              "price": 5,
+              "price": 4.2,
               "stock": 3,
               "capacity": 3,
               "expired": false
