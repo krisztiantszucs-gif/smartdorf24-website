@@ -1,6 +1,6 @@
 {
   "sample": false,
-  "updatedAt": "2026-11-28T15:36:07.173Z",
+  "updatedAt": "2026-11-28T16:07:51.251Z",
   "note": "Live data from ImpressIoT (public fields only).",
   "locations": [
     {
@@ -21,7 +21,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T15:36:07.173Z",
+          "fetchedAt": "2026-11-28T16:07:51.251Z",
           "items": [
             {
               "lane": "1",
@@ -453,7 +453,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T15:36:07.173Z",
+          "fetchedAt": "2026-11-28T16:07:51.251Z",
           "items": [
             {
               "lane": "2",
@@ -877,7 +877,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T15:36:07.173Z",
+          "fetchedAt": "2026-11-28T16:07:51.251Z",
           "items": [
             {
               "lane": "1",
@@ -1309,7 +1309,7 @@
           },
           "online": true,
           "apiOffline": false,
-          "fetchedAt": "2026-11-28T15:36:07.173Z",
+          "fetchedAt": "2026-11-28T16:07:51.251Z",
           "items": [
             {
               "lane": "2",
